@@ -1,0 +1,132 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "ShareSheet 分享面板",
+      "properties": [
+        {
+          "label": "设置ShareSheet 分享面板",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "是否显示分享面板",
+              "type": "boolean"
+            },
+            {
+              "key": "options",
+              "bindProp": "options",
+              "label": "ShareSheet 分享面板 分享选项",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "defaultValue": "渠道名称",
+                    "label": "分享渠道名称",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "description",
+                    "defaultValue": "选项描述",
+                    "label": "分享选项描述",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "img",
+                    "defaultValue": "https://img01.yzcdn.cn/vant/share-sheet-wechat.png",
+                    "key": "icon",
+                    "label": "图标"
+                  },
+                  {
+                    "type": "string",
+                    "defaultValue": "",
+                    "key": "className",
+                    "label": "选项的额外类名"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "顶部标题",
+              "type": "string"
+            },
+            {
+              "key": "cancel-text",
+              "bindProp": "cancel-text",
+              "label": "取消按钮文字，传入空字符串可以隐藏按钮",
+              "type": "string"
+            },
+            {
+              "key": "description",
+              "bindProp": "description",
+              "label": "标题下方的辅助描述文字",
+              "type": "string"
+            },
+            {
+              "key": "duration",
+              "bindProp": "duration",
+              "label": "动画时长，单位秒",
+              "type": "string"
+            },
+            {
+              "key": "overlay",
+              "bindProp": "overlay",
+              "label": "是否显示遮罩层",
+              "type": "boolean"
+            },
+            {
+              "key": "lock-scroll",
+              "bindProp": "lock-scroll",
+              "label": "是否锁定背景滚动",
+              "type": "boolean"
+            },
+            {
+              "key": "lazy-render",
+              "bindProp": "lazy-render",
+              "label": "是否在显示弹层时才渲染内容",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-popstate",
+              "bindProp": "close-on-popstate",
+              "label": "是否在页面回退时自动关闭",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-click-overlay",
+              "bindProp": "close-on-click-overlay",
+              "label": "是否在点击遮罩层后关闭",
+              "type": "boolean"
+            },
+            {
+              "key": "safe-area-inset-bottom",
+              "bindProp": "safe-area-inset-bottom",
+              "label": "是否开启 底部安全区适配",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "ShareSheet 分享面板",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

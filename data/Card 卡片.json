@@ -1,0 +1,130 @@
+{
+  "Card 卡片": {
+    "minthods": [
+      {
+        "key": "thumb",
+        "label": "Card 卡片 左侧图片 URL ",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "title",
+        "label": "标题 ",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "desc",
+        "label": "描述 ",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "tag",
+        "label": "图片角标 ",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "num",
+        "label": "商品数量 ",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "price",
+        "label": "商品价格 ",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "origin-price",
+        "label": "商品划线原价 ",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "centered",
+        "label": "内容是否垂直居中 ",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "currency",
+        "label": "货币符号 ",
+        "type": "string",
+        "default": "¥"
+      },
+      {
+        "key": "thumb-link",
+        "label": "点击左侧图片后跳转的链接地址 ",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "lazy-load",
+        "label": "是否开启图片懒加载，须配合  Lazyload  组件使用 ",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "click",
+        "label": "点击时触发 ",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "click-thumb",
+        "label": "点击自定义图片时触发 ",
+        "param": "event: Event "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "title",
+        "label": "自定义标题"
+      },
+      {
+        "slot": "desc",
+        "label": "自定义描述"
+      },
+      {
+        "slot": "num",
+        "label": "自定义数量"
+      },
+      {
+        "slot": "price",
+        "label": "自定义价格"
+      },
+      {
+        "slot": "origin-price",
+        "label": "自定义商品原价"
+      },
+      {
+        "slot": "price-top",
+        "label": "自定义价格上方区域"
+      },
+      {
+        "slot": "bottom",
+        "label": "自定义价格下方区域"
+      },
+      {
+        "slot": "thumb",
+        "label": "自定义图片"
+      },
+      {
+        "slot": "tag",
+        "label": "自定义图片角标"
+      },
+      {
+        "slot": "tags",
+        "label": "自定义描述下方标签区域"
+      },
+      {
+        "slot": "footer",
+        "label": "自定义右下角内容"
+      }
+    ]
+  }
+}

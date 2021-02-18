@@ -1,0 +1,133 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "数字键盘",
+      "properties": [
+        {
+          "label": "设置数字键盘",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "数字键盘 当前输入值",
+              "type": "string"
+            },
+            {
+              "key": "show",
+              "bindProp": "show",
+              "label": "是否显示键盘",
+              "type": "boolean"
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "键盘标题",
+              "type": "string"
+            },
+            {
+              "key": "theme",
+              "bindProp": "theme",
+              "label": "样式风格",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "custom",
+                  "label": "custom"
+                },
+                {
+                  "value": "default",
+                  "label": "default"
+                }
+              ]
+            },
+            {
+              "key": "maxlength",
+              "bindProp": "maxlength",
+              "label": "输入值最大长度",
+              "type": "number"
+            },
+            {
+              "key": "transition",
+              "bindProp": "transition",
+              "label": "是否开启过场动画",
+              "type": "boolean"
+            },
+            {
+              "key": "z-index",
+              "bindProp": "z-index",
+              "label": "键盘 z-index 层级",
+              "type": "number"
+            },
+            {
+              "key": "extra-key",
+              "bindProp": "extra-key",
+              "label": "底部额外按键的内容",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "value",
+                "type": "string"
+              }
+            },
+            {
+              "key": "close-button-text",
+              "bindProp": "close-button-text",
+              "label": "关闭按钮文字，空则不展示",
+              "type": "string"
+            },
+            {
+              "key": "delete-button-text",
+              "bindProp": "delete-button-text",
+              "label": "删除按钮文字，空则展示删除图标",
+              "type": "string"
+            },
+            {
+              "key": "close-button-loading",
+              "bindProp": "close-button-loading",
+              "label": "是否将关闭按钮设置为加载中状态，仅在theme=custom时有效",
+              "type": "boolean"
+            },
+            {
+              "key": "show-delete-key",
+              "bindProp": "show-delete-key",
+              "label": "是否展示删除图标",
+              "type": "boolean"
+            },
+            {
+              "key": "hide-on-click-outside",
+              "bindProp": "hide-on-click-outside",
+              "label": "点击外部时是否收起键盘",
+              "type": "boolean"
+            },
+            {
+              "key": "safe-area-inset-bottom",
+              "bindProp": "safe-area-inset-bottom",
+              "label": "是否开启 底部安全区适配",
+              "type": "boolean"
+            },
+            {
+              "key": "random-key-order",
+              "bindProp": "random-key-order",
+              "label": "是否将通过随机顺序展示按键",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "数字键盘",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

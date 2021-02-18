@@ -1,0 +1,62 @@
+[
+  {
+    "key": "title",
+    "label": "Coupon 优惠券选择器 单元格标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "chosen-coupon",
+    "label": "当前选中优惠券的索引",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "coupons",
+    "label": "可用优惠券列表",
+    "category": "attr",
+    "schema": {
+      "type": "Coupon[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "editable",
+    "label": "能否切换优惠券",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "border",
+    "label": "是否显示内边框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "currency",
+    "label": "货币符号",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  }
+]

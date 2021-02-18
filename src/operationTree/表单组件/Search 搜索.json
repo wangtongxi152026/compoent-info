@@ -1,0 +1,164 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Search 搜索",
+      "properties": [
+        {
+          "label": "设置Search 搜索",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "内容文本",
+              "type": "string"
+            },
+            {
+              "key": "label",
+              "bindProp": "label",
+              "label": "Search 搜索 搜索框左侧文本",
+              "type": "string"
+            },
+            {
+              "key": "shape",
+              "bindProp": "shape",
+              "label": "搜索框形状",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "round",
+                  "label": "round"
+                },
+                {
+                  "value": "square",
+                  "label": "square"
+                }
+              ]
+            },
+            {
+              "key": "background",
+              "bindProp": "background",
+              "label": "搜索框外部背景色",
+              "type": "color"
+            },
+            {
+              "key": "maxlength",
+              "bindProp": "maxlength",
+              "label": "输入的最大字符数",
+              "type": "number"
+            },
+            {
+              "key": "placeholder",
+              "bindProp": "placeholder",
+              "label": "占位提示文字",
+              "type": "string"
+            },
+            {
+              "key": "clearable",
+              "bindProp": "clearable",
+              "label": "是否启用清除图标，点击清除图标后会清空输入框",
+              "type": "boolean"
+            },
+            {
+              "key": "clear-trigger",
+              "bindProp": "clear-trigger",
+              "label": "显示清除图标的时机",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "always",
+                  "value": "always"
+                },
+                {
+                  "label": "focus",
+                  "value": "focus"
+                }
+              ]
+            },
+            {
+              "key": "autofocus",
+              "bindProp": "autofocus",
+              "label": "是否自动聚焦，iOS 系统不支持该属性",
+              "type": "boolean"
+            },
+            {
+              "key": "show-action",
+              "bindProp": "show-action",
+              "label": "是否在搜索框右侧显示取消按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "action-text",
+              "bindProp": "action-text",
+              "label": "取消按钮文字",
+              "type": "boolean"
+            },
+            {
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否禁用输入框",
+              "type": "boolean"
+            },
+            {
+              "key": "readonly",
+              "bindProp": "readonly",
+              "label": "是否将输入框设为只读",
+              "type": "boolean"
+            },
+            {
+              "key": "error",
+              "bindProp": "error",
+              "label": "是否将输入内容标红",
+              "type": "boolean"
+            },
+            {
+              "key": "input-align",
+              "bindProp": "input-align",
+              "label": "输入框内容对齐方式",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "center",
+                  "label": "center"
+                },
+                {
+                  "value": "right",
+                  "label": "right"
+                },
+                {
+                  "value": "left",
+                  "label": "left"
+                }
+              ]
+            },
+            {
+              "key": "left-icon",
+              "bindProp": "left-icon",
+              "label": "输入框左侧 图标名称 或图片链接",
+              "type": "img"
+            },
+            {
+              "key": "right-icon",
+              "bindProp": "right-icon",
+              "label": "输入框右侧 图标名称 或图片链接",
+              "type": "img"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Search 搜索",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

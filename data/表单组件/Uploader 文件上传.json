@@ -1,0 +1,202 @@
+{
+  "Uploader 文件上传": {
+    "minthods": [
+      {
+        "key": "v-model (fileList)",
+        "label": "Uploader 文件上传 已上传的文件列表",
+        "type": "FileListItem[]",
+        "default": "-"
+      },
+      {
+        "key": "accept",
+        "label": "允许上传的文件类型， 详细说明",
+        "type": "string",
+        "default": "image/*"
+      },
+      {
+        "key": "name",
+        "label": "标识符，可以在回调函数的第二项参数中获取",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "preview-size",
+        "label": "预览图和上传区域的尺寸，默认单位为  px",
+        "type": "number | string",
+        "default": "80px"
+      },
+      {
+        "key": "preview-image",
+        "label": "是否在上传完成后展示预览图",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "preview-full-image",
+        "label": "是否在点击预览图后展示全屏图片预览",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "preview-options ",
+        "label": "全屏图片预览的配置项，可选值见  ImagePreview",
+        "type": "object",
+        "default": "-"
+      },
+      {
+        "key": "multiple",
+        "label": "是否开启图片多选，部分安卓机型不支持",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用文件上传",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "deletable",
+        "label": "是否展示删除按钮",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "show-upload ",
+        "label": "是否展示上传区域",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "lazy-load ",
+        "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "capture",
+        "label": "图片选取模式，可选值为  camera  (直接调起摄像头)",
+        "type": "string",
+        "default": "-",
+        "enumList": [
+          {
+            "value": "camera",
+            "label": "camera"
+          },
+          {
+            "value": "",
+            "label": ""
+          },
+          {
+            "value": "(直接调起摄像头)",
+            "label": "(直接调起摄像头)"
+          },
+          {
+            "value": "-",
+            "label": "-"
+          }
+        ]
+      },
+      {
+        "key": "after-read",
+        "label": "文件读取完成后的回调函数",
+        "type": "Function",
+        "default": "-"
+      },
+      {
+        "key": "before-read",
+        "label": "文件读取前的回调函数，返回  false  可终止文件读取， 支持返回  Promise",
+        "type": "Function",
+        "default": "-"
+      },
+      {
+        "key": "before-delete",
+        "label": "文件删除前的回调函数，返回  false  可终止文件读取， 支持返回  Promise",
+        "type": "Function",
+        "default": "-"
+      },
+      {
+        "key": "max-size",
+        "label": "文件大小限制，单位为  byte",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "max-count",
+        "label": "文件上传数量限制",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "result-type",
+        "label": "文件读取结果类型，可选值为  file text",
+        "type": "string",
+        "default": "dataUrl",
+        "enumList": [
+          {
+            "value": "file",
+            "label": "file"
+          },
+          {
+            "value": "text",
+            "label": "text"
+          },
+          {
+            "value": "dataUrl",
+            "label": "dataUrl"
+          }
+        ]
+      },
+      {
+        "key": "upload-text",
+        "label": "上传区域文字提示",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "image-fit",
+        "label": "预览图裁剪模式，可选值见  Image  组件",
+        "type": "string",
+        "default": "cover"
+      },
+      {
+        "key": "upload-icon ",
+        "label": "上传区域 图标名称 或图片链接",
+        "type": "string",
+        "default": "photograph"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "oversize",
+        "label": "文件大小超过限制时触发",
+        "param": "同  after-read "
+      },
+      {
+        "eventKey": "click-preview",
+        "label": "点击预览图时触发",
+        "param": "同  after-read "
+      },
+      {
+        "eventKey": "close-preview",
+        "label": "关闭全屏图片预览时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "delete",
+        "label": "删除文件预览时触发",
+        "param": "同  after-read "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "自定义上传区域"
+      },
+      {
+        "slot": "preview-cover ",
+        "label": "自定义覆盖在预览区域上方的内容"
+      }
+    ]
+  }
+}

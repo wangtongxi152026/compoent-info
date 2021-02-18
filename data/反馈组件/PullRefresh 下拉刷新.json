@@ -1,0 +1,93 @@
+{
+  "PullRefresh 下拉刷新": {
+    "minthods": [
+      {
+        "key": "v-model",
+        "label": "PullRefresh 下拉刷新 是否处于加载中状态",
+        "type": "boolean",
+        "default": "-"
+      },
+      {
+        "key": "pulling-text",
+        "label": "下拉过程提示文案",
+        "type": "string",
+        "default": "下拉即可刷新..."
+      },
+      {
+        "key": "loosing-text",
+        "label": "释放过程提示文案",
+        "type": "string",
+        "default": "释放即可刷新..."
+      },
+      {
+        "key": "loading-text",
+        "label": "加载过程提示文案",
+        "type": "string",
+        "default": "加载中..."
+      },
+      {
+        "key": "success-text",
+        "label": "刷新成功提示文案",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "success-duration",
+        "label": "刷新成功提示展示时长(ms)",
+        "type": "number | string",
+        "default": "500"
+      },
+      {
+        "key": "animation-duration",
+        "label": "动画时长",
+        "type": "number | string",
+        "default": "300"
+      },
+      {
+        "key": "head-height",
+        "label": "顶部内容高度",
+        "type": "number | string",
+        "default": "50"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用下拉刷新",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "refresh",
+        "label": "下拉刷新时触发",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "自定义内容"
+      },
+      {
+        "slot": "normal",
+        "label": "非下拉状态时顶部内容"
+      },
+      {
+        "slot": "pulling",
+        "label": "下拉过程中顶部内容"
+      },
+      {
+        "slot": "loosing",
+        "label": "释放过程中顶部内容"
+      },
+      {
+        "slot": "loading",
+        "label": "加载过程中顶部内容"
+      },
+      {
+        "slot": "success",
+        "label": "刷新成功提示内容"
+      }
+    ]
+  }
+}

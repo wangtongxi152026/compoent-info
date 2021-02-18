@@ -1,0 +1,65 @@
+{
+  "Empty 空状态": {
+    "minthods": [
+      {
+        "key": "image",
+        "label": "Empty 空状态 图片类型，可选值为  error network search ，支持传入图片 URL",
+        "type": "string",
+        "default": "default",
+        "enumList": [
+          {
+            "value": "error",
+            "label": "error"
+          },
+          {
+            "value": "network",
+            "label": "network"
+          },
+          {
+            "value": "search",
+            "label": "search"
+          },
+          {
+            "value": "，支持传入图片",
+            "label": "，支持传入图片"
+          },
+          {
+            "value": "URL",
+            "label": "URL"
+          },
+          {
+            "value": "default",
+            "label": "default"
+          }
+        ]
+      },
+      {
+        "key": "image-size ",
+        "label": "图片大小，默认单位为  px",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "description",
+        "label": "图片下方的描述文字",
+        "type": "string",
+        "default": "-"
+      }
+    ],
+    "envets": [],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "自定义底部内容"
+      },
+      {
+        "slot": "image",
+        "label": "自定义图标"
+      },
+      {
+        "slot": "description",
+        "label": "自定义描述文字"
+      }
+    ]
+  }
+}

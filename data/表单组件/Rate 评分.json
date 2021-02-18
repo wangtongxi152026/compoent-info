@@ -1,0 +1,98 @@
+{
+  "Rate 评分": {
+    "minthods": [
+      {
+        "key": "v-model",
+        "label": "Rate 评分 当前分值",
+        "type": "number",
+        "default": "-"
+      },
+      {
+        "key": "count",
+        "label": "图标总数",
+        "type": "number | string",
+        "default": "5"
+      },
+      {
+        "key": "size",
+        "label": "图标大小，默认单位为 px",
+        "type": "number | string",
+        "default": "20px"
+      },
+      {
+        "key": "gutter",
+        "label": "图标间距，默认单位为 px",
+        "type": "number | string",
+        "default": "4px"
+      },
+      {
+        "key": "color",
+        "label": "选中时的颜色",
+        "type": "string",
+        "default": "#ee0a24"
+      },
+      {
+        "key": "void-color",
+        "label": "未选中时的颜色",
+        "type": "string",
+        "default": "#c8c9cc"
+      },
+      {
+        "key": "disabled-color",
+        "label": "禁用时的颜色",
+        "type": "string",
+        "default": "#c8c9cc"
+      },
+      {
+        "key": "icon",
+        "label": "选中时的 图标名称 或图片链接",
+        "type": "string",
+        "default": "star"
+      },
+      {
+        "key": "void-icon",
+        "label": "未选中时的 图标名称 或图片链接",
+        "type": "string",
+        "default": "star-o"
+      },
+      {
+        "key": "icon-prefix ",
+        "label": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+        "type": "string",
+        "default": "van-icon"
+      },
+      {
+        "key": "allow-half",
+        "label": "是否允许半选",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "readonly",
+        "label": "是否为只读状态",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用评分",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "touchable",
+        "label": "是否可以通过滑动手势选择评分",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "change",
+        "label": "当前分值变化时触发的事件",
+        "param": "当前分值 "
+      }
+    ],
+    "slots": []
+  }
+}

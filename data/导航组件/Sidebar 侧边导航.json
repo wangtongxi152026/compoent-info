@@ -1,0 +1,1 @@
+{"Sidebar 侧边导航":{"minthods":[{"key":"v-model","label":"Sidebar 侧边导航 当前导航项的索引","type":"number | string","default":"0"}],"envets":[{"eventKey":"v-model","label":"当前导航项的索引","param":"number | string "}],"slots":[{"slot":"v-model","label":"当前导航项的索引"}]}}

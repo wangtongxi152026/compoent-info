@@ -1,0 +1,310 @@
+[
+  {
+    "key": "value",
+    "label": "搜索文本",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label",
+    "label": "Search 搜索 搜索框左侧文本",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "shape",
+    "label": "搜索框形状，可选值为  round",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "round",
+          "label": "round"
+        },
+        {
+          "value": "square",
+          "label": "square"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "background",
+    "label": "搜索框外部背景色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "maxlength",
+    "label": "输入的最大字符数",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "placeholder",
+    "label": "占位提示文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clearable",
+    "label": "是否启用清除图标，点击清除图标后会清空输入框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clear-trigger",
+    "label": "显示清除图标的时机， always  表示输入框不为空时展示， focus  表示输入框聚焦且不为空时展示",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "autofocus",
+    "label": "是否自动聚焦，iOS 系统不支持该属性",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-action",
+    "label": "是否在搜索框右侧显示取消按钮",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "action-text",
+    "label": "取消按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled",
+    "label": "是否禁用输入框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly",
+    "label": "是否将输入框设为只读",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "error",
+    "label": "是否将输入内容标红",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "input-align",
+    "label": "输入框内容对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "left-icon",
+    "label": "输入框左侧 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "right-icon",
+    "label": "输入框右侧 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "search",
+    "label": "确定搜索时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件search",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "input",
+    "label": "输入框内容变化时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件input",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "focus",
+    "label": "输入框获得焦点时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件focus",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "blur",
+    "label": "输入框失去焦点时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件blur",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "clear",
+    "label": "点击清除按钮后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件clear",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "cancel",
+    "label": "点击取消按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件cancel",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "left",
+    "label": "自定义左侧内容（搜索框外）",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "action",
+    "label": "自定义右侧内容（搜索框外），设置 show-action 属性后展示",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "label",
+    "label": "自定义左侧文本（搜索框内）",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "left-icon",
+    "label": "自定义左侧图标（搜索框内）",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "right-icon",
+    "label": "自定义右侧图标（搜索框内）",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

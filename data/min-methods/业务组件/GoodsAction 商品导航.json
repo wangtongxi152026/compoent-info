@@ -1,0 +1,12 @@
+[
+  {
+    "key": "safe-area-inset-bottom",
+    "label": "GoodsAction 商品导航 是否开启 底部安全区适配 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  }
+]

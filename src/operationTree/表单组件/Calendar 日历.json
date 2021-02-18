@@ -1,0 +1,180 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "日历",
+      "properties": [
+        {
+          "label": "设置日历",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "是否显示",
+              "type": "boolean"
+            },
+            {
+              "key": "type ",
+              "bindProp": "type",
+              "label": "Calendar 日历 选择类型",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "single",
+                  "label": "单个日期"
+                },
+                {
+                  "value": "multiple",
+                  "label": "多个日期"
+                },
+                {
+                  "value": "range",
+                  "label": "日期区间"
+                }
+              ]
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "日历标题",
+              "type": "string"
+            },
+            {
+              "key": "color",
+              "bindProp": "color",
+              "label": "主题色，对底部按钮和选中日期生效",
+              "type": "color"
+            },
+            {
+              "key": "min-date",
+              "bindProp": "min-date",
+              "label": "可选择的最小日期",
+              "type": "date"
+            },
+            {
+              "key": "max-date",
+              "bindProp": "max-date",
+              "label": "可选择的最大日期",
+              "type": "date"
+            },
+            {
+              "key": "default-date",
+              "bindProp": "default-date",
+              "label": "默认选中的日期",
+              "type": "date"
+            },
+            {
+              "key": "row-height",
+              "bindProp": "row-height",
+              "label": "日期行高",
+              "type": "string"
+            },
+            {
+              "key": "poppable",
+              "bindProp": "poppable",
+              "label": "是否以弹层的形式展示日历",
+              "type": "boolean"
+            },
+            {
+              "key": "lazy-render ",
+              "bindProp": "lazy-render ",
+              "label": "是否只渲染可视区域的内容",
+              "type": "boolean"
+            },
+            {
+              "key": "show-mark",
+              "bindProp": "show-mark",
+              "label": "是否显示月份背景水印",
+              "type": "boolean"
+            },
+            {
+              "key": "show-title",
+              "bindProp": "show-title ",
+              "label": "是否展示日历标题",
+              "type": "boolean"
+            },
+            {
+              "key": "show-subtitle",
+              "bindProp": "show-subtitle ",
+              "label": "是否展示日历副标题（年月）",
+              "type": "boolean"
+            },
+            {
+              "key": "show-confirm",
+              "bindProp": "show-confirm",
+              "label": "是否展示确认按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "readonly",
+              "bindProp": "readonly ",
+              "label": "是否为只读状态，只读状态下不能选择日期",
+              "type": "boolean"
+            },
+            {
+              "key": "confirm-text",
+              "bindProp": "confirm-text",
+              "label": "确认按钮的文字",
+              "type": "string"
+            },
+            {
+              "key": "confirm-disabled-text",
+              "bindProp": "confirm-disabled-text",
+              "label": "确认按钮处于禁用状态时的文字",
+              "type": "string"
+            },
+            {
+              "key": "first-day-of-week",
+              "bindProp": "first-day-of-week",
+              "label": "设置周起始日(0-6)",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": 0,
+                  "label": 0
+                },
+                {
+                  "value": 1,
+                  "label": 1
+                },
+                {
+                  "value": 2,
+                  "label": 2
+                },
+                {
+                  "value": 3,
+                  "label": 3
+                },
+                {
+                  "value": 4,
+                  "label": 4
+                },
+                {
+                  "value": 5,
+                  "label": 5
+                },
+                {
+                  "value": 6,
+                  "label": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "日历",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

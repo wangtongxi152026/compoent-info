@@ -1,0 +1,192 @@
+[
+  {
+    "key": "value",
+    "label": "Area 省市区选择 当前选中的省市区 code ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "顶部栏标题 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm-button-text",
+    "label": "确认按钮文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "cancel-button-text",
+    "label": "取消按钮文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "area-list",
+    "label": "省市区数据，格式见下方 ",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-placeholder",
+    "label": "列占位提示文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loading",
+    "label": "是否显示加载状态 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly ",
+    "label": "是否为只读状态，只读状态下无法切换选项 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "item-height ",
+    "label": "选项高度，支持  px vw vh rem  单位，默认  px ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-num",
+    "label": "显示列数，3-省市区，2-省市，1-省 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "visible-item-count",
+    "label": "可见的选项个数 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "swipe-duration",
+    "label": "快速滑动时惯性滚动的时长，单位 ms ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "is-oversea-code",
+    "label": "根据 code 校验海外地址，海外地址会划分至单独的分类 ",
+    "category": "attr",
+    "schema": {
+      "type": "() => boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm",
+    "label": "点击右上方完成按钮 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件confirm",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "cancel",
+    "label": "点击取消按钮时 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件cancel",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "选项改变时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "title ",
+    "label": "自定义标题内容 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-top ",
+    "label": "自定义选项上方内容 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-bottom ",
+    "label": "自定义选项下方内容 ",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

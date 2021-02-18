@@ -1,0 +1,74 @@
+{
+  "Skeleton 骨架屏": {
+    "minthods": [
+      {
+        "key": "row",
+        "label": "Skeleton 骨架屏 段落占位图行数",
+        "type": "number | string",
+        "default": "0"
+      },
+      {
+        "key": "row-width",
+        "label": "段落占位图宽度，可传数组来设置每一行的宽度",
+        "type": "number | string | (number | string)[]",
+        "default": "100%"
+      },
+      {
+        "key": "title",
+        "label": "是否显示标题占位图",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "avatar",
+        "label": "是否显示头像占位图",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "loading",
+        "label": "是否显示骨架屏，传  false  时会展示子组件内容",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "animate",
+        "label": "是否开启动画",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "round ",
+        "label": "是否将标题和段落显示为圆角风格",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "title-width",
+        "label": "标题占位图宽度",
+        "type": "number | string",
+        "default": "40%"
+      },
+      {
+        "key": "avatar-size",
+        "label": "头像占位图大小",
+        "type": "number | string",
+        "default": "32px"
+      },
+      {
+        "key": "avatar-shape",
+        "label": "头像占位图形状，可选值为 square",
+        "type": "string",
+        "default": "round",
+        "enumList": [
+          {
+            "value": "round",
+            "label": "round"
+          }
+        ]
+      }
+    ],
+    "envets": [],
+    "slots": []
+  }
+}

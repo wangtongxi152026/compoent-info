@@ -1,0 +1,187 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-uploader",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "value": [{ "url": "https://img01.yzcdn.cn/vant/leaf.jpg" }, { "url": "https://cloud-image", "isImage": true }],
+      "accept": "image/*",
+      "preview-size": "80px",
+      "preview-image": true,
+      "preview-full-image": true,
+      "multiple": false,
+      "disabled": false,
+      "deletable": true,
+      "show-upload ": true,
+      "lazy-load ": false,
+      "result-type": "dataUrl",
+      "image-fit": "cover",
+      "upload-icon ": "photograph",
+      "$exports": [
+        {
+          "attrKey": "upload-icon",
+          "alias": "上传区域 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "image-fit",
+          "alias": "预览图裁剪模式，可选值见  Image  组件",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "upload-text",
+          "alias": "上传区域文字提示",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "result-type",
+          "alias": "文件读取结果类型，可选值为  file text",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "max-count",
+          "alias": "文件上传数量限制",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "max-size",
+          "alias": "文件大小限制，单位为  byte",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "before-delete",
+          "alias": "文件删除前的回调函数，返回  false  可终止文件读取， 支持返回  Promise",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "before-read",
+          "alias": "文件读取前的回调函数，返回  false  可终止文件读取， 支持返回  Promise",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "after-read",
+          "alias": "文件读取完成后的回调函数",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "capture",
+          "alias": "图片选取模式，可选值为  camera  (直接调起摄像头)",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "lazy-load",
+          "alias": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "show-upload",
+          "alias": "是否展示上传区域",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "deletable",
+          "alias": "是否展示删除按钮",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "disabled",
+          "alias": "是否禁用文件上传",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "multiple",
+          "alias": "是否开启图片多选，部分安卓机型不支持",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "preview-options",
+          "alias": "全屏图片预览的配置项，可选值见  ImagePreview",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "preview-full-image",
+          "alias": "是否在点击预览图后展示全屏图片预览",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "preview-image",
+          "alias": "是否在上传完成后展示预览图",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "preview-size",
+          "alias": "预览图和上传区域的尺寸，默认单位为  px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "name",
+          "alias": "标识符，可以在回调函数的第二项参数中获取",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "accept",
+          "alias": "允许上传的文件类型， 详细说明",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "value",
+          "alias": "Uploader 文件上传 已上传的文件列表",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "delete",
+          "alias": "删除文件预览时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "close-preview",
+          "alias": "关闭全屏图片预览时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click-preview",
+          "alias": "点击预览图时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "oversize",
+          "alias": "文件大小超过限制时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Uploader 文件上传",
+      "properties": [
+        {
+          "label": "设置Uploader 文件上传",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "type": "array",
+              "label": "Uploader 文件上传 已上传的文件列表",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "imageFit",
+                    "label": "类型",
+                    "defaultValue": "cover",
+                    "enumList": [
+                      {
+                        "label": "覆盖",
+                        "value": "cover"
+                      },
+                      {
+                        "label": "包含",
+                        "value": "contain"
+                      },
+                      {
+                        "label": "填充",
+                        "value": "fill"
+                      },
+                      {
+                        "label": "无",
+                        "value": "none"
+                      },
+                      {
+                        "label": "降低",
+                        "value": "scale-down"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "img",
+                    "key": "url",
+                    "label": "图标地址",
+                    "defaultValue": "https://img01.yzcdn.cn/vant/leaf.jpg"
+                  },
+                  {
+                    "type": "deletable",
+                    "key": "subtext",
+                    "defaultValue": true,
+                    "label": "是否可删除"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "accept",
+              "bindProp": "accept",
+              "label": "允许上传的文件类型， 详细说明",
+              "type": "string"
+            },
+            {
+              "key": "name",
+              "bindProp": "name",
+              "label": "标识符，可以在回调函数的第二项参数中获取",
+              "type": "string"
+            },
+            {
+              "key": "preview-size",
+              "bindProp": "preview-size",
+              "label": "预览图和上传区域的尺寸，默认单位为  px",
+              "type": "string"
+            },
+            {
+              "key": "preview-image",
+              "bindProp": "preview-image",
+              "label": "是否在上传完成后展示预览图",
+              "type": "boolean"
+            },
+            {
+              "key": "preview-full-image",
+              "bindProp": "preview-full-image",
+              "label": "是否在点击预览图后展示全屏图片预览",
+              "type": "boolean"
+            },
+            {
+              "key": "preview-options",
+              "bindProp": "preview-options",
+              "label": "全屏图片预览的配置项，可选值见  ImagePreview",
+              "type": "object"
+            },
+            {
+              "key": "multiple",
+              "bindProp": "multiple",
+              "label": "是否开启图片多选，部分安卓机型不支持",
+              "type": "boolean"
+            },
+            {
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否禁用文件上传",
+              "type": "boolean"
+            },
+            {
+              "key": "deletable",
+              "bindProp": "deletable",
+              "label": "是否展示删除按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "show-upload",
+              "bindProp": "show-upload",
+              "label": "是否展示上传区域",
+              "type": "boolean"
+            },
+            {
+              "key": "lazy-load",
+              "bindProp": "lazy-load",
+              "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+              "type": "boolean"
+            },
+            {
+              "key": "capture",
+              "bindProp": "capture",
+              "label": "图片选取模式",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "camera",
+                  "label": "camera"
+                }
+              ]
+            },
+            {
+              "key": "max-size",
+              "bindProp": "max-size",
+              "label": "文件大小限制，单位为  byte",
+              "type": "string"
+            },
+            {
+              "key": "max-count",
+              "bindProp": "max-count",
+              "label": "文件上传数量限制",
+              "type": "string"
+            },
+            {
+              "key": "result-type",
+              "bindProp": "result-type",
+              "label": "文件读取结果类型",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "file",
+                  "label": "file"
+                },
+                {
+                  "value": "text",
+                  "label": "text"
+                },
+                {
+                  "value": "dataUrl",
+                  "label": "dataUrl"
+                }
+              ]
+            },
+            {
+              "key": "upload-text",
+              "bindProp": "upload-text",
+              "label": "上传区域文字提示",
+              "type": "string"
+            },
+            {
+              "key": "image-fit",
+              "bindProp": "image-fit",
+              "label": "预览图裁剪模式",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "覆盖",
+                  "value": "cover"
+                },
+                {
+                  "label": "包含",
+                  "value": "contain"
+                },
+                {
+                  "label": "填充",
+                  "value": "fill"
+                },
+                {
+                  "label": "无",
+                  "value": "none"
+                },
+                {
+                  "label": "降低",
+                  "value": "scale-down"
+                }
+              ]
+            },
+            {
+              "key": "upload-icon",
+              "bindProp": "upload-icon",
+              "label": "上传区域 图标名称 或图片链接",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Uploader 文件上传",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

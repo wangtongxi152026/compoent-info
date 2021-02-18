@@ -1,0 +1,120 @@
+[
+  {
+    "key": "title",
+    "label": "Cascader级联选择顶部标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "value",
+    "label": "选中项的值",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "options",
+    "label": "可选项数据源",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "placeholder",
+    "label": "未选中时的提示文案",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "active-color",
+    "label": "选中状态的高亮颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "closeable",
+    "label": "是否显示关闭图标",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "field-names",
+    "label": "自定义  options  结构中的字段",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "选中项变化时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "finish",
+    "label": "全部选项选择完成后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件finish",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "close",
+    "label": "点击关闭图标时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件close",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义顶部标题",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

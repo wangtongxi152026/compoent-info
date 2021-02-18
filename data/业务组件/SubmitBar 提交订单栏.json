@@ -1,0 +1,36 @@
+{
+  "SubmitBar 提交订单栏": {
+    "minthods": [
+      { "key": "price", "label": "SubmitBar 提交订单栏 价格（单位分） ", "type": "number", "default": "-" },
+      { "key": "decimal-length", "label": "价格小数点位数 ", "type": "number | string", "default": "2" },
+      { "key": "label", "label": "价格左侧文案 ", "type": "string", "default": "合计：" },
+      { "key": "suffix-label", "label": "价格右侧文案 ", "type": "string", "default": "-" },
+      {
+        "key": "text-align",
+        "label": "价格文案对齐方向，可选值为  left ",
+        "type": "string",
+        "default": "right",
+        "enumList": [
+          { "value": "left", "label": "left" },
+          { "value": "right", "label": "right" }
+        ]
+      },
+      { "key": "button-text", "label": "按钮文字 ", "type": "string", "default": "-" },
+      { "key": "button-type", "label": "按钮类型 ", "type": "string", "default": "danger" },
+      { "key": "button-color ", "label": "自定义按钮颜色 ", "type": "string", "default": "-" },
+      { "key": "tip", "label": "在订单栏上方的提示文案 ", "type": "string", "default": "-" },
+      { "key": "tip-icon", "label": "提示文案左侧的 图标名称 或图片链接 ", "type": "string", "default": "-" },
+      { "key": "currency", "label": "货币符号 ", "type": "string", "default": "¥" },
+      { "key": "disabled", "label": "是否禁用按钮 ", "type": "boolean", "default": "false" },
+      { "key": "loading", "label": "是否显示将按钮显示为加载中状态 ", "type": "boolean", "default": "false" },
+      { "key": "safe-area-inset-bottom", "label": "是否开启 底部安全区适配 ", "type": "boolean", "default": "true" }
+    ],
+    "envets": [{ "eventKey": "submit", "label": "按钮点击事件回调 ", "param": "- " }],
+    "slots": [
+      { "slot": "default", "label": "自定义订单栏左侧内容 " },
+      { "slot": "button ", "label": "自定义按钮 " },
+      { "slot": "top", "label": "自定义订单栏上方内容 " },
+      { "slot": "tip", "label": "提示文案中的额外内容 " }
+    ]
+  }
+}

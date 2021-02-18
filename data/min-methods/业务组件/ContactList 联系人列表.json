@@ -1,0 +1,84 @@
+[
+  {
+    "key": "v-model",
+    "label": "ContactList 联系人列表 当前选中联系人的 id ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "list",
+    "label": "联系人列表 ",
+    "category": "attr",
+    "schema": {
+      "type": "Contact[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "add-text",
+    "label": "新建按钮文案 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default-tag-text",
+    "label": "默认联系人标签文案 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "add",
+    "label": "点击新增按钮时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件add",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "edit",
+    "label": "点击编辑按钮时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件edit",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "select",
+    "label": "切换选中的联系人时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件select",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  }
+]

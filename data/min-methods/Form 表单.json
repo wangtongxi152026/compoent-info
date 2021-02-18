@@ -1,0 +1,230 @@
+[
+  {
+    "key": "label-width",
+    "label": "Form 表单 表单项 label 宽度，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label-align",
+    "label": "\b 表单项 label 对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "input-align",
+    "label": "输入框对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "error-message-align",
+    "label": "错误提示文案对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "validate-trigger ",
+    "label": "表单校验触发时机，可选值为  onChange 、 onSubmit ，详见下表",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "onChange",
+          "label": "onChange"
+        },
+        {
+          "value": "、",
+          "label": "、"
+        },
+        {
+          "value": "onSubmit",
+          "label": "onSubmit"
+        },
+        {
+          "value": "，详见下表",
+          "label": "，详见下表"
+        },
+        {
+          "value": "onBlur",
+          "label": "onBlur"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "colon",
+    "label": "是否在 label 后面添加冒号",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled ",
+    "label": "是否禁用表单中的所有输入框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly ",
+    "label": "是否将表单中的所有输入框设置为只读",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "validate-first",
+    "label": "是否在某一项校验不通过时停止校验",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "scroll-to-error ",
+    "label": "是否在提交表单且校验不通过时滚动至错误的表单项",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-error ",
+    "label": "是否在校验不通过时标红输入框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-error-message ",
+    "label": "是否在校验不通过时在输入框下方展示错误提示",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "submit-on-enter ",
+    "label": "是否在按下回车键时提交表单",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "submit",
+    "label": "提交表单且验证通过后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件submit",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "failed",
+    "label": "提交表单且验证不通过后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件failed",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "表单内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

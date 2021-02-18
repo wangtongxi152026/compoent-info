@@ -1,0 +1,13 @@
+{
+  "swipeitem 轮播": {
+    "minthods": [],
+    "envets": [
+      {
+        "eventKey": "click",
+        "label": "swipeitem 轮播 点击时触发",
+        "param": "event: Event "
+      }
+    ],
+    "slots": []
+  }
+}

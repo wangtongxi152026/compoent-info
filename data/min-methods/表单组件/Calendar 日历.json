@@ -1,0 +1,330 @@
+[
+  {
+    "key": "value",
+    "label": "是否显示日历",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "type",
+    "label": "Calendar 日历 选择类型: single 表示选择单个日期， multiple 表示选择多个日期， range 表示选择日期区间",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "single",
+          "label": "单个日期"
+        },
+        {
+          "value": "multiple",
+          "label": "多个日期"
+        },
+        {
+          "value": "range",
+          "label": "日期区间"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "日历标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "color",
+    "label": "主题色，对底部按钮和选中日期生效",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "min-date",
+    "label": "可选择的最小日期",
+    "category": "attr",
+    "schema": {
+      "type": "date"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max-date",
+    "label": "可选择的最大日期",
+    "category": "attr",
+    "schema": {
+      "type": "date"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default-date",
+    "label": "默认选中的日期， type  为  multiple  或  range  时为数组，传入  null  表示默认不选择",
+    "category": "attr",
+    "schema": {
+      "type": "date"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "row-height",
+    "label": "日期行高",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "formatter",
+    "label": "日期格式化函数",
+    "category": "attr",
+    "schema": {
+      "type": "function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "poppable",
+    "label": "是否以弹层的形式展示日历",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lazy-render",
+    "label": "是否只渲染可视区域的内容",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-mark",
+    "label": "是否显示月份背景水印",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-title",
+    "label": "是否展示日历标题",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-subtitle",
+    "label": "是否展示日历副标题（年月）",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-confirm",
+    "label": "是否展示确认按钮",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly",
+    "label": "是否为只读状态，只读状态下不能选择日期",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm-text",
+    "label": "确认按钮的文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm-disabled-text",
+    "label": "确认按钮处于禁用状态时的文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "first-day-of-week",
+    "label": "设置周起始日(0-6)",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "select",
+    "label": "点击并选中任意日期时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件select",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "confirm",
+    "label": "日期选择完成后触发，若 show-confirm 为 true ，则点击确认按钮后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件confirm",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "open ",
+    "label": "打开弹出层时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件open ",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "close ",
+    "label": "关闭弹出层时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件close ",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "opened",
+    "label": "打开弹出层且动画结束后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件opened ",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "closed",
+    "label": "关闭弹出层且动画结束后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件closed ",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "unselect",
+    "label": "当日历组件的  type  为  multiple  时，取消选中日期时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件unselect ",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "month-show",
+    "label": "当某个月份进入可视区域时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件month-show ",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义标题",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "footer",
+    "label": "自定义底部区域内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

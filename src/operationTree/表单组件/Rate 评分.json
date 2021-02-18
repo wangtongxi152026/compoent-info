@@ -1,0 +1,106 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Rate 评分",
+      "properties": [
+        {
+          "label": "设置Rate 评分",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "Rate 评分 当前分值",
+              "type": "number"
+            },
+            {
+              "key": "count",
+              "bindProp": "count",
+              "label": "图标总数",
+              "type": "number"
+            },
+            {
+              "key": "size",
+              "bindProp": "size",
+              "label": "图标大小，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "gutter",
+              "bindProp": "gutter",
+              "label": "图标间距，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "color",
+              "bindProp": "color",
+              "label": "选中时的颜色",
+              "type": "color"
+            },
+            {
+              "key": "void-color",
+              "bindProp": "void-color",
+              "label": "未选中时的颜色",
+              "type": "color"
+            },
+            {
+              "key": "disabled-color",
+              "bindProp": "disabled-color",
+              "label": "禁用时的颜色",
+              "type": "color"
+            },
+            {
+              "key": "icon",
+              "bindProp": "icon",
+              "label": "选中时的 图标名称 或图片链接",
+              "type": "img"
+            },
+            {
+              "key": "void-icon",
+              "bindProp": "void-icon",
+              "label": "未选中时的 图标名称 或图片链接",
+              "type": "img"
+            },
+            {
+              "key": "allow-half",
+              "bindProp": "allow-half",
+              "label": "是否允许半选",
+              "type": "boolean"
+            },
+            {
+              "key": "readonly",
+              "bindProp": "readonly",
+              "label": "是否为只读状态",
+              "type": "boolean"
+            },
+            {
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否禁用评分",
+              "type": "boolean"
+            },
+            {
+              "key": "touchable",
+              "bindProp": "touchable",
+              "label": "是否可以通过滑动手势选择评分",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Rate 评分",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

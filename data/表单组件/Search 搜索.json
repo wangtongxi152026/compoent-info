@@ -1,0 +1,180 @@
+{
+  "Search 搜索": {
+    "minthods": [
+      {
+        "key": "label",
+        "label": "Search 搜索 搜索框左侧文本",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "shape",
+        "label": "搜索框形状，可选值为  round",
+        "type": "string",
+        "default": "square",
+        "enumList": [
+          {
+            "value": "round",
+            "label": "round"
+          },
+          {
+            "value": "square",
+            "label": "square"
+          }
+        ]
+      },
+      {
+        "key": "background",
+        "label": "搜索框外部背景色",
+        "type": "string",
+        "default": "#f2f2f2"
+      },
+      {
+        "key": "maxlength",
+        "label": "输入的最大字符数",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "placeholder",
+        "label": "占位提示文字",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "clearable",
+        "label": "是否启用清除图标，点击清除图标后会清空输入框",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "clear-trigger ",
+        "label": "显示清除图标的时机， always  表示输入框不为空时展示， focus  表示输入框聚焦且不为空时展示",
+        "type": "string",
+        "default": "focus"
+      },
+      {
+        "key": "autofocus",
+        "label": "是否自动聚焦，iOS 系统不支持该属性",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "show-action",
+        "label": "是否在搜索框右侧显示取消按钮",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "action-text",
+        "label": "取消按钮文字",
+        "type": "boolean",
+        "default": "取消"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用输入框",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "readonly",
+        "label": "是否将输入框设为只读",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "error",
+        "label": "是否将输入内容标红",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "input-align",
+        "label": "输入框内容对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "left-icon",
+        "label": "输入框左侧 图标名称 或图片链接",
+        "type": "string",
+        "default": "search"
+      },
+      {
+        "key": "right-icon",
+        "label": "输入框右侧 图标名称 或图片链接",
+        "type": "string",
+        "default": "-"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "search",
+        "label": "确定搜索时触发",
+        "param": "value: string (当前输入的值) "
+      },
+      {
+        "eventKey": "input",
+        "label": "输入框内容变化时触发",
+        "param": "value: string (当前输入的值) "
+      },
+      {
+        "eventKey": "focus",
+        "label": "输入框获得焦点时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "blur",
+        "label": "输入框失去焦点时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "clear",
+        "label": "点击清除按钮后触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "cancel",
+        "label": "点击取消按钮时触发",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "left",
+        "label": "自定义左侧内容（搜索框外）"
+      },
+      {
+        "slot": "action",
+        "label": "自定义右侧内容（搜索框外），设置 show-action 属性后展示"
+      },
+      {
+        "slot": "label",
+        "label": "自定义左侧文本（搜索框内）"
+      },
+      {
+        "slot": "left-icon",
+        "label": "自定义左侧图标（搜索框内）"
+      },
+      {
+        "slot": "right-icon",
+        "label": "自定义右侧图标（搜索框内）"
+      }
+    ]
+  }
+}

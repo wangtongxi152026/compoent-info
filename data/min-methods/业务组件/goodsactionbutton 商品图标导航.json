@@ -1,0 +1,120 @@
+[
+  {
+    "key": "text",
+    "label": "goodsactionbutton 商品图标导航 按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "type",
+    "label": "按钮类型，可选值为  primary info warning danger",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "primary",
+          "label": "primary"
+        },
+        {
+          "value": "info",
+          "label": "info"
+        },
+        {
+          "value": "warning",
+          "label": "warning"
+        },
+        {
+          "value": "danger",
+          "label": "danger"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "color",
+    "label": "按钮颜色，支持传入 linear-gradient 渐变色",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "icon",
+    "label": "左侧 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled",
+    "label": "是否禁用按钮",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loading",
+    "label": "是否显示为加载状态",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "url",
+    "label": "点击后跳转的链接地址",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "to",
+    "label": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+    "category": "attr",
+    "schema": {
+      "type": "string | object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "replace",
+    "label": "是否在跳转时替换当前页面历史",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "按钮显示内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

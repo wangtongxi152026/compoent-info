@@ -1,0 +1,48 @@
+{
+  "CountDown 倒计时": {
+    "minthods": [
+      {
+        "key": "time",
+        "label": "CountDown 倒计时 倒计时时长，单位毫秒",
+        "type": "number | string",
+        "default": "0"
+      },
+      {
+        "key": "format",
+        "label": "时间格式",
+        "type": "string",
+        "default": "HH:mm:ss"
+      },
+      {
+        "key": "auto-start",
+        "label": "是否自动开始倒计时",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "millisecond",
+        "label": "是否开启毫秒级渲染",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "finish",
+        "label": "倒计时结束时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "change",
+        "label": "倒计时变化时触发",
+        "param": "timeData: TimeData "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "自定义内容"
+      }
+    ]
+  }
+}

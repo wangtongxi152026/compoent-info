@@ -1,0 +1,166 @@
+{
+  "Form 表单": {
+    "minthods": [
+      {
+        "key": "label-width",
+        "label": "Form 表单 表单项 label 宽度，默认单位为 px",
+        "type": "number | string",
+        "default": "6.2em"
+      },
+      {
+        "key": "label-align",
+        "label": "表单项 label 对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "input-align",
+        "label": "输入框对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "error-message-align",
+        "label": "错误提示文案对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "validate-trigger ",
+        "label": "表单校验触发时机，可选值为  onChange 、 onSubmit ，详见下表",
+        "type": "string",
+        "default": "onBlur",
+        "enumList": [
+          {
+            "value": "onChange",
+            "label": "onChange"
+          },
+          {
+            "value": "、",
+            "label": "、"
+          },
+          {
+            "value": "onSubmit",
+            "label": "onSubmit"
+          },
+          {
+            "value": "，详见下表",
+            "label": "，详见下表"
+          },
+          {
+            "value": "onBlur",
+            "label": "onBlur"
+          }
+        ]
+      },
+      {
+        "key": "colon",
+        "label": "是否在 label 后面添加冒号",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "disabled ",
+        "label": "是否禁用表单中的所有输入框",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "readonly ",
+        "label": "是否将表单中的所有输入框设置为只读",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "validate-first",
+        "label": "是否在某一项校验不通过时停止校验",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "scroll-to-error ",
+        "label": "是否在提交表单且校验不通过时滚动至错误的表单项",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "show-error ",
+        "label": "是否在校验不通过时标红输入框",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "show-error-message ",
+        "label": "是否在校验不通过时在输入框下方展示错误提示",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "submit-on-enter ",
+        "label": "是否在按下回车键时提交表单",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "submit",
+        "label": "提交表单且验证通过后触发",
+        "param": "values: object "
+      },
+      {
+        "eventKey": "failed",
+        "label": "提交表单且验证不通过后触发",
+        "param": "errorInfo: { values: object, errors: object[] } "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "表单内容"
+      }
+    ]
+  }
+}

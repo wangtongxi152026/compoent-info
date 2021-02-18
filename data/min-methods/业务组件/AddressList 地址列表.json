@@ -1,0 +1,174 @@
+[
+  {
+    "key": "v-model",
+    "label": "AddressList 地址列表当前选中地址的 id",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "list",
+    "label": "地址列表",
+    "category": "attr",
+    "schema": {
+      "type": "Address[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled-list",
+    "label": "不可配送地址列表",
+    "category": "attr",
+    "schema": {
+      "type": "Address[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled-text",
+    "label": "不可配送提示文案",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "switchable",
+    "label": "是否允许切换地址",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "add-button-text",
+    "label": "底部按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default-tag-text",
+    "label": "默认地址标签文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "add",
+    "label": "点击新增按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件add",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "edit",
+    "label": "点击编辑按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件edit",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "select",
+    "label": "切换选中的地址时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件select",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "edit-disabled",
+    "label": "编辑不可配送的地址时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件edit-disabled",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "select-disabled",
+    "label": "选中不可配送的地址时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件select-disabled",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-item",
+    "label": "点击任意地址时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-item",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "在列表下方插入内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "top",
+    "label": "在顶部插入内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "item-bottom ",
+    "label": "在列表项底部插入内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

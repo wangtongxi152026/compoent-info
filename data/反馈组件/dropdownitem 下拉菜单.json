@@ -1,0 +1,85 @@
+{
+  "dropdownitem 下拉菜单": {
+    "minthods": [
+      {
+        "key": "value",
+        "label": "dropdownitem 下拉菜单 当前选中项对应的 value，可以通过 v-model 双向绑定",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "title",
+        "label": "菜单项标题",
+        "type": "string",
+        "default": "当前选中项文字"
+      },
+      {
+        "key": "options",
+        "label": "选项数组",
+        "type": "Option[]",
+        "default": "[]"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用菜单",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "lazy-render ",
+        "label": "是否在首次展开时才渲染菜单内容",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "title-class",
+        "label": "标题额外类名",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "get-container",
+        "label": "指定挂载的节点， 用法示例",
+        "type": "string | () => Element",
+        "default": "-"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "change",
+        "label": "点击选项导致 value 变化时触发",
+        "param": "value "
+      },
+      {
+        "eventKey": "open",
+        "label": "打开菜单栏时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "close",
+        "label": "关闭菜单栏时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "opened",
+        "label": "打开菜单栏且动画结束后触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "closed",
+        "label": "关闭菜单栏且动画结束后触发",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "菜单内容"
+      },
+      {
+        "slot": "title",
+        "label": "自定义菜单项标题"
+      }
+    ]
+  }
+}

@@ -1,0 +1,294 @@
+[
+  {
+    "key": "type",
+    "label": "DatetimePicker 时间选择 时间类型，可选值为  date time year-month month-day datehour",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "date",
+          "label": "date"
+        },
+        {
+          "value": "time",
+          "label": "time"
+        },
+        {
+          "value": "year-month",
+          "label": "year-month"
+        },
+        {
+          "value": "month-day",
+          "label": "month-day"
+        },
+        {
+          "value": "datehour",
+          "label": "datehour"
+        },
+        {
+          "value": "datetime",
+          "label": "datetime"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "min-date",
+    "label": "可选的最小时间，精确到分钟",
+    "category": "attr",
+    "schema": {
+      "type": "date"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max-date",
+    "label": "可选的最大时间，精确到分钟",
+    "category": "attr",
+    "schema": {
+      "type": "date"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "顶部栏标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "顶部栏标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm-button-text",
+    "label": "确认按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "cancel-button-text",
+    "label": "取消按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-toolbar",
+    "label": "是否显示顶部栏",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loading",
+    "label": "是否显示加载状态",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly",
+    "label": "是否为只读状态，只读状态下无法切换选项",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "filter",
+    "label": "选项过滤函数",
+    "category": "attr",
+    "schema": {
+      "type": "function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "formatter",
+    "label": "选项格式化函数",
+    "category": "attr",
+    "schema": {
+      "type": "function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-order",
+    "label": "自定义列排序数组, 子项可选值为 year 、 month 、 day 、 hour 、 minute",
+    "category": "attr",
+    "schema": {
+      "type": "array",
+      "enumList": [
+        {
+          "value": "year",
+          "label": "year"
+        },
+        {
+          "value": "month",
+          "label": "month"
+        },
+        {
+          "value": "day",
+          "label": "day"
+        },
+        {
+          "value": "hour",
+          "label": "hour"
+        },
+        {
+          "value": "minute",
+          "label": "minute"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "item-height",
+    "label": "选项高度，支持  px vw vh rem  单位，默认  px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "visible-item-count",
+    "label": "可见的选项个数",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "swipe-duration",
+    "label": "快速滑动时惯性滚动的时长，单位 ms",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "当值变化时触发的事件",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "confirm",
+    "label": "点击完成按钮时触发的事件",
+    "category": "event",
+    "task": {
+      "label": "绑定事件confirm",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "cancel",
+    "label": "点击取消按钮时触发的事件",
+    "category": "event",
+    "task": {
+      "label": "绑定事件cancel",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义整个顶部栏的内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义标题内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm",
+    "label": "自定义确认按钮内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "cancel",
+    "label": "自定义取消按钮内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "option",
+    "label": "自定义选项内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-top",
+    "label": "自定义选项上方内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-bottom",
+    "label": "自定义选项下方内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

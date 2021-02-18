@@ -1,0 +1,44 @@
+{
+  "Coupon 优惠券选择器": {
+    "minthods": [
+      {
+        "key": "title",
+        "label": "Coupon 优惠券选择器 单元格标题",
+        "type": "string",
+        "default": "优惠券"
+      },
+      {
+        "key": "chosen-coupon",
+        "label": "当前选中优惠券的索引",
+        "type": "number | string",
+        "default": "-1"
+      },
+      {
+        "key": "coupons",
+        "label": "可用优惠券列表",
+        "type": "Coupon[]",
+        "default": "[]"
+      },
+      {
+        "key": "editable",
+        "label": "能否切换优惠券",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "border",
+        "label": "是否显示内边框",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "currency",
+        "label": "货币符号",
+        "type": "string",
+        "default": "¥"
+      }
+    ],
+    "envets": [],
+    "slots": []
+  }
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "key": "$text",
+    "label": "文本",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "color",
+    "label": "Loading 加载 颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "type",
+    "label": "类型，可选值为  spinner",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "spinner",
+          "label": "spinner"
+        },
+        {
+          "value": "circular",
+          "label": "circular"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "size",
+    "label": "加载图标大小，默认单位为  px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "text-size",
+    "label": "文字大小，默认单位为  px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "text-color",
+    "label": "文字颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "vertical",
+    "label": "是否垂直排列图标和文字内容",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "加载文案",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

@@ -1,0 +1,1 @@
+[{"key":"v-model","label":"Sidebar 侧边导航 当前导航项的索引","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"v-model","label":"当前导航项的索引","category":"event","task":{"label":"绑定事件v-model","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"v-model","label":"当前导航项的索引","category":"slot","isExoprt":true}]

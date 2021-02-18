@@ -1,0 +1,86 @@
+{
+  "NavBar 导航栏": {
+    "minthods": [
+      {
+        "key": "title",
+        "label": "NavBar 导航栏标题",
+        "type": "string",
+        "default": "''"
+      },
+      {
+        "key": "left-text",
+        "label": "左侧文案",
+        "type": "string",
+        "default": "''"
+      },
+      {
+        "key": "right-text",
+        "label": "右侧文案",
+        "type": "string",
+        "default": "''"
+      },
+      {
+        "key": "left-arrow",
+        "label": "是否显示左侧箭头",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "border",
+        "label": "是否显示下边框",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "fixed",
+        "label": "是否固定在顶部",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "placeholder ",
+        "label": "固定在顶部时，是否在标签位置生成一个等高的占位元素",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "z-index",
+        "label": "导航栏 z-index",
+        "type": "number | string",
+        "default": "1"
+      },
+      {
+        "key": "safe-area-inset-top",
+        "label": "是否开启顶部安全区适配",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "click-left",
+        "label": "点击左侧按钮时触发",
+        "param": "-"
+      },
+      {
+        "eventKey": "click-right",
+        "label": "点击右侧按钮时触发",
+        "param": "-"
+      }
+    ],
+    "slots": [
+      {
+        "slot": "title",
+        "label": "自定义标题"
+      },
+      {
+        "slot": "left",
+        "label": "自定义左侧区域内容"
+      },
+      {
+        "slot": "right",
+        "label": "自定义右侧区域内容"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "key": "v-model",
+    "label": "Collapse 折叠面板 当前展开面板的 name",
+    "category": "attr",
+    "schema": {
+      "type": "手风琴模式： number | string 非手风琴模式： (number | string)[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "accordion",
+    "label": "是否开启手风琴模式",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "border",
+    "label": "是否显示外边框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "切换面板时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  }
+]

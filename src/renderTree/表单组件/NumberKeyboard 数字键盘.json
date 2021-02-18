@@ -1,0 +1,162 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-number-keyboard",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "theme": "default",
+      "transition": true,
+      "z-index": "100",
+      "close-button-loading": false,
+      "show-delete-key": true,
+      "hide-on-click-outside": true,
+      "safe-area-inset-bottom": true,
+      "random-key-order": false,
+      "$exports": [
+        {
+          "attrKey": "random-key-order",
+          "alias": "是否将通过随机顺序展示按键",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "safe-area-inset-bottom",
+          "alias": "是否开启 底部安全区适配",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "get-container",
+          "alias": "指定挂载的节点， 用法示例",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "hide-on-click-outside",
+          "alias": "点击外部时是否收起键盘",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "show-delete-key",
+          "alias": "是否展示删除图标",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "close-button-loading",
+          "alias": "是否将关闭按钮设置为加载中状态，仅在  theme=custom时有效",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "delete-button-text",
+          "alias": "删除按钮文字，空则展示删除图标",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "close-button-text",
+          "alias": "关闭按钮文字，空则不展示",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "extra-key",
+          "alias": "底部额外按键的内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "z-index",
+          "alias": "键盘 z-index 层级",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "transition",
+          "alias": "是否开启过场动画",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "maxlength",
+          "alias": "输入值最大长度",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "theme",
+          "alias": "样式风格，可选值为  custom",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title",
+          "alias": "键盘标题",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "show",
+          "alias": "是否显示键盘",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model (value)",
+          "alias": "NumberKeyboard 数字键盘 当前输入值",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "hide",
+          "alias": "键盘完全收起时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "show",
+          "alias": "键盘完全弹出时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "blur",
+          "alias": "点击关闭按钮或非键盘区域时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "close",
+          "alias": "点击关闭按钮时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "delete",
+          "alias": "点击删除键时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "input",
+          "alias": "点击按键时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Stepper 步进器",
+      "properties": [
+        {
+          "label": "设置Stepper 步进器",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "valuel",
+              "label": "Stepper 步进器 当前输入的值",
+              "type": "string"
+            },
+            {
+              "key": "min",
+              "bindProp": "min",
+              "label": "最小值",
+              "type": "string"
+            },
+            {
+              "key": "max",
+              "bindProp": "max",
+              "label": "最大值",
+              "type": "string"
+            },
+            {
+              "key": "default-value",
+              "bindProp": "default-value",
+              "label": "初始值，当 v-model 为空时生效",
+              "type": "string"
+            },
+            {
+              "key": "step",
+              "bindProp": "step",
+              "label": "步长，每次点击时改变的值",
+              "type": "string"
+            },
+            {
+              "key": "name",
+              "bindProp": "name",
+              "label": "标识符，可以在 change 事件回调参数中获取",
+              "type": "string"
+            },
+            {
+              "key": "input-width",
+              "bindProp": "input-width",
+              "label": "输入框宽度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "button-size",
+              "bindProp": "button-size",
+              "label": "按钮大小以及输入框高度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "decimal-length",
+              "bindProp": "decimal-length",
+              "label": "固定显示的小数位数",
+              "type": "string"
+            },
+            {
+              "key": "theme",
+              "bindProp": "theme",
+              "label": "样式风格",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "round",
+                  "label": "round"
+                },
+                {
+                  "value": "",
+                  "label": "-"
+                }
+              ]
+            },
+            {
+              "key": "placeholder",
+              "bindProp": "placeholder",
+              "label": "输入框占位提示文字",
+              "type": "string"
+            },
+            {
+              "key": "integer",
+              "bindProp": "integer",
+              "label": "是否只允许输入整数",
+              "type": "boolean"
+            },
+            {
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否禁用步进器",
+              "type": "boolean"
+            },
+            {
+              "key": "disable-plus",
+              "bindProp": "disable-plus",
+              "label": "是否禁用增加按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "disable-minus",
+              "bindProp": "disable-minus",
+              "label": "是否禁用减少按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "disable-input",
+              "bindProp": "disable-input",
+              "label": "是否禁用输入框",
+              "type": "boolean"
+            },
+            {
+              "key": "async-change",
+              "bindProp": "async-change",
+              "label": "是否开启异步变更，开启后需要手动控制输入值",
+              "type": "boolean"
+            },
+            {
+              "key": "show-plus",
+              "bindProp": "show-plus",
+              "label": "是否显示增加按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "show-minus",
+              "bindProp": "show-minus",
+              "label": "是否显示减少按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "show-input",
+              "bindProp": "show-input",
+              "label": "是否显示输入框",
+              "type": "boolean"
+            },
+            {
+              "key": "long-press",
+              "bindProp": "long-press",
+              "label": "是否开启长按手势",
+              "type": "boolean"
+            },
+            {
+              "key": "allow-empty",
+              "bindProp": "allow-empty",
+              "label": "是否允许输入的值为空",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Stepper 步进器",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

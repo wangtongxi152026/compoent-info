@@ -1,0 +1,210 @@
+[
+  {
+    "key": "v-model",
+    "label": "couponlist 优惠券选择器 当前输入的兑换码",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "chosen-coupon",
+    "label": "当前选中优惠券的索引",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "coupons",
+    "label": "可用优惠券列表",
+    "category": "attr",
+    "schema": {
+      "type": "Coupon[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled-coupons",
+    "label": "不可用优惠券列表",
+    "category": "attr",
+    "schema": {
+      "type": "Coupon[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "enabled-title",
+    "label": "可用优惠券列表标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled-title",
+    "label": "不可用优惠券列表标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "exchange-button-text",
+    "label": "兑换按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "exchange-button-loading",
+    "label": "是否显示兑换按钮加载动画",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "exchange-button-disabled",
+    "label": "是否禁用兑换按钮",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "exchange-min-length",
+    "label": "兑换码最小长度",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "displayed-coupon-index",
+    "label": "滚动至特定优惠券位置",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-close-button",
+    "label": "是否显示列表底部按钮",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-button-text",
+    "label": "列表底部按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "input-placeholder",
+    "label": "输入框文字提示",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-exchange-bar",
+    "label": "是否展示兑换栏",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "currency",
+    "label": "货币符号",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "empty-image",
+    "label": "列表为空时的占位图",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-count",
+    "label": "是否展示可用 / 不可用数量",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "优惠券切换回调",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "exchange",
+    "label": "兑换优惠券回调",
+    "category": "event",
+    "task": {
+      "label": "绑定事件exchange",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  }
+]

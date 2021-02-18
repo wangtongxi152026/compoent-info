@@ -1,0 +1,197 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-picker",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "columns": [
+        {
+          "text": "浙江",
+          "children": [
+            {
+              "text": "杭州",
+              "children": [
+                {
+                  "text": "西湖区"
+                },
+                {
+                  "text": "余杭区"
+                }
+              ]
+            },
+            {
+              "text": "温州",
+              "children": [
+                {
+                  "text": "鹿城区"
+                },
+                {
+                  "text": "瓯海区"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "福建",
+          "children": [
+            {
+              "text": "福州",
+              "children": [
+                {
+                  "text": "鼓楼区"
+                },
+                {
+                  "text": "台江区"
+                }
+              ]
+            },
+            {
+              "text": "厦门",
+              "children": [
+                {
+                  "text": "思明区"
+                },
+                {
+                  "text": "海沧区"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "confirm-button-text": "确认",
+      "cancel-button-text": "取消",
+      "value-key": "text",
+      "toolbar-position": "top",
+      "loading": false,
+      "readonly ": false,
+      "show-toolbar": false,
+      "allow-html": true,
+      "default-index": "0",
+      "item-height ": "44",
+      "visible-item-count": "6",
+      "swipe-duration": "1000",
+      "$exports": [
+        {
+          "attrKey": "swipe-duration",
+          "alias": "快速滑动时惯性滚动的时长，单位 ms",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "visible-item-count",
+          "alias": "可见的选项个数",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "item-height",
+          "alias": "选项高度，支持  px vw vh rem  单位，默认  px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "default-index",
+          "alias": "单列选择时，默认选中项的索引",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "allow-html",
+          "alias": "是否允许选项内容中渲染 HTML",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "show-toolbar",
+          "alias": "是否显示顶部栏",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "readonly",
+          "alias": "是否为只读状态，只读状态下无法切换选项",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "loading",
+          "alias": "是否显示加载状态",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "toolbar-position",
+          "alias": "顶部栏位置，可选值为 bottom",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "value-key",
+          "alias": "选项对象中，选项文字对应的键名",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "cancel-button-text",
+          "alias": "取消按钮文字",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "confirm-button-text",
+          "alias": "确认按钮文字",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title",
+          "alias": "顶部栏标题",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "columns",
+          "alias": "Picker 选择器 对象数组，配置每一列显示的数据",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "change",
+          "alias": "选项改变时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "cancel",
+          "alias": "点击取消按钮时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "confirm",
+          "alias": "点击完成按钮时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

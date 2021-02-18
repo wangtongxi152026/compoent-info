@@ -1,0 +1,82 @@
+[
+  {
+    "key": "show",
+    "label": "Overlay 遮罩层 是否展示遮罩层",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "z-index",
+    "label": "z-index 层级",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "duration",
+    "label": "动画时长，单位秒",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "class-name",
+    "label": "自定义类名",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "custom-style",
+    "label": "自定义样式",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lock-scroll",
+    "label": "是否锁定背景滚动，锁定时蒙层里的内容也将无法滚动",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "click",
+    "label": "点击时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "默认插槽，用于在遮罩层上方嵌入内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

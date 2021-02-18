@@ -1,0 +1,206 @@
+[
+  {
+    "key": "thumb",
+    "label": "Card 卡片 左侧图片 URL ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "标题 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "desc",
+    "label": "描述 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "tag",
+    "label": "图片角标 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "num",
+    "label": "商品数量 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "price",
+    "label": "商品价格 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "origin-price",
+    "label": "商品划线原价 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "centered",
+    "label": "内容是否垂直居中 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "currency",
+    "label": "货币符号 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "thumb-link",
+    "label": "点击左侧图片后跳转的链接地址 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lazy-load",
+    "label": "是否开启图片懒加载，须配合  Lazyload  组件使用 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "click",
+    "label": "点击时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-thumb",
+    "label": "点击自定义图片时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-thumb",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义标题",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "desc",
+    "label": "自定义描述",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "num",
+    "label": "自定义数量",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "price",
+    "label": "自定义价格",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "origin-price",
+    "label": "自定义商品原价",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "price-top",
+    "label": "自定义价格上方区域",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "bottom",
+    "label": "自定义价格下方区域",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "thumb",
+    "label": "自定义图片",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "tag",
+    "label": "自定义图片角标",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "tags",
+    "label": "自定义描述下方标签区域",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "footer",
+    "label": "自定义右下角内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

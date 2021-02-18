@@ -1,0 +1,58 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "级联选择",
+      "properties": [
+        {
+          "label": "配置级联选择",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "Cascader 级联选择 顶部标题",
+              "type": "string"
+            },
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "是否显示",
+              "type": "boolean"
+            },
+            {
+              "key": "placeholder",
+              "bindProp": "placeholder",
+              "label": "未选中时的提示文案",
+              "type": "string"
+            },
+            {
+              "key": "active-color",
+              "bindProp": "active-color",
+              "label": "选中状态的高亮颜色",
+              "type": "string"
+            },
+            {
+              "key": "closeable",
+              "bindProp": "closeable",
+              "label": "是否显示关闭图标",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "级联选择",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

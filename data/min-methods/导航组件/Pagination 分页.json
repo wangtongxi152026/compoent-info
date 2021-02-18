@@ -1,0 +1,134 @@
+[
+  {
+    "key": "v-model",
+    "label": "Pagination 分页 当前页码 ",
+    "category": "attr",
+    "schema": {
+      "type": "number "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "mode",
+    "label": "显示模式，可选值为  simple ",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "simple",
+          "label": "simple"
+        },
+        {
+          "value": "multi",
+          "label": "multi"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "prev-text",
+    "label": "上一页按钮文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "next-text",
+    "label": "下一页按钮文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "page-count",
+    "label": "总页数 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "total-items",
+    "label": "总记录数 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "items-per-page",
+    "label": "每页记录数 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-page-size",
+    "label": "显示的页码个数 ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "force-ellipses",
+    "label": "是否显示省略号 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean "
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "页码改变时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "page ",
+    "label": "自定义页码 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "prev-text ",
+    "label": "自定义上一页按钮文字 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "next-text ",
+    "label": "自定义下一页按钮文字 ",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

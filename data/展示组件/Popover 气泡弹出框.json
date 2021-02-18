@@ -1,0 +1,123 @@
+{
+  "Popover 气泡弹出框": {
+    "minthods": [
+      {
+        "key": "v-model",
+        "label": "Popover 气泡弹出框 是否展示气泡弹出层",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "actions",
+        "label": "选项列表",
+        "type": "Action[]",
+        "default": "[]"
+      },
+      {
+        "key": "placement",
+        "label": "弹出位置",
+        "type": "string",
+        "default": "bottom"
+      },
+      {
+        "key": "theme",
+        "label": "主题风格，可选值为  dark",
+        "type": "string",
+        "default": "light",
+        "enumList": [
+          {
+            "value": "dark",
+            "label": "dark"
+          },
+          {
+            "value": "light",
+            "label": "light"
+          }
+        ]
+      },
+      {
+        "key": "trigger ",
+        "label": "触发方式，可选值为  click",
+        "type": "-",
+        "default": "",
+        "enumList": [
+          {
+            "value": "click",
+            "label": "click"
+          },
+          {
+            "value": "",
+            "label": ""
+          }
+        ]
+      },
+      {
+        "key": "offset",
+        "label": "出现位置的偏移量",
+        "type": "[number, number]",
+        "default": "[0, 8]"
+      },
+      {
+        "key": "overlay",
+        "label": "是否显示遮罩层",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "close-on-click-action",
+        "label": "是否在点击选项后关闭",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "close-on-click-outside",
+        "label": "是否在点击外部元素后关闭菜单",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "get-container",
+        "label": "指定挂载的节点， 用法示例",
+        "type": "string | () => Element",
+        "default": "body"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "select",
+        "label": "点击选项时触发",
+        "param": "action: Action, index: number "
+      },
+      {
+        "eventKey": "open",
+        "label": "打开菜单时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "close",
+        "label": "关闭菜单时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "opened",
+        "label": "打开菜单且动画结束后触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "closed",
+        "label": "关闭菜单且动画结束后触发",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "自定义菜单内容"
+      },
+      {
+        "slot": "reference",
+        "label": "触发 Popover 显示的元素内容"
+      }
+    ]
+  }
+}

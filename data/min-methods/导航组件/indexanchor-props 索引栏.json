@@ -1,0 +1,32 @@
+[
+  {
+    "key": "index",
+    "label": "indexanchor-props 索引栏 索引字符",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "index",
+    "label": "索引字符",
+    "category": "event",
+    "task": {
+      "label": "绑定事件index",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "index",
+    "label": "索引字符",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "Loading 加载": {
+    "minthods": [
+      {
+        "key": "color",
+        "label": "Loading 加载 颜色",
+        "type": "string",
+        "default": "#c9c9c9"
+      },
+      {
+        "key": "type",
+        "label": "类型，可选值为  spinner",
+        "type": "string",
+        "default": "circular",
+        "enumList": [
+          {
+            "value": "spinner",
+            "label": "spinner"
+          },
+          {
+            "value": "circular",
+            "label": "circular"
+          }
+        ]
+      },
+      {
+        "key": "size",
+        "label": "加载图标大小，默认单位为  px",
+        "type": "number | string",
+        "default": "30px"
+      },
+      {
+        "key": "text-size",
+        "label": "文字大小，默认单位为  px",
+        "type": "number | string",
+        "default": "14px"
+      },
+      {
+        "key": "text-color ",
+        "label": "文字颜色",
+        "type": "string",
+        "default": "#c9c9c9"
+      },
+      {
+        "key": "vertical",
+        "label": "是否垂直排列图标和文字内容",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "envets": [],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "加载文案"
+      }
+    ]
+  }
+}

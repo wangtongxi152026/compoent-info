@@ -1,0 +1,174 @@
+[
+  {
+    "key": "value",
+    "label": "Slider 滑块 当前进度百分比",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max",
+    "label": "最大值",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "min",
+    "label": "最小值",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "step",
+    "label": "步长",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "bar-height",
+    "label": "进度条高度，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "button-size",
+    "label": "滑块按钮大小，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "active-color",
+    "label": "进度条激活态颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "inactive-color",
+    "label": "进度条非激活态颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "range",
+    "label": "是否开启双滑块模式",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled",
+    "label": "是否禁用滑块",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "vertical",
+    "label": "是否垂直展示",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "input",
+    "label": "进度变化时实时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件input",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "进度变化且结束拖动后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "drag-start",
+    "label": "开始拖动时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件drag-start",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "drag-end",
+    "label": "结束拖动时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件drag-end",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "button",
+    "label": "自定义滑动按钮",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

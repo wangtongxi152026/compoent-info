@@ -1,0 +1,96 @@
+[
+  {
+    "key": "items",
+    "label": "TreeSelect 分类选择 分类显示所需的数据",
+    "category": "attr",
+    "schema": {
+      "type": "Item[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "height",
+    "label": "高度，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "main-active-index",
+    "label": "左侧选中项的索引",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "active-id",
+    "label": "右侧选中项的 id，支持传入数组",
+    "category": "attr",
+    "schema": {
+      "type": "number | string | (number | string)[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max",
+    "label": "右侧项最大选中个数",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "selected-icon ",
+    "label": "自定义右侧栏选中状态的图标",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "click-nav",
+    "label": "点击左侧导航时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-nav",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-item",
+    "label": "点击右侧选择项时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-item",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "content",
+    "label": "自定义右侧区域内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

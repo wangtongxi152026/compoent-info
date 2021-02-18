@@ -1,0 +1,143 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-share-sheet",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "value": true,
+      "title": "立即分享给好友",
+      "options": [
+        {
+          "name": "名称",
+          "icon": "https://img01.yzcdn.cn/vant/custom-icon-fire.png"
+        },
+        {
+          "name": "名称",
+          "icon": "https://img01.yzcdn.cn/vant/custom-icon-light.png"
+        },
+        {
+          "name": "名称",
+          "icon": "https://img01.yzcdn.cn/vant/custom-icon-water.png"
+        }
+      ],
+      "cancel-text": "取消",
+      "duration": "0.3",
+      "overlay": true,
+      "lock-scroll": true,
+      "lazy-render": true,
+      "close-on-popstate": true,
+      "close-on-click-overlay": true,
+      "safe-area-inset-bottom": true,
+      "$exports": [
+        {
+          "attrKey": "get-container",
+          "alias": "指定挂载的节点， 用法示例",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "safe-area-inset-bottom",
+          "alias": "是否开启 底部安全区适配",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "close-on-click-overlay",
+          "alias": "是否在点击遮罩层后关闭",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "close-on-popstate",
+          "alias": "是否在页面回退时自动关闭",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "lazy-render",
+          "alias": "是否在显示弹层时才渲染内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "lock-scroll",
+          "alias": "是否锁定背景滚动",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "overlay",
+          "alias": "是否显示遮罩层",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "duration",
+          "alias": "动画时长，单位秒",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "description",
+          "alias": "标题下方的辅助描述文字",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "cancel-text",
+          "alias": "取消按钮文字，传入空字符串可以隐藏按钮",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title",
+          "alias": "顶部标题",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "options",
+          "alias": "ShareSheet 分享面板 分享选项",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click-overlay",
+          "alias": "点击遮罩层时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "cancel",
+          "alias": "点击取消按钮时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "select",
+          "alias": "点击分享选项时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

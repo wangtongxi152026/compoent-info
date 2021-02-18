@@ -1,0 +1,54 @@
+[
+  {
+    "key": "content",
+    "label": "Badge 徽标 徽标内容",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "color",
+    "label": "徽标背景颜色",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "dot",
+    "label": "是否展示为小红点",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max",
+    "label": "最大值，超过最大值会显示  {max}+ ，仅当 content 为数字时有效",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "徽标包裹的子元素",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "content",
+    "label": "自定义徽标内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

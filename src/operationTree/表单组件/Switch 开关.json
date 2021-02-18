@@ -1,0 +1,64 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Switch 开关",
+      "properties": [
+        {
+          "label": "设置Switch 开关",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "Switch 开关 开关选中状态",
+              "type": "boolean"
+            },
+            {
+              "key": "loading",
+              "bindProp": "loading",
+              "label": "是否为加载状态",
+              "type": "boolean"
+            },
+            {
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否为禁用状态",
+              "type": "boolean"
+            },
+            {
+              "key": "size",
+              "bindProp": "size",
+              "label": "开关尺寸，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "active-color",
+              "bindProp": "active-color",
+              "label": "打开时的背景色",
+              "type": "color"
+            },
+            {
+              "key": "inactive-color",
+              "bindProp": "inactive-color",
+              "label": "关闭时的背景色",
+              "type": "color"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Switch 开关",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

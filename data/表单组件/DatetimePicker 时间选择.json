@@ -1,0 +1,195 @@
+{
+  "DatetimePicker 时间选择": {
+    "minthods": [
+      {
+        "key": "type",
+        "label": "DatetimePicker 时间选择 时间类型，可选值为  date time year-month month-day datehour",
+        "type": "string",
+        "default": "datetime",
+        "enumList": [
+          {
+            "value": "date",
+            "label": "date"
+          },
+          {
+            "value": "time",
+            "label": "time"
+          },
+          {
+            "value": "year-month",
+            "label": "year-month"
+          },
+          {
+            "value": "month-day",
+            "label": "month-day"
+          },
+          {
+            "value": "datehour",
+            "label": "datehour"
+          },
+          {
+            "value": "datetime",
+            "label": "datetime"
+          }
+        ]
+      },
+      {
+        "key": "title",
+        "label": "顶部栏标题",
+        "type": "string",
+        "default": "''"
+      },
+      {
+        "key": "confirm-button-text",
+        "label": "确认按钮文字",
+        "type": "string",
+        "default": "确认"
+      },
+      {
+        "key": "cancel-button-text",
+        "label": "取消按钮文字",
+        "type": "string",
+        "default": "取消"
+      },
+      {
+        "key": "show-toolbar",
+        "label": "是否显示顶部栏",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "loading",
+        "label": "是否显示加载状态",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "readonly ",
+        "label": "是否为只读状态，只读状态下无法切换选项",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "filter",
+        "label": "选项过滤函数",
+        "type": "(type, vals) => vals",
+        "default": "-"
+      },
+      {
+        "key": "formatter",
+        "label": "选项格式化函数",
+        "type": "(type, val) => val",
+        "default": "-"
+      },
+      {
+        "key": "columns-order ",
+        "label": "自定义列排序数组, 子项可选值为 year 、 month 、 day 、 hour 、 minute",
+        "type": "string[]",
+        "default": "-",
+        "enumList": [
+          {
+            "value": "、",
+            "label": "、"
+          },
+          {
+            "value": "month",
+            "label": "month"
+          },
+          {
+            "value": "、",
+            "label": "、"
+          },
+          {
+            "value": "day",
+            "label": "day"
+          },
+          {
+            "value": "、",
+            "label": "、"
+          },
+          {
+            "value": "hour",
+            "label": "hour"
+          },
+          {
+            "value": "、",
+            "label": "、"
+          },
+          {
+            "value": "minute",
+            "label": "minute"
+          },
+          {
+            "value": "-",
+            "label": "-"
+          }
+        ]
+      },
+      {
+        "key": "item-height ",
+        "label": "选项高度，支持  px vw vh rem  单位，默认  px",
+        "type": "number | string",
+        "default": "44"
+      },
+      {
+        "key": "visible-item-count",
+        "label": "可见的选项个数",
+        "type": "number | string",
+        "default": "6"
+      },
+      {
+        "key": "swipe-duration",
+        "label": "快速滑动时惯性滚动的时长，单位 ms",
+        "type": "number | string",
+        "default": "1000"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "change",
+        "label": "当值变化时触发的事件",
+        "param": "picker: Picker 实例 "
+      },
+      {
+        "eventKey": "confirm",
+        "label": "点击完成按钮时触发的事件",
+        "param": "value: 当前选中的时间 "
+      },
+      {
+        "eventKey": "cancel",
+        "label": "点击取消按钮时触发的事件",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default ",
+        "label": "自定义整个顶部栏的内容"
+      },
+      {
+        "slot": "title ",
+        "label": "自定义标题内容"
+      },
+      {
+        "slot": "confirm ",
+        "label": "自定义确认按钮内容"
+      },
+      {
+        "slot": "cancel ",
+        "label": "自定义取消按钮内容"
+      },
+      {
+        "slot": "option ",
+        "label": "自定义选项内容"
+      },
+      {
+        "slot": "columns-top ",
+        "label": "自定义选项上方内容"
+      },
+      {
+        "slot": "columns-bottom ",
+        "label": "自定义选项下方内容"
+      }
+    ]
+  }
+}

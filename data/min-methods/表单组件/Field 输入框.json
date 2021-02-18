@@ -1,0 +1,588 @@
+[
+  {
+    "key": "value",
+    "label": "Field 输入框 当前输入的值",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label",
+    "label": "输入框左侧文本",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "name",
+    "label": "名称，提交表单的标识符",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "type",
+    "label": "输入框类型, 可选值为  tel digit number textarea password  等",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "tel",
+          "label": "tel"
+        },
+        {
+          "value": "digit",
+          "label": "digit"
+        },
+        {
+          "value": "number",
+          "label": "number"
+        },
+        {
+          "value": "textarea",
+          "label": "textarea"
+        },
+        {
+          "value": "password",
+          "label": "password"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "size",
+    "label": "大小，可选值为  large",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "large",
+          "label": "large"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "maxlength",
+    "label": "输入的最大字符数",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "placeholder",
+    "label": "输入框占位提示文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "border",
+    "label": "是否显示内边框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled",
+    "label": "是否禁用输入框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly",
+    "label": "是否只读",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "colon",
+    "label": "是否在 label 后面添加冒号",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "required",
+    "label": "是否显示表单必填星号",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "center",
+    "label": "是否使内容垂直居中",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clearable",
+    "label": "是否启用清除图标，点击清除图标后会清空输入框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clear-trigger",
+    "label": "显示清除图标的时机， always  表示输入框不为空时展示， focus  表示输入框聚焦且不为空时展示",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clickable",
+    "label": "是否开启点击反馈",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "is-link",
+    "label": "是否展示右侧箭头并开启点击反馈",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "autofocus",
+    "label": "是否自动聚焦，iOS 系统不支持该属性",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-word-limit",
+    "label": "是否显示字数统计，需要设置 maxlength 属性",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "error",
+    "label": "是否将输入内容标红",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "error-message",
+    "label": "底部错误提示文案，为空时不展示",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "formatter",
+    "label": "输入内容格式化函数",
+    "category": "attr",
+    "schema": {
+      "type": "Function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "format-trigger",
+    "label": "格式化函数触发的时机，可选值为  onBlur",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "onBlur",
+          "label": "onBlur"
+        },
+        {
+          "value": "onChange",
+          "label": "onChange"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "arrow-direction",
+    "label": "箭头方向，可选值为  left up down",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "up",
+          "label": "up"
+        },
+        {
+          "value": "down",
+          "label": "down"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label-class",
+    "label": "左侧文本额外类名",
+    "category": "attr",
+    "schema": {
+      "type": "any"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label-width",
+    "label": "左侧文本宽度，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label-align",
+    "label": "左侧文本对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "input-align",
+    "label": "输入框对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "error-message-align",
+    "label": "错误提示文案对齐方式，可选值为  center right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "autosize",
+    "label": "是否自适应内容高度，只对 textarea 有效， 可传入对象,如 { maxHeight: 100, minHeight: 50 }， 单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "left-icon",
+    "label": "左侧 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "right-icon",
+    "label": "右侧 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "icon-prefix",
+    "label": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "rules",
+    "label": "表单校验规则，详见  Form 组件",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "input",
+    "label": "输入框内容变化时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件input",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "focus",
+    "label": "输入框获得焦点时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件focus",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "blur",
+    "label": "输入框失去焦点时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件blur",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "clear",
+    "label": "点击清除按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件clear",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click",
+    "label": "点击 Field 时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-input",
+    "label": "点击输入区域时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-input",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-left-icon",
+    "label": "点击左侧图标时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-left-icon",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-right-icon",
+    "label": "点击右侧图标时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-right-icon",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "label",
+    "label": "自定义输入框 label 标签",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "input",
+    "label": "自定义输入框，使用此插槽后，与输入框相关的属性和事件将失效",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "left-icon",
+    "label": "自定义输入框头部图标",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "right-icon",
+    "label": "自定义输入框尾部图标",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "button",
+    "label": "自定义输入框尾部按钮",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "extra",
+    "label": "自定义输入框最右侧的额外内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

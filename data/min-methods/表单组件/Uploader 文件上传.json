@@ -1,0 +1,332 @@
+[
+  {
+    "key": "value",
+    "label": "Uploader 文件上传 已上传的文件列表",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "accept",
+    "label": "允许上传的文件类型， 详细说明",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "name",
+    "label": "标识符，可以在回调函数的第二项参数中获取",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "preview-size",
+    "label": "预览图和上传区域的尺寸，默认单位为  px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "preview-image",
+    "label": "是否在上传完成后展示预览图",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "preview-full-image",
+    "label": "是否在点击预览图后展示全屏图片预览",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "preview-options",
+    "label": "全屏图片预览的配置项，可选值见  ImagePreview",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "multiple",
+    "label": "是否开启图片多选，部分安卓机型不支持",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled",
+    "label": "是否禁用文件上传",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "deletable",
+    "label": "是否展示删除按钮",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-upload",
+    "label": "是否展示上传区域",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lazy-load",
+    "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "capture",
+    "label": "图片选取模式，可选值为  camera  (直接调起摄像头)",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "camera",
+          "label": "camera"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "after-read",
+    "label": "文件读取完成后的回调函数",
+    "category": "attr",
+    "schema": {
+      "type": "function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "before-read",
+    "label": "文件读取前的回调函数，返回  false  可终止文件读取， 支持返回  Promise",
+    "category": "attr",
+    "schema": {
+      "type": "function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "before-delete",
+    "label": "文件删除前的回调函数，返回  false  可终止文件读取， 支持返回  Promise",
+    "category": "attr",
+    "schema": {
+      "type": "function"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max-size",
+    "label": "文件大小限制，单位为  byte",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max-count",
+    "label": "文件上传数量限制",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "result-type",
+    "label": "文件读取结果类型，可选值为  file text",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "file",
+          "label": "file"
+        },
+        {
+          "value": "text",
+          "label": "text"
+        },
+        {
+          "value": "dataUrl",
+          "label": "dataUrl"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "upload-text",
+    "label": "上传区域文字提示",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "image-fit",
+    "label": "预览图裁剪模式",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "label": "覆盖",
+          "value": "cover"
+        },
+        {
+          "label": "包含",
+          "value": "contain"
+        },
+        {
+          "label": "填充",
+          "value": "fill"
+        },
+        {
+          "label": "无",
+          "value": "none"
+        },
+        {
+          "label": "降低",
+          "value": "scale-down"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "upload-icon",
+    "label": "上传区域 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "oversize",
+    "label": "文件大小超过限制时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件oversize",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-preview",
+    "label": "点击预览图时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-preview",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "close-preview",
+    "label": "关闭全屏图片预览时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件close-preview",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "delete",
+    "label": "删除文件预览时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件delete",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义上传区域",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "preview-cover",
+    "label": "自定义覆盖在预览区域上方的内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

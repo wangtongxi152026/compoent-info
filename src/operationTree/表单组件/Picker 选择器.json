@@ -1,0 +1,112 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Picker 选择器",
+      "properties": [
+        {
+          "label": "设置Picker 选择器",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "顶部栏标题",
+              "type": "string"
+            },
+            {
+              "key": "confirm-button-text",
+              "bindProp": "confirm-button-text",
+              "label": "确认按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "cancel-button-text",
+              "bindProp": "cancel-button-text",
+              "label": "取消按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "value-key",
+              "bindProp": "value-key",
+              "label": "选项对象中，选项文字对应的键名",
+              "type": "string"
+            },
+            {
+              "key": "toolbar-position",
+              "bindProp": "toolbar-position",
+              "label": "顶部栏位置",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "top",
+                  "label": "top"
+                }
+              ]
+            },
+            {
+              "key": "loading",
+              "bindProp": "loading",
+              "label": "是否显示加载状态",
+              "type": "boolean"
+            },
+            {
+              "key": "readonly",
+              "bindProp": "readonly",
+              "label": "是否为只读状态，只读状态下无法切换选项",
+              "type": "boolean"
+            },
+            {
+              "key": "show-toolbar",
+              "bindProp": "show-toolbar",
+              "label": "是否显示顶部栏",
+              "type": "boolean"
+            },
+            {
+              "key": "allow-html",
+              "bindProp": "allow-html",
+              "label": "是否允许选项内容中渲染 HTML",
+              "type": "boolean"
+            },
+            {
+              "key": "default-index",
+              "bindProp": "default-index",
+              "label": "单列选择时，默认选中项的索引",
+              "type": "string"
+            },
+            {
+              "key": "item-height",
+              "bindProp": "item-height",
+              "label": "选项高度，支持  px vw vh rem  单位，默认  px",
+              "type": "string"
+            },
+            {
+              "key": "visible-item-count",
+              "bindProp": "visible-item-count",
+              "label": "可见的选项个数",
+              "type": "string"
+            },
+            {
+              "key": "swipe-duration",
+              "bindProp": "swipe-duration",
+              "label": "快速滑动时惯性滚动的时长，单位  ms",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Picker 选择器",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

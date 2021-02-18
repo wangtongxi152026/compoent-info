@@ -1,0 +1,236 @@
+[
+  {
+    "key": "columns",
+    "label": "Picker 选择器 对象数组，配置每一列显示的数据",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "顶部栏标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm-button-text",
+    "label": "确认按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "cancel-button-text",
+    "label": "取消按钮文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "value-key",
+    "label": "选项对象中，选项文字对应的键名",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "toolbar-position",
+    "label": "顶部栏位置，可选值为 bottom",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "top",
+          "label": "top"
+        },
+        {
+          "value": "bottom",
+          "label": "bottom"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loading",
+    "label": "是否显示加载状态",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "readonly",
+    "label": "是否为只读状态，只读状态下无法切换选项",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-toolbar",
+    "label": "是否显示顶部栏",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "allow-html",
+    "label": "是否允许选项内容中渲染 HTML",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default-index",
+    "label": "单列选择时，默认选中项的索引",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "item-height",
+    "label": "选项高度，支持  px vw vh rem  单位，默认  px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "visible-item-count",
+    "label": "可见的选项个数",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "swipe-duration",
+    "label": "快速滑动时惯性滚动的时长，单位  ms",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm",
+    "label": "点击完成按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件confirm",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "cancel",
+    "label": "点击取消按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件cancel",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "选项改变时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义整个顶部栏的内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义标题内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "confirm",
+    "label": "自定义确认按钮内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "cancel",
+    "label": "自定义取消按钮内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "option",
+    "label": "自定义选项内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-top",
+    "label": "自定义选项上方内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "columns-bottom",
+    "label": "自定义选项下方内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "checkboxgroup 复选框": {
+    "minthods": [
+      {
+        "key": "v-model (value)",
+        "label": "checkboxgroup 复选框 所有选中项的标识符",
+        "type": "any[]",
+        "default": "-"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用所有复选框",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "max",
+        "label": "最大可选数， 0 为无限制",
+        "type": "number | string",
+        "default": "0"
+      },
+      {
+        "key": "direction ",
+        "label": "排列方向，可选值为  horizontal",
+        "type": "string",
+        "default": "vertical",
+        "enumList": [
+          {
+            "value": "horizontal",
+            "label": "horizontal"
+          },
+          {
+            "value": "vertical",
+            "label": "vertical"
+          }
+        ]
+      },
+      {
+        "key": "icon-size",
+        "label": "所有复选框的图标大小，默认单位为  px",
+        "type": "number | string",
+        "default": "20px"
+      },
+      {
+        "key": "checked-color",
+        "label": "所有复选框的选中状态颜色",
+        "type": "string",
+        "default": "#1989fa"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "change",
+        "label": "当绑定值变化时触发的事件",
+        "param": "names: any[] "
+      }
+    ],
+    "slots": []
+  }
+}

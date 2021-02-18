@@ -1,0 +1,48 @@
+{
+  "ContactList 联系人列表": {
+    "minthods": [
+      {
+        "key": "v-model",
+        "label": "ContactList 联系人列表 当前选中联系人的 id ",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "list",
+        "label": "联系人列表 ",
+        "type": "Contact[]",
+        "default": "[]"
+      },
+      {
+        "key": "add-text",
+        "label": "新建按钮文案 ",
+        "type": "string",
+        "default": "新建联系人"
+      },
+      {
+        "key": "default-tag-text",
+        "label": "默认联系人标签文案 ",
+        "type": "string",
+        "default": "-"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "add",
+        "label": "点击新增按钮时触发 ",
+        "param": "- "
+      },
+      {
+        "eventKey": "edit",
+        "label": "点击编辑按钮时触发 ",
+        "param": "contact: Contact，index: number "
+      },
+      {
+        "eventKey": "select",
+        "label": "切换选中的联系人时触发 ",
+        "param": "contact: Contact，index: number "
+      }
+    ],
+    "slots": []
+  }
+}

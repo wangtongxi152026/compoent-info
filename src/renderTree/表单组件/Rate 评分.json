@@ -1,0 +1,133 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-rate",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "value": 4,
+      "count": "5",
+      "size": "20px",
+      "gutter": "4px",
+      "color": "#ee0a24",
+      "void-color": "#c8c9cc",
+      "disabled-color": "#c8c9cc",
+      "icon": "star",
+      "void-icon": "star-o",
+      "icon-prefix ": "van-icon",
+      "allow-half": false,
+      "readonly": false,
+      "disabled": false,
+      "touchable": true,
+      "$exports": [
+        {
+          "attrKey": "touchable",
+          "alias": "是否可以通过滑动手势选择评分",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "disabled",
+          "alias": "是否禁用评分",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "readonly",
+          "alias": "是否为只读状态 \b",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "allow-half",
+          "alias": "是否允许半选",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "icon-prefix ",
+          "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "void-icon",
+          "alias": "未选中时的 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "icon",
+          "alias": "选中时的 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "disabled-color",
+          "alias": "禁用时的颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "void-color",
+          "alias": "未选中时的颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "color",
+          "alias": "选中时的颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "gutter",
+          "alias": "图标间距，默认单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "size",
+          "alias": "图标大小，默认单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "count",
+          "alias": "图标总数",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "Rate 评分 当前分值",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "change",
+          "alias": "当前分值变化时触发的事件",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

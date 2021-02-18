@@ -1,0 +1,204 @@
+[
+  {
+    "key": "v-model",
+    "label": "Popover 气泡弹出框 是否展示气泡弹出层",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "actions",
+    "label": "选项列表",
+    "category": "attr",
+    "schema": {
+      "type": "Action[]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "placement",
+    "label": "弹出位置",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "theme",
+    "label": "主题风格，可选值为  dark",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "dark",
+          "label": "dark"
+        },
+        {
+          "value": "light",
+          "label": "light"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "trigger ",
+    "label": "触发方式，可选值为  click",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "click",
+          "label": "click"
+        },
+        {
+          "value": "",
+          "label": ""
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "offset",
+    "label": "出现位置的偏移量",
+    "category": "attr",
+    "schema": {
+      "type": "[number, number]"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "overlay",
+    "label": "是否显示遮罩层",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-on-click-action",
+    "label": "是否在点击选项后关闭",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-on-click-outside",
+    "label": "是否在点击外部元素后关闭菜单",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "get-container",
+    "label": "指定挂载的节点， 用法示例",
+    "category": "attr",
+    "schema": {
+      "type": "string | () => Element"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "select",
+    "label": "点击选项时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件select",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "open",
+    "label": "打开菜单时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件open",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "close",
+    "label": "关闭菜单时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件close",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "opened",
+    "label": "打开菜单且动画结束后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件opened",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "closed",
+    "label": "关闭菜单且动画结束后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件closed",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义菜单内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "reference",
+    "label": "触发 Popover 显示的元素内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

@@ -1,0 +1,392 @@
+{
+  "Field 输入框": {
+    "minthods": [
+      {
+        "key": "v-model (value)",
+        "label": "Field 输入框 当前输入的值",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "label",
+        "label": "输入框左侧文本",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "name ",
+        "label": "名称，提交表单的标识符",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "type",
+        "label": "输入框类型, 可选值为  tel digit number textarea password  等",
+        "type": "string",
+        "default": "text",
+        "enumList": [
+          {
+            "value": "tel",
+            "label": "tel"
+          },
+          {
+            "value": "digit",
+            "label": "digit"
+          },
+          {
+            "value": "number",
+            "label": "number"
+          },
+          {
+            "value": "textarea",
+            "label": "textarea"
+          },
+          {
+            "value": "password",
+            "label": "password"
+          },
+          {
+            "value": "",
+            "label": ""
+          },
+          {
+            "value": "等",
+            "label": "等"
+          },
+          {
+            "value": "text",
+            "label": "text"
+          }
+        ]
+      },
+      {
+        "key": "size",
+        "label": "大小，可选值为  large",
+        "type": "string",
+        "default": "-",
+        "enumList": [
+          {
+            "value": "large",
+            "label": "large"
+          },
+          {
+            "value": "-",
+            "label": "-"
+          }
+        ]
+      },
+      {
+        "key": "maxlength",
+        "label": "输入的最大字符数",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "placeholder",
+        "label": "输入框占位提示文字",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "border",
+        "label": "是否显示内边框",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "disabled",
+        "label": "是否禁用输入框",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "readonly",
+        "label": "是否只读",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "colon ",
+        "label": "是否在 label 后面添加冒号",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "required",
+        "label": "是否显示表单必填星号",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "center",
+        "label": "是否使内容垂直居中",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "clearable",
+        "label": "是否启用清除图标，点击清除图标后会清空输入框",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "clear-trigger ",
+        "label": "显示清除图标的时机， always  表示输入框不为空时展示， focus  表示输入框聚焦且不为空时展示",
+        "type": "string",
+        "default": "focus"
+      },
+      {
+        "key": "clickable",
+        "label": "是否开启点击反馈",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "is-link",
+        "label": "是否展示右侧箭头并开启点击反馈",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "autofocus",
+        "label": "是否自动聚焦，iOS 系统不支持该属性",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "show-word-limit",
+        "label": "是否显示字数统计，需要设置 maxlength 属性",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "error",
+        "label": "是否将输入内容标红",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "error-message",
+        "label": "底部错误提示文案，为空时不展示",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "formatter",
+        "label": "输入内容格式化函数",
+        "type": "Function",
+        "default": "-"
+      },
+      {
+        "key": "format-trigger ",
+        "label": "格式化函数触发的时机，可选值为  onBlur",
+        "type": "string",
+        "default": "onChange",
+        "enumList": [
+          {
+            "value": "onBlur",
+            "label": "onBlur"
+          },
+          {
+            "value": "onChange",
+            "label": "onChange"
+          }
+        ]
+      },
+      {
+        "key": "arrow-direction",
+        "label": "箭头方向，可选值为  left up down",
+        "type": "string",
+        "default": "right",
+        "enumList": [
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "up",
+            "label": "up"
+          },
+          {
+            "value": "down",
+            "label": "down"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ]
+      },
+      {
+        "key": "label-class",
+        "label": "左侧文本额外类名",
+        "type": "any",
+        "default": "-"
+      },
+      {
+        "key": "label-width",
+        "label": "左侧文本宽度，默认单位为 px",
+        "type": "number | string",
+        "default": "6.2em"
+      },
+      {
+        "key": "label-align",
+        "label": "左侧文本对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "input-align",
+        "label": "输入框对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "error-message-align",
+        "label": "错误提示文案对齐方式，可选值为  center right",
+        "type": "string",
+        "default": "left",
+        "enumList": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ]
+      },
+      {
+        "key": "autosize",
+        "label": "是否自适应内容高度，只对 textarea 有效， 可传入对象,如 { maxHeight: 100, minHeight: 50 }， 单位为 px",
+        "type": "boolean | object",
+        "default": "false"
+      },
+      {
+        "key": "left-icon",
+        "label": "左侧 图标名称 或图片链接",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "right-icon",
+        "label": "右侧 图标名称 或图片链接",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "icon-prefix ",
+        "label": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+        "type": "string",
+        "default": "van-icon"
+      },
+      {
+        "key": "rules ",
+        "label": "表单校验规则，详见  Form 组件",
+        "type": "Rule[]",
+        "default": "-"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "input",
+        "label": "输入框内容变化时触发",
+        "param": "value: string (当前输入的值) "
+      },
+      {
+        "eventKey": "focus",
+        "label": "输入框获得焦点时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "blur",
+        "label": "输入框失去焦点时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "clear",
+        "label": "点击清除按钮时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "click",
+        "label": "点击 Field 时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "click-input ",
+        "label": "点击输入区域时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "click-left-icon",
+        "label": "点击左侧图标时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "click-right-icon",
+        "label": "点击右侧图标时触发",
+        "param": "event: Event "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "label",
+        "label": "自定义输入框 label 标签"
+      },
+      {
+        "slot": "input",
+        "label": "自定义输入框，使用此插槽后，与输入框相关的属性和事件将失效"
+      },
+      {
+        "slot": "left-icon",
+        "label": "自定义输入框头部图标"
+      },
+      {
+        "slot": "right-icon",
+        "label": "自定义输入框尾部图标"
+      },
+      {
+        "slot": "button",
+        "label": "自定义输入框尾部按钮"
+      },
+      {
+        "slot": "extra ",
+        "label": "自定义输入框最右侧的额外内容"
+      }
+    ]
+  }
+}

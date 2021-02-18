@@ -1,0 +1,161 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "ActionSheet 动作面板",
+      "properties": [
+        {
+          "label": "设置ActionSheet 动作面板",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "是否显示动作面板",
+              "type": "boolean"
+            },
+            {
+              "key": "actions",
+              "bindProp": "actions",
+              "label": "面板选项列表",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "标题",
+                    "defaultValue": "标题"
+                  },
+                  {
+                    "type": "string",
+                    "key": "subname",
+                    "label": "二级标题",
+                    "defaultValue": "二级标题"
+                  },
+                  {
+                    "type": "color",
+                    "key": "color",
+                    "label": "选项文字颜色",
+                    "defaultValue": "#323233"
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "loading",
+                    "label": "是否为加载状态",
+                    "defaultValue": false
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "disabled",
+                    "label": "是否为禁用状态",
+                    "defaultValue": false
+                  }
+                ]
+              }
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "顶部标题",
+              "type": "string"
+            },
+            {
+              "key": "cancel-text",
+              "bindProp": "cancel-text",
+              "label": "取消按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "description",
+              "bindProp": "description",
+              "label": "选项上方的描述信息",
+              "type": "string"
+            },
+            {
+              "key": "closeable",
+              "bindProp": "closeable",
+              "label": "是否显示关闭图标",
+              "type": "boolean"
+            },
+            {
+              "key": "close-icon",
+              "bindProp": "close-icon",
+              "label": "关闭 图标名称 或图片链接",
+              "type": "img"
+            },
+            {
+              "key": "duration",
+              "bindProp": "duration",
+              "label": "动画时长，单位秒",
+              "type": "string"
+            },
+            {
+              "key": "round",
+              "bindProp": "round",
+              "label": "是否显示圆角",
+              "type": "boolean"
+            },
+            {
+              "key": "overlay",
+              "bindProp": "overlay",
+              "label": "是否显示遮罩层",
+              "type": "boolean"
+            },
+            {
+              "key": "lock-scroll",
+              "bindProp": "lock-scroll",
+              "label": "是否锁定背景滚动",
+              "type": "boolean"
+            },
+            {
+              "key": "lazy-render",
+              "bindProp": "lazy-render",
+              "label": "是否在显示弹层时才渲染节点",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-popstate",
+              "bindProp": "close-on-popstate",
+              "label": "是否在页面回退时自动关闭",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-click-action",
+              "bindProp": "close-on-click-action",
+              "label": "是否在点击选项后关闭",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-click-overlay",
+              "bindProp": "close-on-click-overlay",
+              "label": "是否在点击遮罩层后关闭",
+              "type": "boolean"
+            },
+            {
+              "key": "safe-area-inset-bottom",
+              "bindProp": "safe-area-inset-bottom",
+              "label": "是否开启 底部安全区适配",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "ActionSheet 动作面板",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

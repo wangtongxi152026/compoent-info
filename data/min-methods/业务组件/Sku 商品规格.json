@@ -1,0 +1,496 @@
+[
+  {
+    "key": "v-model",
+    "label": "Sku 商品规格 是否显示商品规格弹窗 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "sku",
+    "label": "商品 sku 数据 ",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "goods",
+    "label": "商品信息 ",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "goods-id",
+    "label": "商品 id ",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "price-tag",
+    "label": "显示在价格后面的标签 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "hide-stock",
+    "label": "是否显示商品剩余库存 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "hide-quota-text",
+    "label": "是否显示限购提示 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "hide-selected-text",
+    "label": "是否隐藏已选提示 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "stock-threshold",
+    "label": "库存阈值。低于这个值会把库存数高亮显示 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-add-cart-btn",
+    "label": "是否显示加入购物车按钮 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "buy-text",
+    "label": "购买按钮文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "add-cart-text",
+    "label": "加入购物车按钮文字 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "quota",
+    "label": "限购数，0 表示不限购 ",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "quota-used",
+    "label": "已经购买过的数量 ",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "reset-stepper-on-hide",
+    "label": "隐藏时重置选择的商品数量 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "reset-selected-sku-on-hide",
+    "label": "隐藏时重置已选择的 sku ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disable-stepper-input",
+    "label": "是否禁用步进器输入 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-on-click-overlay",
+    "label": "是否在点击遮罩层后关闭 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "stepper-title",
+    "label": "数量选择组件左侧文案 ",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "custom-stepper-config",
+    "label": "步进器相关自定义配置 ",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "message-config",
+    "label": "留言相关配置 ",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "get-container",
+    "label": "指定挂载的节点， 用法示例 ",
+    "category": "attr",
+    "schema": {
+      "type": "string | () => Element"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "initial-sku",
+    "label": "默认选中的 sku，具体参考高级用法 ",
+    "category": "attr",
+    "schema": {
+      "type": "object"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-soldout-sku",
+    "label": "是否展示售罄的 sku，默认展示并置灰 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disable-soldout-sku ",
+    "label": "是否禁用售罄的 sku ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "safe-area-inset-bottom",
+    "label": "是否开启 底部安全区适配 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "start-sale-num",
+    "label": "起售数量 ",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "properties",
+    "label": "商品属性 ",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "preview-on-click-image ",
+    "label": "是否在点击商品图片时自动预览 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-header-image ",
+    "label": "是否展示头部图片 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lazy-load ",
+    "label": "是否开启图片懒加载，须配合  Lazyload  组件使用 ",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "add-cart",
+    "label": "点击添加购物车回调 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件add-cart",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "buy-clicked",
+    "label": "点击购买回调 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件buy-clicked",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "stepper-change",
+    "label": "购买数量变化时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件stepper-change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "sku-selected",
+    "label": "切换规格类目时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件sku-selected",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "sku-prop-selected",
+    "label": "切换商品属性时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件sku-prop-selected",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "open-preview",
+    "label": "打开商品图片预览时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件open-preview",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "close-preview",
+    "label": "关闭商品图片预览时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件close-preview",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "sku-reset",
+    "label": "规格和属性被重置时触发 ",
+    "category": "event",
+    "task": {
+      "label": "绑定事件sku-reset",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "sku-header",
+    "label": "商品信息展示区，包含商品图片、名称、价格等信息 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-header-price",
+    "label": "自定义 sku 头部价格展示 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-header-origin-price",
+    "label": "自定义 sku 头部原价展示 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-header-extra",
+    "label": "额外 sku 头部区域 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-header-image-extra ",
+    "label": "自定义 sku 头部图片额外的展示 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-body-top",
+    "label": "sku 展示区上方的内容，无默认展示内容，按需使用 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-group",
+    "label": "商品 sku 展示区 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "extra-sku-group",
+    "label": "额外商品 sku 展示区，一般用不到 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-stepper",
+    "label": "商品数量选择区 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-messages",
+    "label": "商品留言区 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-actions-top",
+    "label": "操作按钮区顶部内容，无默认展示内容，按需使用 ",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "sku-actions",
+    "label": "操作按钮区 ",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

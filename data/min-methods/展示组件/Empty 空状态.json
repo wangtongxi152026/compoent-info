@@ -1,0 +1,76 @@
+[
+  {
+    "key": "image",
+    "label": "Empty 空状态 图片类型，可选值为  error network search ，支持传入图片 URL",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "error",
+          "label": "error"
+        },
+        {
+          "value": "network",
+          "label": "network"
+        },
+        {
+          "value": "search",
+          "label": "search"
+        },
+        {
+          "value": "，支持传入图片",
+          "label": "，支持传入图片"
+        },
+        {
+          "value": "URL",
+          "label": "URL"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "image-size ",
+    "label": "图片大小，默认单位为  px",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "description",
+    "label": "图片下方的描述文字",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义底部内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "image",
+    "label": "自定义图标",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "description",
+    "label": "自定义描述文字",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

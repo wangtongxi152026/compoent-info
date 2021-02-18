@@ -1,0 +1,80 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Loading 加载",
+      "properties": [
+        {
+          "label": "设置Loading 加载",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "$text",
+              "bindProp": "color",
+              "label": "文本",
+              "type": "string"
+            },
+            {
+              "key": "color",
+              "bindProp": "color",
+              "label": "Loading 加载 颜色",
+              "type": "color"
+            },
+            {
+              "key": "type",
+              "bindProp": "type",
+              "label": "类型",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "spinner",
+                  "label": "spinner"
+                },
+                {
+                  "value": "circular",
+                  "label": "circular"
+                }
+              ]
+            },
+            {
+              "key": "size",
+              "bindProp": "size",
+              "label": "加载图标大小，默认单位为  px",
+              "type": "string"
+            },
+            {
+              "key": "text-size",
+              "bindProp": "text-size",
+              "label": "文字大小，默认单位为  px",
+              "type": "string"
+            },
+            {
+              "key": "text-color",
+              "bindProp": "text-color",
+              "label": "文字颜色",
+              "type": "color"
+            },
+            {
+              "key": "vertical",
+              "bindProp": "vertical",
+              "label": "是否垂直排列图标和文字内容",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Loading 加载",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

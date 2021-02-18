@@ -1,0 +1,1 @@
+[{"key":"click","label":"swipeitem 轮播 点击时触发","category":"event","task":{"label":"绑定事件click","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true}]

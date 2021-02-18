@@ -1,0 +1,138 @@
+[
+  {
+    "key": "title",
+    "label": "NavBar 导航栏标题",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "left-text",
+    "label": "左侧文案",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "right-text",
+    "label": "右侧文案",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "left-arrow",
+    "label": "是否显示左侧箭头",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "border",
+    "label": "是否显示下边框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "fixed",
+    "label": "是否固定在顶部",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "placeholder ",
+    "label": "固定在顶部时，是否在标签位置生成一个等高的占位元素",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "z-index",
+    "label": "导航栏 z-index",
+    "category": "attr",
+    "schema": {
+      "type": "number"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "safe-area-inset-top ",
+    "label": "是否开启顶部安全区适配",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "click-left",
+    "label": "点击左侧按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-left",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click-right",
+    "label": "点击右侧按钮时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click-right",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义标题",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "left",
+    "label": "自定义左侧区域内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "right",
+    "label": "自定义右侧区域内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

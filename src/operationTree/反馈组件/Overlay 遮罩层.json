@@ -1,0 +1,58 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Overlay 遮罩层",
+      "properties": [
+        {
+          "label": "设置Overlay 遮罩层",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "show",
+              "bindProp": "show",
+              "label": "Overlay 遮罩层 是否展示遮罩层",
+              "type": "boolean"
+            },
+            {
+              "key": "z-index",
+              "bindProp": "z-index",
+              "label": "z-index 层级",
+              "type": "string"
+            },
+            {
+              "key": "duration",
+              "bindProp": "duration",
+              "label": "动画时长，单位秒",
+              "type": "string"
+            },
+            {
+              "key": "class-name",
+              "bindProp": "class-name",
+              "label": "自定义类名",
+              "type": "string"
+            },
+            {
+              "key": "lock-scroll",
+              "bindProp": "lock-scroll",
+              "label": "是否锁定背景滚动，锁定时蒙层里的内容也将无法滚动",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Overlay 遮罩层",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

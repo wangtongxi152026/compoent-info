@@ -1,0 +1,76 @@
+[
+  {
+    "key": "time",
+    "label": "CountDown 倒计时 倒计时时长，单位毫秒",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "format",
+    "label": "时间格式",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "auto-start",
+    "label": "是否自动开始倒计时",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "millisecond",
+    "label": "是否开启毫秒级渲染",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "finish",
+    "label": "倒计时结束时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件finish",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "倒计时变化时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

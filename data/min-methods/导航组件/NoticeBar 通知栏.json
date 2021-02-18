@@ -1,0 +1,105 @@
+{
+  "NoticeBar 通知栏": {
+    "minthods": [
+      {
+        "key": "mode",
+        "label": "NoticeBar 通知栏 通知栏模式，可选值为  closeable link",
+        "type": "string",
+        "default": "''",
+        "enumList": [
+          {
+            "value": "closeable",
+            "label": "closeable"
+          },
+          {
+            "value": "link",
+            "label": "link"
+          },
+          {
+            "value": "''",
+            "label": "''"
+          }
+        ]
+      },
+      {
+        "key": "text",
+        "label": "通知文本内容",
+        "type": "string",
+        "default": "''"
+      },
+      {
+        "key": "color",
+        "label": "通知文本颜色",
+        "type": "string",
+        "default": "#f60"
+      },
+      {
+        "key": "background",
+        "label": "滚动条背景",
+        "type": "string",
+        "default": "#fff7cc"
+      },
+      {
+        "key": "left-icon",
+        "label": "左侧 图标名称 或图片链接",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "delay",
+        "label": "动画延迟时间 (s)",
+        "type": "number | string",
+        "default": "1"
+      },
+      {
+        "key": "speed",
+        "label": "滚动速率 (px/s)",
+        "type": "number | string",
+        "default": "50"
+      },
+      {
+        "key": "scrollable",
+        "label": "是否开启滚动播放，内容长度溢出时默认开启",
+        "type": "boolean",
+        "default": "-"
+      },
+      {
+        "key": "wrapable",
+        "label": "是否开启文本换行，只在禁用滚动时生效",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "click",
+        "label": "点击通知栏时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "close",
+        "label": "关闭通知栏时触发",
+        "param": "event: Event "
+      },
+      {
+        "eventKey": "replay ",
+        "label": "每当滚动栏重新开始滚动时触发",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "通知文本内容"
+      },
+      {
+        "slot": "left-icon",
+        "label": "自定义左侧图标"
+      },
+      {
+        "slot": "right-icon",
+        "label": "自定义右侧图标"
+      }
+    ]
+  }
+}

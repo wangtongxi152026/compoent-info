@@ -1,0 +1,1 @@
+{"indexanchor-props 索引栏":{"minthods":[{"key":"index","label":"indexanchor-props 索引栏 索引字符","type":"number | string","default":"-"}],"envets":[{"eventKey":"index","label":"索引字符","param":"number | string "}],"slots":[{"slot":"index","label":"索引字符"}]}}

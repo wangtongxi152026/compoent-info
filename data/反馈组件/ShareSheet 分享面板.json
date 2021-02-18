@@ -1,0 +1,105 @@
+{
+  "ShareSheet 分享面板": {
+    "minthods": [
+      {
+        "key": "options",
+        "label": "ShareSheet 分享面板 分享选项",
+        "type": "Option[]",
+        "default": "[]"
+      },
+      {
+        "key": "title",
+        "label": "顶部标题",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "cancel-text",
+        "label": "取消按钮文字，传入空字符串可以隐藏按钮",
+        "type": "string",
+        "default": "'取消'"
+      },
+      {
+        "key": "description",
+        "label": "标题下方的辅助描述文字",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "duration",
+        "label": "动画时长，单位秒",
+        "type": "number | string",
+        "default": "0.3"
+      },
+      {
+        "key": "overlay",
+        "label": "是否显示遮罩层",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "lock-scroll",
+        "label": "是否锁定背景滚动",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "lazy-render",
+        "label": "是否在显示弹层时才渲染内容",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "close-on-popstate",
+        "label": "是否在页面回退时自动关闭",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "close-on-click-overlay",
+        "label": "是否在点击遮罩层后关闭",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "safe-area-inset-bottom",
+        "label": "是否开启 底部安全区适配",
+        "type": "boolean",
+        "default": "true"
+      },
+      {
+        "key": "get-container",
+        "label": "指定挂载的节点， 用法示例",
+        "type": "string | () => Element",
+        "default": "-"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "select",
+        "label": "点击分享选项时触发",
+        "param": "option: Option, index: number "
+      },
+      {
+        "eventKey": "cancel",
+        "label": "点击取消按钮时触发",
+        "param": "- "
+      },
+      {
+        "eventKey": "click-overlay ",
+        "label": "点击遮罩层时触发",
+        "param": "- "
+      }
+    ],
+    "slots": [
+      {
+        "slot": "title",
+        "label": "自定义顶部标题"
+      },
+      {
+        "slot": "description",
+        "label": "自定义描述文字"
+      }
+    ]
+  }
+}

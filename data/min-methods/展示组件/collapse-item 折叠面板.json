@@ -1,0 +1,162 @@
+[
+  {
+    "key": "name",
+    "label": "collapse-item 折叠面板 唯一标识符，默认为索引值",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "icon",
+    "label": "标题栏左侧 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "size",
+    "label": "标题栏大小，可选值为  large",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "large",
+          "label": "large"
+        },
+        {
+          "value": "-",
+          "label": "-"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "标题栏左侧内容",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "value",
+    "label": "标题栏右侧内容",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label",
+    "label": "标题栏描述信息",
+    "category": "attr",
+    "schema": {
+      "type": "number | string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "border",
+    "label": "是否显示内边框",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "is-link",
+    "label": "是否展示标题栏右侧箭头并开启点击反馈",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "disabled",
+    "label": "是否禁用面板",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "title-class",
+    "label": "左侧标题额外类名",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "value-class",
+    "label": "右侧内容额外类名",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "label-class",
+    "label": "描述信息额外类名",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "面板内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "value",
+    "label": "自定义显示内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "icon",
+    "label": "自定义  icon",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "title",
+    "label": "自定义  title",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "right-icon",
+    "label": "自定义右侧按钮，默认是  arrow",
+    "category": "slot",
+    "isExoprt": true
+  }
+]
