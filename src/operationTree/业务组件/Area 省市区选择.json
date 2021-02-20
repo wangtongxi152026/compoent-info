@@ -1,0 +1,99 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Area 省市区选择",
+      "properties": [
+        {
+          "label": "设置Area 省市区选择",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "Area 省市区选择 当前选中的省市区 code",
+              "type": "string"
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "顶部栏标题",
+              "type": "string"
+            },
+            {
+              "key": "confirm-button-text",
+              "bindProp": "confirm-button-text",
+              "label": "确认按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "cancel-button-text",
+              "bindProp": "cancel-button-text",
+              "label": "取消按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "columns-placeholder",
+              "bindProp": "columns-placeholder",
+              "label": "列占位提示文字",
+              "type": "array",
+              "items": {
+                "label": "提示文字",
+                "key": "value",
+                "type": "string"
+              }
+            },
+            {
+              "key": "loading",
+              "bindProp": "loading",
+              "label": "是否显示加载状态",
+              "type": "boolean"
+            },
+            {
+              "key": "readonly",
+              "bindProp": "readonly",
+              "label": "是否为只读状态，只读状态下无法切换选项",
+              "type": "boolean"
+            },
+            {
+              "key": "item-height",
+              "bindProp": "item-height",
+              "label": "选项高度，支持  px vw vh rem  单位，默认  px",
+              "type": "string"
+            },
+            {
+              "key": "columns-num",
+              "bindProp": "columns-num",
+              "label": "显示列数，3-省市区，2-省市，1-省",
+              "type": "string"
+            },
+            {
+              "key": "visible-item-count",
+              "bindProp": "visible-item-count",
+              "label": "可见的选项个数",
+              "type": "string"
+            },
+            {
+              "key": "swipe-duration",
+              "bindProp": "swipe-duration",
+              "label": "快速滑动时惯性滚动的时长，单位 ms",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Area 省市区选择",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

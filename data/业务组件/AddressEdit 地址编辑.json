@@ -3,7 +3,7 @@
     "minthods": [
       { "key": "area-list", "label": "AddressEdit 地址编辑地区列表", "type": "object", "default": "-" },
       { "key": "area-columns-placeholder", "label": "地区选择列占位提示文字", "type": "string[]", "default": "[]" },
-      { "key": "area-placeholder ", "label": "地区输入框占位提示文字", "type": "string", "default": "选择省 / 市 / 区" },
+      { "key": "area-placeholder", "label": "地区输入框占位提示文字", "type": "string", "default": "选择省 / 市 / 区" },
       { "key": "address-info", "label": "收货人信息初始值", "type": "AddressInfo", "default": "{}" },
       { "key": "search-result", "label": "详细地址搜索结果", "type": "SearchResult[]", "default": "[]" },
       { "key": "show-postal", "label": "是否显示邮政编码", "type": "boolean", "default": "false" },
@@ -12,7 +12,7 @@
       { "key": "show-search-result", "label": "是否显示搜索结果", "type": "boolean", "default": "false" },
       { "key": "show-area", "label": "是否显示地区", "type": "boolean", "default": "true" },
       { "key": "show-detail", "label": "是否显示详细地址", "type": "boolean", "default": "true" },
-      { "key": "disable-area ", "label": "是否禁用地区选择", "type": "boolean", "default": "false" },
+      { "key": "disable-area", "label": "是否禁用地区选择", "type": "boolean", "default": "false" },
       { "key": "save-button-text", "label": "保存按钮文字", "type": "string", "default": "保存" },
       { "key": "delete-button-text", "label": "删除按钮文字", "type": "string", "default": "删除" },
       { "key": "detail-rows", "label": "详细地址输入框行数", "type": "number | string", "default": "1" },
@@ -20,7 +20,7 @@
       { "key": "is-saving", "label": "是否显示保存按钮加载动画", "type": "boolean", "default": "false" },
       { "key": "is-deleting", "label": "是否显示删除按钮加载动画", "type": "boolean", "default": "false" },
       { "key": "tel-validator", "label": "手机号格式校验函数", "type": "string => boolean", "default": "-" },
-      { "key": "tel-maxlength ", "label": "手机号最大长度", "type": "number | string", "default": "-" },
+      { "key": "tel-maxlength", "label": "手机号最大长度", "type": "number | string", "default": "-" },
       { "key": "postal-validator", "label": "邮政编码格式校验函数", "type": "string => boolean", "default": "-" },
       { "key": "validator", "label": "自定义校验函数", "type": "(key, val) => string", "default": "-" }
     ],
@@ -30,7 +30,7 @@
       { "eventKey": "delete", "label": "确认删除地址时触发", "param": "content：表单内容" },
       { "eventKey": "cancel-delete", "label": "取消删除地址时触发", "param": "content：表单内容" },
       { "eventKey": "select-search", "label": "选中搜索结果时触发", "param": "value: 搜索结果" },
-      { "eventKey": "click-area ", "label": "点击收件地区时触发", "param": "-" },
+      { "eventKey": "click-area", "label": "点击收件地区时触发", "param": "-" },
       { "eventKey": "change-area", "label": "修改收件地区时触发", "param": "values: 地区信息" },
       { "eventKey": "change-detail", "label": "修改详细地址时触发", "param": "value: 详细地址内容" },
       { "eventKey": "change-default", "label": "切换是否使用默认地址时触发", "param": "value: 是否选中" }

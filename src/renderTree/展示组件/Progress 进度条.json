@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-progress",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "percentage": "20",
+      "stroke-width": "4px",
+      "color": "#1989fa",
+      "track-color": "#e5e5e5",
+      "pivot-text": "百分比",
+      "pivot-color": "同进度条颜色",
+      "text-color": "white",
+      "inactive": false,
+      "show-pivot": true,
+      "$exports": [
+        {
+          "attrKey": "show-pivot",
+          "alias": "是否显示进度文字",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "inactive",
+          "alias": "是否置灰",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "text-color",
+          "alias": "进度文字颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "pivot-color",
+          "alias": "进度文字背景色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "pivot-text",
+          "alias": "进度文字内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "track-color",
+          "alias": "轨道颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "color",
+          "alias": "进度条颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "stroke-width",
+          "alias": "进度条粗细，默认单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "percentage",
+          "alias": "Progress 进度条 进度百分比",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

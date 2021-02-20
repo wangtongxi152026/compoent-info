@@ -1,0 +1,221 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "AddressEdit 地址编辑",
+      "properties": [
+        {
+          "label": "设置AddressEdit 地址编辑",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "area-columns-placeholder",
+              "bindProp": "area-columns-placeholder",
+              "label": "地区选择列占位提示文字",
+              "type": "array",
+              "items": {
+                "label": "提示文字",
+                "key": "value",
+                "type": "string"
+              }
+            },
+            {
+              "key": "area-placeholder",
+              "bindProp": "area-placeholder",
+              "label": "地区输入框占位提示文字",
+              "type": "string"
+            },
+            {
+              "key": "address-info",
+              "bindProp": "address-info",
+              "label": "收货人信息初始值",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "id",
+                    "label": "每条地址的唯一标识",
+                    "defaultValue": "-1"
+                  },
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "标题",
+                    "defaultValue": "标题"
+                  },
+                  {
+                    "type": "string",
+                    "key": "tel",
+                    "label": "收货人手机号",
+                    "defaultValue": "88888888"
+                  },
+                  {
+                    "type": "string",
+                    "key": "province",
+                    "label": "省份",
+                    "defaultValue": "浙江"
+                  },
+                  {
+                    "type": "string",
+                    "key": "province",
+                    "label": "城市",
+                    "defaultValue": "杭州市"
+                  },
+                  {
+                    "type": "string",
+                    "key": "county",
+                    "label": "区县",
+                    "defaultValue": "西湖区"
+                  },
+                  {
+                    "type": "string",
+                    "key": "areaCode",
+                    "label": "地区编码",
+                    "defaultValue": "110100"
+                  },
+                  {
+                    "type": "string",
+                    "key": "postalCode",
+                    "label": "邮政编码",
+                    "defaultValue": "110100"
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "isDefault",
+                    "label": "是否为默认地址",
+                    "defaultValue": false
+                  }
+                ]
+              }
+            },
+            {
+              "key": "search-result",
+              "bindProp": "search-result",
+              "label": "详细地址搜索结果",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "地名",
+                    "defaultValue": "-1"
+                  },
+                  {
+                    "type": "string",
+                    "key": "address",
+                    "label": "详细地址",
+                    "defaultValue": "详细地址"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "show-postal",
+              "bindProp": "show-postal",
+              "label": "是否显示邮政编码",
+              "type": "boolean"
+            },
+            {
+              "key": "show-delete",
+              "bindProp": "show-delete",
+              "label": "是否显示删除按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "show-set-default",
+              "bindProp": "show-set-default",
+              "label": "是否显示默认地址栏",
+              "type": "boolean"
+            },
+            {
+              "key": "show-search-result",
+              "bindProp": "show-search-result",
+              "label": "是否显示搜索结果",
+              "type": "boolean"
+            },
+            {
+              "key": "show-area",
+              "bindProp": "show-area",
+              "label": "是否显示地区",
+              "type": "boolean"
+            },
+            {
+              "key": "show-detail",
+              "bindProp": "show-detail",
+              "label": "是否显示详细地址",
+              "type": "boolean"
+            },
+            {
+              "key": "disable-area",
+              "bindProp": "disable-area",
+              "label": "是否禁用地区选择",
+              "type": "boolean"
+            },
+            {
+              "key": "save-button-text",
+              "bindProp": "save-button-text",
+              "label": "保存按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "delete-button-text",
+              "bindProp": "delete-button-text",
+              "label": "删除按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "detail-rows",
+              "bindProp": "detail-rows",
+              "label": "详细地址输入框行数",
+              "type": "string"
+            },
+            {
+              "key": "detail-maxlength",
+              "bindProp": "detail-maxlength",
+              "label": "详细地址最大长度",
+              "type": "string"
+            },
+            {
+              "key": "is-saving",
+              "bindProp": "is-saving",
+              "label": "是否显示保存按钮加载动画",
+              "type": "boolean"
+            },
+            {
+              "key": "is-deleting",
+              "bindProp": "is-deleting",
+              "label": "是否显示删除按钮加载动画",
+              "type": "boolean"
+            },
+            {
+              "key": "tel-maxlength",
+              "bindProp": "tel-maxlength",
+              "label": "手机号最大长度",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "AddressEdit 地址编辑",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

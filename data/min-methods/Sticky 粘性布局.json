@@ -1,0 +1,46 @@
+[
+  {
+    "key": "offset-top ",
+    "label": "Sticky 粘性布局 吸顶时与顶部的距离，支持px vw vh rem  单位，默认  px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "z-index",
+    "label": "吸顶时的 z-index",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "container",
+    "label": "容器对应的 HTML 节点",
+    "category": "attr",
+    "schema": {
+      "type": "Element"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "scroll",
+    "label": "滚动时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件scroll",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  }
+]

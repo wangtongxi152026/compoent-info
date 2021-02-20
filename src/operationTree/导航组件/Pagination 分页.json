@@ -1,1 +1,92 @@
-[{"type":"PropSchema","schema":{"type":"object","key":"schema","label":"Pagination 分页","properties":[{"label":"设置Pagination 分页","key":"tabs","type":"object","properties":[{"key":"v-model","bindProp":"v-model","label":"Pagination 分页 当前页码 ","type":"number "},{"key":"mode","bindProp":"mode","label":"显示模式","type":"string","enumList":[{"value":"simple","label":"simple"},{"value":"multi","label":"multi"}]},{"key":"prev-text","bindProp":"prev-text","label":"上一页按钮文字 ","type":"string "},{"key":"next-text","bindProp":"next-text","label":"下一页按钮文字 ","type":"string "},{"key":"page-count","bindProp":"page-count","label":"总页数 ","type":"number | string "},{"key":"total-items","bindProp":"total-items","label":"总记录数 ","type":"number | string "},{"key":"items-per-page","bindProp":"items-per-page","label":"每页记录数 ","type":"number | string "},{"key":"show-page-size","bindProp":"show-page-size","label":"显示的页码个数 ","type":"number | string "},{"key":"force-ellipses","bindProp":"force-ellipses","label":"是否显示省略号 ","type":"boolean "}]}]},"label":"Pagination 分页","render_tree_node":{"ins_id":"","key":"schema"},"code_tree_node":{"ins_id":"","key":"schema"}}]
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Pagination 分页",
+      "properties": [
+        {
+          "label": "设置Pagination 分页",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "Pagination 分页 当前页码",
+              "type": "number"
+            },
+            {
+              "key": "mode",
+              "bindProp": "mode",
+              "label": "显示模式",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "simple",
+                  "label": "simple"
+                },
+                {
+                  "value": "multi",
+                  "label": "multi"
+                }
+              ]
+            },
+            {
+              "key": "prev-text",
+              "bindProp": "prev-text",
+              "label": "上一页按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "next-text",
+              "bindProp": "next-text",
+              "label": "下一页按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "page-count",
+              "bindProp": "page-count",
+              "label": "总页数",
+              "type": "string"
+            },
+            {
+              "key": "total-items",
+              "bindProp": "total-items",
+              "label": "总记录数",
+              "type": "string"
+            },
+            {
+              "key": "items-per-page",
+              "bindProp": "items-per-page",
+              "label": "每页记录数",
+              "type": "string"
+            },
+            {
+              "key": "show-page-size",
+              "bindProp": "show-page-size",
+              "label": "显示的页码个数",
+              "type": "string"
+            },
+            {
+              "key": "force-ellipses",
+              "bindProp": "force-ellipses",
+              "label": "是否显示省略号",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Pagination 分页",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

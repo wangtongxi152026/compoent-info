@@ -1,0 +1,111 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-notice-bar",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "mode": "''",
+      "text": "技术是开发它的人的共同灵魂。",
+      "color": "#f60",
+      "background": "#fff7cc",
+      "delay": "1",
+      "speed": "50",
+      "wrapable": false,
+      "$exports": [
+        {
+          "attrKey": "wrapable",
+          "alias": "是否开启文本换行，只在禁用滚动时生效",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "scrollable",
+          "alias": "是否开启滚动播放，内容长度溢出时默认开启",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "speed",
+          "alias": "滚动速率 (px/s)",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "delay",
+          "alias": "动画延迟时间 (s)",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "left-icon",
+          "alias": "左侧 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "background",
+          "alias": "滚动条背景",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "color",
+          "alias": "通知文本颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "text",
+          "alias": "通知文本内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "mode",
+          "alias": "NoticeBar 通知栏 通知栏模式，可选值为  closeable link",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "replay",
+          "alias": "每当滚动栏重新开始滚动时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "close",
+          "alias": "关闭通知栏时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click",
+          "alias": "点击通知栏时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

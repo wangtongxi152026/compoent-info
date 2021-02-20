@@ -1,1 +1,234 @@
-[{"key":"images","label":"ImagePreview 图片预览 需要预览的图片 URL 数组","category":"attr","schema":{"type":"string[]"},"default":"","isExoprt":true},{"key":"start-position","label":"图片预览起始位置索引","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"swipe-duration","label":"动画时长，单位为 ms","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"show-index","label":"是否显示页码","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"show-indicators","label":"是否显示轮播指示器","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"loop","label":"是否开启循环播放","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"async-close","label":"是否开启异步关闭","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"close-on-popstate","label":"是否在页面回退时自动关闭","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"class-name","label":"自定义类名","category":"attr","schema":{"type":"any"},"default":"","isExoprt":true},{"key":"max-zoom","label":"手势缩放时，最大缩放比例","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"min-zoom","label":"手势缩放时，最小缩放比例","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"closeable ","label":"是否显示关闭图标","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"close-icon ","label":"关闭图标名称或图片链接","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"close-icon-position ","label":"关闭图标位置，可选值为 top-left bottom-left bottom-right","category":"attr","schema":{"type":"enum","enumList":[{"value":"bottom-left","label":"bottom-left"},{"value":"bottom-right","label":"bottom-right"},{"value":"top-right","label":"top-right"}]},"default":"","isExoprt":true},{"key":"get-container","label":"指定挂载的节点， 用法示例","category":"attr","schema":{"type":"string | () => Element"},"default":"","isExoprt":true},{"key":"close","label":"关闭时触发","category":"event","task":{"label":"绑定事件close","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"closed ","label":"关闭且且动画结束后触发","category":"event","task":{"label":"绑定事件closed ","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"change","label":"切换当前图片时触发","category":"event","task":{"label":"绑定事件change","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"scale ","label":"缩放当前图片时触发","category":"event","task":{"label":"绑定事件scale ","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"index","label":"自定义页码内容","category":"slot","isExoprt":true},{"key":"cover","label":"自定义覆盖在图片预览上方的内容","category":"slot","isExoprt":true}]
+[
+  {
+    "key": "images",
+    "label": "ImagePreview 图片预览 需要预览的图片 URL 数组",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "start-position",
+    "label": "图片预览起始位置索引",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "swipe-duration",
+    "label": "动画时长，单位为 ms",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-index",
+    "label": "是否显示页码",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-indicators",
+    "label": "是否显示轮播指示器",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loop",
+    "label": "是否开启循环播放",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "async-close",
+    "label": "是否开启异步关闭",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-on-popstate",
+    "label": "是否在页面回退时自动关闭",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "class-name",
+    "label": "自定义类名",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "max-zoom",
+    "label": "手势缩放时，最大缩放比例",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "min-zoom",
+    "label": "手势缩放时，最小缩放比例",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "closeable",
+    "label": "是否显示关闭图标",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-icon",
+    "label": "关闭图标名称或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close-icon-position",
+    "label": "关闭图标位置，可选值为 top-left bottom-left bottom-right",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "value": "bottom-left",
+          "label": "bottom-left"
+        },
+        {
+          "value": "bottom-right",
+          "label": "bottom-right"
+        },
+        {
+          "value": "top-right",
+          "label": "top-right"
+        }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "get-container",
+    "label": "指定挂载的节点， 用法示例",
+    "category": "attr",
+    "schema": {
+      "type": "funtion"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "close",
+    "label": "关闭时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件close",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "closed",
+    "label": "关闭且且动画结束后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件closed",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "切换当前图片时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "scale",
+    "label": "缩放当前图片时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件scale",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "index",
+    "label": "自定义页码内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "cover",
+    "label": "自定义覆盖在图片预览上方的内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

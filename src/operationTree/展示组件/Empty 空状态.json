@@ -1,0 +1,70 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Empty 空状态",
+      "properties": [
+        {
+          "label": "设置Empty 空状态",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "image",
+              "bindProp": "image",
+              "label": "Empty 空状态 图片类型",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "error",
+                  "label": "error"
+                },
+                {
+                  "value": "network",
+                  "label": "network"
+                },
+                {
+                  "value": "search",
+                  "label": "search"
+                },
+                {
+                  "value": "default",
+                  "label": "default"
+                }
+              ]
+            },
+            {
+              "key": "image",
+              "bindProp": "image",
+              "label": "Empty 空状态 图片链接",
+              "type": "img"
+            },
+            {
+              "key": "image-size",
+              "bindProp": "image-size",
+              "label": "图片大小，默认单位为  px",
+              "type": "string"
+            },
+            {
+              "key": "description",
+              "bindProp": "description",
+              "label": "图片下方的描述文字",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Empty 空状态",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

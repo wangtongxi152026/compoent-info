@@ -1,17 +1,17 @@
 [
   {
     "key": "thumb",
-    "label": "Card 卡片 左侧图片 URL ",
+    "label": "Card 卡片 左侧图片 URL",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "img"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "title",
-    "label": "标题 ",
+    "label": "标题",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -21,7 +21,7 @@
   },
   {
     "key": "desc",
-    "label": "描述 ",
+    "label": "描述",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   {
     "key": "tag",
-    "label": "图片角标 ",
+    "label": "图片角标",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -41,37 +41,37 @@
   },
   {
     "key": "num",
-    "label": "商品数量 ",
+    "label": "商品数量",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "price",
-    "label": "商品价格 ",
+    "label": "商品价格",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "origin-price",
-    "label": "商品划线原价 ",
+    "label": "商品划线原价",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "centered",
-    "label": "内容是否垂直居中 ",
+    "label": "内容是否垂直居中",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -81,7 +81,7 @@
   },
   {
     "key": "currency",
-    "label": "货币符号 ",
+    "label": "货币符号",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -91,7 +91,7 @@
   },
   {
     "key": "thumb-link",
-    "label": "点击左侧图片后跳转的链接地址 ",
+    "label": "点击左侧图片后跳转的链接地址",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -101,7 +101,7 @@
   },
   {
     "key": "lazy-load",
-    "label": "是否开启图片懒加载，须配合  Lazyload  组件使用 ",
+    "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -111,7 +111,7 @@
   },
   {
     "key": "click",
-    "label": "点击时触发 ",
+    "label": "点击时触发",
     "category": "event",
     "task": {
       "label": "绑定事件click",
@@ -125,7 +125,7 @@
   },
   {
     "key": "click-thumb",
-    "label": "点击自定义图片时触发 ",
+    "label": "点击自定义图片时触发",
     "category": "event",
     "task": {
       "label": "绑定事件click-thumb",

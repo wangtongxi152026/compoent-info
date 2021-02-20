@@ -6,63 +6,60 @@ import {
   Events,
   Slots
 } from './types/types'
-const html = `<section><h1>Tag 标签</h1>
-<div class="card"><h3 id="yin-ru">引入</h3>
+const html = `<section><h1>AddressEdit 地址编辑</h1>
+<div class="card"><h3 id="jie-shao">介绍</h3>
+<p>收货地址编辑组件，用于新建、更新、删除收货地址。</p>
+</div><div class="card"><h3 id="yin-ru">引入</h3>
 <pre><code class="language-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
-<span class="hljs-keyword">import</span> { Tag } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
+<span class="hljs-keyword">import</span> { AddressEdit } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
 
-Vue.use(Tag);
+Vue.use(AddressEdit);
 </code></pre>
 </div><h2 id="dai-ma-yan-shi">代码演示</h2>
 <div class="card"><h3 id="ji-chu-yong-fa">基础用法</h3>
-<p>通过 <code>type</code> 属性控制标签颜色。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-address-edit</span>
+  <span class="hljs-attr">:area-list</span>=<span class="hljs-string">"areaList"</span>
+  <span class="hljs-attr">show-postal</span>
+  <span class="hljs-attr">show-delete</span>
+  <span class="hljs-attr">show-set-default</span>
+  <span class="hljs-attr">show-search-result</span>
+  <span class="hljs-attr">:search-result</span>=<span class="hljs-string">"searchResult"</span>
+  <span class="hljs-attr">:area-columns-placeholder</span>=<span class="hljs-string">"['请选择', '请选择', '请选择']"</span>
+  @<span class="hljs-attr">save</span>=<span class="hljs-string">"onSave"</span>
+  @<span class="hljs-attr">delete</span>=<span class="hljs-string">"onDelete"</span>
+  @<span class="hljs-attr">change-detail</span>=<span class="hljs-string">"onChangeDetail"</span>
+/&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="kong-xin-yang-shi">空心样式</h3>
-<p>设置 <code>plain</code> 属性设置为空心样式。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">plain</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="yuan-jiao-yang-shi">圆角样式</h3>
-<p>通过 <code>round</code> 设置为圆角样式。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">round</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="biao-ji-yang-shi">标记样式</h3>
-<p>通过 <code>mark</code> 设置为标记样式(半圆角)。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">mark</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="ke-guan-bi-biao-qian">可关闭标签</h3>
-<p>添加 <code>closeable</code> 属性表示标签是可关闭的，关闭标签时会触发 <code>close</code> 事件，在 <code>close</code> 事件中可以执行隐藏标签的逻辑。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"show"</span> <span class="hljs-attr">closeable</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"medium"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> @<span class="hljs-attr">close</span>=<span class="hljs-string">"close"</span>&gt;</span>
-  标签
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-</code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+<pre><code class="language-js"><span class="hljs-keyword">import</span> { Toast } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
   data() {
     <span class="hljs-keyword">return</span> {
-      <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
+      areaList,
+      <span class="hljs-attr">searchResult</span>: [],
     };
   },
   <span class="hljs-attr">methods</span>: {
-    close() {
-      <span class="hljs-keyword">this</span>.show = <span class="hljs-literal">false</span>;
+    onSave() {
+      Toast(<span class="hljs-string">'save'</span>);
+    },
+    onDelete() {
+      Toast(<span class="hljs-string">'delete'</span>);
+    },
+    onChangeDetail(val) {
+      <span class="hljs-keyword">if</span> (val) {
+        <span class="hljs-keyword">this</span>.searchResult = [
+          {
+            <span class="hljs-attr">name</span>: <span class="hljs-string">'黄龙万科中心'</span>,
+            <span class="hljs-attr">address</span>: <span class="hljs-string">'杭州市西湖区'</span>,
+          },
+        ];
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">this</span>.searchResult = [];
+      }
     },
   },
 };
-</code></pre>
-</div><div class="card"><h3 id="biao-qian-da-xiao">标签大小</h3>
-<p>通过 <code>size</code> 属性调整标签大小。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"medium"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"large"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="zi-ding-yi-yan-se">自定义颜色</h3>
-<p>通过 <code>color</code> 和 <code>text-color</code> 属性设置标签颜色。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#7232dd"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#ffe1e1"</span> <span class="hljs-attr">text-color</span>=<span class="hljs-string">"#ad0000"</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tag</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#7232dd"</span> <span class="hljs-attr">plain</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">van-tag</span>&gt;</span>
 </code></pre>
 </div><h2 id="api">API</h2>
 <div class="card"><h3 id="props">Props</h3>
@@ -77,67 +74,136 @@ Vue.use(Tag);
 </thead>
 <tbody>
 <tr>
-<td>type</td>
-<td>类型，可选值为<code>primary</code> <code>success</code> <code>danger</code> <code>warning</code></td>
-<td><em>string</em></td>
-<td><code>default</code></td>
-</tr>
-<tr>
-<td>size</td>
-<td>大小, 可选值为<code>large</code> <code>medium</code></td>
-<td><em>string</em></td>
+<td>area-list</td>
+<td>地区列表</td>
+<td><em>object</em></td>
 <td>-</td>
 </tr>
 <tr>
-<td>color</td>
-<td>标签颜色</td>
+<td>area-columns-placeholder</td>
+<td>地区选择列占位提示文字</td>
+<td><em>string[]</em></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td>area-placeholder <code>v2.6.1</code></td>
+<td>地区输入框占位提示文字</td>
 <td><em>string</em></td>
+<td><code>选择省 / 市 / 区</code></td>
+</tr>
+<tr>
+<td>address-info</td>
+<td>收货人信息初始值</td>
+<td><em>AddressInfo</em></td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td>search-result</td>
+<td>详细地址搜索结果</td>
+<td><em>SearchResult[]</em></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td>show-postal</td>
+<td>是否显示邮政编码</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>show-delete</td>
+<td>是否显示删除按钮</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>show-set-default</td>
+<td>是否显示默认地址栏</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>show-search-result</td>
+<td>是否显示搜索结果</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>show-area</td>
+<td>是否显示地区</td>
+<td><em>boolean</em></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>show-detail</td>
+<td>是否显示详细地址</td>
+<td><em>boolean</em></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>disable-area <code>v2.5.0</code></td>
+<td>是否禁用地区选择</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>save-button-text</td>
+<td>保存按钮文字</td>
+<td><em>string</em></td>
+<td><code>保存</code></td>
+</tr>
+<tr>
+<td>delete-button-text</td>
+<td>删除按钮文字</td>
+<td><em>string</em></td>
+<td><code>删除</code></td>
+</tr>
+<tr>
+<td>detail-rows</td>
+<td>详细地址输入框行数</td>
+<td><em>number | string</em></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td>detail-maxlength</td>
+<td>详细地址最大长度</td>
+<td><em>number | string</em></td>
+<td><code>200</code></td>
+</tr>
+<tr>
+<td>is-saving</td>
+<td>是否显示保存按钮加载动画</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>is-deleting</td>
+<td>是否显示删除按钮加载动画</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>tel-validator</td>
+<td>手机号格式校验函数</td>
+<td><em>string =&gt; boolean</em></td>
 <td>-</td>
 </tr>
 <tr>
-<td>plain</td>
-<td>是否为空心样式</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
+<td>tel-maxlength <code>v2.10.0</code></td>
+<td>手机号最大长度</td>
+<td><em>number | string</em></td>
+<td>-</td>
 </tr>
 <tr>
-<td>round</td>
-<td>是否为圆角样式</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
+<td>postal-validator</td>
+<td>邮政编码格式校验函数</td>
+<td><em>string =&gt; boolean</em></td>
+<td>-</td>
 </tr>
 <tr>
-<td>mark</td>
-<td>是否为标记样式</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
-</tr>
-<tr>
-<td>text-color</td>
-<td>文本颜色，优先级高于<code>color</code>属性</td>
-<td><em>string</em></td>
-<td><code>white</code></td>
-</tr>
-<tr>
-<td>closeable</td>
-<td>是否为可关闭标签</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
-</tr>
-</tbody>
-</table>
-</div><div class="card"><h3 id="slots">Slots</h3>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>default</td>
-<td>标签显示内容</td>
+<td>validator</td>
+<td>自定义校验函数</td>
+<td><em>(key, val) =&gt; string</em></td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -152,17 +218,174 @@ Vue.use(Tag);
 </thead>
 <tbody>
 <tr>
-<td>click</td>
-<td>点击时触发</td>
-<td><em>event: Event</em></td>
+<td>save</td>
+<td>点击保存按钮时触发</td>
+<td>content：表单内容</td>
 </tr>
 <tr>
-<td>close</td>
-<td>关闭标签时触发</td>
+<td>focus</td>
+<td>输入框聚焦时触发</td>
+<td>key: 聚焦的输入框对应的 key</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>确认删除地址时触发</td>
+<td>content：表单内容</td>
+</tr>
+<tr>
+<td>cancel-delete</td>
+<td>取消删除地址时触发</td>
+<td>content：表单内容</td>
+</tr>
+<tr>
+<td>select-search</td>
+<td>选中搜索结果时触发</td>
+<td>value: 搜索结果</td>
+</tr>
+<tr>
+<td>click-area <code>v2.5.9</code></td>
+<td>点击收件地区时触发</td>
+<td>-</td>
+</tr>
+<tr>
+<td>change-area</td>
+<td>修改收件地区时触发</td>
+<td>values: 地区信息</td>
+</tr>
+<tr>
+<td>change-detail</td>
+<td>修改详细地址时触发</td>
+<td>value: 详细地址内容</td>
+</tr>
+<tr>
+<td>change-default</td>
+<td>切换是否使用默认地址时触发</td>
+<td>value: 是否选中</td>
+</tr>
+</tbody>
+</table>
+</div><div class="card"><h3 id="slots">Slots</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>default</td>
+<td>在邮政编码下方插入内容</td>
+</tr>
+</tbody>
+</table>
+</div><div class="card"><h3 id="fang-fa">方法</h3>
+<p>通过 ref 可以获取到 AddressEdit 实例并调用实例方法，详见<a href="#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa" target="_blank">组件实例方法</a>。</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+<th>参数</th>
+<th>返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setAddressDetail</td>
+<td>设置详细地址</td>
+<td>addressDetail: string</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
+</div><div class="card"><h3 id="addressinfo-shu-ju-ge-shi">AddressInfo 数据格式</h3>
+<p>注意：AddressInfo 仅作为初始值传入，表单最终内容可以在 save 事件中获取</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>说明</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>每条地址的唯一标识</td>
+<td><em>number | string</em></td>
+</tr>
+<tr>
+<td>name</td>
+<td>收货人姓名</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>tel</td>
+<td>收货人手机号</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>province</td>
+<td>省份</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>city</td>
+<td>城市</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>county</td>
+<td>区县</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>addressDetail</td>
+<td>详细地址</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>areaCode</td>
+<td>地区编码，通过<code>省市区选择</code>获取（必填）</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>postalCode</td>
+<td>邮政编码</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>isDefault</td>
+<td>是否为默认地址</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+</div><div class="card"><h3 id="searchresult-shu-ju-ge-shi">SearchResult 数据格式</h3>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>说明</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>地名</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td>address</td>
+<td>详细地址</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+</div><div class="card"><h3 id="sheng-shi-xian-lie-biao-shu-ju-ge-shi">省市县列表数据格式</h3>
+<p>请参考 <a href="#/zh-CN/area" target="_blank">Area</a> 组件。</p>
 </div><div class="card"><h3 id="yang-shi-bian-liang">样式变量</h3>
 <p>组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考<a href="#/zh-CN/theme" target="_blank">主题定制</a>。</p>
 <table>
@@ -175,83 +398,28 @@ Vue.use(Tag);
 </thead>
 <tbody>
 <tr>
-<td>@tag-padding</td>
-<td><code>0 @padding-base</code></td>
+<td>@address-edit-padding</td>
+<td><code>@padding-sm</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tag-text-color</td>
-<td><code>@white</code></td>
+<td>@address-edit-buttons-padding</td>
+<td><code>@padding-xl @padding-base</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tag-font-size</td>
-<td><code>@font-size-sm</code></td>
+<td>@address-edit-button-margin-bottom</td>
+<td><code>@padding-sm</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tag-border-radius</td>
-<td><code>2px</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-line-height</td>
-<td><code>16px</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-medium-padding</td>
-<td><code>2px 6px</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-large-padding</td>
-<td><code>@padding-base @padding-xs</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-large-border-radius</td>
-<td><code>@border-radius-md</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-large-font-size</td>
-<td><code>@font-size-md</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-round-border-radius</td>
-<td><code>@border-radius-max</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-danger-color</td>
-<td><code>@red</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-primary-color</td>
+<td>@address-edit-detail-finish-color</td>
 <td><code>@blue</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tag-success-color</td>
-<td><code>@green</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-warning-color</td>
-<td><code>@orange</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-default-color</td>
-<td><code>@gray-6</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tag-plain-background-color</td>
-<td><code>@white</code></td>
+<td>@address-edit-detail-finish-font-size</td>
+<td><code>@font-size-sm</code></td>
 <td>-</td>
 </tr>
 </tbody>

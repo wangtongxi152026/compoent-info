@@ -1,0 +1,60 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-empty",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "image": "https://img01.yzcdn.cn/vant/empty-image-default.png",
+      "$exports": [
+        {
+          "attrKey": "description",
+          "alias": "图片下方的描述文字",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "image-size",
+          "alias": "图片大小，默认单位为  px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "image",
+          "alias": "Empty 空状态 图片类型，可选值为  error network search ，支持传入图片 URL",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

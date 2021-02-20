@@ -1,0 +1,94 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Card 卡片",
+      "properties": [
+        {
+          "label": "设置Card 卡片",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "thumb",
+              "bindProp": "thumb",
+              "label": "Card 卡片 左侧图片 URL",
+              "type": "img"
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "标题",
+              "type": "string"
+            },
+            {
+              "key": "desc",
+              "bindProp": "desc",
+              "label": "描述",
+              "type": "string"
+            },
+            {
+              "key": "tag",
+              "bindProp": "tag",
+              "label": "图片角标",
+              "type": "string"
+            },
+            {
+              "key": "num",
+              "bindProp": "num",
+              "label": "商品数量",
+              "type": "string"
+            },
+            {
+              "key": "price",
+              "bindProp": "price",
+              "label": "商品价格",
+              "type": "string"
+            },
+            {
+              "key": "origin-price",
+              "bindProp": "origin-price",
+              "label": "商品划线原价",
+              "type": "string"
+            },
+            {
+              "key": "centered",
+              "bindProp": "centered",
+              "label": "内容是否垂直居中",
+              "type": "boolean"
+            },
+            {
+              "key": "currency",
+              "bindProp": "currency",
+              "label": "货币符号",
+              "type": "string"
+            },
+            {
+              "key": "thumb-link",
+              "bindProp": "thumb-link",
+              "label": "点击左侧图片后跳转的链接地址",
+              "type": "string"
+            },
+            {
+              "key": "lazy-load",
+              "bindProp": "lazy-load",
+              "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Card 卡片",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

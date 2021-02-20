@@ -8,8 +8,8 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'Pagination 分页'
-  private folder = '导航组件'
+  private pathName = 'ContactList 联系人列表'
+  private folder = '业务组件'
   constructor() {
     this.readCompInfo()
   }
@@ -81,7 +81,7 @@ export default class DellAnalyzer {
       }
       optiontree.push(optionItem)
     });
-    const content = JSON.stringify(initOperationTree(optiontree,this.pathName))
+    const content = JSON.stringify(initOperationTree(optiontree, this.pathName))
     const pathx = path.resolve(__dirname, `../operationTree/${this.folder}/${this.pathName}.json`);
     fs.writeFileSync(pathx, content);
   }

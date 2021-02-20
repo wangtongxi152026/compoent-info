@@ -4,7 +4,7 @@
     "label": "TreeSelect 分类选择 分类显示所需的数据",
     "category": "attr",
     "schema": {
-      "type": "Item[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -14,7 +14,7 @@
     "label": "高度，默认单位为 px",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -24,7 +24,7 @@
     "label": "左侧选中项的索引",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -34,7 +34,7 @@
     "label": "右侧选中项的 id，支持传入数组",
     "category": "attr",
     "schema": {
-      "type": "number | string | (number | string)[]"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -44,13 +44,13 @@
     "label": "右侧项最大选中个数",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
-    "key": "selected-icon ",
+    "key": "selected-icon",
     "label": "自定义右侧栏选中状态的图标",
     "category": "attr",
     "schema": {
