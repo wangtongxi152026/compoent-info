@@ -8,7 +8,7 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'Area 省市区选择'
+  private pathName = 'ContactList 联系人列表'
   private folder = '业务组件'
   constructor() {
     this.readCompInfo()

@@ -1,0 +1,73 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "ContactEdit 联系人编辑",
+      "properties": [
+        {
+          "label": "设置ContactEdit 联系人编辑",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "name",
+              "bindProp": "contactInfo.name",
+              "label": "联系人姓名",
+              "type": "string"
+            },
+            {
+              "key": "tel",
+              "bindProp": "contactInfo.tel",
+              "label": "联系人手机号",
+              "type": "string"
+            },
+            {
+              "key": "is-edit",
+              "bindProp": "is-edit",
+              "label": "是否为编辑联系人",
+              "type": "boolean"
+            },
+            {
+              "key": "is-saving",
+              "bindProp": "is-saving",
+              "label": "是否显示保存按钮加载动画",
+              "type": "boolean"
+            },
+            {
+              "key": "is-deleting",
+              "bindProp": "is-deleting",
+              "label": "是否显示删除按钮加载动画",
+              "type": "boolean"
+            },
+            {
+              "key": "show-set-default",
+              "bindProp": "show-set-default",
+              "label": "是否显示默认联系人栏",
+              "type": "boolean"
+            },
+            {
+              "key": "set-default-label",
+              "bindProp": "set-default-label",
+              "label": "默认联系人栏文案",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "ContactEdit 联系人编辑",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]
+
+
+

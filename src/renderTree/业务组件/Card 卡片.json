@@ -1,0 +1,119 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-card",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "centered": false,
+      "desc": "标签",
+      "tag": "2",
+      "price": "2",
+      "origin-price": "20",
+      "num": "2",
+      "thumb": "https://img01.yzcdn.cn/vant/ipad.jpeg",
+      "title": "商品标题",
+      "currency": "¥",
+      "lazy-load": false,
+      "$exports": [
+        {
+          "attrKey": "lazy-load",
+          "alias": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "thumb-link",
+          "alias": "点击左侧图片后跳转的链接地址",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "currency",
+          "alias": "货币符号",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "centered",
+          "alias": "内容是否垂直居中",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "origin-price",
+          "alias": "商品划线原价",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "price",
+          "alias": "商品价格",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "num",
+          "alias": "商品数量",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "tag",
+          "alias": "图片角标",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "desc",
+          "alias": "描述",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title",
+          "alias": "标题",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "thumb",
+          "alias": "Card 卡片 左侧图片 URL",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click-thumb",
+          "alias": "点击自定义图片时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click",
+          "alias": "点击时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

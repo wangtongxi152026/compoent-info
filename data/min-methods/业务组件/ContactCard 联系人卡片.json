@@ -1,7 +1,7 @@
 [
   {
     "key": "type",
-    "label": "ContactCard 联系人卡片 卡片类型，可选值为  edit ",
+    "label": "ContactCard 联系人卡片 卡片类型，可选值为  edit",
     "category": "attr",
     "schema": {
       "type": "enum",
@@ -21,7 +21,7 @@
   },
   {
     "key": "name",
-    "label": "联系人姓名 ",
+    "label": "联系人姓名",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   {
     "key": "tel",
-    "label": "联系人手机号 ",
+    "label": "联系人手机号",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -41,7 +41,7 @@
   },
   {
     "key": "add-text",
-    "label": "添加时的文案提示 ",
+    "label": "添加时的文案提示",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -51,7 +51,7 @@
   },
   {
     "key": "click",
-    "label": "点击时触发 ",
+    "label": "点击时触发",
     "category": "event",
     "task": {
       "label": "绑定事件click",
