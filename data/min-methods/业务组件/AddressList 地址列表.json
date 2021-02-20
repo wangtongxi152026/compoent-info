@@ -1,6 +1,6 @@
 [
   {
-    "key": "v-model",
+    "key": "value",
     "label": "AddressList 地址列表当前选中地址的 id",
     "category": "attr",
     "schema": {
@@ -14,7 +14,7 @@
     "label": "地址列表",
     "category": "attr",
     "schema": {
-      "type": "Address[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -24,7 +24,7 @@
     "label": "不可配送地址列表",
     "category": "attr",
     "schema": {
-      "type": "Address[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true

@@ -1,0 +1,103 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Skeleton 骨架屏",
+      "properties": [
+        {
+          "label": "设置Skeleton 骨架屏",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "row",
+              "bindProp": "row",
+              "label": "Skeleton 骨架屏 段落占位图行数",
+              "type": "string"
+            },
+            {
+              "key": "row-width",
+              "bindProp": "row-width",
+              "label": "段落占位图宽度，可传数组来设置每一行的宽度",
+              "type": "array",
+              "items": {
+                "label": "段落占位图宽度",
+                "key": "value",
+                "type": "string"
+              }
+            },
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "是否显示标题占位图",
+              "type": "boolean"
+            },
+            {
+              "key": "avatar",
+              "bindProp": "avatar",
+              "label": "是否显示头像占位图",
+              "type": "boolean"
+            },
+            {
+              "key": "loading",
+              "bindProp": "loading",
+              "label": "是否显示骨架屏，传false时会展示子组件内容",
+              "type": "boolean"
+            },
+            {
+              "key": "animate",
+              "bindProp": "animate",
+              "label": "是否开启动画",
+              "type": "boolean"
+            },
+            {
+              "key": "round",
+              "bindProp": "round",
+              "label": "是否将标题和段落显示为圆角风格",
+              "type": "boolean"
+            },
+            {
+              "key": "title-width",
+              "bindProp": "title-width",
+              "label": "标题占位图宽度",
+              "type": "string"
+            },
+            {
+              "key": "avatar-size",
+              "bindProp": "avatar-size",
+              "label": "头像占位图大小",
+              "type": "string"
+            },
+            {
+              "key": "avatar-shape",
+              "bindProp": "avatar-shape",
+              "label": "头像占位图形状",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "square",
+                  "label": "square"
+                },
+                {
+                  "value": "round",
+                  "label": "round"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Skeleton 骨架屏",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

@@ -2,15 +2,15 @@
   "Pagination 分页": {
     "minthods": [
       {
-        "key": "v-model",
-        "label": "Pagination 分页 当前页码 ",
-        "type": "number ",
+        "key": "value",
+        "label": "Pagination 分页 当前页码",
+        "type": "number",
         "default": "-"
       },
       {
         "key": "mode",
-        "label": "显示模式，可选值为  simple ",
-        "type": "string ",
+        "label": "显示模式，可选值为  simple",
+        "type": "string",
         "default": "multi",
         "enumList": [
           {
@@ -25,65 +25,65 @@
       },
       {
         "key": "prev-text",
-        "label": "上一页按钮文字 ",
-        "type": "string ",
+        "label": "上一页按钮文字",
+        "type": "string",
         "default": "上一页"
       },
       {
         "key": "next-text",
-        "label": "下一页按钮文字 ",
-        "type": "string ",
+        "label": "下一页按钮文字",
+        "type": "string",
         "default": "下一页"
       },
       {
         "key": "page-count",
-        "label": "总页数 ",
-        "type": "number | string ",
+        "label": "总页数",
+        "type": "number | string",
         "default": "根据页数计算"
       },
       {
         "key": "total-items",
-        "label": "总记录数 ",
-        "type": "number | string ",
+        "label": "总记录数",
+        "type": "number | string",
         "default": "0"
       },
       {
         "key": "items-per-page",
-        "label": "每页记录数 ",
-        "type": "number | string ",
+        "label": "每页记录数",
+        "type": "number | string",
         "default": "10"
       },
       {
         "key": "show-page-size",
-        "label": "显示的页码个数 ",
-        "type": "number | string ",
+        "label": "显示的页码个数",
+        "type": "number | string",
         "default": "5"
       },
       {
         "key": "force-ellipses",
-        "label": "是否显示省略号 ",
-        "type": "boolean ",
+        "label": "是否显示省略号",
+        "type": "boolean",
         "default": "false"
       }
     ],
     "envets": [
       {
         "eventKey": "change",
-        "label": "页码改变时触发 ",
+        "label": "页码改变时触发",
         "param": "- "
       }
     ],
     "slots": [
       {
-        "slot": "page ",
+        "slot": "page",
         "label": "自定义页码 "
       },
       {
-        "slot": "prev-text ",
+        "slot": "prev-text",
         "label": "自定义上一页按钮文字 "
       },
       {
-        "slot": "next-text ",
+        "slot": "next-text",
         "label": "自定义下一页按钮文字 "
       }
     ]

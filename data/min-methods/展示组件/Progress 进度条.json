@@ -1,27 +1,7 @@
 [
   {
     "key": "percentage",
-    "label": "Progress 进度条 进度百分比 ",
-    "category": "attr",
-    "schema": {
-      "type": "number | string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "stroke-width",
-    "label": "进度条粗细，默认单位为 px ",
-    "category": "attr",
-    "schema": {
-      "type": "number | string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "color",
-    "label": "进度条颜色 ",
+    "label": "Progress 进度条 进度百分比",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -30,9 +10,29 @@
     "isExoprt": true
   },
   {
-    "key": "track-color",
-    "label": "轨道颜色 ",
+    "key": "stroke-width",
+    "label": "进度条粗细，默认单位为 px",
     "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "color",
+    "label": "进度条颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "track-color",
+    "label": "轨道颜色",
+    "category": "color",
     "schema": {
       "type": "string"
     },
@@ -41,7 +41,7 @@
   },
   {
     "key": "pivot-text",
-    "label": "进度文字内容 ",
+    "label": "进度文字内容",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -51,27 +51,27 @@
   },
   {
     "key": "pivot-color",
-    "label": "进度文字背景色 ",
+    "label": "进度文字背景色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "text-color",
-    "label": "进度文字颜色 ",
+    "label": "进度文字颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "inactive",
-    "label": "是否置灰 ",
+    "label": "是否置灰",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -81,7 +81,7 @@
   },
   {
     "key": "show-pivot",
-    "label": "是否显示进度文字 ",
+    "label": "是否显示进度文字",
     "category": "attr",
     "schema": {
       "type": "boolean"

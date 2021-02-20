@@ -19,14 +19,6 @@
           "label": "search"
         },
         {
-          "value": "，支持传入图片",
-          "label": "，支持传入图片"
-        },
-        {
-          "value": "URL",
-          "label": "URL"
-        },
-        {
           "value": "default",
           "label": "default"
         }
@@ -36,11 +28,11 @@
     "isExoprt": true
   },
   {
-    "key": "image-size ",
+    "key": "image-size",
     "label": "图片大小，默认单位为  px",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true

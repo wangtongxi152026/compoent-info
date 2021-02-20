@@ -1,0 +1,40 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Sticky 粘性布局",
+      "properties": [
+        {
+          "label": "设置Sticky 粘性布局",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "offset-top",
+              "bindProp": "offset-top",
+              "label": "Sticky 粘性布局吸顶时与顶部的距离 默认 px",
+              "type": "string"
+            },
+            {
+              "key": "z-index",
+              "bindProp": "z-index",
+              "label": "吸顶时的 z-index",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Sticky 粘性布局",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

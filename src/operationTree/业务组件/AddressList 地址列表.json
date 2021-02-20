@@ -1,0 +1,144 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "AddressList 地址列表",
+      "properties": [
+        {
+          "label": "设置AddressList 地址列表",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "AddressList 地址列表当前选中地址的 id",
+              "type": "string"
+            },
+            {
+              "key": "list",
+              "bindProp": "list",
+              "label": "地址列表",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "id",
+                    "label": "每条地址的唯一标识",
+                    "defaultValue": "-1"
+                  },
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "收货人姓名",
+                    "defaultValue": "小明"
+                  },
+                  {
+                    "type": "string",
+                    "key": "tel",
+                    "label": "收货人手机号",
+                    "defaultValue": "88888888"
+                  },
+                  {
+                    "type": "string",
+                    "key": "address",
+                    "label": "收货地址",
+                    "defaultValue": "浙江省杭州市拱墅区莫干山路 50 号"
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "isDefault",
+                    "label": "是否为默认地址",
+                    "defaultValue": false
+                  }
+                ]
+              }
+            },
+            {
+              "key": "disabled-list",
+              "bindProp": "disabled-list",
+              "label": "不可配送地址列表",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "id",
+                    "label": "每条地址的唯一标识",
+                    "defaultValue": "-1"
+                  },
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "收货人姓名",
+                    "defaultValue": "小明"
+                  },
+                  {
+                    "type": "string",
+                    "key": "tel",
+                    "label": "收货人手机号",
+                    "defaultValue": "88888888"
+                  },
+                  {
+                    "type": "string",
+                    "key": "address",
+                    "label": "收货地址",
+                    "defaultValue": "浙江省杭州市拱墅区莫干山路 50 号"
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "isDefault",
+                    "label": "是否为默认地址",
+                    "defaultValue": false
+                  }
+                ]
+              }
+            },
+            {
+              "key": "disabled-text",
+              "bindProp": "disabled-text",
+              "label": "不可配送提示文案",
+              "type": "string"
+            },
+            {
+              "key": "switchable",
+              "bindProp": "switchable",
+              "label": "是否允许切换地址",
+              "type": "boolean"
+            },
+            {
+              "key": "add-button-text",
+              "bindProp": "add-button-text",
+              "label": "底部按钮文字",
+              "type": "string"
+            },
+            {
+              "key": "default-tag-text",
+              "bindProp": "default-tag-text",
+              "label": "默认地址标签文字",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "AddressList 地址列表",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

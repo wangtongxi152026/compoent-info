@@ -4,7 +4,7 @@
     "label": "Badge 徽标 徽标内容",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -14,7 +14,7 @@
     "label": "徽标背景颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
@@ -34,7 +34,7 @@
     "label": "最大值，超过最大值会显示  {max}+ ，仅当 content 为数字时有效",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true

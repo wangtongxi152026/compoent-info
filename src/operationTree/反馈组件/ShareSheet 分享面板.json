@@ -20,6 +20,7 @@
             {
               "key": "options",
               "bindProp": "options",
+              "type": "array",
               "label": "ShareSheet 分享面板 分享选项",
               "items": {
                 "label": "菜单项",

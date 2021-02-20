@@ -1,6 +1,6 @@
 [
   {
-    "key": "v-model",
+    "key": "value",
     "label": "Popover 气泡弹出框 是否展示气泡弹出层",
     "category": "attr",
     "schema": {
@@ -14,7 +14,7 @@
     "label": "选项列表",
     "category": "attr",
     "schema": {
-      "type": "Action[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -24,14 +24,64 @@
     "label": "弹出位置",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "enum",
+      "enumList": [
+        {
+          "label": "top",
+          "value": "top"
+        },
+        {
+          "label": "top-start",
+          "value": "top-start"
+        },
+        {
+          "label": "top-end",
+          "value": "top-end"
+        },
+        {
+          "label": "left",
+          "value": "left"
+        },
+        {
+          "label": "left-start",
+          "value": "left-start"
+        },
+        {
+          "label": "left-end",
+          "value": "left-end"
+        },
+        {
+          "label": "right",
+          "value": "right"
+        },
+        {
+          "label": "right-start",
+          "value": "right-start"
+        },
+        {
+          "label": "right-end",
+          "value": "right-end"
+        },
+        {
+          "label": "bottom",
+          "value": "bottom"
+        },
+        {
+          "label": "bottom-start",
+          "value": "bottom-start"
+        },
+        {
+          "label": "bottom-end",
+          "value": "bottom-end"
+        }
+      ]
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "theme",
-    "label": "主题风格，可选值为  dark",
+    "label": "主题风格，可选值为dark",
     "category": "attr",
     "schema": {
       "type": "enum",
@@ -62,7 +112,7 @@
         },
         {
           "value": "",
-          "label": ""
+          "label": "默认"
         }
       ]
     },
@@ -74,7 +124,7 @@
     "label": "出现位置的偏移量",
     "category": "attr",
     "schema": {
-      "type": "[number, number]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -114,7 +164,7 @@
     "label": "指定挂载的节点， 用法示例",
     "category": "attr",
     "schema": {
-      "type": "string | () => Element"
+      "type": "function"
     },
     "default": "",
     "isExoprt": true

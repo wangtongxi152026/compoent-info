@@ -4,7 +4,7 @@
     "label": "Skeleton 骨架屏 段落占位图行数",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -14,7 +14,7 @@
     "label": "段落占位图宽度，可传数组来设置每一行的宽度",
     "category": "attr",
     "schema": {
-      "type": "number | string | (number | string)[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -60,7 +60,7 @@
     "isExoprt": true
   },
   {
-    "key": "round ",
+    "key": "round",
     "label": "是否将标题和段落显示为圆角风格",
     "category": "attr",
     "schema": {
@@ -74,7 +74,7 @@
     "label": "标题占位图宽度",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -84,7 +84,7 @@
     "label": "头像占位图大小",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -96,6 +96,10 @@
     "schema": {
       "type": "enum",
       "enumList": [
+        {
+          "value": "square",
+          "label": "square"
+        },
         {
           "value": "round",
           "label": "round"
