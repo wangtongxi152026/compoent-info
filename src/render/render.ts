@@ -8,8 +8,8 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'ShareSheet 分享面板'
-  private folder = '反馈组件'
+  private pathName = 'Pagination 分页'
+  private folder = '导航组件'
   constructor() {
     this.readCompInfo()
   }

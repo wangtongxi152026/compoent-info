@@ -1,0 +1,52 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Badge 徽标",
+      "properties": [
+        {
+          "label": "设置Badge 徽标",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "content",
+              "bindProp": "content",
+              "label": "Badge 徽标 徽标内容",
+              "type": "string"
+            },
+            {
+              "key": "color",
+              "bindProp": "color",
+              "label": "徽标背景颜色",
+              "type": "color"
+            },
+            {
+              "key": "dot",
+              "bindProp": "dot",
+              "label": "是否展示为小红点",
+              "type": "boolean"
+            },
+            {
+              "key": "max",
+              "bindProp": "max",
+              "label": "最大值，超过最大值会显示{max}+仅当 content 为数字时有效",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Badge 徽标",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]
