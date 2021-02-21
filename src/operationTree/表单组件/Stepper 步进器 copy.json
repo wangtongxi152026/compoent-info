@@ -1,0 +1,88 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Stepper 步进器",
+      "properties": [
+        {
+          "label": "设置Stepper 步进器",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "customStepperConfig.valuel",
+              "label": "Stepper 步进器 当前输入的值",
+              "type": "string"
+            },
+            {
+              "key": "min",
+              "bindProp": "customStepperConfig.min",
+              "label": "最小值",
+              "type": "string"
+            },
+            {
+              "key": "max",
+              "bindProp": "customStepperConfig.max",
+              "label": "最大值",
+              "type": "string"
+            },
+            {
+              "key": "input-width",
+              "bindProp": "customStepperConfig.input-width",
+              "label": "输入框宽度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "button-size",
+              "bindProp": "customStepperConfig.button-size",
+              "label": "按钮大小以及输入框高度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "placeholder",
+              "bindProp": "customStepperConfig.placeholder",
+              "label": "输入框占位提示文字",
+              "type": "string"
+            },
+            {
+              "key": "integer",
+              "bindProp": "customStepperConfig.integer",
+              "label": "是否只允许输入整数",
+              "type": "boolean"
+            },
+            {
+              "key": "disabled",
+              "bindProp": "customStepperConfig.disabled",
+              "label": "是否禁用步进器",
+              "type": "boolean"
+            },
+            {
+              "key": "show-plus",
+              "bindProp": "customStepperConfig.show-plus",
+              "label": "是否显示增加按钮",
+              "type": "boolean"
+            },
+            {
+              "key": "show-minus",
+              "bindProp": "customStepperConfig.show-minus",
+              "label": "是否显示减少按钮",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Stepper 步进器",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

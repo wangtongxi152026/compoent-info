@@ -1,1 +1,83 @@
-[{"type":"PropSchema","schema":{"type":"object","key":"schema","label":"ContactList 联系人列表","properties":[{"label":"设置ContactList 联系人列表","key":"tabs","type":"object","properties":[{"key":"v-model","bindProp":"v-model","label":"ContactList 联系人列表 当前选中联系人的 id ","type":"number | string"},{"key":"list","bindProp":"list","label":"联系人列表 ","type":"Contact[]"},{"key":"add-text","bindProp":"add-text","label":"新建按钮文案 ","type":"string"},{"key":"default-tag-text","bindProp":"default-tag-text","label":"默认联系人标签文案 ","type":"string"}]}]},"label":"ContactList 联系人列表","render_tree_node":{"ins_id":"","key":"schema"},"code_tree_node":{"ins_id":"","key":"schema"}}]
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "ContactList 联系人列表",
+            "properties": [
+                {
+                    "label": "设置ContactList 联系人列表",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "value",
+                            "bindProp": "value",
+                            "label": "ContactList 联系人列表 当前选中联系人的 id ",
+                            "type": "string"
+                        },
+                        {
+                            "key": "list",
+                            "bindProp": "list",
+                            "label": "联系人列表 ",
+                            "type": "array",
+                            "items": {
+                                "label": "菜单项",
+                                "key": "label",
+                                "type": "object",
+                                "properties": [
+                                    {
+                                        "type": "string",
+                                        "key": "id",
+                                        "label": "每条地址的唯一标识",
+                                        "defaultValue": "-1"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "key": "name",
+                                        "label": "收货人姓名",
+                                        "defaultValue": "小明"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "key": "tel",
+                                        "label": "收货人手机号",
+                                        "defaultValue": "88888888"
+                                    },
+                                    {
+                                        "type": "boolean",
+                                        "key": "isDefault",
+                                        "label": "是否为默认地址",
+                                        "defaultValue": false
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "key": "add-text",
+                            "bindProp": "add-text",
+                            "label": "新建按钮文案 ",
+                            "type": "string"
+                        },
+                        {
+                            "key": "default-tag-text",
+                            "bindProp": "default-tag-text",
+                            "label": "默认联系人标签文案 ",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "ContactList 联系人列表",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]
