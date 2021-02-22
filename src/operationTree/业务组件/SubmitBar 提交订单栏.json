@@ -1,0 +1,140 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "SubmitBar 提交订单栏",
+            "properties": [
+                {
+                    "label": "设置SubmitBar 提交订单栏",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "price",
+                            "bindProp": "price",
+                            "label": "SubmitBar 提交订单栏 价格（单位分）",
+                            "type": "number"
+                        },
+                        {
+                            "key": "decimal-length",
+                            "bindProp": "decimal-length",
+                            "label": "价格小数点位数",
+                            "type": "string"
+                        },
+                        {
+                            "key": "label",
+                            "bindProp": "label",
+                            "label": "价格左侧文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "suffix-label",
+                            "bindProp": "suffix-label",
+                            "label": "价格右侧文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "text-align",
+                            "bindProp": "text-align",
+                            "label": "价格文案对齐方向",
+                            "type": "string",
+                            "enumList": [
+                                {
+                                    "value": "left",
+                                    "label": "left"
+                                },
+                                {
+                                    "value": "right",
+                                    "label": "right"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "button-text",
+                            "bindProp": "button-text",
+                            "label": "按钮文字",
+                            "type": "string"
+                        },
+                        {
+                            "key": "button-type",
+                            "bindProp": "button-type",
+                            "label": "按钮类型",
+                            "type": "string",
+                            "enumList": [
+                                {
+                                    "label": "主题色",
+                                    "value": "primary"
+                                },
+                                {
+                                    "label": "成功",
+                                    "value": "success"
+                                },
+                                {
+                                    "label": "危险",
+                                    "value": "danger"
+                                },
+                                {
+                                    "label": "警告",
+                                    "value": "warning"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "button-color",
+                            "bindProp": "button-color",
+                            "label": "color",
+                            "type": "string"
+                        },
+                        {
+                            "key": "tip",
+                            "bindProp": "tip",
+                            "label": "在订单栏上方的提示文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "tip-icon",
+                            "bindProp": "tip-icon",
+                            "label": "提示文案左侧的图片链接",
+                            "type": "img"
+                        },
+                        {
+                            "key": "currency",
+                            "bindProp": "currency",
+                            "label": "货币符号",
+                            "type": "string"
+                        },
+                        {
+                            "key": "disabled",
+                            "bindProp": "disabled",
+                            "label": "是否禁用按钮",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "loading",
+                            "bindProp": "loading",
+                            "label": "是否显示将按钮显示为加载中状态",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "safe-area-inset-bottom",
+                            "bindProp": "safe-area-inset-bottom",
+                            "label": "是否开启 底部安全区适配",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "SubmitBar 提交订单栏",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

@@ -2,7 +2,7 @@
   {
     "id": 0,
     "parentId": -1,
-    "ins_id": "Jzmwyr7eJBXCDCRC3dXzPwrcYFS58yTW",
+    "ins_id": "",
     "tag": "div",
     "mini_method_uuid": -1,
     "data": {
@@ -16,7 +16,7 @@
   {
     "id": 1,
     "parentId": 0,
-    "ins_id": "C2y7Qek27ZyNKksaT34DhJpDZJ5s4dBH",
+    "ins_id": "",
     "tag": "van-contact-list",
     "mini_method_uuid": -1,
     "data": {
@@ -38,37 +38,37 @@
       "$exports": [
         {
           "attrKey": "default-tag-text",
-          "alias": "默认联系人标签文案 ",
+          "alias": "默认联系人标签文案",
           "sortIdx": -1
         },
         {
           "attrKey": "add-text",
-          "alias": "新建按钮文案 ",
+          "alias": "新建按钮文案",
           "sortIdx": -1
         },
         {
           "attrKey": "list",
-          "alias": "联系人列表 ",
+          "alias": "联系人列表",
           "sortIdx": -1
         },
         {
           "attrKey": "value",
-          "alias": "ContactList 联系人列表 当前选中联系人的 id ",
+          "alias": "ContactList 联系人列表 当前选中联系人的 id",
           "sortIdx": -1
         },
         {
           "eventKey": "select",
-          "alias": "切换选中的联系人时触发 ",
+          "alias": "切换选中的联系人时触发",
           "sortIdx": -1
         },
         {
           "eventKey": "edit",
-          "alias": "点击编辑按钮时触发 ",
+          "alias": "点击编辑按钮时触发",
           "sortIdx": -1
         },
         {
           "eventKey": "add",
-          "alias": "点击新增按钮时触发 ",
+          "alias": "点击新增按钮时触发",
           "sortIdx": -1
         },
         {

@@ -1,27 +1,27 @@
 [
   {
     "key": "v-model",
-    "label": "ContactList 联系人列表 当前选中联系人的 id ",
+    "label": "ContactList 联系人列表 当前选中联系人的 id",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "list",
-    "label": "联系人列表 ",
+    "label": "联系人列表",
     "category": "attr",
     "schema": {
-      "type": "Contact[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "add-text",
-    "label": "新建按钮文案 ",
+    "label": "新建按钮文案",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   {
     "key": "default-tag-text",
-    "label": "默认联系人标签文案 ",
+    "label": "默认联系人标签文案",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -41,7 +41,7 @@
   },
   {
     "key": "add",
-    "label": "点击新增按钮时触发 ",
+    "label": "点击新增按钮时触发",
     "category": "event",
     "task": {
       "label": "绑定事件add",
@@ -55,7 +55,7 @@
   },
   {
     "key": "edit",
-    "label": "点击编辑按钮时触发 ",
+    "label": "点击编辑按钮时触发",
     "category": "event",
     "task": {
       "label": "绑定事件edit",
@@ -69,7 +69,7 @@
   },
   {
     "key": "select",
-    "label": "切换选中的联系人时触发 ",
+    "label": "切换选中的联系人时触发",
     "category": "event",
     "task": {
       "label": "绑定事件select",

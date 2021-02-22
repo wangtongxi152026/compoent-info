@@ -1,0 +1,108 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "Circle 环形进度条",
+            "properties": [
+                {
+                    "label": "设置Circle 环形进度条",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "value",
+                            "bindProp": "value",
+                            "label": "Circle 环形进度条 当前进度",
+                            "type": "number"
+                        },
+                        {
+                            "key": "rate",
+                            "bindProp": "rate",
+                            "label": "目标进度",
+                            "type": "string"
+                        },
+                        {
+                            "key": "size",
+                            "bindProp": "size",
+                            "label": "圆环直径，默认单位为  px",
+                            "type": "string"
+                        },
+                        {
+                            "key": "color",
+                            "bindProp": "color",
+                            "label": "进度条颜色，传入对象格式可以定义渐变色",
+                            "type": "color"
+                        },
+                        {
+                            "key": "layer-color",
+                            "bindProp": "layer-color",
+                            "label": "轨道颜色",
+                            "type": "color"
+                        },
+                        {
+                            "key": "fill",
+                            "bindProp": "fill",
+                            "label": "填充颜色",
+                            "type": "color"
+                        },
+                        {
+                            "key": "speed",
+                            "bindProp": "speed",
+                            "label": "动画速度（单位为 rate/s）",
+                            "type": "string"
+                        },
+                        {
+                            "key": "text",
+                            "bindProp": "text",
+                            "label": "文字",
+                            "type": "string"
+                        },
+                        {
+                            "key": "stroke-width",
+                            "bindProp": "stroke-width",
+                            "label": "进度条宽度",
+                            "type": "string"
+                        },
+                        {
+                            "key": "stroke-linecap",
+                            "bindProp": "stroke-linecap",
+                            "label": "进度条端点的形状",
+                            "type": "string",
+                            "enumList": [
+                                {
+                                    "value": "butt",
+                                    "label": "butt"
+                                },
+                                {
+                                    "value": "sqaure",
+                                    "label": "sqaure"
+                                },
+                                {
+                                    "value": "round",
+                                    "label": "round"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "clockwise",
+                            "bindProp": "clockwise",
+                            "label": "是否顺时针增加",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "Circle 环形进度条",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

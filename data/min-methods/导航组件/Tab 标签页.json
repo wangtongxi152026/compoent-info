@@ -1,1 +1,284 @@
-[{"key":"v-model","label":"Tab 标签页 绑定当前选中标签的标识符","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"type","label":"样式风格类型，可选值为  card","category":"attr","schema":{"type":"enum","enumList":[{"value":"card","label":"card"},{"value":"line","label":"line"}]},"default":"","isExoprt":true},{"key":"color","label":"标签主题色","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"background","label":"标签栏背景色","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"duration","label":"动画时间，单位秒","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"line-width","label":"底部条宽度，默认单位  px","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"line-height","label":"底部条高度，默认单位  px","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"animated","label":"是否开启切换标签内容时的转场动画","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"border","label":"是否显示标签栏外边框，仅在  type=\"line\"  时有效","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"ellipsis","label":"是否省略过长的标题文字","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"sticky","label":"是否使用粘性定位布局","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"swipeable","label":"是否开启手势滑动切换","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"lazy-render","label":"是否开启延迟渲染（首次切换到标签时才触发内容渲染）","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"scrollspy","label":"是否开启滚动导航","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"offset-top ","label":"粘性定位布局下与顶部的最小距离，支持  px vw vh rem  单位，默认  px","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"swipe-threshold","label":"滚动阈值，标签数量超过阈值且总宽度超过标签栏宽度时开始横向滚动","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"title-active-color","label":"标题选中态颜色","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"title-inactive-color","label":"标题默认态颜色","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"before-change ","label":"切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise","category":"attr","schema":{"type":"(name) => boolean | Promise"},"default":"","isExoprt":true},{"key":"v-model","label":"绑定当前选中标签的标识符","category":"event","task":{"label":"绑定事件v-model","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"type","label":"样式风格类型，可选值为  card","category":"event","task":{"label":"绑定事件type","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"color","label":"标签主题色","category":"event","task":{"label":"绑定事件color","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"background","label":"标签栏背景色","category":"event","task":{"label":"绑定事件background","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"duration","label":"动画时间，单位秒","category":"event","task":{"label":"绑定事件duration","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"line-width","label":"底部条宽度，默认单位  px","category":"event","task":{"label":"绑定事件line-width","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"line-height","label":"底部条高度，默认单位  px","category":"event","task":{"label":"绑定事件line-height","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"animated","label":"是否开启切换标签内容时的转场动画","category":"event","task":{"label":"绑定事件animated","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"border","label":"是否显示标签栏外边框，仅在  type=\"line\"  时有效","category":"event","task":{"label":"绑定事件border","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"ellipsis","label":"是否省略过长的标题文字","category":"event","task":{"label":"绑定事件ellipsis","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"sticky","label":"是否使用粘性定位布局","category":"event","task":{"label":"绑定事件sticky","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"swipeable","label":"是否开启手势滑动切换","category":"event","task":{"label":"绑定事件swipeable","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"lazy-render","label":"是否开启延迟渲染（首次切换到标签时才触发内容渲染）","category":"event","task":{"label":"绑定事件lazy-render","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"scrollspy","label":"是否开启滚动导航","category":"event","task":{"label":"绑定事件scrollspy","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"offset-top ","label":"粘性定位布局下与顶部的最小距离，支持  px vw vh rem  单位，默认  px","category":"event","task":{"label":"绑定事件offset-top ","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"swipe-threshold","label":"滚动阈值，标签数量超过阈值且总宽度超过标签栏宽度时开始横向滚动","category":"event","task":{"label":"绑定事件swipe-threshold","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"title-active-color","label":"标题选中态颜色","category":"event","task":{"label":"绑定事件title-active-color","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"title-inactive-color","label":"标题默认态颜色","category":"event","task":{"label":"绑定事件title-inactive-color","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"before-change ","label":"切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise","category":"event","task":{"label":"绑定事件before-change ","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"v-model","label":"绑定当前选中标签的标识符","category":"slot","isExoprt":true},{"key":"type","label":"样式风格类型，可选值为  card","category":"slot","isExoprt":true},{"key":"color","label":"标签主题色","category":"slot","isExoprt":true},{"key":"background","label":"标签栏背景色","category":"slot","isExoprt":true},{"key":"duration","label":"动画时间，单位秒","category":"slot","isExoprt":true},{"key":"line-width","label":"底部条宽度，默认单位  px","category":"slot","isExoprt":true},{"key":"line-height","label":"底部条高度，默认单位  px","category":"slot","isExoprt":true},{"key":"animated","label":"是否开启切换标签内容时的转场动画","category":"slot","isExoprt":true},{"key":"border","label":"是否显示标签栏外边框，仅在  type=\"line\"  时有效","category":"slot","isExoprt":true},{"key":"ellipsis","label":"是否省略过长的标题文字","category":"slot","isExoprt":true},{"key":"sticky","label":"是否使用粘性定位布局","category":"slot","isExoprt":true},{"key":"swipeable","label":"是否开启手势滑动切换","category":"slot","isExoprt":true},{"key":"lazy-render","label":"是否开启延迟渲染（首次切换到标签时才触发内容渲染）","category":"slot","isExoprt":true},{"key":"scrollspy","label":"是否开启滚动导航","category":"slot","isExoprt":true},{"key":"offset-top ","label":"粘性定位布局下与顶部的最小距离，支持  px vw vh rem  单位，默认  px","category":"slot","isExoprt":true},{"key":"swipe-threshold","label":"滚动阈值，标签数量超过阈值且总宽度超过标签栏宽度时开始横向滚动","category":"slot","isExoprt":true},{"key":"title-active-color","label":"标题选中态颜色","category":"slot","isExoprt":true},{"key":"title-inactive-color","label":"标题默认态颜色","category":"slot","isExoprt":true},{"key":"before-change ","label":"切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise","category":"slot","isExoprt":true}]
+[
+    {
+        "key": "value",
+        "label": "Tab 标签页 绑定当前选中标签的标识符",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "type",
+        "label": "样式风格类型，可选值为  card",
+        "category": "attr",
+        "schema": {
+            "type": "enum",
+            "enumList": [
+                {
+                    "value": "card",
+                    "label": "card"
+                },
+                {
+                    "value": "line",
+                    "label": "line"
+                }
+            ]
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "color",
+        "label": "标签主题色",
+        "category": "attr",
+        "schema": {
+            "type": "color"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "background",
+        "label": "标签栏背景色",
+        "category": "attr",
+        "schema": {
+            "type": "color"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "duration",
+        "label": "动画时间，单位秒",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "line-width",
+        "label": "底部条宽度，默认单位  px",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "line-height",
+        "label": "底部条高度，默认单位  px",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "animated",
+        "label": "是否开启切换标签内容时的转场动画",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "border",
+        "label": "是否显示标签栏外边框，仅在type=line时有效",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "ellipsis",
+        "label": "是否省略过长的标题文字",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "sticky",
+        "label": "是否使用粘性定位布局",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "swipeable",
+        "label": "是否开启手势滑动切换",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "lazy-render",
+        "label": "是否开启延迟渲染（首次切换到标签时才触发内容渲染）",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "scrollspy",
+        "label": "是否开启滚动导航",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "offset-top",
+        "label": "粘性定位布局下与顶部的最小距离，支持  px vw vh rem  单位，默认  px",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "swipe-threshold",
+        "label": "滚动阈值，标签数量超过阈值且总宽度超过标签栏宽度时开始横向滚动",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "title-active-color",
+        "label": "标题选中态颜色",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "title-inactive-color",
+        "label": "标题默认态颜色",
+        "category": "attr",
+        "schema": {
+            "type": "color"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "before-change",
+        "label": "切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise",
+        "category": "attr",
+        "schema": {
+            "type": "function"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "click",
+        "label": "点击标签时触发",
+        "category": "event",
+        "task": {
+            "label": "绑定事件click",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "change",
+        "label": "当前激活的标签改变时触发",
+        "category": "event",
+        "task": {
+            "label": "绑定事件change",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "disabled",
+        "label": "点击被禁用的标签时触发",
+        "category": "event",
+        "task": {
+            "label": "绑定事件disabled",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "rendered",
+        "label": "标签内容首次渲染时触发（仅在开启延迟渲染后触发）",
+        "category": "event",
+        "task": {
+            "label": "绑定事件rendered",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "scroll",
+        "label": "滚动时触发，仅在 sticky 模式下生效",
+        "category": "event",
+        "task": {
+            "label": "绑定事件scroll",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "nav-left",
+        "label": "标题左侧内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "nav-right",
+        "label": "标题右侧内容",
+        "category": "slot",
+        "isExoprt": true
+    }
+]

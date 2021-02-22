@@ -1,0 +1,68 @@
+[
+    {
+        "id": 0,
+        "parentId": -1,
+        "ins_id": "",
+        "tag": "div",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {
+                "width": "100%",
+                "height": "100%",
+                "overflow": "auto"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "parentId": 0,
+        "ins_id": "",
+        "tag": "van-divider",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {},
+            "$text": "文本",
+            "dashed": false,
+            "hairline": true,
+            "content-position": "center",
+            "$exports": [
+                {
+                    "attrKey": "$text",
+                    "alias": "文本",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "content-position",
+                    "alias": "内容位置，可选值为 left right",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "hairline",
+                    "alias": "是否使用 0.5px 线",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "dashed",
+                    "alias": "Divider 分割线 是否使用虚线",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-if",
+                    "alias": "v-if指令",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-show",
+                    "alias": "v-show指令",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-model",
+                    "alias": "v-model指令",
+                    "sortIdx": -1
+                }
+            ],
+            "$exportState": true
+        }
+    }
+]

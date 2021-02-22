@@ -1,0 +1,118 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "Tag 标签",
+            "properties": [
+                {
+                    "label": "设置Tag 标签",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "$text",
+                            "bindProp": "$text",
+                            "label": "文本内容",
+                            "type": "string"
+                        },
+                        {
+                            "key": "type",
+                            "bindProp": "type",
+                            "label": "Tag 标签 类型",
+                            "type": "string",
+                            "enumList": [
+                                {
+                                    "value": "primary",
+                                    "label": "primary"
+                                },
+                                {
+                                    "value": "success",
+                                    "label": "success"
+                                },
+                                {
+                                    "value": "danger",
+                                    "label": "danger"
+                                },
+                                {
+                                    "value": "warning",
+                                    "label": "warning"
+                                },
+                                {
+                                    "value": "default",
+                                    "label": "default"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "size",
+                            "bindProp": "size",
+                            "label": "大小, 可选值为 large medium",
+                            "type": "string",
+                            "enumList": [
+                                {
+                                    "value": "large",
+                                    "label": "large"
+                                },
+                                {
+                                    "value": "medium",
+                                    "label": "medium"
+                                },
+                                {
+                                    "value": "",
+                                    "label": "small"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "color",
+                            "bindProp": "color",
+                            "label": "标签颜色",
+                            "type": "color"
+                        },
+                        {
+                            "key": "plain",
+                            "bindProp": "plain",
+                            "label": "是否为空心样式",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "round",
+                            "bindProp": "round",
+                            "label": "是否为圆角样式",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "mark",
+                            "bindProp": "mark",
+                            "label": "是否为标记样式",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "text-color",
+                            "bindProp": "text-color",
+                            "label": "文本颜色，优先级高于 color 属性",
+                            "type": "color"
+                        },
+                        {
+                            "key": "closeable",
+                            "bindProp": "closeable",
+                            "label": "是否为可关闭标签",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "Tag 标签",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

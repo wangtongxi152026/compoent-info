@@ -1,0 +1,52 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "CountDown 倒计时",
+            "properties": [
+                {
+                    "label": "设置CountDown 倒计时",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "time",
+                            "bindProp": "time",
+                            "label": "CountDown 倒计时 倒计时时长，单位毫秒",
+                            "type": "string"
+                        },
+                        {
+                            "key": "format",
+                            "bindProp": "format",
+                            "label": "时间格式",
+                            "type": "string"
+                        },
+                        {
+                            "key": "auto-start",
+                            "bindProp": "auto-start",
+                            "label": "是否自动开始倒计时",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "millisecond",
+                            "bindProp": "millisecond",
+                            "label": "是否开启毫秒级渲染",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "CountDown 倒计时",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

@@ -5,11 +5,11 @@ import {
   Minthods,
   Events,
 } from '../types/types'
-import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel } from './initData'
+import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel, initEditChildNode } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'ContactList 联系人列表'
-  private folder = '业务组件'
+  private pathName = 'Tab 标签页'
+  private folder = '导航组件'
   constructor() {
     this.readCompInfo()
   }

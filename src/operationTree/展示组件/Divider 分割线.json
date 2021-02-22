@@ -1,0 +1,60 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "Divider 分割线",
+            "properties": [
+                {
+                    "label": "设置Divider 分割线",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "dashed",
+                            "bindProp": "dashed",
+                            "label": "Divider 分割线 是否使用虚线",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "hairline",
+                            "bindProp": "hairline",
+                            "label": "是否使用 0.5px 线",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "content-position",
+                            "bindProp": "content-position",
+                            "label": "内容位置",
+                            "type": "string",
+                            "enumList": [
+                                {
+                                    "value": "right",
+                                    "label": "right"
+                                },
+                                {
+                                    "value": "left",
+                                    "label": "left"
+                                },
+                                {
+                                    "value": "center",
+                                    "label": "center"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "Divider 分割线",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

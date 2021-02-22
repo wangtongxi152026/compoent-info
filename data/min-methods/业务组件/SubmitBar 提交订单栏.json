@@ -1,7 +1,7 @@
 [
   {
     "key": "price",
-    "label": "SubmitBar 提交订单栏 价格（单位分） ",
+    "label": "SubmitBar 提交订单栏 价格（单位分）",
     "category": "attr",
     "schema": {
       "type": "number"
@@ -14,14 +14,14 @@
     "label": "价格小数点位数",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "label",
-    "label": "价格左侧文案 ",
+    "label": "价格左侧文案",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -31,7 +31,7 @@
   },
   {
     "key": "suffix-label",
-    "label": "价格右侧文案 ",
+    "label": "价格右侧文案",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -41,7 +41,7 @@
   },
   {
     "key": "text-align",
-    "label": "价格文案对齐方向，可选值为  left ",
+    "label": "价格文案对齐方向，可选值为  left",
     "category": "attr",
     "schema": {
       "type": "enum",
@@ -61,7 +61,7 @@
   },
   {
     "key": "button-text",
-    "label": "按钮文字 ",
+    "label": "按钮文字",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -71,27 +71,45 @@
   },
   {
     "key": "button-type",
-    "label": "按钮类型 ",
+    "label": "按钮类型",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "string",
+      "enumList": [
+        {
+          "label": "主题色",
+          "value": "primary"
+        },
+        {
+          "label": "成功",
+          "value": "success"
+        },
+        {
+          "label": "危险",
+          "value": "danger"
+        },
+        {
+          "label": "警告",
+          "value": "warning"
+        }
+      ]
     },
     "default": "",
     "isExoprt": true
   },
   {
-    "key": "button-color ",
-    "label": "自定义按钮颜色 ",
+    "key": "button-color",
+    "label": "自定义按钮颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "tip",
-    "label": "在订单栏上方的提示文案 ",
+    "label": "在订单栏上方的提示文案",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -101,7 +119,7 @@
   },
   {
     "key": "tip-icon",
-    "label": "提示文案左侧的 图标名称 或图片链接 ",
+    "label": "提示文案左侧的 图标名称 或图片链接",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -111,7 +129,7 @@
   },
   {
     "key": "currency",
-    "label": "货币符号 ",
+    "label": "货币符号",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -121,7 +139,7 @@
   },
   {
     "key": "disabled",
-    "label": "是否禁用按钮 ",
+    "label": "是否禁用按钮",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -131,7 +149,7 @@
   },
   {
     "key": "loading",
-    "label": "是否显示将按钮显示为加载中状态 ",
+    "label": "是否显示将按钮显示为加载中状态",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -141,7 +159,7 @@
   },
   {
     "key": "safe-area-inset-bottom",
-    "label": "是否开启 底部安全区适配 ",
+    "label": "是否开启 底部安全区适配",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -151,7 +169,7 @@
   },
   {
     "key": "submit",
-    "label": "按钮点击事件回调 ",
+    "label": "按钮点击事件回调",
     "category": "event",
     "task": {
       "label": "绑定事件submit",
@@ -165,25 +183,25 @@
   },
   {
     "key": "default",
-    "label": "自定义订单栏左侧内容 ",
+    "label": "自定义订单栏左侧内容",
     "category": "slot",
     "isExoprt": true
   },
   {
-    "key": "button ",
-    "label": "自定义按钮 ",
+    "key": "button",
+    "label": "自定义按钮",
     "category": "slot",
     "isExoprt": true
   },
   {
     "key": "top",
-    "label": "自定义订单栏上方内容 ",
+    "label": "自定义订单栏上方内容",
     "category": "slot",
     "isExoprt": true
   },
   {
     "key": "tip",
-    "label": "提示文案中的额外内容 ",
+    "label": "提示文案中的额外内容",
     "category": "slot",
     "isExoprt": true
   }

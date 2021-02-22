@@ -4,7 +4,7 @@
     "label": "CountDown 倒计时 倒计时时长，单位毫秒",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true

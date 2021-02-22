@@ -1,0 +1,78 @@
+[
+    {
+        "id": 0,
+        "parentId": -1,
+        "ins_id": "",
+        "tag": "div",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {
+                "width": "100%",
+                "height": "100%",
+                "overflow": "auto"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "parentId": 0,
+        "ins_id": "",
+        "tag": "van-count-down",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {},
+            "time": 100000,
+            "format": "DD 天 HH 时 mm 分 ss 秒",
+            "auto-start": true,
+            "millisecond": false,
+            "$exports": [
+                {
+                    "attrKey": "millisecond",
+                    "alias": "是否开启毫秒级渲染",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "auto-start",
+                    "alias": "是否自动开始倒计时",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "format",
+                    "alias": "时间格式",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "time",
+                    "alias": "CountDown 倒计时 倒计时时长，单位毫秒",
+                    "sortIdx": -1
+                },
+                {
+                    "eventKey": "change",
+                    "alias": "倒计时变化时触发",
+                    "sortIdx": -1
+                },
+                {
+                    "eventKey": "finish",
+                    "alias": "倒计时结束时触发",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-if",
+                    "alias": "v-if指令",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-show",
+                    "alias": "v-show指令",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-model",
+                    "alias": "v-model指令",
+                    "sortIdx": -1
+                }
+            ],
+            "$exportState": true
+        }
+    }
+]
