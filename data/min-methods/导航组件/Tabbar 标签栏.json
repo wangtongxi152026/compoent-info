@@ -4,7 +4,7 @@
     "label": "Tabbar 标签栏 当前选中标签的名称或索引值",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -34,7 +34,7 @@
     "label": "元素 z-index",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -44,7 +44,7 @@
     "label": "选中标签的颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
@@ -54,7 +54,7 @@
     "label": "未选中标签的颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
@@ -94,7 +94,7 @@
     "label": "切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise",
     "category": "attr",
     "schema": {
-      "type": "(name) => boolean | Promise"
+      "type": "function"
     },
     "default": "",
     "isExoprt": true

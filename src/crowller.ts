@@ -6,167 +6,82 @@ import {
   Events,
   Slots
 } from './types/types'
-const html = `<section><h1>Tab-item 标签页</h1>
-<div class="card"><h3 id="yin-ru">引入</h3>
+const html = `<section><h1>Grid 宫格</h1>
+<div class="card"><h3 id="jie-shao">介绍</h3>
+<p>宫格可以在水平方向上把页面分隔成等宽度的区块，用于展示内容或进行页面导航。</p>
+</div><div class="card"><h3 id="yin-ru">引入</h3>
 <pre><code class="language-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
-<span class="hljs-keyword">import</span> { Tab, Tabs } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
+<span class="hljs-keyword">import</span> { Grid, GridItem } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
 
-Vue.use(Tab);
-Vue.use(Tabs);
+Vue.use(Grid);
+Vue.use(GridItem);
 </code></pre>
 </div><h2 id="dai-ma-yan-shi">代码演示</h2>
 <div class="card"><h3 id="ji-chu-yong-fa">基础用法</h3>
-<p>通过 <code>v-model</code> 绑定当前激活标签对应的索引值，默认情况下启用第一个标签。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"active"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 1"</span>&gt;</span>内容 1<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 2"</span>&gt;</span>内容 2<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 3"</span>&gt;</span>内容 3<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 4"</span>&gt;</span>内容 4<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
+<p>通过 <code>icon</code> 属性设置格子内的图标，<code>text</code> 属性设置文字内容。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  data() {
-    <span class="hljs-keyword">return</span> {
-      <span class="hljs-attr">active</span>: <span class="hljs-number">2</span>,
-    };
-  },
-};
+</div><div class="card"><h3 id="zi-ding-yi-lie-shu">自定义列数</h3>
+<p>默认一行展示四个格子，可以通过 <code>column-num</code> 自定义列数。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"value in 6"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="tong-guo-ming-cheng-pi-pei">通过名称匹配</h3>
-<p>在标签指定 <code>name</code> 属性的情况下，<code>v-model</code> 的值为当前标签的 <code>name</code>（此时无法通过索引值来匹配标签）。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"activeName"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"a"</span>&gt;</span>内容 1<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 2"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"b"</span>&gt;</span>内容 2<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 3"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"c"</span>&gt;</span>内容 3<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
+</div><div class="card"><h3 id="zi-ding-yi-nei-rong">自定义内容</h3>
+<p>通过插槽可以自定义格子展示的内容。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:border</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"3"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">van-image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://img01.yzcdn.cn/vant/apple-1.jpg"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">van-grid-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">van-image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://img01.yzcdn.cn/vant/apple-2.jpg"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">van-grid-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">van-image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://img01.yzcdn.cn/vant/apple-3.jpg"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">van-grid-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  data() {
-    <span class="hljs-keyword">return</span> {
-      <span class="hljs-attr">activeName</span>: <span class="hljs-string">'a'</span>,
-    };
-  },
-};
+</div><div class="card"><h3 id="zheng-fang-xing-ge-zi">正方形格子</h3>
+<p>设置 <code>square</code> 属性后，格子的高度会和宽度保持一致。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">square</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"value in 8"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="biao-qian-lan-gun-dong">标签栏滚动</h3>
-<p>标签数量超过 5 个时，标签栏可以在水平方向上滚动，切换时会自动将当前标签居中。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 8"</span> <span class="hljs-attr">:title</span>=<span class="hljs-string">"'标签 ' + index"</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
+</div><div class="card"><h3 id="ge-zi-jian-ju">格子间距</h3>
+<p>通过 <code>gutter</code> 属性设置格子之间的距离。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:gutter</span>=<span class="hljs-string">"10"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"value in 8"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="jin-yong-biao-qian">禁用标签</h3>
-<p>设置 <code>disabled</code> 属性即可禁用标签，如果需要监听禁用标签的点击事件，可以在 <code>van-tabs</code> 上监听<code>disabled</code> 事件。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> @<span class="hljs-attr">disabled</span>=<span class="hljs-string">"onClickDisabled"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 1"</span>&gt;</span>内容 1<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 2"</span> <span class="hljs-attr">disabled</span>&gt;</span>内容 2<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 3"</span>&gt;</span>内容 3<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
+</div><div class="card"><h3 id="nei-rong-heng-pai">内容横排</h3>
+<p>将 <code>direction</code> 属性设置为 <code>horizontal</code>，可以让宫格的内容呈横向排列。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">"horizontal"</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">import</span> { Toast } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  <span class="hljs-attr">methods</span>: {
-    onClickDisabled(name, title) {
-      Toast(name + <span class="hljs-string">'已被禁用'</span>);
-    },
-  },
-};
+</div><div class="card"><h3 id="ye-mian-dao-hang">页面导航</h3>
+<p>通过 <code>to</code> 属性设置 <code>vue-router</code> 跳转链接，通过 <code>url</code> 属性设置 URL 跳转链接。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">clickable</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"home-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"路由跳转"</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"URL 跳转"</span> <span class="hljs-attr">url</span>=<span class="hljs-string">"/vant/mobile.html"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="yang-shi-feng-ge">样式风格</h3>
-<p><code>Tab</code> 支持两种样式风格：<code>line</code> 和<code>card</code>，默认为 <code>line</code> 样式，可以通过 <code>type</code> 属性切换样式风格。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"card"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 1"</span>&gt;</span>内容 1<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 2"</span>&gt;</span>内容 2<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 3"</span>&gt;</span>内容 3<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="dian-ji-shi-jian">点击事件</h3>
-<p>可以在 <code>van-tabs</code> 上绑定 <code>click</code> 事件，事件传参为标签对应的标识符和标题。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">"onClick"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 1"</span>&gt;</span>内容 1<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"标签 2"</span>&gt;</span>内容 2<span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">import</span> { Toast } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  <span class="hljs-attr">methods</span>: {
-    onClick(name, title) {
-      Toast(title);
-    },
-  },
-};
-</code></pre>
-</div><div class="card"><h3 id="nian-xing-bu-ju">粘性布局</h3>
-<p>通过 <code>sticky</code> 属性可以开启粘性布局，粘性布局下，标签页滚动到顶部时会自动吸顶。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">sticky</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 4"</span> <span class="hljs-attr">:title</span>=<span class="hljs-string">"'选项 ' + index"</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="zi-ding-yi-biao-qian">自定义标签</h3>
-<p>通过 <code>title</code> 插槽可以自定义标签内容。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"active"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 2"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"index"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">title</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">van-icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"more-o"</span> /&gt;</span>选项 <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="qie-huan-dong-hua">切换动画</h3>
-<p>通过 <code>animated</code> 属性可以开启切换标签内容时的转场动画。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">animated</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 4"</span> <span class="hljs-attr">:title</span>=<span class="hljs-string">"'选项 ' + index"</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="hua-dong-qie-huan">滑动切换</h3>
-<p>通过 <code>swipeable</code> 属性可以开启滑动切换标签页。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">swipeable</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 4"</span> <span class="hljs-attr">:title</span>=<span class="hljs-string">"'选项 ' + index"</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="gun-dong-dao-hang">滚动导航</h3>
-<p>通过 <code>scrollspy</code> 属性可以开启滚动导航模式，该模式下，内容将会平铺展示。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">scrollspy</span> <span class="hljs-attr">sticky</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 8"</span> <span class="hljs-attr">:title</span>=<span class="hljs-string">"'选项 ' + index"</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-</div><div class="card"><h3 id="yi-bu-qie-huan">异步切换</h3>
-<p>通过 <code>before-change</code> 属性可以在切换标签前执行特定的逻辑。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">:before-change</span>=<span class="hljs-string">"beforeChange"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-tab</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"index in 4"</span> <span class="hljs-attr">:title</span>=<span class="hljs-string">"'选项 ' + index"</span>&gt;</span>
-    内容 {{ index }}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-tab</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-tabs</span>&gt;</span>
-</code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  <span class="hljs-attr">methods</span>: {
-    beforeChange(index) {
-      <span class="hljs-comment">// 返回 false 表示阻止此次切换</span>
-      <span class="hljs-keyword">if</span> (index === <span class="hljs-number">1</span>) {
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-      }
-
-      <span class="hljs-comment">// 返回 Promise 来执行异步逻辑</span>
-      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> {
-        <span class="hljs-comment">// 在 resolve 函数中返回 true 或 false</span>
-        resolve(index !== <span class="hljs-number">3</span>);
-      });
-    },
-  },
-};
+</div><div class="card"><h3 id="hui-biao-ti-shi">徽标提示</h3>
+<p>设置 <code>dot</code> 属性后，会在图标右上角展示一个小红点。设置 <code>badge</code> 属性后，会在图标右上角展示相应的徽标。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"home-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> <span class="hljs-attr">dot</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> <span class="hljs-attr">badge</span>=<span class="hljs-string">"99+"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
 </code></pre>
 </div><h2 id="api">API</h2>
-<div class="card"><h3 id="tabs-props">Tabs Props</h3>
+<div class="card"><h3 id="grid-props">Grid Props</h3>
 <table>
 <thead>
 <tr>
@@ -178,122 +93,56 @@ Vue.use(Tabs);
 </thead>
 <tbody>
 <tr>
-<td>v-model</td>
-<td>绑定当前选中标签的标识符</td>
+<td>column-num</td>
+<td>列数</td>
+<td><em>number | string</em></td>
+<td><code>4</code></td>
+</tr>
+<tr>
+<td>icon-size</td>
+<td>图标大小，默认单位为<code>px</code></td>
+<td><em>number | string</em></td>
+<td><code>28px</code></td>
+</tr>
+<tr>
+<td>gutter</td>
+<td>格子之间的间距，默认单位为<code>px</code></td>
 <td><em>number | string</em></td>
 <td><code>0</code></td>
-</tr>
-<tr>
-<td>type</td>
-<td>样式风格类型，可选值为 <code>card</code></td>
-<td><em>string</em></td>
-<td><code>line</code></td>
-</tr>
-<tr>
-<td>color</td>
-<td>标签主题色</td>
-<td><em>string</em></td>
-<td><code>#ee0a24</code></td>
-</tr>
-<tr>
-<td>background</td>
-<td>标签栏背景色</td>
-<td><em>string</em></td>
-<td><code>white</code></td>
-</tr>
-<tr>
-<td>duration</td>
-<td>动画时间，单位秒</td>
-<td><em>number | string</em></td>
-<td><code>0.3</code></td>
-</tr>
-<tr>
-<td>line-width</td>
-<td>底部条宽度，默认单位 <code>px</code></td>
-<td><em>number | string</em></td>
-<td><code>40px</code></td>
-</tr>
-<tr>
-<td>line-height</td>
-<td>底部条高度，默认单位 <code>px</code></td>
-<td><em>number | string</em></td>
-<td><code>3px</code></td>
-</tr>
-<tr>
-<td>animated</td>
-<td>是否开启切换标签内容时的转场动画</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
 </tr>
 <tr>
 <td>border</td>
-<td>是否显示标签栏外边框，仅在 <code>type="line"</code> 时有效</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
-</tr>
-<tr>
-<td>ellipsis</td>
-<td>是否省略过长的标题文字</td>
+<td>是否显示边框</td>
 <td><em>boolean</em></td>
 <td><code>true</code></td>
 </tr>
 <tr>
-<td>sticky</td>
-<td>是否使用粘性定位布局</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
-</tr>
-<tr>
-<td>swipeable</td>
-<td>是否开启手势滑动切换</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
-</tr>
-<tr>
-<td>lazy-render</td>
-<td>是否开启延迟渲染（首次切换到标签时才触发内容渲染）</td>
+<td>center</td>
+<td>是否将格子内容居中显示</td>
 <td><em>boolean</em></td>
 <td><code>true</code></td>
 </tr>
 <tr>
-<td>scrollspy</td>
-<td>是否开启滚动导航</td>
+<td>square</td>
+<td>是否将格子固定为正方形</td>
 <td><em>boolean</em></td>
 <td><code>false</code></td>
 </tr>
 <tr>
-<td>offset-top <code>v2.8.7</code></td>
-<td>粘性定位布局下与顶部的最小距离，支持 <code>px</code> <code>vw</code> <code>vh</code> <code>rem</code> 单位，默认 <code>px</code></td>
-<td><em>number | string</em></td>
-<td><code>0</code></td>
+<td>clickable</td>
+<td>是否开启格子点击反馈</td>
+<td><em>boolean</em></td>
+<td><code>false</code></td>
 </tr>
 <tr>
-<td>swipe-threshold</td>
-<td>滚动阈值，标签数量超过阈值且总宽度超过标签栏宽度时开始横向滚动</td>
-<td><em>number | string</em></td>
-<td><code>5</code></td>
-</tr>
-<tr>
-<td>title-active-color</td>
-<td>标题选中态颜色</td>
+<td>direction <code>v2.8.2</code></td>
+<td>格子内容排列的方向，可选值为 <code>horizontal</code></td>
 <td><em>string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>title-inactive-color</td>
-<td>标题默认态颜色</td>
-<td><em>string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>before-change <code>v2.9.3</code></td>
-<td>切换标签前的回调函数，返回 <code>false</code> 可阻止切换，支持返回 Promise</td>
-<td><em>(name) =&gt; boolean | Promise</em></td>
-<td>-</td>
+<td><code>vertical</code></td>
 </tr>
 </tbody>
 </table>
-</div><div class="card"><h3 id="tab-props">Tab Props</h3>
+</div><div class="card"><h3 id="griditem-props">GridItem Props</h3>
 <table>
 <thead>
 <tr>
@@ -305,20 +154,26 @@ Vue.use(Tabs);
 </thead>
 <tbody>
 <tr>
-<td>title</td>
-<td>标题</td>
+<td>text</td>
+<td>文字</td>
 <td><em>string</em></td>
 <td>-</td>
 </tr>
 <tr>
-<td>disabled</td>
-<td>是否禁用标签</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
+<td>icon</td>
+<td><a href="#/zh-CN/icon" target="_blank">图标名称</a>或图片链接</td>
+<td><em>string</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>icon-prefix <code>v2.5.3</code></td>
+<td>图标类名前缀，同 Icon 组件的 <a href="#/zh-CN/icon#props" target="_blank">class-prefix 属性</a></td>
+<td><em>string</em></td>
+<td><code>van-icon</code></td>
 </tr>
 <tr>
 <td>dot</td>
-<td>是否在标题右上角显示小红点</td>
+<td>是否显示图标右上角小红点</td>
 <td><em>boolean</em></td>
 <td><code>false</code></td>
 </tr>
@@ -329,16 +184,10 @@ Vue.use(Tabs);
 <td>-</td>
 </tr>
 <tr>
-<td>info</td>
+<td>info <code>2.2.1</code></td>
 <td>图标右上角徽标的内容（已废弃，请使用 badge 属性）</td>
 <td><em>number | string</em></td>
 <td>-</td>
-</tr>
-<tr>
-<td>name</td>
-<td>标签名称，作为匹配的标识符</td>
-<td><em>number | string</em></td>
-<td>标签的索引值</td>
 </tr>
 <tr>
 <td>url</td>
@@ -358,21 +207,9 @@ Vue.use(Tabs);
 <td><em>boolean</em></td>
 <td><code>false</code></td>
 </tr>
-<tr>
-<td>title-style</td>
-<td>自定义标题样式</td>
-<td><em>any</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>title-class</td>
-<td>自定义标题类名</td>
-<td><em>any</em></td>
-<td>-</td>
-</tr>
 </tbody>
 </table>
-</div><div class="card"><h3 id="tabs-events">Tabs Events</h3>
+</div><div class="card"><h3 id="griditem-events">GridItem Events</h3>
 <table>
 <thead>
 <tr>
@@ -384,77 +221,12 @@ Vue.use(Tabs);
 <tbody>
 <tr>
 <td>click</td>
-<td>点击标签时触发</td>
-<td>name：标识符，title：标题</td>
-</tr>
-<tr>
-<td>change</td>
-<td>当前激活的标签改变时触发</td>
-<td>name：标识符，title：标题</td>
-</tr>
-<tr>
-<td>disabled</td>
-<td>点击被禁用的标签时触发</td>
-<td>name：标识符，title：标题</td>
-</tr>
-<tr>
-<td>rendered</td>
-<td>标签内容首次渲染时触发（仅在开启延迟渲染后触发）</td>
-<td>name：标识符，title：标题</td>
-</tr>
-<tr>
-<td>scroll</td>
-<td>滚动时触发，仅在 sticky 模式下生效</td>
-<td>{ scrollTop: 距离顶部位置, isFixed: 是否吸顶 }</td>
+<td>点击格子时触发</td>
+<td><em>event: Event</em></td>
 </tr>
 </tbody>
 </table>
-</div><div class="card"><h3 id="tabs-fang-fa">Tabs 方法</h3>
-<p>通过 ref 可以获取到 Tabs 实例并调用实例方法，详见<a href="#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa" target="_blank">组件实例方法</a>。</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-<th>参数</th>
-<th>返回值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>resize</td>
-<td>外层元素大小或组件显示状态变化时，可以调用此方法来触发重绘</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>scrollTo <code>v2.9.3</code></td>
-<td>滚动到指定的标签页，在滚动导航模式下可用</td>
-<td>name: 标识符</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-</div><div class="card"><h3 id="tabs-slots">Tabs Slots</h3>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>nav-left</td>
-<td>标题左侧内容</td>
-</tr>
-<tr>
-<td>nav-right</td>
-<td>标题右侧内容</td>
-</tr>
-</tbody>
-</table>
-</div><div class="card"><h3 id="tab-slots">Tab Slots</h3>
+</div><div class="card"><h3 id="griditem-slots">GridItem Slots</h3>
 <table>
 <thead>
 <tr>
@@ -465,11 +237,15 @@ Vue.use(Tabs);
 <tbody>
 <tr>
 <td>default</td>
-<td>标签页内容</td>
+<td>自定义宫格的所有内容</td>
 </tr>
 <tr>
-<td>title</td>
-<td>自定义标题</td>
+<td>icon</td>
+<td>自定义图标</td>
+</tr>
+<tr>
+<td>text</td>
+<td>自定义文字</td>
 </tr>
 </tbody>
 </table>
@@ -485,82 +261,37 @@ Vue.use(Tabs);
 </thead>
 <tbody>
 <tr>
-<td>@tab-text-color</td>
-<td><code>@gray-7</code></td>
+<td>@grid-item-content-padding</td>
+<td><code>@padding-md @padding-xs</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tab-active-text-color</td>
-<td><code>@text-color</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tab-disabled-text-color</td>
-<td><code>@gray-5</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tab-font-size</td>
-<td><code>@font-size-md</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tab-line-height</td>
-<td><code>@line-height-md</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tabs-default-color</td>
-<td><code>@red</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tabs-line-height</td>
-<td><code>44px</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tabs-card-height</td>
-<td><code>30px</code></td>
-<td>-</td>
-</tr>
-<tr>
-<td>@tabs-nav-background-color</td>
+<td>@grid-item-content-background-color</td>
 <td><code>@white</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tabs-bottom-bar-width</td>
-<td><code>40px</code></td>
+<td>@grid-item-content-active-color</td>
+<td><code>@active-color</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tabs-bottom-bar-height</td>
-<td><code>3px</code></td>
+<td>@grid-item-icon-size</td>
+<td><code>28px</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@tabs-bottom-bar-color</td>
-<td><code>@tabs-default-color</code></td>
+<td>@grid-item-text-color</td>
+<td><code>@gray-7</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>@grid-item-text-font-size</td>
+<td><code>@font-size-sm</code></td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
-</div><h2 id="chang-jian-wen-ti">常见问题</h2>
-<div class="card"><h3 id="zu-jian-cong-yin-cang-zhuang-tai-qie-huan-dao-xian-shi-zhuang-tai-shi-di-bu-tiao-wei-zhi-cuo-wu">组件从隐藏状态切换到显示状态时，底部条位置错误？</h3>
-<p>Tabs 组件在挂载时，会获取自身的宽度，并计算出底部条的位置。如果组件一开始处于隐藏状态，则获取到的宽度永远为 0，因此无法展示底部条位置。</p>
-<h4 id="jie-jue-fang-fa">解决方法</h4>
-<p>方法一，如果是使用 <code>v-show</code> 来控制组件展示的，则替换为 <code>v-if</code> 即可解决此问题：</p>
-<pre><code class="language-html"><span class="hljs-comment">&lt;!-- Before --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">"show"</span> /&gt;</span>
-<span class="hljs-comment">&lt;!-- After --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"show"</span> /&gt;</span>
-</code></pre>
-<p>方法二，调用组件的 resize 方法来主动触发重绘：</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-tabs</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">"show"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"tabs"</span> /&gt;</span>
-</code></pre>
-<pre><code class="language-js"><span class="hljs-keyword">this</span>.$refs.tabs.resize();
-</code></pre>
 </div></section>`;
 
 const attrObj = (item: Minthods) => {

@@ -1,0 +1,212 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Grid 宫格",
+      "properties": [
+        {
+          "label": "设置Grid 宫格",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "column-num",
+              "bindProp": "column-num",
+              "label": "Grid 宫格 列数",
+              "type": "string"
+            },
+            {
+              "key": "icon-size",
+              "bindProp": "icon-size",
+              "label": "图标大小，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "gutter",
+              "bindProp": "gutter",
+              "label": "格子之间的间距，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "border",
+              "bindProp": "border",
+              "label": "是否显示边框",
+              "type": "boolean"
+            },
+            {
+              "key": "center",
+              "bindProp": "center",
+              "label": "是否将格子内容居中显示",
+              "type": "boolean"
+            },
+            {
+              "key": "square",
+              "bindProp": "square",
+              "label": "是否将格子固定为正方形",
+              "type": "boolean"
+            },
+            {
+              "key": "clickable",
+              "bindProp": "clickable",
+              "label": "是否开启格子点击反馈",
+              "type": "boolean"
+            },
+            {
+              "key": "direction",
+              "bindProp": "direction",
+              "label": "格子内容排列的方向",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "horizontal",
+                  "label": "horizontal"
+                },
+                {
+                  "value": "vertical",
+                  "label": "vertical"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Grid 宫格",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  },
+  {
+    "type": "EditChildNode",
+    "label": "Grid-item 宫格",
+    "node": [
+      {
+        "tag": "van-grid-item",
+        "alias": "标签项",
+        "prop": {
+          "text": {
+            "alias": "Grid 宫格 文字",
+            "type": "string",
+            "value": "文字"
+          },
+          "icon": {
+            "alias": "图标名称 或图片链接",
+            "type": "img",
+            "value": "//s2-cdn.oneitfarm.com/FtbrVLqO9AfFi3ebRUSlWTFscQsi"
+          },
+          "dot": {
+            "alias": "是否显示图标右上角小红点",
+            "type": "boolean",
+            "value": false
+          },
+          "badge": {
+            "alias": "图标右上角徽标的内容",
+            "type": "string",
+            "value": ""
+          },
+          "to": {
+            "alias": "点击后跳转的目标路由对象",
+            "type": "string",
+            "value": "-"
+          },
+          "replace": {
+            "alias": "是否在跳转时替换当前页面历史",
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "data": {
+          "$style": {},
+          "icon-prefix ": "van-icon",
+          "text": "文本",
+          "icon": "//s2-cdn.oneitfarm.com/FtbrVLqO9AfFi3ebRUSlWTFscQsi",
+          "dot": false,
+          "replace": false,
+          "$exports": [
+            {
+              "attrKey": "replace",
+              "alias": "是否在跳转时替换当前页面历史",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "to",
+              "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "url",
+              "alias": "点击后跳转的链接地址",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "info",
+              "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "badge",
+              "alias": "图标右上角徽标的内容",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "dot",
+              "alias": "是否显示图标右上角小红点",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon-prefix",
+              "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon",
+              "alias": "图标名称 或图片链接",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "text",
+              "alias": "Grid 宫格 文字",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "click",
+              "alias": "点击格子时触发",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-if",
+              "alias": "v-if指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-show",
+              "alias": "v-show指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-model",
+              "alias": "v-model指令",
+              "sortIdx": -1
+            }
+          ]
+        },
+        "children": []
+      }
+    ],
+    "render_tree_node": {
+      "ins_id": "",
+      "key": ""
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": ""
+    }
+  }
+]

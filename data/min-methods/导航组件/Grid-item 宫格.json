@@ -1,7 +1,7 @@
 [
   {
-    "key": "name",
-    "label": "TabbarItem 标签栏 标签名称，作为匹配的标识符",
+    "key": "text",
+    "label": "Grid 宫格 文字",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -20,7 +20,7 @@
     "isExoprt": true
   },
   {
-    "key": "icon-prefix ",
+    "key": "icon-prefix",
     "label": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
     "category": "attr",
     "schema": {
@@ -40,7 +40,7 @@
     "isExoprt": true
   },
   {
-    "key": "badge ",
+    "key": "badge",
     "label": "图标右上角徽标的内容",
     "category": "attr",
     "schema": {
@@ -80,8 +80,34 @@
     "isExoprt": true
   },
   {
+    "key": "click",
+    "label": "点击格子时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义宫格的所有内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
     "key": "icon",
     "label": "自定义图标",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "text",
+    "label": "自定义文字",
     "category": "slot",
     "isExoprt": true
   }

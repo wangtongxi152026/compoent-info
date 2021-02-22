@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node ./src/crowller.ts",
+    "renderParent": "ts-node ./src/render/renderParent.ts",
     "renderTree": "ts-node ./src/render/render.ts"
   },
   "keywords": [],
