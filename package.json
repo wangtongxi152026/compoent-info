@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node ./src/crowller.ts",
     "renderTree": "ts-node ./src/render/render.ts",
-    "renderParent": "ts-node ./src/render/render s.ts"
+    "renderParent": "ts-node ./src/render/render-parent.ts"
   },
   "keywords": [],
   "author": "",
