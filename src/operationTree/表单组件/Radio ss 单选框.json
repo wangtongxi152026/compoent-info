@@ -15,7 +15,7 @@
               "key": "name",
               "bindProp": "name",
               "label": "Radio 单选框 标识符",
-              "type": "any"
+              "type": "string"
             },
             {
               "key": "shape",
@@ -65,13 +65,13 @@
               "key": "icon-size",
               "bindProp": "icon-size",
               "label": "图标大小，默认单位为 px",
-              "type": "number | string"
+              "type": "string"
             },
             {
               "key": "checked-color",
               "bindProp": "checked-color",
               "label": "选中状态颜色",
-              "type": "string"
+              "type": "color"
             }
           ]
         }

@@ -11,9 +11,9 @@ import {
 } from "./initData";
 
 export default class DellAnalyzer {
-  private pathName = "Collapse 折叠面板";
-  private ChildCompName = "collapse-item 折叠面板";
-  private folder = "展示组件";
+  private pathName = "RadioGroup";
+  private ChildCompName = "Radio 单选框";
+  private folder = "表单组件";
   private parentOpertion: any;
   constructor() {
     this.readCompInfo();
