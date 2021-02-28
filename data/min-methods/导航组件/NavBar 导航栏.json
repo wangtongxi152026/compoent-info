@@ -60,7 +60,7 @@
     "isExoprt": true
   },
   {
-    "key": "placeholder ",
+    "key": "placeholder",
     "label": "固定在顶部时，是否在标签位置生成一个等高的占位元素",
     "category": "attr",
     "schema": {
@@ -80,7 +80,7 @@
     "isExoprt": true
   },
   {
-    "key": "safe-area-inset-top ",
+    "key": "safe-area-inset-top",
     "label": "是否开启顶部安全区适配",
     "category": "attr",
     "schema": {

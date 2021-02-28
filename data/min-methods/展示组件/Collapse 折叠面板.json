@@ -1,10 +1,10 @@
 [
   {
-    "key": "v-model",
+    "key": "value",
     "label": "Collapse 折叠面板 当前展开面板的 name",
     "category": "attr",
     "schema": {
-      "type": "手风琴模式： number | string 非手风琴模式： (number | string)[]"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true

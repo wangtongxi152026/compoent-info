@@ -1,0 +1,226 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "Collapse 折叠面板",
+            "properties": [
+                {
+                    "label": "设置Collapse 折叠面板",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "value",
+                            "bindProp": "value",
+                            "label": "Collapse 折叠面板 当前展开面板的 name",
+                            "type": "string"
+                        },
+                        {
+                            "key": "accordion",
+                            "bindProp": "accordion",
+                            "label": "是否开启手风琴模式",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "border",
+                            "bindProp": "border",
+                            "label": "是否显示外边框",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "Collapse 折叠面板",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    },
+    {
+        "type": "EditChildNode",
+        "label": "collapse-item折叠项",
+        "node": [
+            {
+                "tag": "van-collapse-item",
+                "alias": "标签项",
+                "prop": {
+                    "$text": {
+                        "alias": "文本内容",
+                        "type": "string",
+                        "value": "文本内容"
+                    },
+                    "name": {
+                        "alias": "collapse-item 折叠面板 唯一标识符，默认为索引值",
+                        "type": "string",
+                        "value": ""
+                    },
+                    "icon": {
+                        "alias": "标题栏左侧 图标名称 或图片链接",
+                        "type": "img",
+                        "value": "//s2-cdn.oneitfarm.com/FneschpO0SfQGBvoI0g3y5F07ctO"
+                    },
+                    "size": {
+                        "alias": "是否在标题右上角显示小红点",
+                        "type": "string",
+                        "value": "",
+                        "enumList": [
+                            {
+                                "value": "large",
+                                "label": "large"
+                            },
+                            {
+                                "value": "",
+                                "label": "small"
+                            }
+                        ]
+                    },
+                    "title": {
+                        "alias": "标题栏左侧内容",
+                        "type": "string",
+                        "value": "标题"
+                    },
+                    "value": {
+                        "alias": "标题栏右侧内容",
+                        "type": "string",
+                        "value": "右侧内容"
+                    },
+                    "label": {
+                        "alias": "标题栏描述信息",
+                        "type": "string",
+                        "value": "描述信息"
+                    },
+                    "is-link": {
+                        "alias": "是否展示标题栏右侧箭头并开启点击反馈",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    "disabled": {
+                        "alias": "自定义标题类名(暂时无效)",
+                        "type": "string",
+                        "value": false
+                    },
+                    "title-class": {
+                        "alias": "左侧标题额外类名(暂时无效果)",
+                        "type": "string",
+                        "value": ""
+                    },
+                    "value-class": {
+                        "alias": "右侧内容额外类名(暂时无效果)",
+                        "type": "string",
+                        "value": ""
+                    },
+                    "label-class": {
+                        "alias": "描述信息额外类名(暂时无效果)",
+                        "type": "string",
+                        "value": ""
+                    }
+                },
+                "data": {
+                    "$style": {},
+                    "$text": "内容",
+                    "is-link": true,
+                    "title": "标签栏",
+                    "disabled": false,
+                    "dot": false,
+                    "icon": "//s2-cdn.oneitfarm.com/FneschpO0SfQGBvoI0g3y5F07ctO",
+                    "name": "标签的索引值",
+                    "replace": false,
+                    "$exports": [
+                        {
+                            "attrKey": "$text",
+                            "alias": "文本内容",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "title-class",
+                            "alias": "自定义标题类名",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "title-style",
+                            "alias": "自定义标题样式",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "replace",
+                            "alias": "是否在跳转时替换当前页面历史",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "to",
+                            "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "url",
+                            "alias": "点击后跳转的链接地址",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "name",
+                            "alias": "标签名称，作为匹配的标识符",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "info",
+                            "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "badge",
+                            "alias": "图标右上角徽标的内容",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "dot",
+                            "alias": "是否在标题右上角显示小红点",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "disabled",
+                            "alias": "是否禁用标签",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "title",
+                            "alias": "Tab-item 标签页 标题",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "v-if",
+                            "alias": "v-if指令",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "v-show",
+                            "alias": "v-show指令",
+                            "sortIdx": -1
+                        },
+                        {
+                            "attrKey": "v-model",
+                            "alias": "v-model指令",
+                            "sortIdx": -1
+                        }
+                    ],
+                    "$exportState": true
+
+                }
+            }
+        ],
+        "render_tree_node": {
+            "ins_id": "",
+            "key": ""
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": ""
+        }
+    }
+]

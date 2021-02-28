@@ -4,7 +4,7 @@
     "label": "dropdownitem 下拉菜单 当前选中项对应的 value，可以通过 v-model 双向绑定",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -24,7 +24,7 @@
     "label": "选项数组",
     "category": "attr",
     "schema": {
-      "type": "Option[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -64,7 +64,7 @@
     "label": "指定挂载的节点， 用法示例",
     "category": "attr",
     "schema": {
-      "type": "string | () => Element"
+      "type": "function"
     },
     "default": "",
     "isExoprt": true

@@ -8,8 +8,8 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel, initEditChildNode } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'Tab 标签页'
-  private folder = '导航组件'
+  private pathName = 'collapse-item 折叠面板'
+  private folder = '展示组件'
   constructor() {
     this.readCompInfo()
   }

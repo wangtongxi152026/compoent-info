@@ -1,10 +1,20 @@
 [
   {
+    "key": "$text",
+    "label": "文本内容",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
     "key": "name",
     "label": "collapse-item 折叠面板 唯一标识符，默认为索引值",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -14,7 +24,7 @@
     "label": "标题栏左侧 图标名称 或图片链接",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "img"
     },
     "default": "",
     "isExoprt": true
@@ -32,7 +42,7 @@
         },
         {
           "value": "-",
-          "label": "-"
+          "label": "small"
         }
       ]
     },
@@ -44,7 +54,7 @@
     "label": "标题栏左侧内容",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -54,7 +64,7 @@
     "label": "标题栏右侧内容",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -64,7 +74,7 @@
     "label": "标题栏描述信息",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
