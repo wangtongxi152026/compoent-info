@@ -1,0 +1,86 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Grid 宫格",
+      "properties": [
+        {
+          "label": "设置Grid 宫格",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "column-num",
+              "bindProp": "column-num",
+              "label": "Grid 宫格 列数",
+              "type": "number | string"
+            },
+            {
+              "key": "icon-size",
+              "bindProp": "icon-size",
+              "label": "图标大小，默认单位为 px",
+              "type": "number | string"
+            },
+            {
+              "key": "gutter",
+              "bindProp": "gutter",
+              "label": "格子之间的间距，默认单位为 px",
+              "type": "number | string"
+            },
+            {
+              "key": "border",
+              "bindProp": "border",
+              "label": "是否显示边框",
+              "type": "boolean"
+            },
+            {
+              "key": "center",
+              "bindProp": "center",
+              "label": "是否将格子内容居中显示",
+              "type": "boolean"
+            },
+            {
+              "key": "square",
+              "bindProp": "square",
+              "label": "是否将格子固定为正方形",
+              "type": "boolean"
+            },
+            {
+              "key": "clickable",
+              "bindProp": "clickable",
+              "label": "是否开启格子点击反馈",
+              "type": "boolean"
+            },
+            {
+              "key": "direction",
+              "bindProp": "direction",
+              "label": "格子内容排列的方向",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "horizontal",
+                  "label": "horizontal"
+                },
+                {
+                  "value": "vertical",
+                  "label": "vertical"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Grid 宫格",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

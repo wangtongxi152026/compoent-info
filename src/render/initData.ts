@@ -18,6 +18,14 @@ export function formatLabel(label: string) {
   }
 }
 
+export function formatType(label: string) {
+  if (label==='number | string') {
+    return 'string' 
+  } else {
+    return label;
+  }
+}
+
 export function initExprotArr(): ExprotItem[] {
   return [
     { attrKey: "v-if", alias: "v-if指令", sortIdx: -1 },

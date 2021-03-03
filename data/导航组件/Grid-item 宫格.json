@@ -1,11 +1,11 @@
 {
-  "TabbarItem 标签栏": {
+  "Grid-item 宫格": {
     "minthods": [
       {
-        "key": "name",
-        "label": "TabbarItem 标签栏 标签名称，作为匹配的标识符",
+        "key": "text",
+        "label": "Grid 宫格 文字",
         "type": "string",
-        "default": "当前标签的索引值"
+        "default": "-"
       },
       {
         "key": "icon",
@@ -28,13 +28,13 @@
       {
         "key": "badge ",
         "label": "图标右上角徽标的内容",
-        "type": "string",
+        "type": "number | string",
         "default": "-"
       },
       {
-        "key": "info",
+        "key": "info ",
         "label": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
-        "type": "string",
+        "type": "number | string",
         "default": "-"
       },
       {
@@ -56,11 +56,25 @@
         "default": "false"
       }
     ],
-    "envets": [],
+    "envets": [
+      {
+        "eventKey": "click",
+        "label": "点击格子时触发",
+        "param": "event: Event "
+      }
+    ],
     "slots": [
+      {
+        "slot": "default",
+        "label": "自定义宫格的所有内容"
+      },
       {
         "slot": "icon",
         "label": "自定义图标"
+      },
+      {
+        "slot": "text",
+        "label": "自定义文字"
       }
     ]
   }
