@@ -4,7 +4,7 @@
     "label": "Steps 步骤条 当前步骤",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -34,7 +34,7 @@
     "label": "激活状态颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
@@ -44,27 +44,27 @@
     "label": "未激活状态颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "active-icon",
-    "label": "激活状态底部图标，可选值见  Icon 组件",
+    "label": "激活状态底部图标，可选值见 Icon 组件",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "img"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "inactive-icon",
-    "label": "未激活状态底部图标，可选值见  Icon 组件",
+    "label": "未激活状态底部图标",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "img"
     },
     "default": "",
     "isExoprt": true

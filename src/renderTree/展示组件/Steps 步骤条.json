@@ -1,0 +1,188 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-steps",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "active-icon": "success",
+      "active-color": "#38f",
+      "active": "0",
+      "$exports": [
+        {
+          "attrKey": "click-step",
+          "alias": "点击步骤的标题或图标时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  },
+  {
+    "id": 2,
+    "parentId": 1,
+    "ins_id": "",
+    "tag": "van-step",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "$text": "买家下单",
+      "$exports": [
+        {
+          "attrKey": "$text",
+          "alias": "文本内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  },
+  {
+    "id": 3,
+    "parentId": 1,
+    "ins_id": "",
+    "tag": "van-step",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "$text": "商家接单",
+      "$exports": [
+        {
+          "attrKey": "$text",
+          "alias": "文本内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  },
+  {
+    "id": 4,
+    "parentId": 1,
+    "ins_id": "",
+    "tag": "van-step",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "$text": "买家提货",
+      "$exports": [
+        {
+          "attrKey": "$text",
+          "alias": "文本内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  },
+  {
+    "id": 5,
+    "parentId": 1,
+    "ins_id": "",
+    "tag": "van-step",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "$text": "交易完成",
+      "$exports": [
+        {
+          "attrKey": "$text",
+          "alias": "文本内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

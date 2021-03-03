@@ -1,0 +1,178 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Swipe 轮播",
+      "properties": [
+        {
+          "label": "设置Swipe 轮播",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "imgOptions",
+              "label": "Swipe 轮播数据",
+              "type": "object",
+              "properties": [
+                {
+                  "key": "fit",
+                  "bindProp": "imgOptions.fit",
+                  "label": "图片填充模式",
+                  "type": "string",
+                  "enumList": [
+                    {
+                      "label": "覆盖",
+                      "value": "cover"
+                    },
+                    {
+                      "label": "包含",
+                      "value": "contain"
+                    },
+                    {
+                      "label": "填充",
+                      "value": "fill"
+                    },
+                    {
+                      "label": "无",
+                      "value": "none"
+                    },
+                    {
+                      "label": "降低",
+                      "value": "scale-down"
+                    }
+                  ]
+                },
+                {
+                  "key": "width",
+                  "bindProp": "imgOptions.imgWidth",
+                  "label": "宽度，默认单位为 px",
+                  "type": "string"
+                },
+                {
+                  "key": "height",
+                  "bindProp": "imgOptions.imgHeight",
+                  "label": "高度，默认单位为 px",
+                  "type": "string"
+                },
+                {
+                  "key": "radius",
+                  "bindProp": "imgOptions.radius",
+                  "label": "圆角大小，默认单位为 px",
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "key": "swiperData",
+              "bindProp": "swiperData",
+              "label": "Swipe 轮播数据",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "enum-page",
+                    "key": "info",
+                    "label": "页面",
+                    "defaultValue": ""
+                  },
+                  {
+                    "type": "img",
+                    "key": "src",
+                    "label": "图片链接",
+                    "defaultValue": "//img.mukewang.com/5fb1e8030996e77018000600.png"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "autoplay",
+              "bindProp": "autoplay",
+              "label": "Swipe 轮播 自动轮播间隔，单位为 ms",
+              "type": "string"
+            },
+            {
+              "key": "duration",
+              "bindProp": "duration",
+              "label": "动画时长，单位为 ms",
+              "type": "string"
+            },
+            {
+              "key": "initial-swipe",
+              "bindProp": "initial-swipe",
+              "label": "初始位置索引值",
+              "type": "string"
+            },
+            {
+              "key": "width",
+              "bindProp": "width",
+              "label": "滑块宽度，单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "height",
+              "bindProp": "height",
+              "label": "滑块高度，单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "loop",
+              "bindProp": "loop",
+              "label": "是否开启循环播放",
+              "type": "boolean"
+            },
+            {
+              "key": "show-indicators",
+              "bindProp": "show-indicators",
+              "label": "是否显示指示器",
+              "type": "boolean"
+            },
+            {
+              "key": "vertical",
+              "bindProp": "vertical",
+              "label": "是否为纵向滚动",
+              "type": "boolean"
+            },
+            {
+              "key": "touchable",
+              "bindProp": "touchable",
+              "label": "是否可以通过手势滑动",
+              "type": "boolean"
+            },
+            {
+              "key": "stop-propagation",
+              "bindProp": "stop-propagation",
+              "label": "是否阻止滑动事件冒泡",
+              "type": "boolean"
+            },
+            {
+              "key": "lazy-render",
+              "bindProp": "lazy-render",
+              "label": "是否延迟渲染未展示的轮播",
+              "type": "boolean"
+            },
+            {
+              "key": "indicator-color",
+              "bindProp": "indicator-color",
+              "label": "指示器颜色",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Swipe 轮播",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "c5ddb6248f0247e6884af0b1e4af37d1",
+    "tag": "div",
+    "data": {
+      "$style": {}
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "3a3325c6bf9448508f167a04c9e554ce",
+    "tag": "notice-bar",
+    "data": {
+      "$style": {},
+      "text": "在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。",
+      "scrollable": false,
+      "iconType": "default",
+      "rightIcon": "closeable",
+      "icon": "//s2-cdn.oneitfarm.com/FneschpO0SfQGBvoI0g3y5F07ctO",
+      "option": "普通"
+    }
+  }
+]

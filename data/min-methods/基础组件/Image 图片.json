@@ -1,0 +1,199 @@
+[
+  {
+    "key": "src",
+    "label": "图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "fit",
+    "label": "图片填充模式",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        { "label": "覆盖", "value": "cover" },
+        { "label": "包含", "value": "contain" },
+        { "label": "填充", "value": "fill" },
+        { "label": "无", "value": "none" },
+        { "label": "降低", "value": "scale-down" }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "width",
+    "label": "宽度，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "height",
+    "label": "高度，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "radius",
+    "label": "圆角大小，默认单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "round",
+    "label": "是否显示为圆形",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "alt",
+    "label": "替代文本",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lazy-load",
+    "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-error",
+    "label": "是否展示图片加载失败提示",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-loading",
+    "label": "是否展示图片加载中提示",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "error-icon",
+    "label": "失败时提示的 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loading-icon",
+    "label": "加载时提示的 图标名称 或图片链接",
+    "category": "attr",
+    "schema": {
+      "type": "img"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "icon-prefix",
+    "label": "图标类名前缀，同 Icon 组件的class-prefix 属性",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "click",
+    "label": "点击图片时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件click",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "load",
+    "label": "图片加载完毕时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件load",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "error",
+    "label": "图片加载失败时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件error",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "自定义图片下方的内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "loading",
+    "label": "自定义加载中的提示内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "error",
+    "label": "自定义加载失败时的提示内容",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

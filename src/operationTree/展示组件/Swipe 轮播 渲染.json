@@ -1,0 +1,147 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "CustomSwiper",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "swiperData":[
+        {
+          "info": "",
+          "src": "//img1.mukewang.com/5fbb1dd709b1505218000600.png"
+        },
+        {
+          "info": "",
+          "src": "//img.mukewang.com/5fbdc12c09fd659d18000600.png"
+        },
+        {
+          "info": "",
+          "src": "//img.mukewang.com/5fb1e8030996e77018000600.png"
+        },
+        {
+          "info": "",
+          "src": "//img1.mukewang.com/5fad5c0b091cc88318000600.png"
+        },
+        {
+          "info": "",
+          "src": "//img2.mukewang.com/5ed9ddc50001f7f609000300.jpg"
+        }
+      ],
+      "duration": "500",
+      "initial-swipe": "0",
+      "width": "auto",
+      "height": "auto",
+      "loop": true,
+      "show-indicators": true,
+      "vertical": false,
+      "touchable": true,
+      "stop-propagation": true,
+      "lazy-render ": false,
+      "indicator-color": "#1989fa",
+      "$exports": [
+        {
+          "attrKey": "indicator-color",
+          "alias": "指示器颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "indicator-color",
+          "alias": "指示器颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "lazy-render ",
+          "alias": "是否延迟渲染未展示的轮播",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "stop-propagation",
+          "alias": "是否阻止滑动事件冒泡",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "touchable",
+          "alias": "是否可以通过手势滑动",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "vertical",
+          "alias": "是否为纵向滚动",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "show-indicators",
+          "alias": "是否显示指示器",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "loop",
+          "alias": "是否开启循环播放",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "height",
+          "alias": "滑块高度，单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "width",
+          "alias": "滑块宽度，单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "initial-swipe",
+          "alias": "初始位置索引值",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "duration",
+          "alias": "动画时长，单位为 ms",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "autoplay",
+          "alias": "Swipe 轮播 自动轮播间隔，单位为 ms",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "change",
+          "alias": "每一页轮播结束后触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

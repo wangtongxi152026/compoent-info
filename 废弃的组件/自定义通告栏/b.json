@@ -1,0 +1,114 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "NoticeBar 通知栏",
+      "properties": [
+        {
+          "label": "设置通知栏",
+          "key": "card",
+          "type": "object",
+          "properties": [
+            {
+              "label": "文本",
+              "key": "text",
+              "bindProp": "text",
+              "type": "string"
+            },
+            {
+              "key": "scrollable",
+              "bindProp": "scrollable",
+              "label": "是否滚动",
+              "type": "boolean"
+            },
+            {
+              "key": "iconType",
+              "bindProp": "iconType",
+              "label": "自定义图标（需要开启）",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "普通",
+                  "value": "default"
+                },
+                {
+                  "label": "空图标",
+                  "value": "null"
+                },
+                {
+                  "label": "自定义左侧图标",
+                  "value": "customer"
+                }
+              ]
+            },
+            {
+              "key": "icon",
+              "bindProp": "icon",
+              "label": "自定义图标（需要开启）",
+              "type": "img"
+            },
+            {
+              "key": "rightIcon",
+              "bindProp": "rightIcon",
+              "label": "右侧icon",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "可跳转",
+                  "value": "link"
+                },
+                {
+                  "label": "可关闭",
+                  "value": "closeable"
+                },
+                {
+                  "label": "空图标",
+                  "value": ""
+                }
+              ]
+            },
+            {
+              "label": "类型",
+              "key": "option",
+              "bindProp": "option",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "普通",
+                  "value": "普通"
+                },
+                {
+                  "label": "消息",
+                  "value": "消息"
+                },
+                {
+                  "label": "嫩绿",
+                  "value": "嫩绿"
+                },
+                {
+                  "label": "粉色",
+                  "value": "粉色"
+                },
+                {
+                  "label": "天蓝",
+                  "value": "天蓝"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "NoticeBar 通知栏",
+    "render_tree_node": {
+      "ins_id": "3a3325c6bf9448508f167a04c9e554ce",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "a72b572a1c0a4e37b330b6278cedf36e",
+      "key": "schema"
+    }
+  }
+]

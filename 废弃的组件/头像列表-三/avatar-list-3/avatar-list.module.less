@@ -1,0 +1,123 @@
+// ant-card
+.ant-card {
+  display: grid;
+  padding: 12px 0;
+  margin: 0 12px;
+  padding-bottom: 12px;
+  grid-template-columns: auto 1fr;
+  background-color: #fff;
+  column-gap: 12px;
+  .card-left {
+    .card-img {
+      border-radius: 8px;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .card-right {
+    .two-line {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box; //作为弹性伸缩盒子模型显示。
+      -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+      -webkit-line-clamp: 2; //显示的行
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      .margin-l {
+        margin-left: 4px;
+      }
+      .title {
+        font-size: 15px;
+        color: #333333;
+        font-weight: 500;
+      }
+    }
+    .subtitle {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #999;
+    }
+    .detail {
+      margin-top: 4px;
+      font-size: 13px;
+      margin-bottom: 8px;
+      color: #999;
+      .detail-wrapper {
+        display: inline-block;
+        .divider {
+          display: inline-block;
+          margin: 0 4px;
+          color: #eeeeee;
+        }
+        .detail-item {
+          display: inline-block;
+          font-size: 13px;
+          color: #999999;
+        }
+      }
+    }
+    .payInfo {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0 4px 0;
+      .price {
+        font-size: 18px;
+        color: #ff3b30;
+        .price-unit {
+          font-size: 13px;
+          color: #999999;
+        }
+      }
+      .action {
+        padding: 4px 12px;
+        cursor: pointer;
+        font-size: 12px;
+        color: #1677ff;
+        border: 1px solid #1677ff;
+        border-radius: 12px;
+      }
+    }
+
+    .tags {
+      line-height: 15px;
+      max-height: 35px;
+      overflow: hidden;
+      .tag-wrapper {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        display: inline-block;
+      }
+      .tag {
+        display: inline-block;
+        background: #ffece3;
+        border-radius: 2px;
+        font-size: 11px;
+        color: #ff6010;
+        letter-spacing: 0;
+        padding: 0 2px;
+      }
+    }
+    .desc {
+      margin: 4px 0;
+      padding: 8px;
+      background: #f5f5f5;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #999999;
+    }
+    .corporation {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #999999;
+    }
+  }
+}
+.border{
+  border-bottom: 1px solid #eee;
+}

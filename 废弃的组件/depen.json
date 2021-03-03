@@ -1,0 +1,5 @@
+[
+  { "type": "npm", "value": { "name": "@idg/gui-h5-base-component", "version": "0.0.3" } },
+  { "type": "import", "value": { "source": "@idg/gui-h5-base-component", "imported": "ThreeIcon", "local": "ThreeIcon" } },
+  { "type": "component", "value": { "source": "ThreeIcon", "name": "ThreeIcon" } }
+]

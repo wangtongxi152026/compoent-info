@@ -1,0 +1,114 @@
+
+[
+  {
+    "key": "text",
+    "label": "文本",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "fontWeight",
+    "label": "字重",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        { "label": "100", "value": 100 },
+        { "label": "200", "value": 200 },
+        { "label": "300", "value": 300 },
+        { "label": "400", "value": 400 },
+        { "label": "500", "value": 500 },
+        { "label": "600", "value": 600 },
+        { "label": "700", "value": 700 },
+        { "label": "800", "value": 800 },
+        { "label": "900", "value": 900 }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "color",
+    "label": "文字颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "isLimit",
+    "label": "是否限行数",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lineLimit",
+    "label": "行数限制值",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "size",
+    "label": "尺寸",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        { "label": "10px", "value": "10px" },
+        { "label": "11px", "value": "11px" },
+        { "label": "12px", "value": "12px" },
+        { "label": "13px", "value": "13px" },
+        { "label": "15px", "value": "15px" },
+        { "label": "17px", "value": "17px" },
+        { "label": "18px", "value": "18px" },
+        { "label": "20px", "value": "20px" },
+        { "label": "24px", "value": "24px" },
+        { "label": "27px", "value": "27px" }
+      ]
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lineHeight",
+    "label": "行高",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clickTextHandle",
+    "label": "点击文本时触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件clickTextHandle",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "path": "043fc368aeee4f2791cbfdb01f39abc3.gui.Txt",
+    "category": "editor_render"
+  }
+]

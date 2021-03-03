@@ -6,82 +6,137 @@ import {
   Events,
   Slots
 } from './types/types'
-const html = `<section><h1>Grid 宫格</h1>
+const html = `<section><h1>swipeitem 轮播</h1>
 <div class="card"><h3 id="jie-shao">介绍</h3>
-<p>宫格可以在水平方向上把页面分隔成等宽度的区块，用于展示内容或进行页面导航。</p>
+<p>用于循环播放一组图片或内容。</p>
 </div><div class="card"><h3 id="yin-ru">引入</h3>
 <pre><code class="language-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
-<span class="hljs-keyword">import</span> { Grid, GridItem } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
+<span class="hljs-keyword">import</span> { Swipe, SwipeItem } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
 
-Vue.use(Grid);
-Vue.use(GridItem);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
 </code></pre>
 </div><h2 id="dai-ma-yan-shi">代码演示</h2>
 <div class="card"><h3 id="ji-chu-yong-fa">基础用法</h3>
-<p>通过 <code>icon</code> 属性设置格子内的图标，<code>text</code> 属性设置文字内容。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+<p>每个 SwipeItem 代表一张轮播卡片，可以通过 <code>autoplay</code> 属性设置自动轮播的间隔。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-swipe"</span> <span class="hljs-attr">:autoplay</span>=<span class="hljs-string">"3000"</span> <span class="hljs-attr">indicator-color</span>=<span class="hljs-string">"white"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.my-swipe</span> <span class="hljs-selector-class">.van-swipe-item</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">150px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#39a9ed</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="zi-ding-yi-lie-shu">自定义列数</h3>
-<p>默认一行展示四个格子，可以通过 <code>column-num</code> 自定义列数。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"3"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"value in 6"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+</div><div class="card"><h3 id="tu-pian-lan-jia-zai">图片懒加载</h3>
+<p>当 Swipe 中含有图片时，可以配合 <a href="#/zh-CN/lazyload" target="_blank">Lazyload</a> 组件实现图片懒加载。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">:autoplay</span>=<span class="hljs-string">"3000"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"(image, index) in images"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"index"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">v-lazy</span>=<span class="hljs-string">"image"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="zi-ding-yi-nei-rong">自定义内容</h3>
-<p>通过插槽可以自定义格子展示的内容。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:border</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"3"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">van-image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://img01.yzcdn.cn/vant/apple-1.jpg"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-grid-item</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">van-image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://img01.yzcdn.cn/vant/apple-2.jpg"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-grid-item</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">van-image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://img01.yzcdn.cn/vant/apple-3.jpg"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">van-grid-item</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> { Lazyload } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
+
+Vue.use(Lazyload);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data() {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">images</span>: [
+        <span class="hljs-string">'https://img01.yzcdn.cn/vant/apple-1.jpg'</span>,
+        <span class="hljs-string">'https://img01.yzcdn.cn/vant/apple-2.jpg'</span>,
+      ],
+    };
+  },
+};
 </code></pre>
-</div><div class="card"><h3 id="zheng-fang-xing-ge-zi">正方形格子</h3>
-<p>设置 <code>square</code> 属性后，格子的高度会和宽度保持一致。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">square</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"value in 8"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+</div><div class="card"><h3 id="jian-ting-change-shi-jian">监听 change 事件</h3>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> @<span class="hljs-attr">change</span>=<span class="hljs-string">"onChange"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="ge-zi-jian-ju">格子间距</h3>
-<p>通过 <code>gutter</code> 属性设置格子之间的距离。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:gutter</span>=<span class="hljs-string">"10"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">"value in 8"</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> { Toast } <span class="hljs-keyword">from</span> <span class="hljs-string">'vant'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">methods</span>: {
+    onChange(index) {
+      Toast(<span class="hljs-string">'当前 Swipe 索引：'</span> + index);
+    },
+  },
+};
 </code></pre>
-</div><div class="card"><h3 id="nei-rong-heng-pai">内容横排</h3>
-<p>将 <code>direction</code> 属性设置为 <code>horizontal</code>，可以让宫格的内容呈横向排列。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">"horizontal"</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"photo-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+</div><div class="card"><h3 id="zong-xiang-gun-dong">纵向滚动</h3>
+<p>设置 <code>vertical</code> 属性后滑块会纵向排列，此时需要指定滑块容器的高度。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height: 200px;"</span> <span class="hljs-attr">vertical</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="ye-mian-dao-hang">页面导航</h3>
-<p>通过 <code>to</code> 属性设置 <code>vue-router</code> 跳转链接，通过 <code>url</code> 属性设置 URL 跳转链接。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">clickable</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"home-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"路由跳转"</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"URL 跳转"</span> <span class="hljs-attr">url</span>=<span class="hljs-string">"/vant/mobile.html"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+</div><div class="card"><h3 id="zi-ding-yi-hua-kuai-da-xiao">自定义滑块大小</h3>
+<p>滑块默认宽度为 <code>100%</code>，可以通过 <code>width</code> 属性设置单个滑块的宽度。纵向滚动模式下，可以通过 <code>height</code> 属性设置单个滑块的高度。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">:loop</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">:width</span>=<span class="hljs-string">"300"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe</span>&gt;</span>
 </code></pre>
-</div><div class="card"><h3 id="hui-biao-ti-shi">徽标提示</h3>
-<p>设置 <code>dot</code> 属性后，会在图标右上角展示一个小红点。设置 <code>badge</code> 属性后，会在图标右上角展示相应的徽标。</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-grid</span> <span class="hljs-attr">:column-num</span>=<span class="hljs-string">"2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"home-o"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> <span class="hljs-attr">dot</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">van-grid-item</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">text</span>=<span class="hljs-string">"文字"</span> <span class="hljs-attr">badge</span>=<span class="hljs-string">"99+"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">van-grid</span>&gt;</span>
+<blockquote>
+<p>目前不支持在循环滚动模式下自定义滑块大小，因此需要将 loop 设置为 false。</p>
+</blockquote>
+</div><div class="card"><h3 id="zi-ding-yi-zhi-shi-qi">自定义指示器</h3>
+<p>通过 <code>indicator</code> 插槽可以自定义指示器的样式。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> @<span class="hljs-attr">change</span>=<span class="hljs-string">"onChange"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">van-swipe-item</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">indicator</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"custom-indicator"</span>&gt;</span>{{ current + 1 }}/4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">van-swipe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.custom-indicator</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">2px</span> <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.1</span>);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data() {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">current</span>: <span class="hljs-number">0</span>,
+    };
+  },
+  <span class="hljs-attr">methods</span>: {
+    onChange(index) {
+      <span class="hljs-keyword">this</span>.current = index;
+    },
+  },
+};
 </code></pre>
 </div><h2 id="api">API</h2>
-<div class="card"><h3 id="grid-props">Grid Props</h3>
+<div class="card"><h3 id="swipe-props">Swipe Props</h3>
 <table>
 <thead>
 <tr>
@@ -93,123 +148,97 @@ Vue.use(GridItem);
 </thead>
 <tbody>
 <tr>
-<td>column-num</td>
-<td>列数</td>
+<td>autoplay</td>
+<td>自动轮播间隔，单位为 ms</td>
 <td><em>number | string</em></td>
-<td><code>4</code></td>
+<td>-</td>
 </tr>
 <tr>
-<td>icon-size</td>
-<td>图标大小，默认单位为<code>px</code></td>
+<td>duration</td>
+<td>动画时长，单位为 ms</td>
 <td><em>number | string</em></td>
-<td><code>28px</code></td>
+<td><code>500</code></td>
 </tr>
 <tr>
-<td>gutter</td>
-<td>格子之间的间距，默认单位为<code>px</code></td>
+<td>initial-swipe</td>
+<td>初始位置索引值</td>
 <td><em>number | string</em></td>
 <td><code>0</code></td>
 </tr>
 <tr>
-<td>border</td>
-<td>是否显示边框</td>
+<td>width</td>
+<td>滑块宽度，单位为<code>px</code></td>
+<td><em>number | string</em></td>
+<td><code>auto</code></td>
+</tr>
+<tr>
+<td>height</td>
+<td>滑块高度，单位为<code>px</code></td>
+<td><em>number | string</em></td>
+<td><code>auto</code></td>
+</tr>
+<tr>
+<td>loop</td>
+<td>是否开启循环播放</td>
 <td><em>boolean</em></td>
 <td><code>true</code></td>
 </tr>
 <tr>
-<td>center</td>
-<td>是否将格子内容居中显示</td>
+<td>show-indicators</td>
+<td>是否显示指示器</td>
 <td><em>boolean</em></td>
 <td><code>true</code></td>
 </tr>
 <tr>
-<td>square</td>
-<td>是否将格子固定为正方形</td>
+<td>vertical</td>
+<td>是否为纵向滚动</td>
 <td><em>boolean</em></td>
 <td><code>false</code></td>
 </tr>
 <tr>
-<td>clickable</td>
-<td>是否开启格子点击反馈</td>
+<td>touchable</td>
+<td>是否可以通过手势滑动</td>
+<td><em>boolean</em></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>stop-propagation</td>
+<td>是否阻止滑动事件冒泡</td>
+<td><em>boolean</em></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>lazy-render <code>v2.5.8</code></td>
+<td>是否延迟渲染未展示的轮播</td>
 <td><em>boolean</em></td>
 <td><code>false</code></td>
 </tr>
 <tr>
-<td>direction <code>v2.8.2</code></td>
-<td>格子内容排列的方向，可选值为 <code>horizontal</code></td>
+<td>indicator-color</td>
+<td>指示器颜色</td>
 <td><em>string</em></td>
-<td><code>vertical</code></td>
+<td><code>#1989fa</code></td>
 </tr>
 </tbody>
 </table>
-</div><div class="card"><h3 id="griditem-props">GridItem Props</h3>
+</div><div class="card"><h3 id="swipe-events">Swipe Events</h3>
 <table>
 <thead>
 <tr>
-<th>参数</th>
+<th>事件名</th>
 <th>说明</th>
-<th>类型</th>
-<th>默认值</th>
+<th>回调参数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>text</td>
-<td>文字</td>
-<td><em>string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>icon</td>
-<td><a href="#/zh-CN/icon" target="_blank">图标名称</a>或图片链接</td>
-<td><em>string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>icon-prefix <code>v2.5.3</code></td>
-<td>图标类名前缀，同 Icon 组件的 <a href="#/zh-CN/icon#props" target="_blank">class-prefix 属性</a></td>
-<td><em>string</em></td>
-<td><code>van-icon</code></td>
-</tr>
-<tr>
-<td>dot</td>
-<td>是否显示图标右上角小红点</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
-</tr>
-<tr>
-<td>badge <code>v2.5.6</code></td>
-<td>图标右上角徽标的内容</td>
-<td><em>number | string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>info <code>2.2.1</code></td>
-<td>图标右上角徽标的内容（已废弃，请使用 badge 属性）</td>
-<td><em>number | string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>url</td>
-<td>点击后跳转的链接地址</td>
-<td><em>string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>to</td>
-<td>点击后跳转的目标路由对象，同 vue-router 的 <a href="https://router.vuejs.org/zh/api/#to" target="_blank">to 属性</a></td>
-<td><em>string | object</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>replace</td>
-<td>是否在跳转时替换当前页面历史</td>
-<td><em>boolean</em></td>
-<td><code>false</code></td>
+<td>change</td>
+<td>每一页轮播结束后触发</td>
+<td>index, 当前页的索引</td>
 </tr>
 </tbody>
 </table>
-</div><div class="card"><h3 id="griditem-events">GridItem Events</h3>
+</div><div class="card"><h3 id="swipeitem-events">SwipeItem Events</h3>
 <table>
 <thead>
 <tr>
@@ -221,12 +250,67 @@ Vue.use(GridItem);
 <tbody>
 <tr>
 <td>click</td>
-<td>点击格子时触发</td>
+<td>点击时触发</td>
 <td><em>event: Event</em></td>
 </tr>
 </tbody>
 </table>
-</div><div class="card"><h3 id="griditem-slots">GridItem Slots</h3>
+</div><div class="card"><h3 id="swipe-fang-fa">Swipe 方法</h3>
+<p>通过 ref 可以获取到 Swipe 实例并调用实例方法，详见<a href="#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa" target="_blank">组件实例方法</a>。</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+<th>参数</th>
+<th>返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prev</td>
+<td>切换到上一轮播</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>next</td>
+<td>切换到下一轮播</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>swipeTo</td>
+<td>切换到指定位置</td>
+<td>index: number, options: Options</td>
+<td>-</td>
+</tr>
+<tr>
+<td>resize</td>
+<td>外层元素大小或组件显示状态变化时，可以调用此方法来触发重绘</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div><div class="card"><h3 id="swipeto-options-ge-shi">swipeTo Options 格式</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>immediate</td>
+<td>是否跳过动画</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+</div><div class="card"><h3 id="swipe-slots">Swipe Slots</h3>
 <table>
 <thead>
 <tr>
@@ -237,15 +321,11 @@ Vue.use(GridItem);
 <tbody>
 <tr>
 <td>default</td>
-<td>自定义宫格的所有内容</td>
+<td>轮播内容</td>
 </tr>
 <tr>
-<td>icon</td>
-<td>自定义图标</td>
-</tr>
-<tr>
-<td>text</td>
-<td>自定义文字</td>
+<td>indicator</td>
+<td>自定义指示器</td>
 </tr>
 </tbody>
 </table>
@@ -261,37 +341,59 @@ Vue.use(GridItem);
 </thead>
 <tbody>
 <tr>
-<td>@grid-item-content-padding</td>
-<td><code>@padding-md @padding-xs</code></td>
+<td>@swipe-indicator-size</td>
+<td><code>6px</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@grid-item-content-background-color</td>
-<td><code>@white</code></td>
+<td>@swipe-indicator-margin</td>
+<td><code>@padding-sm</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@grid-item-content-active-color</td>
-<td><code>@active-color</code></td>
+<td>@swipe-indicator-active-opacity</td>
+<td><code>1</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@grid-item-icon-size</td>
-<td><code>28px</code></td>
+<td>@swipe-indicator-inactive-opacity</td>
+<td><code>0.3</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@grid-item-text-color</td>
-<td><code>@gray-7</code></td>
+<td>@swipe-indicator-active-background-color</td>
+<td><code>@blue</code></td>
 <td>-</td>
 </tr>
 <tr>
-<td>@grid-item-text-font-size</td>
-<td><code>@font-size-sm</code></td>
+<td>@swipe-indicator-inactive-background-color</td>
+<td><code>@border-color</code></td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
+</div><h2 id="chang-jian-wen-ti">常见问题</h2>
+<div class="card"><h3 id="hua-dong-lun-bo-shi-wei-shi-me-chu-fa-liao-click-shi-jian">滑动轮播时为什么触发了 click 事件？</h3>
+<p>这种情况通常是由于项目中引入了<code>fastclick</code>库导致的。<code>fastclick</code>的原理是通过 Touch 事件模拟出 click 事件，而 Swipe 内部默认会阻止 touchmove 事件冒泡，干扰了 fastclick 的判断，导致出现这个问题。</p>
+<p>将 Swipe 组件的 stop-propagation 属性设置为 false 即可避免该问题。</p>
+</div><div class="card"><h3 id="zai-zhuo-mian-duan-wu-fa-cao-zuo-zu-jian">在桌面端无法操作组件？</h3>
+<p>参见<a href="#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei" target="_blank">桌面端适配</a>。</p>
+</div><div class="card"><h3 id="swipe-zu-jian-gong-neng-tai-shao-wu-fa-shi-xian-fu-za-xiao-guo">Swipe 组件功能太少，无法实现复杂效果？</h3>
+<p>Vant 中的 Swipe 组件是比较轻量的，因此功能也比较基础。如果需要更复杂的轮播效果，推荐使用社区里一些优质的轮播库，比如 <a href="https://github.com/surmon-china/vue-awesome-swiper" target="_blank">vue-awesome-swiper</a>。</p>
+</div><div class="card"><h3 id="zu-jian-cong-yin-cang-zhuang-tai-qie-huan-dao-xian-shi-zhuang-tai-shi-wu-fa-zheng-que-xuan-ran">组件从隐藏状态切换到显示状态时，无法正确渲染？</h3>
+<p>Swipe 组件在挂载时，会获取自身的宽度，并计算出轮播图的位置。如果组件一开始处于隐藏状态，则获取到的宽度永远为 0，因此无法正确计算位置。</p>
+<h4 id="jie-jue-fang-fa">解决方法</h4>
+<p>方法一，如果是使用 <code>v-show</code> 来控制组件展示的，则替换为 <code>v-if</code> 即可解决此问题：</p>
+<pre><code class="language-html"><span class="hljs-comment">&lt;!-- Before --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">"show"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- After --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">"show"</span> /&gt;</span>
+</code></pre>
+<p>方法二，调用组件的 resize 方法来主动触发重绘：</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">van-swipe</span> <span class="hljs-attr">v-show</span>=<span class="hljs-string">"show"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"swipe"</span> /&gt;</span>
+</code></pre>
+<pre><code class="language-js"><span class="hljs-keyword">this</span>.$refs.swipe.resize();
+</code></pre>
 </div></section>`;
 
 const attrObj = (item: Minthods) => {

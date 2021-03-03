@@ -1,0 +1,101 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "头像列表-4",
+      "properties": [
+        {
+          "label": "设置头像列表-4",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "listData",
+              "bindProp": "listData",
+              "type": "array",
+              "label": "用户数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "img",
+                    "key": "img",
+                    "label": "头像",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/Fir346p_8mbdQBZ8O5CPEd5x_E9Y"
+                  },
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "姓名",
+                    "defaultValue": "姓名"
+                  },
+                  {
+                    "type": "string",
+                    "key": "tag",
+                    "label": "标签",
+                    "defaultValue": "VIP投资人"
+                  },
+                  {
+                    "type": "string",
+                    "key": "descripiton",
+                    "label": "描述",
+                    "defaultValue": "要求合伙人能力，想创业可以投点资金的，经验不足没关系，只要对行业有热爱，我相信我们一定可以经营好的非…"
+                  },
+                  {
+                    "key": "detail",
+                    "type": "array",
+                    "label": "简介",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "label",
+                          "label": "标签",
+                          "defaultValue": "VIP投资人"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "key": "tags",
+                    "type": "array",
+                    "label": "标签组",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "label",
+                          "label": "标签",
+                          "defaultValue": "通信设备"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "头像列表-4",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

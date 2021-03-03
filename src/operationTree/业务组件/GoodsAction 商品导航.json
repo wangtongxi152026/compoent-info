@@ -1,0 +1,340 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "GoodsAction 商品导航",
+      "properties": [
+        {
+          "label": "设置GoodsAction 商品导航",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "safe-area-inset-bottom",
+              "bindProp": "safe-area-inset-bottom",
+              "label": "GoodsAction 商品导航 是否开启 底部安全区适配 ",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "GoodsAction 商品导航",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  },
+  {
+    "type": "EditChildNode",
+    "label": "goodsactionicon 商品图标导航",
+    "node": [
+      {
+        "tag": "van-goods-action-icon",
+        "alias": "图标项",
+        "prop": {
+          "text": {
+            "alias": "goodsactionicon 商品图标导航 按钮文字",
+            "type": "string",
+            "value": "按钮"
+          },
+          "icon": {
+            "alias": "图标",
+            "type": "img",
+            "value": "//s2-cdn.oneitfarm.com/Fh-LZvOlCmcCrSy4NjrhqqaKX32L"
+          },
+          "color": {
+            "alias": "图标颜色（仅vant图标库）",
+            "type": "color",
+            "value": "#323233"
+          },
+          "dot": {
+            "alias": "是否显示图标右上角小红点",
+            "type": "boolean",
+            "value": false
+          },
+          "badge": {
+            "alias": "图标右上角徽标的内容",
+            "type": "string",
+            "value": ""
+          },
+          "info": {
+            "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+            "type": "string",
+            "value": ""
+          },
+          "url": {
+            "alias": "点击后跳转的链接地址",
+            "type": "string",
+            "value": ""
+          },
+          "to": {
+            "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+            "type": "string",
+            "value": ""
+          },
+          "replace": {
+            "alias": "是否在跳转时替换当前页面历史",
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "data": {
+          "$style": {},
+          "color": "#323233",
+          "dot ": false,
+          "replace": false,
+          "$exports": [
+            {
+              "attrKey": "replace",
+              "alias": "是否在跳转时替换当前页面历史",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "to",
+              "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "url",
+              "alias": "点击后跳转的链接地址",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "info",
+              "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "badge ",
+              "alias": "图标右上角徽标的内容",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "dot ",
+              "alias": "是否显示图标右上角小红点",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon-class",
+              "alias": "图标额外类名",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "color",
+              "alias": "图标颜色",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon",
+              "alias": "图标",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "text",
+              "alias": "goodsactionicon 商品图标导航 按钮文字",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-if",
+              "alias": "v-if指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-show",
+              "alias": "v-show指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-model",
+              "alias": "v-model指令",
+              "sortIdx": -1
+            }
+          ]
+        },
+        "children": [
+          {
+            "tag": "GuiLayout",
+            "disabled": true,
+            "data": {
+              "$style": {},
+              "$exports": []
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "render_tree_node": {
+      "ins_id": "",
+      "key": ""
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": ""
+    }
+  },
+  {
+    "type": "EditChildNode",
+    "label": "goodsactionbutton 商品图标导航",
+    "node": [
+      {
+        "tag": "van-goods-action-button",
+        "alias": "按钮项",
+        "prop": {
+          "text": {
+            "alias": "goodsactionbutton 商品图标导航 按钮文字",
+            "type": "string",
+            "value": ""
+          },
+          "type": {
+            "alias": "按钮类型",
+            "type": "enum",
+            "value": "default",
+            "enumList": [
+              {
+                "value": "primary",
+                "label": "primary"
+              },
+              {
+                "value": "info",
+                "label": "info"
+              },
+              {
+                "value": "warning",
+                "label": "warning"
+              },
+              {
+                "value": "danger",
+                "label": "danger"
+              },
+              {
+                "value": "default",
+                "label": "default"
+              }
+            ]
+          },
+          "color": {
+            "alias": "按钮颜色，支持传入 linear-gradient 渐变色",
+            "type": "color",
+            "value": ""
+          },
+          "icon": {
+            "alias": "左侧图标",
+            "type": "img",
+            "value": "-"
+          },
+          "disabled": {
+            "alias": "是否禁用按钮",
+            "type": "boolean",
+            "value": false
+          },
+          "loading": {
+            "alias": "是否显示为加载状态",
+            "type": "boolean",
+            "value": false
+          },
+          "url": {
+            "alias": "点击后跳转的链接地址",
+            "type": "string",
+            "value": "-"
+          },
+          "to": {
+            "alias": "点击后跳转的目标路由对象",
+            "type": "string",
+            "value": ""
+          },
+          "replace": {
+            "alias": "是否在跳转时替换当前页面历史",
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "data": {
+          "$style": {},
+          "type": "default",
+          "disabled": false,
+          "loading": false,
+          "replace": false,
+          "$exports": [
+            {
+              "attrKey": "replace",
+              "alias": "是否在跳转时替换当前页面历史",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "to",
+              "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "url",
+              "alias": "点击后跳转的链接地址",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "loading",
+              "alias": "是否显示为加载状态",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "disabled",
+              "alias": "是否禁用按钮",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon",
+              "alias": "左侧 图标名称 或图片链接",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "color",
+              "alias": "按钮颜色，支持传入 linear-gradient 渐变色",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "type",
+              "alias": "按钮类型，可选值为  primary info warning danger",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "text",
+              "alias": "goodsactionbutton 商品图标导航 按钮文字",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-if",
+              "alias": "v-if指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-show",
+              "alias": "v-show指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-model",
+              "alias": "v-model指令",
+              "sortIdx": -1
+            }
+          ]
+        },
+        "children": []
+      }
+    ],
+    "render_tree_node": {
+      "ins_id": "",
+      "key": ""
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": ""
+    }
+  }
+]

@@ -4,7 +4,7 @@
     "label": "DropdownMenu 下拉菜单 菜单标题和选项的选中态颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true
@@ -16,6 +16,10 @@
     "schema": {
       "type": "enum",
       "enumList": [
+        {
+          "value": "up",
+          "label": "up"
+        },
         {
           "value": "down",
           "label": "down"
@@ -30,7 +34,7 @@
     "label": "菜单栏 z-index 层级",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -40,7 +44,7 @@
     "label": "动画时长，单位秒",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true

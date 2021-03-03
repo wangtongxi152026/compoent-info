@@ -1,0 +1,95 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "头像列表-3",
+      "properties": [
+        {
+          "label": "设置头像列表-3",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "avatarList",
+              "bindProp": "avatarList",
+              "type": "array",
+              "label": "用户数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "img",
+                    "key": "img",
+                    "label": "头像",
+                    "defaultValue":"//s2-cdn.oneitfarm.com/Fir346p_8mbdQBZ8O5CPEd5x_E9Y"
+                  },
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "label": "姓名",
+                    "defaultValue": "小红"
+                  },
+                  {
+                    "type": "string",
+                    "key": "tag",
+                    "label": "标签",
+                    "defaultValue": "VIP投资人"
+                  },
+                  {
+                    "key": "detail",
+                    "type": "array",
+                    "label": "简介",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "label",
+                          "label": "标签",
+                          "defaultValue": "浙商创投"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "key": "descripiton",
+                    "type": "array",
+                    "label": "角色介绍",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "label",
+                          "label": "角色介绍",
+                          "defaultValue": "投资轮次：A轮、B轮、B+轮、C轮"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "头像列表-2",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

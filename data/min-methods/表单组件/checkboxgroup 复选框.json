@@ -1,10 +1,10 @@
 [
   {
-    "key": "v-model (value)",
+    "key": "value",
     "label": "checkboxgroup 复选框 所有选中项的标识符",
     "category": "attr",
     "schema": {
-      "type": "any[]"
+      "type": "array"
     },
     "default": "",
     "isExoprt": true
@@ -24,7 +24,7 @@
     "label": "最大可选数， 0 为无限制",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -54,7 +54,7 @@
     "label": "所有复选框的图标大小，默认单位为  px",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -64,7 +64,7 @@
     "label": "所有复选框的选中状态颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true

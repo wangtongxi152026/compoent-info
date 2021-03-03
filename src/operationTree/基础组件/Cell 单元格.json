@@ -1,0 +1,40 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Cell 单元格",
+      "properties": [
+        {
+          "label": "设置Cell 单元格",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "Cell 单元格 分组标题",
+              "type": "string"
+            },
+            {
+              "key": "border",
+              "bindProp": "border",
+              "label": "是否显示外边框",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Cell 单元格",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

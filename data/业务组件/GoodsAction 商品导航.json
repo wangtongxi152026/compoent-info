@@ -1,1 +1,14 @@
-{"GoodsAction 商品导航":{"minthods":[{"key":"safe-area-inset-bottom","label":"GoodsAction 商品导航 是否开启 底部安全区适配 ","type":"boolean","default":"true"}],"envets":[],"slots":[]}}
+{
+  "GoodsAction 商品导航": {
+    "minthods": [
+      {
+        "key": "safe-area-inset-bottom",
+        "label": "GoodsAction 商品导航 是否开启 底部安全区适配 ",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "envets": [],
+    "slots": []
+  }
+}

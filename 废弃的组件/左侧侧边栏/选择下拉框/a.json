@@ -1,0 +1,81 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "817a2f1bf8d942ae8f19aa6017f10a7a",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "f998a5a635f94b1ea33a58d096fee35d",
+    "tag": "select-button-group",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "title1": "南京",
+      "title2": "综合",
+      "title3": "销量",
+      "groupData": [
+        {
+          "name": "主题",
+          "description": "",
+          "value": "",
+          "group": [
+            { "label": "全部", "value": "1" },
+            { "label": "设计logo", "value": "2" },
+            { "label": "商标设计", "value": "3" },
+            { "label": "标志设计", "value": "4" },
+            { "label": "品牌设计", "value": "5" },
+            { "label": "图形设计", "value": "6" },
+            { "label": "标志logo", "value": "7" },
+            { "label": "平面logo", "value": "8" },
+            { "label": "卡通标志", "value": "9" }
+          ]
+        },
+        {
+          "name": "服务保障",
+          "description": "辅助文字",
+          "value": "",
+          "group": [
+            { "label": "全部", "value": "1" },
+            { "label": "选项一", "value": "2" },
+            { "label": "选项二", "value": "3" },
+            { "label": "选项三", "value": "4" },
+            { "label": "选项四", "value": "5" },
+            { "label": "选项五", "value": "6" },
+            { "label": "选项六", "value": "7" },
+            { "label": "选项七", "value": "8" },
+            { "label": "选项八", "value": "9" }
+          ]
+        }
+      ],
+      "general": [
+        {
+          "label": "综合",
+          "value": "1"
+        },
+        {
+          "label": "评分降序",
+          "value": "2"
+        },
+        {
+          "label": "价格升序",
+          "value": "3"
+        },
+        {
+          "label": "价格降序",
+          "value": "4"
+        }
+      ]
+    }
+  }
+]

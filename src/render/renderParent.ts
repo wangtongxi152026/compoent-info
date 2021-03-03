@@ -8,8 +8,8 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel, initEditChildNode } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'Tabbar 标签栏'
-  private folder = '导航组件'
+  private pathName = 'checkboxgroup 复选框'
+  private folder = '表单组件'
   constructor() {
     this.readCompInfo()
   }

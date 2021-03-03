@@ -2,7 +2,7 @@
   "List 列表": {
     "minthods": [
       {
-        "key": "v-model",
+        "key": "value",
         "label": "List 列表 是否处于加载状态，加载过程中不触发 load 事件",
         "type": "boolean",
         "default": "false"
@@ -22,7 +22,7 @@
       {
         "key": "offset",
         "label": "滚动条与底部距离小于 offset 时触发 load 事件",
-        "type": "number | string",
+        "type": "string",
         "default": "300"
       },
       {
@@ -58,6 +58,10 @@
           {
             "value": "down",
             "label": "down"
+          },
+          {
+            "value": "up",
+            "label": "up"
           }
         ]
       }

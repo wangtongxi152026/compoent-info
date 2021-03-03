@@ -35,7 +35,7 @@
       "closeable": true,
       "close-icon": "cross",
       "close-icon-position": "top-right",
-      "transition-appear ": false,
+      "transition-appear": false,
       "safe-area-inset-bottom": false,
       "$exports": [
         {

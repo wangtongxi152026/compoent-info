@@ -1,0 +1,82 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "编辑地址页",
+      "properties": [
+        {
+          "label": "设置编辑地址页",
+          "key": "grid",
+          "type": "object",
+          "properties": [
+            {
+              "label": "列数",
+              "key": "columnNum",
+              "type": "number",
+              "isHalf": true
+            },
+            {
+              "key": "square",
+              "type": "boolean",
+              "label": "是否是方形",
+              "isHalf": true
+            },
+            {
+              "key": "hasLine",
+              "type": "boolean",
+              "label": "是否有边框",
+              "isHalf": true
+            },
+            {
+              "key": "isCarousel",
+              "type": "boolean",
+              "label": "是否跑马灯",
+              "isHalf": true
+            },
+            {
+              "key": "carouselMaxRow",
+              "type": "boolean",
+              "label": "页跑马灯需要展示的行数",
+              "isHalf": true
+            },
+            {
+              "key": "data",
+              "type": "array",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "text",
+                    "label": "显示文本",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "icon",
+                    "label": "图标地址",
+                    "isHalf": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "编辑地址页",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

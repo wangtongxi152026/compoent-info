@@ -1,0 +1,172 @@
+[
+  {
+    "key": "swiperData",
+    "label": "Swipe 轮播 自动轮播间隔，单位为 ms",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "autoplay",
+    "label": "Swipe 轮播 自动轮播间隔，单位为 ms",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "duration",
+    "label": "动画时长，单位为 ms",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "initial-swipe",
+    "label": "初始位置索引值",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "width",
+    "label": "滑块宽度，单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "height",
+    "label": "滑块高度，单位为 px",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "loop",
+    "label": "是否开启循环播放",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "show-indicators",
+    "label": "是否显示指示器",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "vertical",
+    "label": "是否为纵向滚动",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "touchable",
+    "label": "是否可以通过手势滑动",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "stop-propagation",
+    "label": "是否阻止滑动事件冒泡",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "lazy-render",
+    "label": "是否延迟渲染未展示的轮播",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "indicator-color",
+    "label": "指示器颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "change",
+    "label": "每一页轮播结束后触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "click",
+    "label": "点击时触发每一页轮播触发",
+    "category": "event",
+    "task": {
+      "label": "绑定事件change",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "key": "default",
+    "label": "轮播内容",
+    "category": "slot",
+    "isExoprt": true
+  },
+  {
+    "key": "indicator",
+    "label": "自定义指示器",
+    "category": "slot",
+    "isExoprt": true
+  }
+]

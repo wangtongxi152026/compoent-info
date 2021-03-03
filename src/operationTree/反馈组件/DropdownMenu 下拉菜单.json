@@ -1,0 +1,201 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "DropdownMenu 下拉菜单",
+      "properties": [
+        {
+          "label": "设置DropdownMenu 下拉菜单",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "active-color",
+              "bindProp": "active-color",
+              "label": "DropdownMenu 下拉菜单 菜单标题和选项的选中态颜色",
+              "type": "string"
+            },
+            {
+              "key": "direction",
+              "bindProp": "direction",
+              "label": "菜单展开方向",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "down",
+                  "label": "down"
+                }
+              ]
+            },
+            {
+              "key": "z-index",
+              "bindProp": "z-index",
+              "label": "菜单栏 z-index 层级",
+              "type": "string"
+            },
+            {
+              "key": "duration",
+              "bindProp": "duration",
+              "label": "动画时长，单位秒",
+              "type": "string"
+            },
+            {
+              "key": "overlay",
+              "bindProp": "overlay",
+              "label": "是否显示遮罩层",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-click-overlay",
+              "bindProp": "close-on-click-overlay",
+              "label": "是否在点击遮罩层后关闭菜单",
+              "type": "boolean"
+            },
+            {
+              "key": "close-on-click-outside",
+              "bindProp": "close-on-click-outside",
+              "label": "是否在点击外部元素后关闭菜单",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "DropdownMenu 下拉菜单",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  },
+  {
+    "type": "EditChildNode",
+    "label": "dropdownitem 下拉菜单",
+    "node": [
+      {
+        "tag": "dropdownitem 下拉菜单",
+        "alias": "标签项",
+        "prop": {
+          "value": {
+            "alias": "dropdownitem 下拉菜单 当前选中项对应的 value，可以通过 v-model 双向绑定",
+            "type": "string",
+            "value": ""
+          },
+          "title": {
+            "alias": "菜单项标题",
+            "type": "string",
+            "value": "菜单项标题"
+          },
+          "disabled": {
+            "alias": "是否禁用菜单",
+            "type": "boolean",
+            "value": false
+          },
+          "lazy-render": {
+            "alias": "是否在首次展开时才渲染菜单内容",
+            "type": "boolean",
+            "value": true
+          },
+          "title-class": {
+            "alias": "标题额外类名(暂时不生效)",
+            "type": "string",
+            "value": " "
+          }
+        },
+        "data": {
+          "$style": {},
+          "$exports": [
+            {
+              "attrKey": "get-container",
+              "alias": "指定挂载的节点， 用法示例",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "title-class",
+              "alias": "标题额外类名",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "lazy-render",
+              "alias": "是否在首次展开时才渲染菜单内容",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "disabled",
+              "alias": "是否禁用菜单",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "options",
+              "alias": "选项数组",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "title",
+              "alias": "菜单项标题",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "value",
+              "alias": "dropdownitem 下拉菜单 当前选中项对应的 value，可以通过 v-model 双向绑定",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "closed",
+              "alias": "关闭菜单栏且动画结束后触发",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "opened",
+              "alias": "打开菜单栏且动画结束后触发",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "close",
+              "alias": "关闭菜单栏时触发",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "open",
+              "alias": "打开菜单栏时触发",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "change",
+              "alias": "点击选项导致 value 变化时触发",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-if",
+              "alias": "v-if指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-show",
+              "alias": "v-show指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-model",
+              "alias": "v-model指令",
+              "sortIdx": -1
+            }
+          ]
+        }
+      }
+    ],
+    "render_tree_node": {
+      "ins_id": "",
+      "key": ""
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": ""
+    }
+  }
+]

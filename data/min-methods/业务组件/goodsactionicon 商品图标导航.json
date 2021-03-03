@@ -1,7 +1,7 @@
 [
   {
     "key": "text",
-    "label": "goodsactionicon 商品图标导航 按钮文字 ",
+    "label": "goodsactionicon 商品图标导航 按钮文字",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -11,17 +11,27 @@
   },
   {
     "key": "icon",
-    "label": "图标 ",
+    "label": "图标",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "img"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "color",
-    "label": "图标颜色 ",
+    "label": "图标颜色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "icon-class",
+    "label": "图标额外类名",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -30,18 +40,8 @@
     "isExoprt": true
   },
   {
-    "key": "icon-class",
-    "label": "图标额外类名 ",
-    "category": "attr",
-    "schema": {
-      "type": "any"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "dot ",
-    "label": "是否显示图标右上角小红点 ",
+    "key": "dot",
+    "label": "是否显示图标右上角小红点",
     "category": "attr",
     "schema": {
       "type": "boolean"
@@ -50,28 +50,28 @@
     "isExoprt": true
   },
   {
-    "key": "badge ",
-    "label": "图标右上角徽标的内容 ",
+    "key": "badge",
+    "label": "图标右上角徽标的内容",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "info",
-    "label": "图标右上角徽标的内容（已废弃，请使用 badge 属性） ",
+    "label": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "url",
-    "label": "点击后跳转的链接地址 ",
+    "label": "点击后跳转的链接地址",
     "category": "attr",
     "schema": {
       "type": "string"
@@ -81,17 +81,17 @@
   },
   {
     "key": "to",
-    "label": "点击后跳转的目标路由对象，同 vue-router 的  to 属性 ",
+    "label": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
     "category": "attr",
     "schema": {
-      "type": "string | object"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
   },
   {
     "key": "replace",
-    "label": "是否在跳转时替换当前页面历史 ",
+    "label": "是否在跳转时替换当前页面历史",
     "category": "attr",
     "schema": {
       "type": "boolean"

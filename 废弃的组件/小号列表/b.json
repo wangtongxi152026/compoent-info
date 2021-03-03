@@ -1,0 +1,53 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "小号列表",
+      "properties": [
+        {
+          "label": "设置小号列表",
+          "key": "scrollImg",
+          "type": "object",
+          "properties": [
+            {
+              "label": "名称",
+              "key": "listData",
+              "bindProp": "listData",
+              "type": "array",
+              "items": {
+                "label": "列表项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "defaultValue": "默认名称",
+                    "label": "名称"
+                  },
+                  {
+                    "type": "string",
+                    "key": "describtion",
+                    "defaultValue": " ",
+                    "label": "描述文本"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "小号列表",
+    "render_tree_node": {
+      "ins_id": "7f28890311e34796a0b7daf33b627e4d",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "b2a10d8899e140d4bdbc7150cf405fe3",
+      "key": "schema"
+    }
+  }
+]

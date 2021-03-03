@@ -1,1 +1,88 @@
-[{"type":"PropSchema","schema":{"type":"object","key":"schema","label":"Tabbar 标签栏","properties":[{"label":"设置Tabbar 标签栏","key":"tabs","type":"object","properties":[{"key":"v-model","bindProp":"v-model","label":"Tabbar 标签栏 当前选中标签的名称或索引值","type":"string"},{"key":"fixed","bindProp":"fixed","label":"是否固定在底部","type":"boolean"},{"key":"border","bindProp":"border","label":"是否显示外边框","type":"boolean"},{"key":"z-index","bindProp":"z-index","label":"元素 z-index","type":"string"},{"key":"active-color","bindProp":"active-color","label":"选中标签的颜色","type":"string"},{"key":"inactive-color","bindProp":"inactive-color","label":"未选中标签的颜色","type":"string"},{"key":"route","bindProp":"route","label":"是否开启路由模式","type":"boolean"},{"key":"placeholder","bindProp":"placeholder","label":"固定在底部时，是否在标签位置生成一个等高的占位元素","type":"boolean"},{"key":"safe-area-inset-bottom","bindProp":"safe-area-inset-bottom","label":"是否开启 底部安全区适配 ，设置 fixed 时默认开启","type":"boolean"},{"key":"before-change","bindProp":"before-change","label":"切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise","type":"(name) => boolean | Promise"}]}]},"label":"Tabbar 标签栏","render_tree_node":{"ins_id":"","key":"schema"},"code_tree_node":{"ins_id":"","key":"schema"}}]
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Tabbar 标签栏",
+      "properties": [
+        {
+          "label": "设置Tabbar 标签栏",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "v-model",
+              "bindProp": "v-model",
+              "label": "Tabbar 标签栏 当前选中标签的名称或索引值",
+              "type": "string"
+            },
+            {
+              "key": "fixed",
+              "bindProp": "fixed",
+              "label": "是否固定在底部",
+              "type": "boolean"
+            },
+            {
+              "key": "border",
+              "bindProp": "border",
+              "label": "是否显示外边框",
+              "type": "boolean"
+            },
+            {
+              "key": "z-index",
+              "bindProp": "z-index",
+              "label": "元素 z-index",
+              "type": "string"
+            },
+            {
+              "key": "active-color",
+              "bindProp": "active-color",
+              "label": "选中标签的颜色",
+              "type": "string"
+            },
+            {
+              "key": "inactive-color",
+              "bindProp": "inactive-color",
+              "label": "未选中标签的颜色",
+              "type": "string"
+            },
+            {
+              "key": "route",
+              "bindProp": "route",
+              "label": "是否开启路由模式",
+              "type": "boolean"
+            },
+            {
+              "key": "placeholder",
+              "bindProp": "placeholder",
+              "label": "固定在底部时，是否在标签位置生成一个等高的占位元素",
+              "type": "boolean"
+            },
+            {
+              "key": "safe-area-inset-bottom",
+              "bindProp": "safe-area-inset-bottom",
+              "label": "是否开启 底部安全区适配 ，设置 fixed 时默认开启",
+              "type": "boolean"
+            },
+            {
+              "key": "before-change",
+              "bindProp": "before-change",
+              "label": "切换标签前的回调函数，返回  false  可阻止切换，支持返回 Promise",
+              "type": "(name) => boolean | Promise"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Tabbar 标签栏",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

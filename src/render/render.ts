@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { ExprotItem, Minthods, Events } from "../types/types";
+import { ExprotItem, Minthods, Events, compInfoResult } from "../types/types";
 import {
   initExprotArr,
   initRenderTree,
@@ -12,40 +12,43 @@ import {
 } from "./initData";
 
 export default class DellAnalyzer {
-  private pathName = "Tabbar 标签栏";
-  private ChildCompName = "TabbarItem 标签栏";
-  private folder = "导航组件";
+  private pathName = "checkboxgroup 复选框";
+  private ChildCompName = "Checkbox 复选框";
+  private folder = "表单组件";
   private parentOpertion: any;
   constructor() {
-    this.readCompInfo();
-    this.readChildCompInfo();
+    this.gen()
+    this.genChild()
   }
 
+  public async gen() {
+    const { minthods, envets } = await this.readComponentInfo(this.pathName);
+    this.getRenderTree(minthods, envets);
+    this.parentOpertion = this.getOperationTree(minthods);
+  }
+
+  public async genChild() {
+    const { minthods, envets } = await this.readComponentInfo(this.ChildCompName);
+    this.getRenderTree(minthods, envets);
+    this.parentOpertion = this.getChildCompOperationTree(minthods, envets);
+  }
   private filePath(pathName: string) {
     const pathx = `../../data/${this.folder}/${pathName}.json`;
     return path.resolve(__dirname, pathx);
   }
 
-  private readCompInfo() {
-    const filePath = this.filePath(this.pathName);
+
+  private readComponentInfo(pathName: string): any {
+    const filePath = this.filePath(pathName);
     let fileContent: any = {};
     if (fs.existsSync(filePath)) {
       fileContent = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-      const { minthods, envets, slots } = fileContent[this.pathName];
-      this.getRenderTree(minthods, envets);
-      this.parentOpertion = this.getOperationTree(minthods);
+      const { minthods, envets, slots } = fileContent[pathName];
+      return { minthods, envets, slots }
+
     }
   }
-  private readChildCompInfo() {
-    const filePath = this.filePath(this.ChildCompName);
-    let fileContent: any = {};
-    if (fs.existsSync(filePath)) {
-      fileContent = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-      const { minthods, envets, slots } = fileContent[this.ChildCompName];
-      this.getRenderTree(minthods, envets);
-      this.getChildCompOperationTree(minthods, envets);
-    }
-  }
+
 
   private getRenderTree(minthods: any, envets: any) {
     let exprotArr = initExprotArr();
@@ -111,7 +114,7 @@ export default class DellAnalyzer {
       if (item.enumList) {
         optionPropObj[key] = {
           alias: label,
-          type: "string",
+          type: "enum",
           value: initDefaultValue(item.default),
           enumList: item.enumList,
         };

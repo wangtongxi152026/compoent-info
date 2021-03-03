@@ -1,0 +1,35 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "GoodsAction 商品导航",
+      "properties": [
+        {
+          "label": "设置GoodsAction 商品导航",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "safe-area-inset-bottom",
+              "bindProp": "safe-area-inset-bottom",
+              "label": "是否开启底部安全区适配 ",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "GoodsAction 商品导航",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  },
+
+]

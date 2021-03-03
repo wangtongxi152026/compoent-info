@@ -1,0 +1,128 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Image 图片",
+      "properties": [
+        {
+          "label": "设置Image 图片",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "src",
+              "bindProp": "src",
+              "label": "图片链接",
+              "type": "img"
+            },
+            {
+              "key": "alt",
+              "bindProp": "alt",
+              "label": "替代文本",
+              "type": "string"
+            },
+            {
+              "key": "fit",
+              "bindProp": "fit",
+              "label": "图片填充模式",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "覆盖",
+                  "value": "cover"
+                },
+                {
+                  "label": "包含",
+                  "value": "contain"
+                },
+                {
+                  "label": "填充",
+                  "value": "fill"
+                },
+                {
+                  "label": "无",
+                  "value": "none"
+                },
+                {
+                  "label": "降低",
+                  "value": "scale-down"
+                }
+              ]
+            },
+            {
+              "key": "width",
+              "bindProp": "width",
+              "label": "宽度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "height",
+              "bindProp": "height",
+              "label": "高度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "radius",
+              "bindProp": "radius",
+              "label": "圆角大小，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "round",
+              "bindProp": "round",
+              "label": "是否显示为圆形",
+              "type": "boolean"
+            },
+            {
+              "key": "lazy-load",
+              "bindProp": "lazy-load",
+              "label": "是否开启图片懒加载，须配合  Lazyload  组件使用",
+              "type": "boolean"
+            },
+            {
+              "key": "show-error",
+              "bindProp": "show-error",
+              "label": "是否展示图片加载失败提示",
+              "type": "img"
+            },
+            {
+              "key": "show-loading",
+              "bindProp": "show-loading",
+              "label": "是否展示图片加载中提示",
+              "type": "boolean"
+            },
+            {
+              "key": "error-icon",
+              "bindProp": "error-icon",
+              "label": "失败时提示的 图标名称 或图片链接",
+              "type": "img"
+            },
+            {
+              "key": "loading-icon",
+              "bindProp": "loading-icon",
+              "label": "加载时提示的 图标名称 或图片链接",
+              "type": "string"
+            },
+            {
+              "key": "icon-prefix",
+              "bindProp": "icon-prefix",
+              "label": "图标类名前缀，vant组件Icon的class-prefix 属性",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Image 图片",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

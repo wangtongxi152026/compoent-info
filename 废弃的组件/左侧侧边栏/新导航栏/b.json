@@ -1,0 +1,199 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "右侧导航栏",
+      "properties": [
+        {
+          "label": "设置宫格",
+          "key": "gridIcons",
+          "type": "object",
+          "properties": [
+            {
+              "type": "boolean",
+              "key": "isIcon",
+              "bindProp": "isIcon",
+              "label": "是否是小图标"
+            },
+            {
+              "type": "string",
+              "key": "name",
+              "bindProp": "gridIcons.name",
+              "isHalf": true,
+              "label": "标题"
+            },
+            {
+              "type": "string",
+              "key": "description",
+              "bindProp": "gridIcons.description",
+              "isHalf": true,
+              "label": "副文本"
+            },
+            {
+              "label": "宫格",
+              "key": "gridData",
+              "bindProp": "gridIcons.gridData",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "to",
+                    "defaultValue": "javascript:;",
+                    "isHalf": true,
+                    "label": "跳转链接（暂不支持）"
+                  },
+                  {
+                    "type": "img",
+                    "key": "icon",
+                    "isHalf": true,
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FuiIoGUH7DAszXGSDWLEIEi8o-R1",
+                    "label": "图标"
+                  },
+                  {
+                    "type": "string",
+                    "key": "text",
+                    "defaultValue": "文本",
+                    "label": "文本"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "设置纵向Tab",
+          "key": "tabs",
+          "bindProp": "tabs",
+          "type": "array",
+          "items": {
+            "label": "菜单项",
+            "key": "label",
+            "type": "object",
+            "properties": [
+              {
+                "type": "string",
+                "key": "title",
+                "defaultValue": "title",
+                "isHalf": true,
+                "label": "标题"
+              },
+              {
+                "type": "string",
+                "key": "sub",
+                "isHalf": true,
+                "defaultValue": "默认值（唯一）",
+                "label": "默认值"
+              }
+            ]
+          }
+        },
+        {
+          "key": "data",
+          "type": "array",
+          "bindProp": "buttonSelectGroup",
+          "label": "设置标签组",
+          "items": {
+            "label": "菜单项",
+            "key": "label",
+            "type": "object",
+            "properties": [
+              {
+                "type": "string",
+                "key": "name",
+                "defaultValue": "默认模块",
+                "label": "标题"
+              },
+              {
+                "type": "string",
+                "key": "description",
+                "defaultValue": "描述文本",
+                "label": "副文本"
+              },
+              {
+                "label": "群组",
+                "key": "group",
+                "type": "array",
+                "items": {
+                  "label": "菜单项",
+                  "key": "label",
+                  "type": "object",
+                  "properties": [
+                    {
+                      "type": "string",
+                      "key": "label",
+                      "defaultValue": "默认文本",
+                      "isHalf": true,
+                      "label": "文本"
+                    },
+                    {
+                      "type": "string",
+                      "key": "value",
+                      "isHalf": true,
+                      "defaultValue": "默认值",
+                      "label": "默认值"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "设置轮播",
+          "key": "carousel",
+          "type": "object",
+          "properties": [
+            {
+              "key": "radius",
+              "type": "number",
+              "bindProp": "CarouselOptions.radius",
+              "label": "图片圆角"
+            },
+            {
+              "key": "data",
+              "type": "array",
+              "bindProp": "CarouselData",
+              "label": "数据",
+              "items": {
+                "label": "图片项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "herf",
+                    "defaultValue": "javascript:;",
+                    "isHalf": true,
+                    "label": "链接"
+                  },
+                  {
+                    "type": "img",
+                    "isHalf": true,
+                    "defaultValue": "//img.mukewang.com/5fb1e8030996e77018000600.png",
+                    "key": "img",
+                    "label": "图标地址"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "右侧导航栏",
+    "render_tree_node": {
+      "ins_id": "0230a3aa2cb442e7845d3c46400b558d",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "5f958f4b7d734277bbdbe8734b31e18b",
+      "key": "schema"
+    }
+  }
+]

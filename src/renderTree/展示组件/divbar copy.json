@@ -1,0 +1,30 @@
+[
+  {
+    "key": "height",
+    "label": "字号",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "value": "",
+    "default": "",
+    "task": {},
+    "isExoprt": true
+  },
+  {
+    "key": "background",
+    "label": "背景色",
+    "category": "attr",
+    "schema": {
+      "type": "color"
+    },
+    "value": "",
+    "default": "",
+    "task": {},
+    "isExoprt": true
+  },
+  {
+    "path": "043fc368aeee4f2791cbfdb01f39abc3.gui.VerticalDivider",
+  "category": "editor_render"
+  }
+]

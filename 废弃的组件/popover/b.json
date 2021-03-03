@@ -1,0 +1,109 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "气泡菜单",
+      "properties": [
+        {
+          "label": "设置气泡菜单",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "type": "boolean",
+              "key": "showPopover",
+              "bindProp": "showPopover",
+              "label": "是否显示"
+            },
+            {
+              "type": "boolean",
+              "key": "overlay",
+              "bindProp": "overlay",
+              "label": "是否开启遮罩层"
+            },
+            {
+              "type": "string",
+              "key": "theme",
+              "bindProp": "theme",
+              "enumList": [
+                { "label": "默认", "value": "light" },
+                { "label": "黑色", "value": "dark" }
+              ],
+              "label": "类型"
+            },
+            {
+              "type": "string",
+              "key": "placement",
+              "bindProp": "placement",
+              "enumList": [
+                { "label": "top", "value": "top" },
+                { "label": "top-start", "value": "top-start" },
+                { "label": "top-end", "value": "top-end" },
+                { "label": "left", "value": "left" },
+                { "label": "left-start", "value": "left-start" },
+                { "label": "left-end", "value": "left-end" },
+                { "label": "right", "value": "right" },
+                { "label": "right-start", "value": "right-start" },
+                { "label": "right-end", "value": "right-end" },
+                { "label": "bottom", "value": "bottom" },
+                { "label": "bottom-start", "value": "bottom-start" },
+                { "label": "bottom-end", "value": "bottom-end" }
+              ],
+              "label": "类型"
+            },
+            {
+              "key": "actions",
+              "bindProp": "actions",
+              "type": "array",
+              "label": "用户数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "img",
+                    "key": "lightIcon",
+                    "label": "默认图标",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/Fign8TSDbyH80CBKsvFa81QEam5w",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "img",
+                    "key": "darkIcon",
+                    "label": "主题色图标",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FjzIISpVKHqcdtwr3L1OXsTleAWR",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "text",
+                    "label": "文本",
+                    "defaultValue": "默认文本"
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "disbled",
+                    "defaultValue": false,
+                    "label": "是否禁用"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "气泡菜单",
+    "render_tree_node": {
+      "ins_id": "f0853e6aa25c488180531b2e51240cf3",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "4140e792a5c14e29ba6861c12bd2eb6f",
+      "key": "schema"
+    }
+  }
+]

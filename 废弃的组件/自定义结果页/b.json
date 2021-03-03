@@ -1,0 +1,74 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "自定义结果页",
+      "properties": [
+        {
+          "label": "设置自定义结果页",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "label": "类型",
+              "key": "type",
+              "bindProp": "type",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "失败",
+                  "value": "fail"
+                },
+                {
+                  "label": "成功",
+                  "value": "success"
+                },
+                {
+                  "label": "消息",
+                  "value": "info"
+                },
+                {
+                  "label": "等待",
+                  "value": "waiting"
+                },
+                {
+                  "label": "警告",
+                  "value": "warning"
+                }
+              ]
+            },
+            {
+              "label": "主要操作文本",
+              "key": "primaryAction",
+              "bindProp": "primaryAction",
+              "type": "string"
+            },
+            {
+              "label": "辅助操作文本",
+              "key": "subAction",
+              "bindProp": "subAction",
+              "type": "string"
+            },
+            {
+              "label": "提示文本",
+              "key": "text",
+              "bindProp": "text",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "自定义结果页",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

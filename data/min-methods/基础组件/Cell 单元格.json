@@ -1,0 +1,30 @@
+[
+  {
+    "key": "iconData",
+    "label": "组件图标数据",
+    "category": "attr",
+    "schema": {
+      "type": "array"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clickIcon",
+    "label": "点击图标事件回调",
+    "category": "event",
+    "task": {
+      "label": "绑定事件clickIcon",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "path": "043fc368aeee4f2791cbfdb01f39abc3.gui.DoubleIcon",
+    "category": "editor_render"
+  }
+]

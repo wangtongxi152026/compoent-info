@@ -1,0 +1,152 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "Jzmwyr7eJBXCDCRC3dXzPwrcYFS58yTW",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-cell",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "icon-prefix": "van-icon",
+      "border": true,
+      "replace": false,
+      "clickable": "null",
+      "is-link": false,
+      "required": false,
+      "center": false,
+      "arrow-direction": "right",
+      "$exports": [
+        {
+          "attrKey": "label-class",
+          "alias": "描述信息额外类名",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "value-class",
+          "alias": "右侧内容额外类名",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title-class",
+          "alias": "左侧标题额外类名",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title-style",
+          "alias": "左侧标题额外样式",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "arrow-direction",
+          "alias": "箭头方向，可选值为  left up down",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "center",
+          "alias": "是否使内容垂直居中",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "required",
+          "alias": "是否显示表单必填星号",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "is-link",
+          "alias": "是否展示右侧箭头并开启点击反馈",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "clickable",
+          "alias": "是否开启点击反馈",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "replace",
+          "alias": "是否在跳转时替换当前页面历史",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "border",
+          "alias": "是否显示内边框",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "to",
+          "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "url",
+          "alias": "点击后跳转的链接地址",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "icon-prefix ",
+          "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "icon",
+          "alias": "左侧 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "size",
+          "alias": "单元格大小，可选值为  large",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "label",
+          "alias": "标题下方的描述信息",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "value",
+          "alias": "右侧内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "title",
+          "alias": "Cell-item 单元格 左侧标题",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click",
+          "alias": "点击单元格时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

@@ -1,192 +1,60 @@
-[
-  {
-    "key": "active",
-    "label": "Steps 步骤条 当前步骤",
-    "category": "attr",
-    "schema": {
-      "type": "number | string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "direction",
-    "label": "显示方向，可选值为  vertical",
-    "category": "attr",
-    "schema": {
-      "type": "enum",
-      "enumList": [
-        {
-          "value": "vertical",
-          "label": "vertical"
-        },
-        {
-          "value": "horizontal",
-          "label": "horizontal"
-        }
-      ]
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "active-color",
-    "label": "激活状态颜色",
-    "category": "attr",
-    "schema": {
-      "type": "string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "inactive-color ",
-    "label": "未激活状态颜色",
-    "category": "attr",
-    "schema": {
-      "type": "string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "active-icon",
-    "label": "激活状态底部图标，可选值见  Icon 组件",
-    "category": "attr",
-    "schema": {
-      "type": "string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "inactive-icon",
-    "label": "未激活状态底部图标，可选值见  Icon 组件",
-    "category": "attr",
-    "schema": {
-      "type": "string"
-    },
-    "default": "",
-    "isExoprt": true
-  },
-  {
-    "key": "active",
-    "label": "当前步骤",
-    "category": "event",
-    "task": {
-      "label": "绑定事件active",
-      "process": {
-        "type": "bind_method",
-        "defaultMethods": [],
-        "custom_access": true
+{
+  "Steps 步骤条": {
+    "minthods": [
+      {
+        "key": "active",
+        "label": "Steps 步骤条 当前步骤",
+        "type": "string",
+        "default": "0"
+      },
+      {
+        "key": "direction",
+        "label": "显示方向，可选值为  vertical",
+        "type": "string",
+        "default": "horizontal",
+        "enumList": [
+          {
+            "value": "vertical",
+            "label": "vertical"
+          },
+          {
+            "value": "horizontal",
+            "label": "horizontal"
+          }
+        ]
+      },
+      {
+        "key": "active-color",
+        "label": "激活状态颜色",
+        "type": "color",
+        "default": "#07c160"
+      },
+      {
+        "key": "inactive-color ",
+        "label": "未激活状态颜色",
+        "type": "color",
+        "default": "#969799"
+      },
+      {
+        "key": "active-icon",
+        "label": "激活状态底部图标，可选值见  Icon 组件",
+        "type": "string",
+        "default": "checked"
+      },
+      {
+        "key": "inactive-icon",
+        "label": "未激活状态底部图标，可选值见  Icon 组件",
+        "type": "string",
+        "default": "-"
       }
-    },
-    "isExoprt": true
-  },
-  {
-    "key": "direction",
-    "label": "显示方向，可选值为  vertical",
-    "category": "event",
-    "task": {
-      "label": "绑定事件direction",
-      "process": {
-        "type": "bind_method",
-        "defaultMethods": [],
-        "custom_access": true
+    ],
+    "envets": [
+      {
+        "eventKey": "click-step ",
+        "label": "点击步骤的标题或图标时触发",
+        "param": "index: number "
       }
-    },
-    "isExoprt": true
-  },
-  {
-    "key": "active-color",
-    "label": "激活状态颜色",
-    "category": "event",
-    "task": {
-      "label": "绑定事件active-color",
-      "process": {
-        "type": "bind_method",
-        "defaultMethods": [],
-        "custom_access": true
-      }
-    },
-    "isExoprt": true
-  },
-  {
-    "key": "inactive-color ",
-    "label": "未激活状态颜色",
-    "category": "event",
-    "task": {
-      "label": "绑定事件inactive-color ",
-      "process": {
-        "type": "bind_method",
-        "defaultMethods": [],
-        "custom_access": true
-      }
-    },
-    "isExoprt": true
-  },
-  {
-    "key": "active-icon",
-    "label": "激活状态底部图标，可选值见  Icon 组件",
-    "category": "event",
-    "task": {
-      "label": "绑定事件active-icon",
-      "process": {
-        "type": "bind_method",
-        "defaultMethods": [],
-        "custom_access": true
-      }
-    },
-    "isExoprt": true
-  },
-  {
-    "key": "inactive-icon",
-    "label": "未激活状态底部图标，可选值见  Icon 组件",
-    "category": "event",
-    "task": {
-      "label": "绑定事件inactive-icon",
-      "process": {
-        "type": "bind_method",
-        "defaultMethods": [],
-        "custom_access": true
-      }
-    },
-    "isExoprt": true
-  },
-  {
-    "key": "active",
-    "label": "当前步骤",
-    "category": "slot",
-    "isExoprt": true
-  },
-  {
-    "key": "direction",
-    "label": "显示方向，可选值为  vertical",
-    "category": "slot",
-    "isExoprt": true
-  },
-  {
-    "key": "active-color",
-    "label": "激活状态颜色",
-    "category": "slot",
-    "isExoprt": true
-  },
-  {
-    "key": "inactive-color ",
-    "label": "未激活状态颜色",
-    "category": "slot",
-    "isExoprt": true
-  },
-  {
-    "key": "active-icon",
-    "label": "激活状态底部图标，可选值见  Icon 组件",
-    "category": "slot",
-    "isExoprt": true
-  },
-  {
-    "key": "inactive-icon",
-    "label": "未激活状态底部图标，可选值见  Icon 组件",
-    "category": "slot",
-    "isExoprt": true
+    ],
+    "slots": []
   }
-]
+}

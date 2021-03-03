@@ -1,0 +1,194 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Sidebar 侧边导航",
+      "properties": [
+        {
+          "label": "设置Sidebar 侧边导航",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "bindProp": "value",
+              "label": "当前导航项的索引",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Sidebar 侧边导航",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  },
+  {
+    "type": "EditChildNode",
+    "label": "sidebaritem 侧边导航",
+    "node": [
+      {
+        "tag": "van-sidebar-item",
+        "alias": "标签项",
+        "prop": {
+          "title": {
+            "alias": "sidebaritem 侧边导航 内容",
+            "type": "string",
+            "value": "标签名"
+          },
+          "dot": {
+            "alias": "是否显示右上角小红点",
+            "type": "boolean",
+            "value": false
+          },
+          "badge": {
+            "alias": "图标右上角徽标的内容",
+            "type": "string",
+            "value": " "
+          },
+          "disabled": {
+            "alias": "是否禁用该项",
+            "type": "boolean",
+            "value": false
+          },
+          "url": {
+            "alias": "点击后跳转的链接地址",
+            "type": "string",
+            "value": ""
+          },
+          "to": {
+            "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+            "type": "enum-page",
+            "value": " "
+          },
+          "replace": {
+            "alias": "是否在跳转时替换当前页面历史",
+            "type": "boolean",
+            "value": false
+          }
+        },
+        "data": {
+          "$style": {},
+          "title": "标签栏",
+          "dot": false,
+          "disabled": false,
+          "replace": false,
+          "$exports": [
+            {
+              "attrKey": "replace",
+              "alias": "是否在跳转时替换当前页面历史",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "to",
+              "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "url",
+              "alias": "点击后跳转的链接地址",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "disabled",
+              "alias": "是否禁用该项",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "info",
+              "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "badge ",
+              "alias": "图标右上角徽标的内容",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "dot",
+              "alias": "是否显示右上角小红点",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "title",
+              "alias": "sidebaritem 侧边导航 内容",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "replace",
+              "alias": "是否在跳转时替换当前页面历史",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "to",
+              "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "url",
+              "alias": "点击后跳转的链接地址",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "disabled",
+              "alias": "是否禁用该项",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "info",
+              "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "badge",
+              "alias": "图标右上角徽标的内容",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "dot",
+              "alias": "是否显示右上角小红点",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "title",
+              "alias": "内容",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-if",
+              "alias": "v-if指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-show",
+              "alias": "v-show指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-model",
+              "alias": "v-model指令",
+              "sortIdx": -1
+            }
+          ]
+        },
+        "children": []
+      }
+    ],
+    "render_tree_node": {
+      "ins_id": "",
+      "key": ""
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": ""
+    }
+  }
+]

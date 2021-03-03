@@ -153,9 +153,9 @@ export default class DellAnalyzer {
   private parseHtml(html: string) {
     const $ = cheerio.load(html);
     let componentName = this.getParseText($('h1').toArray()[0]).trim()
-    let minthodsHtml = $('#griditem-props').siblings().find('tbody').find('tr')
-    let envetsHtml = $('#griditem-events').siblings().find('tbody').find('tr')
-    let slotsHtml = $('#griditem-slots').siblings().find('tbody').find('tr')
+    let minthodsHtml = $('#swipeitem-props').siblings().find('tbody').find('tr')
+    let envetsHtml = $('#swipeitem-events').siblings().find('tbody').find('tr')
+    let slotsHtml = $('#swipeitem-slots').siblings().find('tbody').find('tr')
     const minthods = this.getMinthods(minthodsHtml)
     const envets = this.getEnvets(envetsHtml)
     const slots = this.getSlots(slotsHtml)

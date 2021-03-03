@@ -1,0 +1,63 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "6483d15c7f014a9a9ad940d905a32aae",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "0a3eec2d74a242eba2e69a07d5348f8a",
+    "tag": "popover",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "actions": [
+        {
+          "text": "添加子钱包",
+          "lightIcon": "//s2-cdn.oneitfarm.com/FqtQM6GD65QcG-p1K4HBhrAujK5t",
+          "darkIcon": "//s2-cdn.oneitfarm.com/Fmi9g_dqJuOsy0VqHCrZ2d1NeSw-",
+          "disbled":false
+        },
+        {
+          "text": "添加资产",
+          "lightIcon": "//s2-cdn.oneitfarm.com/FkrZRUTN49iD1GOrlAIj68K-VDos",
+          "darkIcon": "//s2-cdn.oneitfarm.com/FtpMWUfCKHzfAmbrajoZAZfdBbwr",
+          "disbled": false
+        },
+        {
+          "text": "导入资产",
+          "lightIcon": "//s2-cdn.oneitfarm.com/FhV22188-1Bo-NxyvYRBE2aAl3c_",
+          "darkIcon": "//s2-cdn.oneitfarm.com/Fk4qh69het-F_A2GupZGgzhKuDDD",
+          "disbled": false
+        },
+        {
+          "text": "收付款",
+          "lightIcon": "//s2-cdn.oneitfarm.com/Fhvql-4WKIfJlalXQeLSZ0QhZCJw",
+          "darkIcon": "//s2-cdn.oneitfarm.com/FvOVqQF_YHVEjJtipeVi377sF5zL",
+          "disbled": false
+        },
+        {
+          "text": "钱包设置",
+          "lightIcon": "//s2-cdn.oneitfarm.com/Fign8TSDbyH80CBKsvFa81QEam5w",
+          "darkIcon": "//s2-cdn.oneitfarm.com/FjzIISpVKHqcdtwr3L1OXsTleAWR",
+          "disbled": false
+        }
+      ],
+      "showPopover": true,
+      "overlay": false,
+      "theme": "dark",
+      "placement":"bottom",
+      "hasIcon": true
+    }
+  }
+]

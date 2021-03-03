@@ -1,0 +1,29 @@
+{
+  "Cell 单元格": {
+    "minthods": [
+      {
+        "key": "title",
+        "label": "Cell 单元格 分组标题",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "border",
+        "label": "是否显示外边框",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "envets": [],
+    "slots": [
+      {
+        "slot": "default",
+        "label": "默认插槽"
+      },
+      {
+        "slot": "title",
+        "label": "自定义分组标题"
+      }
+    ]
+  }
+}

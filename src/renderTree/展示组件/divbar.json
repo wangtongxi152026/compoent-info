@@ -1,0 +1,58 @@
+[
+  {
+    "key": "selectSize",
+    "label": "字号",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "label": "4px",
+          "value": 1
+        },
+        {
+          "label": "8px",
+          "value": 3
+        },
+        {
+          "label": "12px",
+          "value": 4
+        }
+      ]
+    },
+    "value": "",
+    "default": "",
+    "task": {},
+    "isExoprt": true
+  },
+  {
+    "key": "selectBackground",
+    "label": "背景色",
+    "category": "attr",
+    "schema": {
+      "type": "enum",
+      "enumList": [
+        {
+          "label": "4px",
+          "value": 1
+        },
+        {
+          "label": "8px",
+          "value": 3
+        },
+        {
+          "label": "12px",
+          "value": 4
+        }
+      ]
+    },
+    "value": "",
+    "default": "",
+    "task": {},
+    "isExoprt": true
+  },
+  {
+    "path": "043fc368aeee4f2791cbfdb01f39abc3.gui.divider-bar",
+    "category": "editor_render"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "优惠页面",
+      "properties": [
+        {
+          "label": "设置优惠页面",
+          "key": "grid",
+          "type": "object",
+          "properties": [
+            {
+              "label": "主题",
+              "key": "theme",
+              "bindProp": "theme",
+              "type": "color"
+            },
+            {
+              "label": "是否显示失效提示",
+              "key": "loseTip",
+              "bindProp": "loseTip",
+              "type": "boolean"
+            },
+            {
+              "label": "是否显示选中框",
+              "key": "select",
+              "bindProp": "select",
+              "type": "boolean"
+            },
+            {
+              "label": "主题色",
+              "key": "themeColor",
+              "bindProp": "themeColor",
+              "type": "color"
+            },
+            {
+              "key": "value",
+              "bindProp": "value",
+              "type": "array",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "id",
+                    "label": "id",
+                    "defaultValue": "00",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "number",
+                    "key": "num",
+                    "label": "金额",
+                    "defaultValue": "12",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "type",
+                    "enumList": [
+                      {
+                        "label": "满减券",
+                        "value": "0"
+                      },
+                      {
+                        "label": "折扣券",
+                        "value": "1"
+                      }
+                    ],
+                    "defaultValue": "0",
+                    "label": "优惠类型",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "title",
+                    "defaultValue": "优惠券标题",
+                    "isHalf": true,
+                    "label": "标题"
+                  },
+                  {
+                    "type": "string",
+                    "key": "start_at",
+                    "label": "开始时间",
+                    "defaultValue": "2020.01.01",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "end_at",
+                    "label": "结束时间",
+                    "defaultValue": "2020.01.01",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "is_expire",
+                    "enumList": [
+                      {
+                        "label": "未过期",
+                        "value": 0
+                      },
+                      {
+                        "label": "过期",
+                        "value": 1
+                      }
+                    ],
+                    "defaultValue": 0,
+                    "label": "是否过期",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "is_selected",
+                    "enumList": [
+                      {
+                        "label": "未选中",
+                        "value": 0
+                      },
+                      {
+                        "label": "选中",
+                        "value": 1
+                      },
+                      {
+                        "label": "不可选",
+                        "value": -1
+                      }
+                    ],
+                    "defaultValue": 1,
+                    "label": "选中状态",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "rules",
+                    "label": "规则",
+                    "defaultValue": "",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "img",
+                    "key": "icon",
+                    "defaultValue": "https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg",
+                    "label": "图标地址",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "store_name",
+                    "defaultValue": "store_name",
+                    "label": "店铺名",
+                    "isHalf": true
+                  },
+                  {
+                    "type": "string",
+                    "key": "tag",
+                    "label": "标签",
+                    "isHalf": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "订单详情页",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

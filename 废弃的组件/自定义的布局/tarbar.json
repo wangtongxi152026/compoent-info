@@ -1,0 +1,116 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "tag": "div",
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    },
+    "ins_id": "s86p49z9ridnatqn8og8beh5g4ppfrzs"
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "tag": "FlexBox",
+    "data": {
+      "$style": {},
+      "flexDirection": "column",
+      "width": "100%",
+      "height": "100%",
+      "margin": "0",
+      "padding": "0",
+      "$exports": []
+    },
+    "$exportState": true,
+    "ins_id": "57a23f7bedf64fdfbd2a0a84ab646f75"
+  },
+  {
+    "id": 2,
+    "parentId": 1,
+    "tag": "FlexItem",
+    "data": {
+      "width": "100%",
+      "margin": "0px 0px 0px 0px",
+      "flexGrow": 1,
+      "flexBasis": "0",
+      "overflow": "hidden",
+      "$style": {
+        "padding": 0
+      },
+      "$exports": []
+    },
+    "$exportState": true,
+    "group": true,
+    "ins_id": ""
+  },
+  {
+    "id": 8,
+    "parentId": 1,
+    "tag": "FlexItem",
+    "data": {
+      "flexBasis": "50px",
+      "flexGrow": 0,
+      "margin": "0px 0px 0px 0px",
+      "overflow": "hidden",
+      "width": "100%",
+      "$style": {
+        "transform": "translate(0px, 0px)"
+      },
+      "$exports": []
+    },
+    "$exportState": true,
+    "group": true,
+    "ins_id": ""
+  },
+  {
+    "id": 9,
+    "parentId": 8,
+    "ins_id": "",
+    "tag": "ant-bottom-bar",
+    "mini_method_uuid": -1,
+    "$complexInfo": {
+      "id": 68234,
+      "edit_page_uuid": "sal20000_org_key210222eaemcm6dep"
+    },
+    "data": {
+      "$style": {},
+      "selectFontColor": "#108ee9",
+      "normalColor": "#999",
+      "midIcon": "//s2-cdn.oneitfarm.com/FgePYW5gG_TFHHjz9Q2TGNmQML58",
+      "menu": [
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/Fiuppq7Os1nu1ZbYvy14J46Y-3EV",
+          "noSelect": "//s2-cdn.oneitfarm.com/FjwbjbktDa56ElPs-8GgJValsT5M",
+          "label": "首页",
+          "name": "home",
+          "to": ""
+        },
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/FjGj98_H39aKKFi4cVTGSDqDvuuW",
+          "noSelect": "//s2-cdn.oneitfarm.com/FhX56Ue82at0_lUggH6vZ7lU3TSO",
+          "label": "消息",
+          "name": "message",
+          "to": ""
+        },
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/Fm2FnGER6jvD91xZ-dRFRAlFDlMZ",
+          "noSelect": "//s2-cdn.oneitfarm.com/FlHYSOPKTFAlTrguVejsj7x0-Ewr",
+          "label": "通讯录",
+          "name": "shop",
+          "to": ""
+        },
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/Fhzbk-DjjRkg_7KqTj-M0CttO-_S",
+          "noSelect": "//s2-cdn.oneitfarm.com/FkLG6a_JyHxOCXCLnF8F4AYMRvtB",
+          "label": "我",
+          "name": "my",
+          "to": ""
+        }
+      ]
+    }
+  }
+]

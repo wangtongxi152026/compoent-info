@@ -1,0 +1,52 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "默认导航栏",
+      "properties": [
+        {
+          "label": "设置默认导航栏",
+          "key": "grid",
+          "type": "object",
+          "properties": [
+            {
+              "key": "isShowLeftIcon",
+              "bindProp": "isShowLeftIcon",
+              "type": "boolean",
+              "label": "是否显示返回"
+            },
+            {
+              "type": "string",
+              "key": "title",
+              "bindProp": "value.title",
+              "label": "显示文本"
+            },
+            {
+              "type": "img",
+              "key": "rightIcon",
+              "bindProp": "value.rightIcon",
+              "label": "右侧图标"
+            },
+            {
+              "type": "string",
+              "key": "subText",
+              "bindProp": "value.subText",
+              "label": "附文本"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "默认导航栏",
+    "render_tree_node": {
+      "ins_id": "bf5bef2ebd124c8daa3a40c851bd0dc3",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "8db41dfe415042f4aeb32f1de3c8cb4a",
+      "key": "schema"
+    }
+  }
+]

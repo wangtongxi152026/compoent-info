@@ -14,7 +14,7 @@
             {
               "key": "name",
               "bindProp": "name",
-              "label": "滑动单元格标识符，可以在事件参数中获取到",
+              "label": "SwipeCell 滑动单元格 标识符，可以在事件参数中获取到",
               "type": "string"
             },
             {

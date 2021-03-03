@@ -1,0 +1,59 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "按钮标签页",
+      "properties": [
+        {
+          "label": "设置按钮标签页",
+          "key": "grid",
+          "type": "object",
+          "properties": [
+            {
+              "key": "value",
+              "type": "array",
+              "bindProp": "value",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "label",
+                    "defaultValue": "文本",
+                    "label": "显示文本"
+                  },
+                  {
+                    "type": "enum-page",
+                    "key": "to",
+                    "defaultValue": "",
+                    "label": "默认菜单"
+                  },
+                  {
+                    "type": "string",
+                    "defaultValue": "",
+                    "key": "value",
+                    "label": "默认值"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "按钮标签页",
+    "render_tree_node": {
+      "ins_id": "bf5bef2ebd124c8daa3a40c851bd0dc3",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "8db41dfe415042f4aeb32f1de3c8cb4a",
+      "key": "schema"
+    }
+  }
+]

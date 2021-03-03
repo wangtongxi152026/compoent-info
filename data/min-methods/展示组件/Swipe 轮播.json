@@ -4,7 +4,7 @@
     "label": "Swipe 轮播 自动轮播间隔，单位为 ms",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -14,7 +14,7 @@
     "label": "动画时长，单位为 ms",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -24,7 +24,7 @@
     "label": "初始位置索引值",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -34,7 +34,7 @@
     "label": "滑块宽度，单位为 px",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -44,7 +44,7 @@
     "label": "滑块高度，单位为 px",
     "category": "attr",
     "schema": {
-      "type": "number | string"
+      "type": "string"
     },
     "default": "",
     "isExoprt": true
@@ -114,7 +114,7 @@
     "label": "指示器颜色",
     "category": "attr",
     "schema": {
-      "type": "string"
+      "type": "color"
     },
     "default": "",
     "isExoprt": true

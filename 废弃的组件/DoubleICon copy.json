@@ -1,0 +1,65 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "三列图标",
+      "properties": [
+        {
+          "label": "设置三列图标",
+          "key": "doubleIcon",
+          "type": "object",
+          "properties": [
+            {
+              "key": "iconData",
+              "type": "array",
+              "bindProp": "iconData",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "enum-page",
+                    "key": "to",
+                    "defaultValue": "",
+                    "label": "跳转页面"
+                  },
+                  {
+                    "type": "string",
+                    "key": "text",
+                    "defaultValue": "文本",
+                    "label": "显示文本"
+                  },
+                  {
+                    "type": "icon",
+                    "key": "icon",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FneschpO0SfQGBvoI0g3y5F07ctO",
+                    "label": "图标地址"
+                  },
+                  {
+                    "type": "string",
+                    "defaultValue": "副文本",
+                    "key": "subtext",
+                    "label": "副文本"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "三列图标",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

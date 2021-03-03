@@ -1,0 +1,57 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "390e29e3dc45482ca35b59ec2902767f",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "bf5bef2ebd124c8daa3a40c851bd0dc3",
+    "tag": "bottom-bar",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+"color":"#2d8cf0",
+      "menu": [
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/FlW4equ6tqwVcLGRH_OvudnMglVG",
+          "noSelect": "//s2-cdn.oneitfarm.com/FiCO1Kw95L4xJEidhq5HmbOapcba",
+          "label": "首页",
+          "name": "home",
+          "to": ""
+        },
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/FrZ61wqONLHsftLKGx0BzXLE48J_",
+          "noSelect": "//s2-cdn.oneitfarm.com/FgSfKUe5mm1NLSGxdh12c1snkE69",
+          "label": "购物车",
+          "name": "shop",
+          "to": ""
+        },
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/FpccQGEiIjDXOMekZskh58BAdqSJ",
+          "noSelect": "//s2-cdn.oneitfarm.com/FscoP-SNouiFT02wcXmhAfa6WCaZ",
+          "label": "分类",
+          "name": "category",
+          "to": ""
+        },
+        {
+          "selectImg": "//s2-cdn.oneitfarm.com/FuGZ-wD_4uWnf9O5G01GOCICBNSO",
+          "noSelect": "//s2-cdn.oneitfarm.com/FuUX4VShRCH1LV-KZk_yYgIvNDKP",
+          "label": "账号",
+          "name": "my",
+          "to": ""
+        }
+      ]
+    }
+  }
+]

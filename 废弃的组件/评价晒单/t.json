@@ -1,0 +1,60 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "评价分享",
+      "properties": [
+        {
+          "label": "设置评价分享",
+          "key": "productDetails",
+          "type": "object",
+          "properties": [
+            {
+              "label": "评论数据",
+              "key": "commentData",
+              "bindProp": "commentData",
+              "type": "object",
+              "properties": [
+                {
+                  "type": "img",
+                  "key": "productImage",
+                  "label": "产品图片",
+                  "isHalf": true
+                },
+                {
+                  "type": "string",
+                  "key": "description",
+                  "label": "描述",
+                  "isHalf": true
+                },
+                {
+                  "type": "string",
+                  "key": "size",
+                  "label": "规格",
+                  "isHalf": true
+                },
+                {
+                  "type": "number",
+                  "key": "price",
+                  "label": "价格",
+                  "isHalf": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "评论分享",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "底部导航配置",
+      "properties": [
+        {
+          "label": "设置底部导航配置",
+          "key": "antBottomBar",
+          "type": "object",
+          "properties": [
+            {
+              "type": "color",
+              "key": "color",
+              "bindProp": "color",
+              "label": "主题色"
+            },
+            {
+              "key": "menu",
+              "bindProp": "menu",
+              "type": "array",
+              "label": "设置导航",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "img",
+                    "key": "selectImg",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FlW4equ6tqwVcLGRH_OvudnMglVG",
+                    "label": "选中Icon"
+                  },
+                  {
+                    "type": "img",
+                    "key": "noSelect",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FiCO1Kw95L4xJEidhq5HmbOapcba",
+                    "label": "默认Icon"
+                  },
+                  {
+                    "type": "string",
+                    "key": "label",
+                    "defaultValue": "文本",
+                    "label": "文本"
+                  },
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "defaultValue": "名称",
+                    "label": "名称"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "底部导航配置",
+    "render_tree_node": {
+      "ins_id": "bf5bef2ebd124c8daa3a40c851bd0dc3",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "8db41dfe415042f4aeb32f1de3c8cb4a",
+      "key": "schema"
+    }
+  }
+]

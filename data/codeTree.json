@@ -1,0 +1,528 @@
+{
+  "id": 0,
+  "parentId": -1,
+  "tag": "div",
+  "data": {
+    "$style": {
+      "width": "100%",
+      "height": "100%",
+      "overflow": "auto"
+    }
+  },
+  "children": [
+    {
+      "id": 2,
+      "parentId": 0,
+      "ins_id": "",
+      "tag": "GuiLayout",
+      "data": {
+        "$layout": true,
+        "$style": {
+          "padding": "12px 12px 12px 12px",
+          "display": "flex",
+          "flexGrow": 1,
+          "flexShrink": 0,
+          "height": "100%",
+          "overflow": "auto",
+          "justifyContent": "center",
+          "alignItems": "center"
+        },
+        "$exports": [
+          {
+            "eventKey": "click",
+            "alias": "",
+            "sortIdx": -1
+          }
+        ],
+        "$exportState": true
+      },
+      "$complexInfo": {
+        "id": 68090,
+        "edit_page_uuid": "sal20000_org_key210209eaeop56d9m",
+        "atom_ins": {
+          "uuid": "5a987f4b2bd14214bac3934e3eaf25a2",
+          "origin_page_uuid": "sal20000_org_key210302eaepmu6dwz"
+        },
+        "code_tree": {
+          "id": 1,
+          "parentId": 0,
+          "ins_id": "",
+          "tag": "GuiLayout",
+          "data": {
+            "$layout": true,
+            "$style": {
+              "padding": "12px 12px 12px 12px",
+              "display": "flex",
+              "flexGrow": 1,
+              "flexShrink": 0,
+              "height": "100%",
+              "overflow": "auto"
+            },
+            "$exports": [
+              {
+                "eventKey": "click",
+                "alias": "",
+                "sortIdx": -1
+              }
+            ],
+            "$exportState": true
+          },
+          "children": []
+        }
+      },
+      "children": [
+        {
+          "id": 4,
+          "parentId": 2,
+          "ins_id": "2a306f74662c407cbfb5b5f1948fd295",
+          "tag": "Txt",
+          "mini_method_uuid": -1,
+          "data": {
+            "$style": {},
+            "text": "默认文本",
+            "fontWeight": 400,
+            "color": "#333",
+            "isLimit": false,
+            "throughLine": false,
+            "lineLimit": 2,
+            "size": "15px",
+            "lineHeight": "normal",
+            "$exports": [
+              {
+                "attrKey": "text",
+                "sortIdx": -1,
+                "bindParamId": "424b35de09454241ae83d992b4786af0"
+              },
+              {
+                "attrKey": "fontWeight",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "color",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "isLimit",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "lineLimit",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "size",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "lineHeight",
+                "sortIdx": -1
+              },
+              {
+                "eventKey": "clickTextHandle",
+                "alias": "文本被点击的事件",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "v-if",
+                "alias": "v-if指令",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "v-show",
+                "alias": "v-show指令",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "v-model",
+                "alias": "v-model指令",
+                "sortIdx": -1
+              }
+            ],
+            "$exportState": true,
+            "$event": {
+              "@clickTextHandle": {
+                "id": "960a41ce7d0c4fa5adfb0e1588338bc3",
+                "parameters": []
+              }
+            }
+          },
+          "$complexInfo": {
+            "id": 68038,
+            "edit_page_uuid": "sal20000_org_key210206eaejqj6d70",
+            "atom_ins": {
+              "uuid": "c04b18de8b3a42d9b701dda76456a3de",
+              "origin_page_uuid": "sal20000_org_key210302eaepmu6dwz"
+            },
+            "code_tree": {
+              "id": 1,
+              "parentId": 0,
+              "ins_id": "2a306f74662c407cbfb5b5f1948fd295",
+              "tag": "Txt",
+              "mini_method_uuid": -1,
+              "data": {
+                "$style": {},
+                "text": "默认文本",
+                "fontWeight": 400,
+                "color": "#333",
+                "isLimit": false,
+                "throughLine": false,
+                "lineLimit": 2,
+                "size": "15px",
+                "lineHeight": "normal",
+                "$exports": [
+                  {
+                    "attrKey": "text",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "fontWeight",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "color",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "isLimit",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "lineLimit",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "size",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "lineHeight",
+                    "sortIdx": -1
+                  },
+                  {
+                    "eventKey": "clickTextHandle",
+                    "alias": "文本被点击的事件",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "v-if",
+                    "alias": "v-if指令",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "v-show",
+                    "alias": "v-show指令",
+                    "sortIdx": -1
+                  },
+                  {
+                    "attrKey": "v-model",
+                    "alias": "v-model指令",
+                    "sortIdx": -1
+                  }
+                ],
+                "$exportState": true
+              },
+              "children": []
+            }
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "parentId": 0,
+      "ins_id": "83950bd8307e4fbbb98369cf3b87a4ac",
+      "tag": "van-button",
+      "mini_method_uuid": -1,
+      "data": {
+        "$style": {},
+        "text": "按钮文字",
+        "type": "default",
+        "size": "normal",
+        "round": false,
+        "color": "",
+        "block": false,
+        "plain": false,
+        "square": false,
+        "disabled": false,
+        "hairline": false,
+        "loading": false,
+        "loading-type": "circular",
+        "loading-size": "20px",
+        "replace": false,
+        "$exports": [
+          {
+            "attrKey": "type",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "size",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "text",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "color",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "icon",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "tag",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "block",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "plain",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "square",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "round",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "disabled",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "hairline",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "loading",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "url",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "to",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "replace",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "icon-prefix",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "icon-position",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "native-type",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "loading-text",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "loading-type",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "loading-siz",
+            "sortIdx": -1
+          },
+          {
+            "eventKey": "click",
+            "alias": "点击按钮，且按钮状态不为加载或禁用时触发",
+            "sortIdx": -1
+          },
+          {
+            "eventKey": "touchstart",
+            "alias": "开始触摸按钮时触发",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "v-if",
+            "alias": "v-if指令",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "v-show",
+            "alias": "v-show指令",
+            "sortIdx": -1
+          },
+          {
+            "attrKey": "v-model",
+            "alias": "v-model指令",
+            "sortIdx": -1
+          }
+        ],
+        "$exportState": true,
+        "$event": {
+          "@touchstart": {
+            "id": "960a41ce7d0c4fa5adfb0e1588338bc3",
+            "parameters": []
+          }
+        }
+      },
+      "$complexInfo": {
+        "id": 68093,
+        "edit_page_uuid": "sal20000_org_key210209eaejqp6dn6",
+        "atom_ins": {
+          "uuid": "55d7d29167df48a7906f879462a933d6",
+          "origin_page_uuid": "sal20000_org_key210302eaepmu6dwz"
+        },
+        "code_tree": {
+          "id": 1,
+          "parentId": 0,
+          "ins_id": "78c44970c0524ddabd965c93bb7bb8fc",
+          "tag": "van-button",
+          "mini_method_uuid": -1,
+          "data": {
+            "$style": {},
+            "text": "按钮文字",
+            "type": "default",
+            "size": "normal",
+            "round": false,
+            "color": "",
+            "block": false,
+            "plain": false,
+            "square": false,
+            "disabled": false,
+            "hairline": false,
+            "loading": false,
+            "loading-type": "circular",
+            "loading-size": "20px",
+            "replace": false,
+            "$exports": [
+              {
+                "attrKey": "type",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "size",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "text",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "color",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "icon",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "tag",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "block",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "plain",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "square",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "round",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "disabled",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "hairline",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "loading",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "url",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "to",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "replace",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "icon-prefix",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "icon-position",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "native-type",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "loading-text",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "loading-type",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "loading-siz",
+                "sortIdx": -1
+              },
+              {
+                "eventKey": "click",
+                "alias": "点击按钮，且按钮状态不为加载或禁用时触发",
+                "sortIdx": -1
+              },
+              {
+                "eventKey": "touchstart",
+                "alias": "开始触摸按钮时触发",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "v-if",
+                "alias": "v-if指令",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "v-show",
+                "alias": "v-show指令",
+                "sortIdx": -1
+              },
+              {
+                "attrKey": "v-model",
+                "alias": "v-model指令",
+                "sortIdx": -1
+              }
+            ],
+            "$exportState": true
+          },
+          "children": []
+        }
+      },
+      "children": []
+    }
+  ]
+}

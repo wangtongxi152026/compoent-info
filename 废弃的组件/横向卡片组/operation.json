@@ -1,0 +1,131 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "创业蚂蚁-卡片",
+      "properties": [
+        {
+          "label": "设置卡片",
+          "key": "antCard",
+          "type": "object",
+          "properties": [
+            {
+              "label": "卡片是否带投影",
+              "key": "hasShadow",
+              "bindProp": "hasShadow",
+              "type": "boolean"
+            },
+            {
+              "key": "data",
+              "type": "array",
+              "label": "卡片内容",
+              "bindProp": "antCardData",
+              "items": {
+                "label": "卡片内容项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "label": "标题",
+                    "key": "title",
+                    "defaultValue": "title",
+                    "type": "string"
+                  },
+                  {
+                    "label": "图片地址",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FtbrVLqO9AfFi3ebRUSlWTFscQsi",
+                    "key": "img",
+                    "type": "img"
+                  },
+                  {
+              "label": "是否是小图模式",
+              "key": "isSmallImg",
+              "defaultValue": false,
+              "type": "boolean"
+            },
+                  {
+                    "label": "价格",
+                    "key": "price",
+                    "defaultValue": "￥45",
+                    "type": "string"
+                  },
+                  {
+                    "label": "数量单位",
+                    "key": "unit",
+                    "defaultValue": "个",
+                    "type": "string"
+                  },
+                  {
+                    "label": "公司出处描述",
+                    "key": "corporation",
+                    "defaultValue": "艾特品牌研创江苏 南京",
+                    "type": "string"
+                  },
+                  {
+                    "label": "标签组",
+                    "key": "tags",
+                    "type": "array",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "value",
+                          "defaultValue": "文本",
+                          "label": "文本"
+                        },
+                        {
+                          "type": "color",
+                          "key": "color",
+                          "defaultValue": "#FF6010",
+                          "label": "字体颜色"
+                        },
+                        {
+                          "type": "color",
+                          "defaultValue": "#FFECE3",
+                          "key": "bgc",
+                          "label": "背景色"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "key": "detail",
+                    "type": "array",
+                    "label": "细节描述",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "value",
+                          "defaultValue": "描述文本",
+                          "label": "描述"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "创业蚂蚁-卡片",
+    "render_tree_node": {
+      "ins_id": "cb361de161c64ab29d8ab8d385f7815f",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "1e2d20f17c7f48b691bec906bb44baf0",
+      "key": "schema"
+    }
+  }
+]

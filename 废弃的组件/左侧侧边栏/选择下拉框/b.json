@@ -1,0 +1,120 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "下拉选择按钮组",
+      "properties": [
+        {
+          "label": "设置下拉框",
+          "key": "selectGroup",
+          "type": "object",
+          "properties": [
+            {
+              "label": "标题1",
+              "key": "title1",
+              "bindProp": "title1",
+              "type": "string"
+            },
+            {
+              "label": "标题2",
+              "key": "title2",
+              "bindProp": "title2",
+              "type": "string"
+            },
+            {
+              "label": "标题3",
+              "key": "title3",
+              "bindProp": "title3",
+              "type": "string"
+            },
+            {
+              "label": "综合",
+              "key": "general",
+              "bindProp": "general",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "label",
+                    "defaultValue": "默认文本",
+                    "label": "label"
+                  },
+                  {
+                    "type": "string",
+                    "key": "value",
+                    "defaultValue": "默认值",
+                    "label": "value"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "data",
+              "bindProp": "groupData",
+              "type": "array",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "defaultValue": "标题",
+                    "label": "标题"
+                  },
+                  {
+                    "type": "string",
+                    "key": "description",
+                    "defaultValue": "副文本描述",
+                    "label": "副文本"
+                  },
+                  {
+                    "label": "群组",
+                    "key": "group",
+                    "type": "array",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "label",
+                          "defaultValue": "文本描述",
+                          "label": "label"
+                        },
+                        {
+                          "type": "string",
+                          "key": "value",
+                          "defaultValue": "默认值（number/string）",
+                          "label": "value"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "下拉选择按钮组",
+    "render_tree_node": {
+      "ins_id": "f998a5a635f94b1ea33a58d096fee35d",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "15e9061b5df34edfb6356ec257f481ac",
+      "key": "schema"
+    }
+  }
+]
