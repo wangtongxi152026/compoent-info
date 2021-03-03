@@ -17,72 +17,71 @@
         "id": 1,
         "parentId": 0,
         "ins_id": "",
-        "tag": "van-pull-refresh",
+        "tag": "van-nav-bar",
         "mini_method_uuid": -1,
         "data": {
             "$style": {},
-            "value": false,
-            "pulling-text": "下拉即可刷新...",
-            "loosing-text": "释放即可刷新...",
-            "loading-text": "加载中...",
-            "success-duration": "500",
-            "animation-duration": "300",
-            "head-height": "50",
-            "disabled": false,
+            "title": "标题",
+            "left-arrow": true,
+            "border": true,
+            "fixed": false,
+            "placeholder ": false,
+            "z-index": "1",
+            "safe-area-inset-top": false,
             "$exports": [
                 {
-                    "attrKey": "value",
-                    "alias": "是否处于加载中状态",
+                    "attrKey": "safe-area-inset-top",
+                    "alias": "是否开启顶部安全区适配",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "disabled",
-                    "alias": "是否禁用下拉刷新",
+                    "attrKey": "z-index",
+                    "alias": "导航栏 z-index",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "head-height",
-                    "alias": "顶部内容高度",
+                    "attrKey": "placeholder",
+                    "alias": "固定在顶部时，是否在标签位置生成一个等高的占位元素",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "animation-duration",
-                    "alias": "动画时长",
+                    "attrKey": "fixed",
+                    "alias": "是否固定在顶部",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "success-duration",
-                    "alias": "刷新成功提示展示时长(ms)",
+                    "attrKey": "border",
+                    "alias": "是否显示下边框",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "success-text",
-                    "alias": "刷新成功提示文案",
+                    "attrKey": "left-arrow",
+                    "alias": "是否显示左侧箭头",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "loading-text",
-                    "alias": "加载过程提示文案",
+                    "attrKey": "right-text",
+                    "alias": "右侧文案",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "loosing-text",
-                    "alias": "释放过程提示文案",
+                    "attrKey": "left-text",
+                    "alias": "左侧文案",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "pulling-text",
-                    "alias": "下拉过程提示文案",
+                    "attrKey": "title",
+                    "alias": "NavBar 导航栏标题",
                     "sortIdx": -1
                 },
                 {
-                    "attrKey": "v-model",
-                    "alias": "PullRefresh 下拉刷新 是否处于加载中状态",
+                    "eventKey": "click-right",
+                    "alias": "点击右侧按钮时触发",
                     "sortIdx": -1
                 },
                 {
-                    "eventKey": "refresh",
-                    "alias": "下拉刷新时触发",
+                    "eventKey": "click-left",
+                    "alias": "点击左侧按钮时触发",
                     "sortIdx": -1
                 },
                 {
@@ -112,9 +111,28 @@
         "mini_method_uuid": -1,
         "data": {
             "$style": {
-                "min-height": "40px"
+                "min-width": "20px",
+                "min-height": "20px"
             },
             "$layout": true,
+            "$slot": "left",
+            "$exports": [],
+            "$exportState": true
+        }
+    },
+    {
+        "id": 3,
+        "parentId": 1,
+        "ins_id": "",
+        "tag": "GuiLayout",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {
+                "min-width": "20px",
+                "min-height": "20px"
+            },
+            "$layout": true,
+            "$slot": "right",
             "$exports": [],
             "$exportState": true
         }

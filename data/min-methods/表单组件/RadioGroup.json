@@ -1,10 +1,10 @@
 [
     {
-        "key": "v-model (value)",
+        "key": "value",
         "label": "Radio-item 单选框 当前选中项的标识符",
         "category": "attr",
         "schema": {
-            "type": "any"
+            "type": "string"
         },
         "default": "",
         "isExoprt": true
@@ -20,7 +20,7 @@
         "isExoprt": true
     },
     {
-        "key": "direction ",
+        "key": "direction",
         "label": "排列方向，可选值为 horizontal",
         "category": "attr",
         "schema": {
@@ -29,6 +29,10 @@
                 {
                     "value": "vertical",
                     "label": "vertical"
+                },
+                {
+                    "value": "horizontal",
+                    "label": "horizontal"
                 }
             ]
         },
@@ -40,7 +44,7 @@
         "label": "所有单选框的图标大小，默认单位为 px",
         "category": "attr",
         "schema": {
-            "type": "number | string"
+            "type": "string"
         },
         "default": "",
         "isExoprt": true
@@ -50,7 +54,7 @@
         "label": "所有单选框的选中状态颜色",
         "category": "attr",
         "schema": {
-            "type": "string"
+            "type": "color"
         },
         "default": "",
         "isExoprt": true

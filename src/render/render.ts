@@ -8,8 +8,8 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel, initEditChildNode } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'collapse-item 折叠面板'
-  private folder = '展示组件'
+  private pathName = 'Radio 单选框'
+  private folder = '表单组件'
   constructor() {
     this.readCompInfo()
   }
