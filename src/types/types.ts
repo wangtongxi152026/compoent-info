@@ -17,7 +17,7 @@ export interface Slots {
   label: string;
 }
 
-export interface compInfoResult {
+export interface CompInfoResult {
   componentName: string,
   minthods: Minthods[];
   envets: Events[];

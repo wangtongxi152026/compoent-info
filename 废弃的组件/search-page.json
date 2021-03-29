@@ -1,0 +1,203 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "TreeSelect 分类选择",
+      "properties": [
+        {
+          "label": "设置TreeSelect 分类选择",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "items",
+              "bindProp": "items",
+              "label": "分类显示所需的数据",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "text",
+                    "label": "导航名称",
+                    "defaultValue": "标题"
+                  },
+                  {
+                    "type": "string",
+                    "key": "dot",
+                    "label": "是否在导航名称右上角显示小红点",
+                    "defaultValue": false
+                  },
+                  {
+                    "type": "string",
+                    "key": "badge",
+                    "label": "徽标内容",
+                    "defaultValue": " "
+                  },
+                  {
+                    "type": "string",
+                    "key": "className",
+                    "label": "额外类名（暂时无效果）",
+                    "defaultValue": ""
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "disabled",
+                    "label": "是否禁用选项",
+                    "defaultValue": false
+                  },
+                  {
+                    "type": "string",
+                    "key": "id",
+                    "label": "默认值（唯一性）",
+                    "defaultValue": "-1"
+                  },
+                  {
+                    "type": "array",
+                    "key": "children",
+                    "label": "子项选择",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "text",
+                          "label": "导航名称",
+                          "defaultValue": "标题"
+                        },
+                        {
+                          "type": "string",
+                          "key": "dot",
+                          "label": "是否在导航名称右上角显示小红点",
+                          "defaultValue": false
+                        },
+                        {
+                          "type": "string",
+                          "key": "badge",
+                          "label": "徽标内容",
+                          "defaultValue": " "
+                        },
+                        {
+                          "type": "string",
+                          "key": "className",
+                          "label": "额外类名（暂时无效果）",
+                          "defaultValue": ""
+                        },
+                        {
+                          "type": "boolean",
+                          "key": "disabled",
+                          "label": "是否禁用选项",
+                          "defaultValue": false
+                        },
+                        {
+                          "type": "string",
+                          "key": "id",
+                          "label": "默认值（唯一性）",
+                          "defaultValue": ""
+                        },
+                        {
+                          "type": "array",
+                          "key": "children",
+                          "label": "子项选择",
+                          "items": {
+                            "label": "菜单项",
+                            "key": "label",
+                            "type": "object",
+                            "properties": [
+                              {
+                                "type": "string",
+                                "key": "text",
+                                "label": "导航名称",
+                                "defaultValue": "标题"
+                              },
+                              {
+                                "type": "string",
+                                "key": "dot",
+                                "label": "是否在导航名称右上角显示小红点",
+                                "defaultValue": false
+                              },
+                              {
+                                "type": "string",
+                                "key": "badge",
+                                "label": "徽标内容",
+                                "defaultValue": " "
+                              },
+                              {
+                                "type": "string",
+                                "key": "className",
+                                "label": "额外类名（暂时无效果）",
+                                "defaultValue": ""
+                              },
+                              {
+                                "type": "boolean",
+                                "key": "disabled",
+                                "label": "是否禁用选项",
+                                "defaultValue": false
+                              },
+                              {
+                                "type": "string",
+                                "key": "id",
+                                "label": "默认值（唯一性）",
+                                "defaultValue": ""
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "key": "height",
+              "bindProp": "height",
+              "label": "高度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "main-active-index",
+              "bindProp": "main-active-index",
+              "label": "左侧选中项的索引",
+              "type": "string"
+            },
+            {
+              "key": "active-id",
+              "bindProp": "active-id",
+              "label": "右侧选中项的 id，支持传入数组",
+              "type": "string"
+            },
+            {
+              "key": "max",
+              "bindProp": "max",
+              "label": "右侧项最大选中个数",
+              "type": "string"
+            },
+            {
+              "key": "selected-icon",
+              "bindProp": "selected-icon",
+              "label": "自定义右侧栏选中状态的图标",
+              "type": "img"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "TreeSelect 分类选择",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

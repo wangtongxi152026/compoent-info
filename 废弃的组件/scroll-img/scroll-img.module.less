@@ -1,0 +1,110 @@
+// 轮播组件
+.works-edit-box {
+  padding: 12px 0 12px 12px;
+  overflow-x: auto;
+  touch-action: pan-x;
+  * {
+    touch-action: pan-x;
+  }
+  &::-webkit-scrollbar {
+    height: 0 !important;
+  }
+  .works-edit-box-in {
+    text-align: center;
+    display: flex;
+    .default-style {
+      border: 1px solid #ccc;
+    }
+    div {
+      background-size: contain;
+      flex-shrink: 0;
+      width: fit-content;
+      margin-right: 8px;
+      position: relative;
+      .img {
+        border-radius: 4px;
+      }
+      .works-ok {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+      }
+      .works-vip {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+    div:last-child {
+      margin-right: 0;
+    }
+    .works-mask {
+      width: 100%;
+      height: 100%;
+      background: gray;
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 0.6;
+    }
+  }
+  .select-music {
+    display: flex;
+    .music-name {
+      text-align: center;
+      width: 100%;
+      line-height: 96px;
+      height: 64px;
+      padding-right: 16px;
+    }
+    .music-box {
+      background-size: contain;
+      flex-shrink: 0;
+      width: 153px;
+      height: 153px;
+      line-height: 224px;
+      margin-right: 16px;
+      background-position: 50%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      position: relative;
+      .works-ok {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+      }
+      .works-vip {
+        width: 22px;
+        height: 15px;
+        position: absolute;
+        left: 0;
+        top: 12px;
+      }
+    }
+    div:last-child {
+      margin-right: 0;
+    }
+    .works-mask {
+      width: 100%;
+      height: 100%;
+      background: gray;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 0.6;
+    }
+  }
+}

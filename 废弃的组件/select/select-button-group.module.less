@@ -1,0 +1,227 @@
+.container {
+  position: relative;
+  z-index: 2;
+  .title {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 80px 80px 80px 20px 1px auto;
+    width: 100%;
+    background: #fff;
+    height: 44px;
+    font-size: 15px;
+    padding: 0 12px;
+    span {
+      display: flex;
+      align-items: center;
+      padding-right: 4px;
+      justify-content: space-evenly;
+      div {
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .icon{
+        display: inline-block;
+        width: 30px;
+      }
+    }
+    .selectIconColor {
+      color: #2d8cf0 !important;
+    }
+    .right-icon {
+      justify-self: center;
+      align-self: center;
+      width: 16px;
+    }
+    > span:last-child {
+      justify-self: end;
+    }
+    .divider {
+      height: 18px;
+      background: #eeeeee;
+      align-self: center;
+      margin: 0 12px;
+      width: 1px;
+    }
+    div:last-child {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 12px;
+      width: 100%;
+      margin-left: 12px;
+      img {
+        width: 14px;
+        height: 13px;
+      }
+    }
+  }
+  .border {
+    border-bottom: 1px solid #ddd;
+  }
+  .select-wrapper {
+    top: 44px;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    :global(.um-radio-inner) {
+      &::after {
+        border-color: #333;
+      }
+      &:after {
+        border-width: 0 2px 2px 0 !important;
+      }
+    }
+    :global(.um-list-body div:not(:last-child) .um-list-line) {
+      &::after {
+        border-bottom: 1px solid #eee;
+      }
+    }
+    :global(.um-list-item) {
+      padding-left: 12px;
+    }
+    :global(.um-list-content) {
+      font-size: 17px;
+      color: #333;
+    }
+
+    .select-wrapper-button {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow-y: auto;
+      z-index: 2;
+      background: #fff;
+      max-height: 500px;
+      overflow-y: scroll;
+      .price-range {
+        margin: 0 12px 12px 12px;
+        display: grid;
+        height: 36px;
+        grid-template-columns: 1fr 36px 1fr;
+        grid-template-rows: 1fr;
+        .divider-x {
+          align-self: center;
+          justify-self: center;
+          width: 15px;
+          height: 1px;
+          background-color: #ccc;
+        }
+        .price-input {
+          cursor: pointer;
+          color: #333333;
+          width: 100%;
+          border: none;
+          text-align: center;
+          background-color: #f5f5f5;
+          position: relative;
+          box-sizing: border-box;
+          border-radius: 4px;
+          &::placeholder {
+            color: #ccc;
+          }
+        }
+      }
+      .group-title {
+        height: 45px;
+        display: flex;
+        padding: 0 12px;
+        align-items: center;
+        flex-wrap: nowrap;
+        .name {
+          width: fit-content;
+          font-size: 15px;
+          color: #333;
+        }
+        .subtitle {
+          margin-left: 12px;
+          width: fit-content;
+          font-size: 13px;
+          color: #999;
+        }
+      }
+      .button-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .button-item {
+          cursor: pointer;
+          width: 31%;
+          color: #333333;
+          text-align: center;
+          background-color: #f5f5f5;
+          position: relative;
+          box-sizing: border-box;
+          margin-bottom: 8px;
+          height: 36px;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 2;
+          overflow: hidden;
+          span {
+            font-size: 0.75rem;
+          }
+          .select-icon {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid #108ee9;
+            border-left: 27px solid transparent;
+            .check {
+              position: absolute;
+              top: 6px;
+              right: 0px;
+            }
+          }
+        }
+        .selected {
+          background-color: #e7f1ff;
+          color: #108ee9;
+        }
+      }
+    }
+    .select-action {
+      height: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-size: 18px;
+
+      cursor: pointer;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+      div:first-child {
+        background: #ffffff;
+        color: #333333;
+        border: 1px solid #eeeeee;
+      }
+      div:last-child {
+        background: #108ee9;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  z-index: 2;
+}

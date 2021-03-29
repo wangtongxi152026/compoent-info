@@ -1,6 +1,6 @@
 {
   "Image 图片": {
-    "minthods": [
+    "prop": [
       {
         "key": "src",
         "label": "Image 图片 图片链接",

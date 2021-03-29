@@ -1,0 +1,50 @@
+[
+  {
+    "key": "height",
+    "label": "图片高度",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "radius",
+    "label": "图片圆角",
+    "category": "attr",
+    "schema": {
+      "type": "string"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "dots",
+    "label": "是否显示面板指示点",
+    "category": "attr",
+    "schema": {
+      "type": "boolean"
+    },
+    "default": "",
+    "isExoprt": true
+  },
+  {
+    "key": "clickImgHandle",
+    "label": "点击当前轮播的函数",
+    "category": "event",
+    "task": {
+      "label": "绑定点击当前轮播事件clickImgHandle",
+      "process": {
+        "type": "bind_method",
+        "defaultMethods": [],
+        "custom_access": true
+      }
+    },
+    "isExoprt": true
+  },
+  {
+    "path": "043fc368aeee4f2791cbfdb01f39abc3.gui.Carousel",
+    "category": "editor_render"
+  }
+]

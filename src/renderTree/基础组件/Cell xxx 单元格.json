@@ -2,7 +2,7 @@
   {
     "id": 0,
     "parentId": -1,
-    "ins_id": "Jzmwyr7eJBXCDCRC3dXzPwrcYFS58yTW",
+    "ins_id": "",
     "tag": "div",
     "mini_method_uuid": -1,
     "data": {
@@ -17,117 +17,127 @@
     "id": 1,
     "parentId": 0,
     "ins_id": "",
-    "tag": "van-cell",
+    "tag": "van-picker",
     "mini_method_uuid": -1,
     "data": {
       "$style": {},
-      "icon-prefix": "van-icon",
-      "border": true,
-      "replace": false,
-      "clickable": "null",
-      "is-link": false,
-      "required": false,
-      "center": false,
-      "arrow-direction": "right",
+      "title": "标题",
+      "columns": [
+        {
+          "values": [
+            "周一",
+            "周二",
+            "周三",
+            "周四",
+            "周五"
+          ],
+          "defaultIndex": 2
+        },
+        {
+          "values": [
+            "上午",
+            "下午",
+            "晚上"
+          ],
+          "defaultIndex": 1
+        }
+      ],
+      "confirm-button-text": "确认",
+      "cancel-button-text": "取消",
+      "value-key": "text",
+      "toolbar-position": "top",
+      "loading": false,
+      "readonly ": false,
+      "show-toolbar": true,
+      "allow-html": true,
+      "default-index": "0",
+      "item-height ": "44",
+      "visible-item-count": "6",
+      "swipe-duration": "1000",
       "$exports": [
         {
-          "attrKey": "label-class",
-          "alias": "描述信息额外类名",
+          "attrKey": "swipe-duration",
+          "alias": "快速滑动时惯性滚动的时长，单位 ms",
           "sortIdx": -1
         },
         {
-          "attrKey": "value-class",
-          "alias": "右侧内容额外类名",
+          "attrKey": "visible-item-count",
+          "alias": "可见的选项个数",
           "sortIdx": -1
         },
         {
-          "attrKey": "title-class",
-          "alias": "左侧标题额外类名",
+          "attrKey": "item-height",
+          "alias": "选项高度，支持  px vw vh rem  单位，默认  px",
           "sortIdx": -1
         },
         {
-          "attrKey": "title-style",
-          "alias": "左侧标题额外样式",
+          "attrKey": "default-index",
+          "alias": "单列选择时，默认选中项的索引",
           "sortIdx": -1
         },
         {
-          "attrKey": "arrow-direction",
-          "alias": "箭头方向，可选值为  left up down",
+          "attrKey": "allow-html",
+          "alias": "是否允许选项内容中渲染 HTML",
           "sortIdx": -1
         },
         {
-          "attrKey": "center",
-          "alias": "是否使内容垂直居中",
+          "attrKey": "show-toolbar",
+          "alias": "是否显示顶部栏",
           "sortIdx": -1
         },
         {
-          "attrKey": "required",
-          "alias": "是否显示表单必填星号",
+          "attrKey": "readonly",
+          "alias": "是否为只读状态，只读状态下无法切换选项",
           "sortIdx": -1
         },
         {
-          "attrKey": "is-link",
-          "alias": "是否展示右侧箭头并开启点击反馈",
+          "attrKey": "loading",
+          "alias": "是否显示加载状态",
           "sortIdx": -1
         },
         {
-          "attrKey": "clickable",
-          "alias": "是否开启点击反馈",
+          "attrKey": "toolbar-position",
+          "alias": "顶部栏位置，可选值为 bottom",
           "sortIdx": -1
         },
         {
-          "attrKey": "replace",
-          "alias": "是否在跳转时替换当前页面历史",
+          "attrKey": "value-key",
+          "alias": "选项对象中，选项文字对应的键名",
           "sortIdx": -1
         },
         {
-          "attrKey": "border",
-          "alias": "是否显示内边框",
+          "attrKey": "cancel-button-text",
+          "alias": "取消按钮文字",
           "sortIdx": -1
         },
         {
-          "attrKey": "to",
-          "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "url",
-          "alias": "点击后跳转的链接地址",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "icon-prefix ",
-          "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "icon",
-          "alias": "左侧 图标名称 或图片链接",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "size",
-          "alias": "单元格大小，可选值为  large",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "label",
-          "alias": "标题下方的描述信息",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "value",
-          "alias": "右侧内容",
+          "attrKey": "confirm-button-text",
+          "alias": "确认按钮文字",
           "sortIdx": -1
         },
         {
           "attrKey": "title",
-          "alias": "Cell-item 单元格 左侧标题",
+          "alias": "顶部栏标题",
           "sortIdx": -1
         },
         {
-          "eventKey": "click",
-          "alias": "点击单元格时触发",
+          "attrKey": "columns",
+          "alias": "Picker 选择器 对象数组，配置每一列显示的数据",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "change",
+          "alias": "选项改变时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "cancel",
+          "alias": "点击取消按钮时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "confirm",
+          "alias": "点击完成按钮时触发",
           "sortIdx": -1
         },
         {

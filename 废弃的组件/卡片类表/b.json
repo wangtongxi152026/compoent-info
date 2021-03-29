@@ -1,0 +1,76 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "卡片列表-2",
+      "properties": [
+        {
+          "label": "设置卡片列表-2",
+          "key": "antCard",
+          "type": "object",
+          "properties": [
+            {
+              "key": "cardData",
+              "type": "object",
+              "bindProp": "cardData",
+              "label": "卡片内容",
+              "properties": [
+                {
+                  "label": "图片地址",
+                  "key": "img",
+                  "type": "img"
+                },
+                {
+                  "label": "标题",
+                  "key": "title",
+                  "type": "string"
+                },
+                {
+                  "label": "描述",
+                  "key": "subtitle",
+                  "type": "string"
+                },
+                {
+                  "label": "卡片是否带阴影",
+                  "key": "borderBottom",
+                  "type": "boolean"
+                },
+                {
+                  "label": "左侧文本",
+                  "key": "leftText",
+                  "type": "string"
+                },
+                {
+                  "label": "右侧文本",
+                  "key": "rightText",
+                  "type": "string"
+                },
+                {
+                  "label": "新价格",
+                  "key": "newPrice",
+                  "type": "string"
+                },
+                {
+                  "label": "旧价格",
+                  "key": "oldPrice",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "label": "卡片列表-2",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

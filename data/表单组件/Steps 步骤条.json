@@ -1,0 +1,66 @@
+{
+  "Steps 步骤条": {
+    "minthods": [
+      {
+        "key": "active",
+        "label": "Steps 步骤条 当前步骤",
+        "type": "number | string",
+        "default": "0"
+      },
+      {
+        "key": "direction",
+        "label": "显示方向，可选值为  vertical",
+        "type": "string",
+        "default": "horizontal",
+        "enumList": [
+          {
+            "value": "vertical",
+            "label": "vertical"
+          },
+          {
+            "value": "horizontal",
+            "label": "horizontal"
+          }
+        ]
+      },
+      {
+        "key": "active-color",
+        "label": "激活状态颜色",
+        "type": "string",
+        "default": "#07c160"
+      },
+      {
+        "key": "inactive-color ",
+        "label": "未激活状态颜色",
+        "type": "string",
+        "default": "#969799"
+      },
+      {
+        "key": "active-icon",
+        "label": "激活状态底部图标，可选值见  Icon 组件",
+        "type": "string",
+        "default": "checked"
+      },
+      {
+        "key": "inactive-icon",
+        "label": "未激活状态底部图标，可选值见  Icon 组件",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "finish-icon ",
+        "label": "已完成步骤对应的底部图标，优先级高于  inactive-icon ，可选值见  Icon 组件",
+        "type": "string",
+        "default": "-"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "click-step ",
+        "label": "点击步骤的标题或图标时触发",
+        "param": "index: number "
+      }
+    ],
+    "slots": []
+  }
+}

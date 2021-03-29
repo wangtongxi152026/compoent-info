@@ -1,0 +1,20 @@
+{
+  "Step 步骤条": {
+    "minthods": [],
+    "envets": [],
+    "slots": [
+      {
+        "slot": "active-icon",
+        "label": "Step 步骤条 自定义激活状态图标"
+      },
+      {
+        "slot": "inactive-icon",
+        "label": "自定义未激活状态图标"
+      },
+      {
+        "slot": "finish-icon ",
+        "label": "自定义已完成步骤对应的底部图标，优先级高于  inactive-icon"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+@import '../style/sty-function.less';
+.result-card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 64px;
+    height: 64px;
+  }
+  div {
+    text-align: center;
+  }
+  .hint {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    .normal-text()
+  }
+  .text {
+    .limit-text-line(2);
+    .sub-text()
+  }
+}

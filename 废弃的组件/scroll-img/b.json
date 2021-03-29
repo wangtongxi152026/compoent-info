@@ -1,0 +1,133 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "横向图片滚动",
+      "properties": [
+        {
+          "label": "设置图片滚动",
+          "key": "scrollImg",
+          "type": "object",
+          "properties": [
+            {
+              "label": "主题色",
+              "key": "themeColor",
+              "bindProp": "themeColor",
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "蓝色",
+                  "value": "蓝色"
+                },
+                {
+                  "label": "青绿",
+                  "value": "青绿"
+                },
+                {
+                  "label": "嫩绿",
+                  "value": "嫩绿"
+                },
+                {
+                  "label": "橘黄",
+                  "value": "橘黄"
+                },
+                {
+                  "label": "橘红",
+                  "value": "橘红"
+                },
+                {
+                  "label": "正红",
+                  "value": "正红"
+                },
+                {
+                  "label": "粉色",
+                  "value": "粉色"
+                },
+                {
+                  "label": "金黄",
+                  "value": "金黄"
+                },
+                {
+                  "label": "天蓝",
+                  "value": "天蓝"
+                },
+                {
+                  "label": "紫色",
+                  "value": "紫色"
+                },
+                {
+                  "label": "铁黑",
+                  "value": "铁黑"
+                }
+              ],
+              "isHalf": true
+            },
+            {
+              "label": "类型",
+              "key": "type",
+              "bindProp": "type",
+              "isHalf": true,
+              "type": "string",
+              "enumList": [
+                {
+                  "label": "空心",
+                  "value": "plain"
+                },
+                {
+                  "label": "浅色",
+                  "value": "light"
+                },
+                {
+                  "label": "深色",
+                  "value": "dark"
+                }
+              ]
+            },
+            {
+              "label": "标签名",
+              "key": "text",
+              "bindProp": "text",
+              "type": "string"
+            },
+            {
+              "key": "data",
+              "type": "array",
+              "bindProp": "scrollImgs",
+              "label": "设置图片",
+              "items": {
+                "label": "图片项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "img",
+                    "key": "img",
+                    "defaultValue": "//s2-cdn.oneitfarm.com/FuknX7i6nWJ51EKUZKmEXyZfRr-G",
+                    "label": "建议尺寸：208x312PX"
+                  },
+                  {
+                    "type": "boolean",
+                    "key": "isVip",
+                    "defaultValue": false,
+                    "label": "是否添加标签"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "横向图片滚动",
+    "render_tree_node": {
+      "ins_id": "7f28890311e34796a0b7daf33b627e4d",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "b2a10d8899e140d4bdbc7150cf405fe3",
+      "key": "schema"
+    }
+  }
+]

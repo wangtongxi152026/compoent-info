@@ -12,6 +12,63 @@
           "type": "object",
           "properties": [
             {
+              "key": "columns",
+              "bindProp": "columns",
+              "label": "配置每一列显示的数据",
+              "type": "array",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "array",
+                    "key": "values",
+                    "label": "列中对应的备选值",
+                    "items": {
+                      "label": "备选值",
+                      "key": "value",
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "type": "number",
+                    "key": "初始选中项的索引",
+                    "label": "详细地址",
+                    "defaultValue": 0
+                  },
+                  {
+                    "type": "array",
+                    "key": "children",
+                    "label": "级联选项",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "array",
+                          "key": "values",
+                          "label": "列中对应的备选值",
+                          "items": {
+                            "label": "备选值",
+                            "key": "value",
+                            "type": "string"
+                          }
+                        },
+                        {
+                          "type": "number",
+                          "key": "初始选中项的索引",
+                          "label": "详细地址",
+                          "defaultValue": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
               "key": "title",
               "bindProp": "title",
               "label": "顶部栏标题",

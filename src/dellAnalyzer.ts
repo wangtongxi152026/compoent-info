@@ -4,7 +4,7 @@ import {
   Minthods,
   Events,
   Slots,
-  compInfoResult
+  CompInfoResult
 } from './types/types'
 import { ParseText } from './parseText'
 
@@ -131,7 +131,7 @@ export default class DellAnalyzer {
 
 
 
-  public generateJsonContent(compInfo: compInfoResult) {
+  public generateJsonContent(compInfo: CompInfoResult) {
     const { minthods, envets, slots } = compInfo;
     let fileContent: any = {};
     // if (fs.existsSync(filePath)) {
@@ -144,7 +144,7 @@ export default class DellAnalyzer {
 
 
   public analyze(html: string) {
-    const compInfo: compInfoResult = this.parseHtml(html);
+    const compInfo: CompInfoResult = this.parseHtml(html);
     const fileContent = this.generateJsonContent(compInfo);
     console.log('fileContent', fileContent)
     return { content: fileContent, pathName: compInfo.componentName };
@@ -153,9 +153,9 @@ export default class DellAnalyzer {
   private parseHtml(html: string) {
     const $ = cheerio.load(html);
     let componentName = this.getParseText($('h1').toArray()[0]).trim()
-    let minthodsHtml = $('#swipeitem-props').siblings().find('tbody').find('tr')
-    let envetsHtml = $('#swipeitem-events').siblings().find('tbody').find('tr')
-    let slotsHtml = $('#swipeitem-slots').siblings().find('tbody').find('tr')
+    let minthodsHtml = $('#props').siblings().find('tbody').find('tr')
+    let envetsHtml = $('#events').siblings().find('tbody').find('tr')
+    let slotsHtml = $('#slots').siblings().find('tbody').find('tr')
     const minthods = this.getMinthods(minthodsHtml)
     const envets = this.getEnvets(envetsHtml)
     const slots = this.getSlots(slotsHtml)

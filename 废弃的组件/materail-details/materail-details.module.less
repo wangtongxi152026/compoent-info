@@ -1,0 +1,100 @@
+@import '../style/sty-function.less';
+.container {
+  background-color: #f5f5f5;
+  height: 100%;
+  .card {
+    background-color: #fff;
+    display: grid;
+    padding: 12px;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px;
+    .card-left {
+      .card-img {
+        border-radius: 4px;
+        width: 100px;
+        height: 133px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .card-right {
+      .two-line {
+        .limit-text-line(2); //显示的行
+      }
+      .title {
+        font-size: 15px;
+        color: #333333;
+        font-weight: 500;
+      }
+      .detail {
+        margin-top: 6px;
+        margin-bottom: 12px;
+        font-size: 13px;
+        color: #999;
+        .detail-wrapper {
+          display: inline-block;
+          .divider {
+            display: inline-block;
+            margin: 0 4px;
+            color: #eeeeee;
+          }
+          .detail-item {
+            display: inline-block;
+            font-size: 13px;
+            color: #999999;
+          }
+        }
+      }
+      .action {
+        .flex-content(space-between);
+        .action-item {
+          .flex();
+          img {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+          }
+          span {
+            .sub-text();
+          }
+        }
+      }
+    }
+  }
+  .book-description {
+    background-color: #fff;
+    margin: 8px 0;
+    .descriptions {
+      padding: 0 12px;
+      .margin {
+        margin-bottom: 12px;
+      }
+      .description {
+        .limit-text-line(2);
+        .md-text();
+      }
+    }
+  }
+  .catalogue {
+    background-color: #fff;
+    .catalogue-title {
+      height: 49px;
+      padding: 0 12px;
+      .flex-content(space-between);
+      .title {
+        font-size: 18px;
+        color: #333;
+        letter-spacing: -0.87px;
+        font-weight: 500;
+      }
+      .right {
+        .flex-content(space-between);
+        .desc {
+          margin-right: 12px;
+          .font-15-ccc();
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Icon 图标",
+      "properties": [
+        {
+          "label": "设置Icon 图标",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "name",
+              "bindProp": "name",
+              "label": "vant图标名称",
+              "type": "string"
+            },
+            {
+              "key": "name",
+              "bindProp": "name",
+              "label": "图标链接",
+              "type": "img"
+            },
+            {
+              "key": "dot",
+              "bindProp": "dot",
+              "label": "是否显示图标右上角小红点",
+              "type": "boolean"
+            },
+            {
+              "key": "badge",
+              "bindProp": "badge",
+              "label": "图标右上角徽标的内容",
+              "type": "string"
+            },
+            {
+              "key": "color",
+              "bindProp": "color",
+              "label": "图标颜色",
+              "type": "color"
+            },
+            {
+              "key": "size",
+              "bindProp": "size",
+              "label": "图标大小，如  20px 2em ，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "class-prefix",
+              "bindProp": "class-prefix",
+              "label": "类名前缀，用于使用自定义图标",
+              "type": "string"
+            },
+            {
+              "key": "tag",
+              "bindProp": "tag",
+              "label": "HTML 标签",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Icon 图标",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

@@ -8,8 +8,8 @@ import {
 import { initExprotArr, initRenderTree, initOperationTree, initDefaultValue, formatLabel, initEditChildNode } from './initData'
 
 export default class DellAnalyzer {
-  private pathName = 'checkboxgroup 复选框'
-  private folder = '表单组件'
+  private pathName = 'Icon 图标'
+  private folder = '基础组件'
   constructor() {
     this.readCompInfo()
   }

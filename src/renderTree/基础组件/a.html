@@ -1,0 +1,53 @@
+<!-- @format -->
+
+<script type="text/javascript">
+  function member(id, color) {
+    this.id = id;
+    this.color = color;
+  }
+  var big_table = new Array();
+  big_table[0] = new member('aaa0', '#FF0000');
+  big_table[1] = new member('aaa1', '#99FF00');
+  big_table[2] = new member('aaa2', '#0000FF');
+  big_table[3] = new member('aaa3', '#9900FF');
+
+  function color_map_init() {
+    var map = document.getElementById('map');
+    var svg_document = map.contentDocument;
+    for (var iii in big_table) {
+      obj = big_table[iii].id;
+      this_color = big_table[iii].color;
+      this_obj = svg_document.getElementById(obj);
+      this_obj.setAttribute('style', 'fill:' + this_color);
+    }
+  }
+
+  function color_map(iii, new_color) {
+    var map = document.getElementById('map');
+    var svg_document = map.contentDocument;
+    //this_obj = svg_document.getElementById("a1");//objstr
+    obj = big_table[iii];
+    this_obj = svg_document.getElementById(obj.id);
+    this_obj.setAttribute('style', 'fill:' + new_color);
+  }
+  function color_map1(iii, new_color) {
+    var map = document.getElementById('map1');
+    var svg_document = map.contentDocument;
+    console.log(svg_document,map)
+    //this_obj = svg_document.getElementById("a1");//objstr
+    obj = big_table[iii];
+    this_obj = svg_document.getElementById(obj.id);
+    this_obj.setAttribute('style', 'fill:' + new_color);
+  }
+</script>
+<input type="button" value="初始化init" onclick="color_map_init();" />
+<input type="button" value="按钮1" onclick="color_map(0,'#FFFF00');" />
+<input type="button" value="按钮2" onclick="color_map(1,'#FFFF00');" />
+<input type="button" value="按钮3" onclick="color_map(2,'#FFFF00');" />
+<input type="button" value="按钮4" onclick="color_map1(3,'#FFFF00');" />
+
+<div style="position: absolute; left: 0px; top: 60px; border: solid 1px">
+  <object id="map" type="image/svg+xml" data="./1.svg" width="800" height="700"></object>
+  <object id="map" type="image/svg+xml" data="./2.svg" width="800" height="700"></object>
+  <img id="map1"   src="./1.svg" width="800" height="700"></img>
+</div>

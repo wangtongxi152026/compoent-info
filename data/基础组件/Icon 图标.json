@@ -1,0 +1,62 @@
+{
+  "Icon 图标": {
+    "minthods": [
+      {
+        "key": "name",
+        "label": "Icon 图标 图标名称或图片链接",
+        "type": "string",
+        "default": "-"
+      },
+      {
+        "key": "dot",
+        "label": "是否显示图标右上角小红点",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "key": "badge ",
+        "label": "图标右上角徽标的内容",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "info",
+        "label": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+        "type": "number | string",
+        "default": "-"
+      },
+      {
+        "key": "color",
+        "label": "图标颜色",
+        "type": "string",
+        "default": "inherit"
+      },
+      {
+        "key": "size",
+        "label": "图标大小，如  20px 2em ，默认单位为 px",
+        "type": "number | string",
+        "default": "inherit"
+      },
+      {
+        "key": "class-prefix",
+        "label": "类名前缀，用于使用自定义图标",
+        "type": "string",
+        "default": "van-icon"
+      },
+      {
+        "key": "tag",
+        "label": "HTML 标签",
+        "type": "string",
+        "default": "i"
+      }
+    ],
+    "envets": [
+      {
+        "eventKey": "click",
+        "label": "点击图标时触发",
+        "param": "event: Event "
+      }
+    ],
+    "slots": []
+  }
+}

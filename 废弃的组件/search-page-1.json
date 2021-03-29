@@ -1,0 +1,77 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "搜索页",
+      "properties": [
+        {
+          "label": "搜索页设置",
+          "key": "searchComp",
+          "type": "object",
+          "properties": [
+            {
+              "key": "recommendData",
+              "bindProp": "recommendData",
+              "type": "array",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "label",
+                    "label": "文本"
+                  },
+                  {
+                    "type": "string",
+                    "key": "value",
+                    "label": "唯一标识",
+                    "defaultValue":""
+                  }
+                ]
+              }
+            },
+            {
+              "key": "recentData",
+              "bindProp": "recentData",
+              "type": "array",
+              "label": "数据",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "defaultValue": "默认文本",
+                    "key": "label",
+                    "label": "文本"
+                  },
+                  {
+                    "type": "string",
+                    "key": "value",
+                    "defaultValue": "",
+                    "label": "value"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "label": "搜索页",
+    "render_tree_node": {
+      "ins_id": "cc5dd108c2474dc3a050ce4dab36c65b",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "7a564361d75b4432a9a1175f553e07bf",
+      "key": "schema"
+    }
+  }
+]

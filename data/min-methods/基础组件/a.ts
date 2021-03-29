@@ -1,0 +1,13 @@
+[
+  'divider',
+  'bottom-button-single',
+  'button-tabs',
+  'search-bar-light',
+  'common-search-bar',
+  'classify-search',
+  'card-list',
+  'common-user-center',
+  'ant-card-x',
+  'span',
+  'avatar-list-3'
+]

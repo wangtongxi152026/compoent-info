@@ -4,89 +4,90 @@
     "schema": {
       "type": "object",
       "key": "schema",
-      "label": "Area 省市区选择",
+      "label": "Slider 滑块",
       "properties": [
         {
-          "label": "设置Area 省市区选择",
+          "label": "设置Slider 滑块",
           "key": "tabs",
           "type": "object",
           "properties": [
             {
               "key": "value",
               "bindProp": "value",
-              "label": "Area 省市区选择 当前选中的省市区 code",
-              "type": "string"
-            },
-            {
-              "key": "title",
-              "bindProp": "title",
-              "label": "顶部栏标题",
-              "type": "string"
-            },
-            {
-              "key": "confirm-button-text",
-              "bindProp": "confirm-button-text",
-              "label": "确认按钮文字",
-              "type": "string"
-            },
-            {
-              "key": "cancel-button-text",
-              "bindProp": "cancel-button-text",
-              "label": "取消按钮文字",
-              "type": "string"
-            },
-            {
-              "key": "columns-placeholder",
-              "bindProp": "columns-placeholder",
-              "label": "列占位提示文字",
+              "label": "Slider 滑块 当前进度百分比",
               "type": "array",
               "items": {
-                "label": "提示文字",
+                "label": "当前进度",
                 "key": "value",
+                "defaultValue": 10,
                 "type": "string"
               }
             },
             {
-              "key": "loading",
-              "bindProp": "loading",
-              "label": "是否显示加载状态",
+              "key": "max",
+              "bindProp": "max",
+              "label": "最大值",
+              "type": "number"
+            },
+            {
+              "key": "min",
+              "bindProp": "min",
+              "label": "最小值",
+              "type": "number"
+            },
+            {
+              "key": "step",
+              "bindProp": "step",
+              "label": "步长",
+              "type": "number"
+            },
+            {
+              "key": "bar-height",
+              "bindProp": "bar-height",
+              "label": "进度条高度，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "button-size",
+              "bindProp": "button-size",
+              "label": "滑块按钮大小，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "active-color",
+              "bindProp": "active-color",
+              "label": "进度条激活态颜色",
+              "type": "color"
+            },
+            {
+              "key": "inactive-color",
+              "bindProp": "inactive-color",
+              "label": "进度条非激活态颜色",
+              "type": "color"
+            },
+            {
+              "key": "range",
+              "bindProp": "range",
+              "label": "是否开启双滑块模式",
               "type": "boolean"
             },
             {
-              "key": "readonly",
-              "bindProp": "readonly",
-              "label": "是否为只读状态，只读状态下无法切换选项",
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否禁用滑块",
               "type": "boolean"
             },
             {
-              "key": "item-height",
-              "bindProp": "item-height",
-              "label": "选项高度，支持  px vw vh rem  单位，默认  px",
-              "type": "string"
-            },
-            {
-              "key": "columns-num",
-              "bindProp": "columns-num",
-              "label": "显示列数，3-省市区，2-省市，1-省",
-              "type": "string"
-            },
-            {
-              "key": "visible-item-count",
-              "bindProp": "visible-item-count",
-              "label": "可见的选项个数",
-              "type": "string"
-            },
-            {
-              "key": "swipe-duration",
-              "bindProp": "swipe-duration",
-              "label": "快速滑动时惯性滚动的时长，单位 ms",
-              "type": "string"
+              "key": "vertical",
+              "bindProp": "vertical",
+              "label": "是否垂直展示",
+              "type": "boolean"
             }
           ]
         }
       ]
     },
-    "label": "Area 省市区选择",
+    "label": "Slider 滑块",
     "render_tree_node": {
       "ins_id": "",
       "key": "schema"

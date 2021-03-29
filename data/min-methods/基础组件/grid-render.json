@@ -1,0 +1,90 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "mu-carousel",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "config": {
+        "dots": true,
+        "autoplay": true,
+        "autoplayInterval": 3000,
+        "speed": 2000,
+        "height": 100,
+        "radius": 4,
+        "infinite": true
+      },
+      "imageData": [
+        {
+          "to": "",
+          "img": "//img1.mukewang.com/5fbb1dd709b1505218000600.png"
+        },
+        {
+          "to": "",
+          "img": "//img.mukewang.com/5fbdc12c09fd659d18000600.png"
+        },
+        {
+          "to": "",
+          "img": "//img.mukewang.com/5fb1e8030996e77018000600.png"
+        },
+        {
+          "to": "",
+          "img": "//img1.mukewang.com/5fad5c0b091cc88318000600.png"
+        },
+        {
+          "to": "",
+          "img": "//img2.mukewang.com/5ed9ddc50001f7f609000300.jpg"
+        }
+      ],
+      "$exports": [
+        {
+          "attrKey": "imageData",
+          "alias": "是否开启毫秒级渲染",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "config",
+          "alias": "是否自动开始倒计时",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "clickImgHandle",
+          "alias": "是否自动开始倒计时",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

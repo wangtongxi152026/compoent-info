@@ -1,0 +1,95 @@
+[
+  {
+    "id": 0,
+    "parentId": -1,
+    "ins_id": "",
+    "tag": "div",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {
+        "width": "100%",
+        "height": "100%",
+        "overflow": "auto"
+      }
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-cell",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "dot": false,
+      "color": "inherit",
+      "size": "inherit",
+      "name": "cart-o",
+      "class-prefix": "van-icon",
+      "tag": "i",
+      "$exports": [
+        {
+          "attrKey": "tag",
+          "alias": "HTML 标签",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "class-prefix",
+          "alias": "类名前缀，用于使用自定义图标",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "size",
+          "alias": "图标大小，如  20px 2em ，默认单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "color",
+          "alias": "图标颜色",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "info",
+          "alias": "图标右上角徽标的内容（已废弃，请使用 badge 属性）",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "badge ",
+          "alias": "图标右上角徽标的内容",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "dot",
+          "alias": "是否显示图标右上角小红点",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "name",
+          "alias": "Icon 图标 图标名称或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click",
+          "alias": "点击图标时触发",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-if",
+          "alias": "v-if指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  }
+]

@@ -1,0 +1,91 @@
+.container {
+  .advertisement {
+    position: relative;
+    .card-img {
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 210px;
+    }
+    .times {
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      font-size: 12px;
+      color: #fff;
+      width: 100%;
+      height: 35px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  .card-right {
+    padding: 12px;
+    .price {
+      .new-price {
+        font-size: 18px;
+        color: #ff3b30;
+      }
+      .old-price {
+        margin-left: 4px;
+        font-size: 12px;
+        color: #999999;
+        text-decoration: line-through;
+      }
+    }
+    .two-line {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box; //作为弹性伸缩盒子模型显示。
+      -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+      -webkit-line-clamp: 2; //显示的行
+    }
+    .title {
+      font-size: 15px;
+      color: #333333;
+    }
+    .weight {
+      font-weight: 500;
+    }
+    .subtitle {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #999;
+    }
+    .detail {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #999;
+      .detail-wrapper {
+        display: inline-block;
+        .divider {
+          display: inline-block;
+          margin: 0 4px;
+          color: #eeeeee;
+        }
+        .detail-item {
+          display: inline-block;
+          font-size: 13px;
+          color: #999999;
+        }
+      }
+    }
+    .payInfo {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0 4px 0;
+      .price {
+        font-size: 18px;
+        color: #ff3b30;
+        .price-unit {
+          font-size: 13px;
+          color: #999999;
+        }
+      }
+    }
+  }
+}

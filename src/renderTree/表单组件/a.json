@@ -17,71 +17,284 @@
     "id": 1,
     "parentId": 0,
     "ins_id": "",
-    "tag": "van-nav-bar",
+    "tag": "van-cell-group",
     "mini_method_uuid": -1,
     "data": {
       "$style": {},
-      "title": "标题",
-      "left-arrow": false,
+      "title": "",
       "border": true,
-      "fixed": false,
-      "placeholder ": false,
-      "z-index": "1",
-      "safe-area-inset-top": false,
       "$exports": [
         {
-          "attrKey": "safe-area-inset-top",
-          "alias": "是否开启顶部安全区适配",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "z-index",
-          "alias": "导航栏 z-index",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "placeholder",
-          "alias": "固定在顶部时，是否在标签位置生成一个等高的占位元素",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "fixed",
-          "alias": "是否固定在顶部",
-          "sortIdx": -1
-        },
-        {
           "attrKey": "border",
-          "alias": "是否显示下边框",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "left-arrow",
-          "alias": "是否显示左侧箭头",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "right-text",
-          "alias": "右侧文案",
-          "sortIdx": -1
-        },
-        {
-          "attrKey": "left-text",
-          "alias": "左侧文案",
+          "alias": "是否显示外边框",
           "sortIdx": -1
         },
         {
           "attrKey": "title",
-          "alias": "NavBar 导航栏标题",
+          "alias": "Cell 单元格 分组标题",
           "sortIdx": -1
         },
         {
-          "eventKey": "click-right",
-          "alias": "点击右侧按钮时触发",
+          "attrKey": "v-if",
+          "alias": "v-if指令",
           "sortIdx": -1
         },
         {
-          "eventKey": "click-left",
-          "alias": "点击左侧按钮时触发",
+          "attrKey": "v-show",
+          "alias": "v-show指令",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model",
+          "alias": "v-model指令",
+          "sortIdx": -1
+        }
+      ],
+      "$exportState": true
+    }
+  },
+  {
+    "id": 1,
+    "parentId": 0,
+    "ins_id": "",
+    "tag": "van-field",
+    "mini_method_uuid": -1,
+    "data": {
+      "$style": {},
+      "type": "text",
+      "border": true,
+      "disabled": false,
+      "readonly": false,
+      "colon ": false,
+      "required": false,
+      "center": false,
+      "size": "large",
+      "placeholder": "请输入文本",
+      "label": "文本",
+      "clearable": false,
+      "clear-trigger ": "focus",
+      "clickable": false,
+      "is-link": false,
+      "autofocus": false,
+      "show-word-limit": false,
+      "error": false,
+      "format-trigger ": "onChange",
+      "arrow-direction": "",
+      "label-width": "6.2em",
+      "label-align": "left",
+      "input-align": "left",
+      "error-message-align": "left",
+      "autosize": false,
+      "icon-prefix ": "van-icon",
+      "$exports": [
+        {
+          "attrKey": "rules",
+          "alias": "表单校验规则，详见  Form 组件",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "icon-prefix",
+          "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "right-icon",
+          "alias": "右侧 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "left-icon",
+          "alias": "左侧 图标名称 或图片链接",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "autosize",
+          "alias": "是否自适应内容高度，只对 textarea 有效， 可传入对象,如 { maxHeight: 100, minHeight: 50 }， 单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "error-message-align",
+          "alias": "错误提示文案对齐方式，可选值为  center right",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "input-align",
+          "alias": "输入框对齐方式，可选值为  center right",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "label-align",
+          "alias": "左侧文本对齐方式，可选值为  center right",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "label-width",
+          "alias": "左侧文本宽度，默认单位为 px",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "label-class",
+          "alias": "左侧文本额外类名",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "arrow-direction",
+          "alias": "箭头方向，可选值为  left up down",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "format-trigger",
+          "alias": "格式化函数触发的时机，可选值为  onBlur",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "formatter",
+          "alias": "输入内容格式化函数",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "error-message",
+          "alias": "底部错误提示文案，为空时不展示",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "error",
+          "alias": "是否将输入内容标红",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "show-word-limit",
+          "alias": "是否显示字数统计，需要设置 maxlength 属性",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "autofocus",
+          "alias": "是否自动聚焦，iOS 系统不支持该属性",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "is-link",
+          "alias": "是否展示右侧箭头并开启点击反馈",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "clickable",
+          "alias": "是否开启点击反馈",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "clear-trigger",
+          "alias": "显示清除图标的时机， always  表示输入框不为空时展示， focus  表示输入框聚焦且不为空时展示",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "clearable",
+          "alias": "是否启用清除图标，点击清除图标后会清空输入框",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "center",
+          "alias": "是否使内容垂直居中",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "required",
+          "alias": "是否显示表单必填星号",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "colon",
+          "alias": "是否在 label 后面添加冒号",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "readonly",
+          "alias": "是否只读",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "disabled",
+          "alias": "是否禁用输入框",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "border",
+          "alias": "是否显示内边框",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "placeholder",
+          "alias": "输入框占位提示文字",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "maxlength",
+          "alias": "输入的最大字符数",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "size",
+          "alias": "大小，可选值为  large",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "type",
+          "alias": "输入框类型, 可选值为  tel digit number textarea password  等",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "name",
+          "alias": "名称，提交表单的标识符",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "label",
+          "alias": "输入框左侧文本",
+          "sortIdx": -1
+        },
+        {
+          "attrKey": "v-model (value)",
+          "alias": "Field 输入框 当前输入的值",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click-right-icon",
+          "alias": "点击右侧图标时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click-left-icon",
+          "alias": "点击左侧图标时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click-input",
+          "alias": "点击输入区域时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "click",
+          "alias": "点击 Field 时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "clear",
+          "alias": "点击清除按钮时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "blur",
+          "alias": "输入框失去焦点时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "focus",
+          "alias": "输入框获得焦点时触发",
+          "sortIdx": -1
+        },
+        {
+          "eventKey": "input",
+          "alias": "输入框内容变化时触发",
           "sortIdx": -1
         },
         {
@@ -111,45 +324,11 @@
     "mini_method_uuid": -1,
     "data": {
       "$style": {
-        "min-width": "20px",
-        "min-height": "20px"
+        "min-height": "20px",
+        "min-width": "20px"
       },
       "$layout": true,
-      "$slot": "left",
-      "$exports": [],
-      "$exportState": true
-    }
-  },
-  {
-    "id": 3,
-    "parentId": 1,
-    "ins_id": "",
-    "tag": "GuiLayout",
-    "mini_method_uuid": -1,
-    "data": {
-      "$style": {
-        "min-width": "20px",
-        "min-height": "20px"
-      },
-      "$layout": true,
-      "$slot": "right",
-      "$exports": [],
-      "$exportState": true
-    }
-  },
-  {
-    "id": 4,
-    "parentId": 1,
-    "ins_id": "",
-    "tag": "GuiLayout",
-    "mini_method_uuid": -1,
-    "data": {
-      "$style": {
-        "min-width": "40px",
-        "min-height": "20px"
-      },
-      "$layout": true,
-      "$slot": "title",
+      "$slot": "extra",
       "$exports": [],
       "$exportState": true
     }

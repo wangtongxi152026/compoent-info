@@ -40,6 +40,103 @@
               "bindProp": "closeable",
               "label": "是否显示关闭图标",
               "type": "boolean"
+            },
+            {
+              "key": "options",
+              "type": "array",
+              "bindProp": "options",
+              "label": "可选项数据源",
+              "items": {
+                "label": "菜单项",
+                "key": "label",
+                "type": "object",
+                "properties": [
+                  {
+                    "type": "string",
+                    "key": "name",
+                    "defaultValue": "文本",
+                    "label": "显示文本"
+                  },
+                  {
+                    "type": "string",
+                    "key": "code",
+                    "defaultValue": "",
+                    "label": "标识符"
+                  },
+                  {
+                    "type": "array",
+                    "key": "items",
+                    "label": "子项",
+                    "items": {
+                      "label": "菜单项",
+                      "key": "label",
+                      "type": "object",
+                      "properties": [
+                        {
+                          "type": "string",
+                          "key": "name",
+                          "defaultValue": "文本",
+                          "label": "显示文本"
+                        },
+                        {
+                          "type": "string",
+                          "key": "code",
+                          "defaultValue": "",
+                          "label": "标识符"
+                        },
+                        {
+                          "type": "array",
+                          "key": "items",
+                          "label": "子项",
+                          "items": {
+                            "label": "菜单项",
+                            "key": "label",
+                            "type": "object",
+                            "properties": [
+                              {
+                                "type": "string",
+                                "key": "name",
+                                "defaultValue": "文本",
+                                "label": "显示文本"
+                              },
+                              {
+                                "type": "string",
+                                "key": "code",
+                                "defaultValue": "",
+                                "label": "标识符"
+                              },
+                              {
+                                "type": "array",
+                                "key": "items",
+                                "label": "子项",
+                                "items": {
+                                  "label": "菜单项",
+                                  "key": "label",
+                                  "type": "object",
+                                  "properties": [
+                                    {
+                                      "type": "string",
+                                      "key": "name",
+                                      "defaultValue": "文本",
+                                      "label": "显示文本"
+                                    },
+                                    {
+                                      "type": "string",
+                                      "key": "code",
+                                      "defaultValue": "",
+                                      "label": "标识符"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
             }
           ]
         }

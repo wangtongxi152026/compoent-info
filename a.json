@@ -1,0 +1,333 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Cell 单元格",
+      "properties": [
+        {
+          "label": "设置Cell 单元格",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "title",
+              "bindProp": "title",
+              "label": "Cell 单元格 分组标题",
+              "type": "string"
+            },
+            {
+              "key": "border",
+              "bindProp": "border",
+              "label": "是否显示外边框",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Cell 单元格",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  },
+  {
+    "type": "EditChildNode",
+    "label": "cell-item单元格",
+    "node": [
+      {
+        "tag": "van-cell",
+        "alias": "标签项",
+        "prop": {
+          "title": {
+            "alias": "cell-item 单元格 左侧标题",
+            "type": "string",
+            "value": "左侧标题"
+          },
+          "label": {
+            "alias": "标题下方的描述信息",
+            "type": "string",
+            "value": "描述信息"
+          },
+          "size": {
+            "alias": "单元格大小",
+            "type": "enum",
+            "value": "large",
+            "enumList": [
+              {
+                "value": "large",
+                "label": "large"
+              },
+              {
+                "value": "",
+                "label": "small"
+              }
+            ]
+          },
+          "icon": {
+            "alias": "左侧图标",
+            "type": "img",
+            "value": " "
+          },
+          "icon-prefix": {
+            "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+            "type": "string",
+            "value": "van-icon"
+          },
+          "border": {
+            "alias": "是否显示内边框",
+            "type": "boolean",
+            "value": true
+          },
+          "replace": {
+            "alias": "是否在跳转时替换当前页面历史",
+            "type": "boolean",
+            "value": false
+          },
+          "clickable": {
+            "alias": "是否开启点击反馈",
+            "type": "boolean",
+            "value": false
+          },
+          "is-link": {
+            "alias": "是否展示右侧箭头并开启点击反馈",
+            "type": "boolean",
+            "value": null
+          },
+          "required": {
+            "alias": "是否显示表单必填星号",
+            "type": "boolean",
+            "value": false
+          },
+          "center": {
+            "alias": "是否使内容垂直居中",
+            "type": "boolean",
+            "value": false
+          },
+          "arrow-direction": {
+            "alias": "箭头方向",
+            "type": "enum",
+            "value": "",
+            "enumList": [
+              {
+                "value": "left",
+                "label": "left"
+              },
+              {
+                "value": "up",
+                "label": "up"
+              },
+              {
+                "value": "down",
+                "label": "down"
+              },
+              {
+                "value": "",
+                "label": "right"
+              }
+            ]
+          },
+          "title-style": {
+            "alias": "左侧标题额外样式(暂不生效)",
+            "type": "string",
+            "value": ""
+          },
+          "title-class": {
+            "alias": "左侧标题额外类名(暂不生效)",
+            "type": "string",
+            "value": ""
+          },
+          "value-class": {
+            "alias": "右侧内容额外类名(暂不生效)",
+            "type": "string",
+            "value": ""
+          },
+          "label-class": {
+            "alias": "描述信息额外类名(暂不生效)",
+            "type": "string",
+            "value": ""
+          }
+        },
+        "data": {
+          "$style": {},
+          "icon-prefix ": "van-icon",
+          "border": true,
+          "replace": false,
+          "clickable": null,
+          "is-link": false,
+          "required": false,
+          "center": false,
+          "size": "large",
+          "arrow-direction": "",
+          "$exports": [
+            {
+              "attrKey": "label-class",
+              "alias": "描述信息额外类名",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "value-class",
+              "alias": "右侧内容额外类名",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "title-class",
+              "alias": "左侧标题额外类名",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "title-style",
+              "alias": "左侧标题额外样式",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "arrow-direction",
+              "alias": "箭头方向，可选值为  left up down",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "center",
+              "alias": "是否使内容垂直居中",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "required",
+              "alias": "是否显示表单必填星号",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "is-link",
+              "alias": "是否展示右侧箭头并开启点击反馈",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "clickable",
+              "alias": "是否开启点击反馈",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "replace",
+              "alias": "是否在跳转时替换当前页面历史",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "border",
+              "alias": "是否显示内边框",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "to",
+              "alias": "点击后跳转的目标路由对象，同 vue-router 的  to 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "url",
+              "alias": "点击后跳转的链接地址",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon-prefix ",
+              "alias": "图标类名前缀，同 Icon 组件的  class-prefix 属性",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "icon",
+              "alias": "左侧 图标名称 或图片链接",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "size",
+              "alias": "单元格大小，可选值为  large",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "label",
+              "alias": "标题下方的描述信息",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "value",
+              "alias": "右侧内容",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "title",
+              "alias": "Cell-item 单元格 左侧标题",
+              "sortIdx": -1
+            },
+            {
+              "eventKey": "click",
+              "alias": "点击单元格时触发",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-if",
+              "alias": "v-if指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-show",
+              "alias": "v-show指令",
+              "sortIdx": -1
+            },
+            {
+              "attrKey": "v-model",
+              "alias": "v-model指令",
+              "sortIdx": -1
+            }
+          ]
+        },
+        "children": [
+          {
+            "tag": "GuiLayout",
+            "disabled": true,
+            "data": {
+              "$layout": true,
+              "$slot": "default",
+              "$style": {
+                "display": "flex",
+                "flexGrow": 1,
+                "flexShrink": 0,
+                "min-height": "20px",
+                "min-width": "20px"
+              },
+              "$exports": []
+            },
+            "children": []
+          },
+          {
+            "tag": "GuiLayout",
+            "disabled": true,
+            "data": {
+              "$layout": true,
+              "$slot": "icon",
+              "$style": {
+                "display": "flex",
+                "flexGrow": 1,
+                "flexShrink": 0,
+                "min-height": "20px",
+                "min-width": "20px"
+              },
+              "$exports": []
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "render_tree_node": {
+      "ins_id": "",
+      "key": ""
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": ""
+    }
+  }
+]
