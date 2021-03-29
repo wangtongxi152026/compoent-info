@@ -1,0 +1,90 @@
+[
+  {
+    "type": "PropSchema",
+    "schema": {
+      "type": "object",
+      "key": "schema",
+      "label": "Radio 单选框",
+      "properties": [
+        {
+          "label": "设置Radio 单选框",
+          "key": "tabs",
+          "type": "object",
+          "properties": [
+            {
+              "key": "name",
+              "bindProp": "name",
+              "label": "Radio 单选框 标识符",
+              "type": "string"
+            },
+            {
+              "key": "shape",
+              "bindProp": "shape",
+              "label": "形状",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "square",
+                  "label": "square"
+                },
+                {
+                  "value": "round",
+                  "label": "round"
+                }
+              ]
+            },
+            {
+              "key": "disabled",
+              "bindProp": "disabled",
+              "label": "是否为禁用状态",
+              "type": "boolean"
+            },
+            {
+              "key": "label-disabled",
+              "bindProp": "label-disabled",
+              "label": "是否禁用文本内容点击",
+              "type": "boolean"
+            },
+            {
+              "key": "label-position",
+              "bindProp": "label-position",
+              "label": "文本位置",
+              "type": "string",
+              "enumList": [
+                {
+                  "value": "left",
+                  "label": "left"
+                },
+                {
+                  "value": "right",
+                  "label": "right"
+                }
+              ]
+            },
+            {
+              "key": "icon-size",
+              "bindProp": "icon-size",
+              "label": "图标大小，默认单位为 px",
+              "type": "string"
+            },
+            {
+              "key": "checked-color",
+              "bindProp": "checked-color",
+              "label": "选中状态颜色",
+              "type": "color"
+            }
+          ]
+        }
+      ]
+    },
+    "label": "Radio 单选框",
+    "render_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    },
+    "code_tree_node": {
+      "ins_id": "",
+      "key": "schema"
+    }
+  }
+]

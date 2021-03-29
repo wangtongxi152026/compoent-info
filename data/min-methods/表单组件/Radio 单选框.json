@@ -1,1 +1,118 @@
-[{"key":"name","label":"Radio 单选框 标识符","category":"attr","schema":{"type":"any"},"default":"","isExoprt":true},{"key":"shape","label":"形状，可选值为  square","category":"attr","schema":{"type":"enum","enumList":[{"value":"square","label":"square"},{"value":"round","label":"round"}]},"default":"","isExoprt":true},{"key":"disabled","label":"是否为禁用状态","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"label-disabled","label":"是否禁用文本内容点击","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"label-position","label":"文本位置，可选值为  left","category":"attr","schema":{"type":"enum","enumList":[{"value":"left","label":"left"},{"value":"right","label":"right"}]},"default":"","isExoprt":true},{"key":"icon-size","label":"图标大小，默认单位为 px","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"checked-color","label":"选中状态颜色","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"click","label":"点击单选框时触发","category":"event","task":{"label":"绑定事件click","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"default","label":"自定义文本","category":"slot","isExoprt":true},{"key":"icon","label":"自定义图标","category":"slot","isExoprt":true}]
+[
+    {
+        "key": "name",
+        "label": "Radio 单选框 标识符",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "shape",
+        "label": "形状，可选值为  square",
+        "category": "attr",
+        "schema": {
+            "type": "enum",
+            "enumList": [
+                {
+                    "value": "square",
+                    "label": "square"
+                },
+                {
+                    "value": "round",
+                    "label": "round"
+                }
+            ]
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "disabled",
+        "label": "是否为禁用状态",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "label-disabled",
+        "label": "是否禁用文本内容点击",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "label-position",
+        "label": "文本位置，可选值为  left",
+        "category": "attr",
+        "schema": {
+            "type": "enum",
+            "enumList": [
+                {
+                    "value": "left",
+                    "label": "left"
+                },
+                {
+                    "value": "right",
+                    "label": "right"
+                }
+            ]
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "icon-size",
+        "label": "图标大小，默认单位为 px",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "checked-color",
+        "label": "选中状态颜色",
+        "category": "attr",
+        "schema": {
+            "type": "color"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "click",
+        "label": "点击单选框时触发",
+        "category": "event",
+        "task": {
+            "label": "绑定事件click",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "default",
+        "label": "自定义文本",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "icon",
+        "label": "自定义图标",
+        "category": "slot",
+        "isExoprt": true
+    }
+]

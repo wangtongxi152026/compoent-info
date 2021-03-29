@@ -1,0 +1,82 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "NavBar 导航栏",
+            "properties": [
+                {
+                    "label": "设置NavBar 导航栏",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "title",
+                            "bindProp": "title",
+                            "label": "NavBar 导航栏标题",
+                            "type": "string"
+                        },
+                        {
+                            "key": "left-text",
+                            "bindProp": "left-text",
+                            "label": "左侧文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "right-text",
+                            "bindProp": "right-text",
+                            "label": "右侧文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "left-arrow",
+                            "bindProp": "left-arrow",
+                            "label": "是否显示左侧箭头",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "border",
+                            "bindProp": "border",
+                            "label": "是否显示下边框",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "fixed",
+                            "bindProp": "fixed",
+                            "label": "是否固定在顶部",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "placeholder",
+                            "bindProp": "placeholder",
+                            "label": "固定在顶部时，是否在标签位置生成一个等高的占位元素",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "z-index",
+                            "bindProp": "z-index",
+                            "label": "导航栏 z-index",
+                            "type": "string"
+                        },
+                        {
+                            "key": "safe-area-inset-top",
+                            "bindProp": "safe-area-inset-top",
+                            "label": "是否开启顶部安全区适配",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "NavBar 导航栏",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

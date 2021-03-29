@@ -1,0 +1,82 @@
+[
+    {
+        "type": "PropSchema",
+        "schema": {
+            "type": "object",
+            "key": "schema",
+            "label": "PullRefresh 下拉刷新",
+            "properties": [
+                {
+                    "label": "设置PullRefresh 下拉刷新",
+                    "key": "tabs",
+                    "type": "object",
+                    "properties": [
+                        {
+                            "key": "value",
+                            "bindProp": "value",
+                            "label": "PullRefresh 下拉刷新 是否处于加载中状态",
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "pulling-text",
+                            "bindProp": "pulling-text",
+                            "label": "下拉过程提示文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "loosing-text",
+                            "bindProp": "loosing-text",
+                            "label": "释放过程提示文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "loading-text",
+                            "bindProp": "loading-text",
+                            "label": "加载过程提示文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "success-text",
+                            "bindProp": "success-text",
+                            "label": "刷新成功提示文案",
+                            "type": "string"
+                        },
+                        {
+                            "key": "success-duration",
+                            "bindProp": "success-duration",
+                            "label": "刷新成功提示展示时长(ms)",
+                            "type": "string"
+                        },
+                        {
+                            "key": "animation-duration",
+                            "bindProp": "animation-duration",
+                            "label": "动画时长",
+                            "type": "string"
+                        },
+                        {
+                            "key": "head-height",
+                            "bindProp": "head-height",
+                            "label": "顶部内容高度",
+                            "type": "string"
+                        },
+                        {
+                            "key": "disabled",
+                            "bindProp": "disabled",
+                            "label": "是否禁用下拉刷新",
+                            "type": "boolean"
+                        }
+                    ]
+                }
+            ]
+        },
+        "label": "PullRefresh 下拉刷新",
+        "render_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        },
+        "code_tree_node": {
+            "ins_id": "",
+            "key": "schema"
+        }
+    }
+]

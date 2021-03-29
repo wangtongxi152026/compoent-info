@@ -1,1 +1,85 @@
-{"Radio 单选框":{"minthods":[{"key":"name","label":"Radio 单选框 标识符","type":"any","default":"-"},{"key":"shape","label":"形状，可选值为  square","type":"string","default":"round","enumList":[{"value":"square","label":"square"},{"value":"round","label":"round"}]},{"key":"disabled","label":"是否为禁用状态","type":"boolean","default":"false"},{"key":"label-disabled","label":"是否禁用文本内容点击","type":"boolean","default":"false"},{"key":"label-position","label":"文本位置，可选值为  left","type":"string","default":"right","enumList":[{"value":"left","label":"left"},{"value":"right","label":"right"}]},{"key":"icon-size","label":"图标大小，默认单位为 px","type":"number | string","default":"20px"},{"key":"checked-color","label":"选中状态颜色","type":"string","default":"#1989fa"}],"envets":[{"eventKey":"click","label":"点击单选框时触发","param":"event: Event "}],"slots":[{"slot":"default","label":"自定义文本"},{"slot":"icon","label":"自定义图标"}]}}
+{
+    "Radio 单选框": {
+        "minthods": [
+            {
+                "key": "name",
+                "label": "Radio 单选框 标识符",
+                "type": "any",
+                "default": "-"
+            },
+            {
+                "key": "shape",
+                "label": "形状，可选值为  square",
+                "type": "string",
+                "default": "round",
+                "enumList": [
+                    {
+                        "value": "square",
+                        "label": "square"
+                    },
+                    {
+                        "value": "round",
+                        "label": "round"
+                    }
+                ]
+            },
+            {
+                "key": "disabled",
+                "label": "是否为禁用状态",
+                "type": "boolean",
+                "default": "false"
+            },
+            {
+                "key": "label-disabled",
+                "label": "是否禁用文本内容点击",
+                "type": "boolean",
+                "default": "false"
+            },
+            {
+                "key": "label-position",
+                "label": "文本位置，可选值为  left",
+                "type": "string",
+                "default": "right",
+                "enumList": [
+                    {
+                        "value": "left",
+                        "label": "left"
+                    },
+                    {
+                        "value": "right",
+                        "label": "right"
+                    }
+                ]
+            },
+            {
+                "key": "icon-size",
+                "label": "图标大小，默认单位为 px",
+                "type": "number | string",
+                "default": "20px"
+            },
+            {
+                "key": "checked-color",
+                "label": "选中状态颜色",
+                "type": "string",
+                "default": "#1989fa"
+            }
+        ],
+        "envets": [
+            {
+                "eventKey": "click",
+                "label": "点击单选框时触发",
+                "param": "event: Event "
+            }
+        ],
+        "slots": [
+            {
+                "slot": "default",
+                "label": "自定义文本"
+            },
+            {
+                "slot": "icon",
+                "label": "自定义图标"
+            }
+        ]
+    }
+}

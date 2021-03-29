@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "parentId": -1,
+        "ins_id": "",
+        "tag": "div",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {
+                "width": "100%",
+                "height": "100%",
+                "overflow": "auto"
+            }
+        }
+    },
+    {
+        "id": 1,
+        "parentId": 0,
+        "ins_id": "",
+        "tag": "van-pull-refresh",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {},
+            "value": false,
+            "pulling-text": "下拉即可刷新...",
+            "loosing-text": "释放即可刷新...",
+            "loading-text": "加载中...",
+            "success-duration": "500",
+            "animation-duration": "300",
+            "head-height": "50",
+            "disabled": false,
+            "$exports": [
+                {
+                    "attrKey": "value",
+                    "alias": "是否处于加载中状态",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "disabled",
+                    "alias": "是否禁用下拉刷新",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "head-height",
+                    "alias": "顶部内容高度",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "animation-duration",
+                    "alias": "动画时长",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "success-duration",
+                    "alias": "刷新成功提示展示时长(ms)",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "success-text",
+                    "alias": "刷新成功提示文案",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "loading-text",
+                    "alias": "加载过程提示文案",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "loosing-text",
+                    "alias": "释放过程提示文案",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "pulling-text",
+                    "alias": "下拉过程提示文案",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-model",
+                    "alias": "PullRefresh 下拉刷新 是否处于加载中状态",
+                    "sortIdx": -1
+                },
+                {
+                    "eventKey": "refresh",
+                    "alias": "下拉刷新时触发",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-if",
+                    "alias": "v-if指令",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-show",
+                    "alias": "v-show指令",
+                    "sortIdx": -1
+                },
+                {
+                    "attrKey": "v-model",
+                    "alias": "v-model指令",
+                    "sortIdx": -1
+                }
+            ],
+            "$exportState": true
+        }
+    },
+    {
+        "id": 2,
+        "parentId": 1,
+        "ins_id": "",
+        "tag": "GuiLayout",
+        "mini_method_uuid": -1,
+        "data": {
+            "$style": {
+                "min-height": "40px"
+            },
+            "$layout": true,
+            "$exports": [],
+            "$exportState": true
+        }
+    }
+]

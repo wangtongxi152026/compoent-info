@@ -1,1 +1,140 @@
-[{"key":"v-model","label":"List 列表 是否处于加载状态，加载过程中不触发 load 事件","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"finished","label":"是否已加载完成，加载完成后不再触发 load 事件","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"error","label":"是否加载失败，加载失败后点击错误提示可以重新 触发 load 事件，必须使用 sync 修饰符","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"offset","label":"滚动条与底部距离小于 offset 时触发 load 事件","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"loading-text","label":"加载过程中的提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"finished-text","label":"加载完成后的提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"error-text","label":"加载失败后的提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"immediate-check","label":"是否在初始化时立即执行滚动位置检查","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"direction","label":"滚动触发加载的方向，可选值为 up","category":"attr","schema":{"type":"enum","enumList":[{"value":"down","label":"down"}]},"default":"","isExoprt":true},{"key":"load","label":"滚动条与底部距离小于 offset 时触发","category":"event","task":{"label":"绑定事件load","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"default","label":"列表内容","category":"slot","isExoprt":true},{"key":"loading","label":"自定义底部加载中提示","category":"slot","isExoprt":true},{"key":"finished","label":"自定义加载完成后的提示文案","category":"slot","isExoprt":true},{"key":"error","label":"自定义加载失败后的提示文案","category":"slot","isExoprt":true}]
+[
+    {
+        "key": "value",
+        "label": "List 列表 是否处于加载状态，加载过程中不触发 load 事件",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "finished",
+        "label": "是否已加载完成，加载完成后不再触发 load 事件",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "error",
+        "label": "是否加载失败，加载失败后点击错误提示可以重新 触发 load 事件，必须使用 sync 修饰符",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "offset",
+        "label": "滚动条与底部距离小于 offset 时触发 load 事件",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "loading-text",
+        "label": "加载过程中的提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "finished-text",
+        "label": "加载完成后的提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "error-text",
+        "label": "加载失败后的提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "immediate-check",
+        "label": "是否在初始化时立即执行滚动位置检查",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "direction",
+        "label": "滚动触发加载的方向，可选值为 up",
+        "category": "attr",
+        "schema": {
+            "type": "enum",
+            "enumList": [
+                {
+                    "value": "down",
+                    "label": "down"
+                },
+                {
+                    "value": "up",
+                    "label": "up"
+                }
+            ]
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "load",
+        "label": "滚动条与底部距离小于 offset 时触发",
+        "category": "event",
+        "task": {
+            "label": "绑定事件load",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "default",
+        "label": "列表内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "loading",
+        "label": "自定义底部加载中提示",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "finished",
+        "label": "自定义加载完成后的提示文案",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "error",
+        "label": "自定义加载失败后的提示文案",
+        "category": "slot",
+        "isExoprt": true
+    }
+]

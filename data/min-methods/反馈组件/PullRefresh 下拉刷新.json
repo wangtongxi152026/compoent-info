@@ -1,1 +1,142 @@
-[{"key":"v-model","label":"PullRefresh 下拉刷新 是否处于加载中状态","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"pulling-text","label":"下拉过程提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"loosing-text","label":"释放过程提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"loading-text","label":"加载过程提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"success-text","label":"刷新成功提示文案","category":"attr","schema":{"type":"string"},"default":"","isExoprt":true},{"key":"success-duration","label":"刷新成功提示展示时长(ms)","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"animation-duration","label":"动画时长","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"head-height","label":"顶部内容高度","category":"attr","schema":{"type":"number | string"},"default":"","isExoprt":true},{"key":"disabled","label":"是否禁用下拉刷新","category":"attr","schema":{"type":"boolean"},"default":"","isExoprt":true},{"key":"refresh","label":"下拉刷新时触发","category":"event","task":{"label":"绑定事件refresh","process":{"type":"bind_method","defaultMethods":[],"custom_access":true}},"isExoprt":true},{"key":"default","label":"自定义内容","category":"slot","isExoprt":true},{"key":"normal","label":"非下拉状态时顶部内容","category":"slot","isExoprt":true},{"key":"pulling","label":"下拉过程中顶部内容","category":"slot","isExoprt":true},{"key":"loosing","label":"释放过程中顶部内容","category":"slot","isExoprt":true},{"key":"loading","label":"加载过程中顶部内容","category":"slot","isExoprt":true},{"key":"success","label":"刷新成功提示内容","category":"slot","isExoprt":true}]
+[
+    {
+        "key": "value",
+        "label": "PullRefresh 下拉刷新 是否处于加载中状态",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "pulling-text",
+        "label": "下拉过程提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "loosing-text",
+        "label": "释放过程提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "loading-text",
+        "label": "加载过程提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "success-text",
+        "label": "刷新成功提示文案",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "success-duration",
+        "label": "刷新成功提示展示时长(ms)",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "animation-duration",
+        "label": "动画时长",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "head-height",
+        "label": "顶部内容高度",
+        "category": "attr",
+        "schema": {
+            "type": "string"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "disabled",
+        "label": "是否禁用下拉刷新",
+        "category": "attr",
+        "schema": {
+            "type": "boolean"
+        },
+        "default": "",
+        "isExoprt": true
+    },
+    {
+        "key": "refresh",
+        "label": "下拉刷新时触发",
+        "category": "event",
+        "task": {
+            "label": "绑定事件refresh",
+            "process": {
+                "type": "bind_method",
+                "defaultMethods": [],
+                "custom_access": true
+            }
+        },
+        "isExoprt": true
+    },
+    {
+        "key": "default",
+        "label": "自定义内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "normal",
+        "label": "非下拉状态时顶部内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "pulling",
+        "label": "下拉过程中顶部内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "loosing",
+        "label": "释放过程中顶部内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "loading",
+        "label": "加载过程中顶部内容",
+        "category": "slot",
+        "isExoprt": true
+    },
+    {
+        "key": "success",
+        "label": "刷新成功提示内容",
+        "category": "slot",
+        "isExoprt": true
+    }
+]
